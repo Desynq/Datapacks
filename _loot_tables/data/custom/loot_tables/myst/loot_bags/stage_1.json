@@ -1,0 +1,51 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "custom:myst/loot_bags/base"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:netherite_boots",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{Enchantments:[{id:protection,lvl:10}],type:soulwalker_boots,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"Soulwalker Boots\"}',Lore:['{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"◘ Immunity to crying obsidian\"}','{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"◘ Vulnerability to water\"}']}}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:netherite_axe",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{type:ryft_battleaxe,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Ryft Battleaxe\"}'},AttributeModifiers:[{AttributeName:generic.attack_damage,Amount:30,Slot:mainhand,UUID:[I;14891,4189,14981,51894]},{AttributeName:generic.attack_speed,Amount:-3.75,Slot:mainhand,UUID:[I;148149,58191,51891,581892]}]}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:carrot_on_a_stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:44,type:soul_lantern,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"Soul Lantern\"}',Lore:['{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"◘ Store souls by holding it in your offhand\"}']}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

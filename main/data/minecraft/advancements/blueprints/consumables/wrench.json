@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Wrench"
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{CustomModelData:9}"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "blueprints/_consumables"
+}

@@ -1,0 +1,1 @@
+give @s tipped_arrow{type:explosive_arrow,HideFlags:32,display:{Name:'{"italic":"false","text":"Explosive Arrow"}'},CustomPotionEffects:[{Amplifier:1,Id:26}],CustomPotionColor:6192150}

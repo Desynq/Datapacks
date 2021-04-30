@@ -1,0 +1,1 @@
+effect give @s[scores={regen_amp=0..2}] regeneration 5 3 true

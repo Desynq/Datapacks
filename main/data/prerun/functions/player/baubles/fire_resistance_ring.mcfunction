@@ -1,0 +1,1 @@
+effect give @s fire_resistance 5 0 true

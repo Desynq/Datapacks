@@ -1,0 +1,1 @@
+give @s white_dye{CustomModelData:21,type:tape,display:{Name:'{"italic":"false","text":"Tape"}'}}

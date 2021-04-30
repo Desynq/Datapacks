@@ -1,0 +1,20 @@
+{
+	"condition": "entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"head": {
+				"nbt": "{type:axolotl_helmet}"
+			},
+			"chest": {
+				"nbt": "{type:axolotl_chestplate}"
+			},
+			"legs": {
+				"nbt": "{type:axolotl_leggings}"
+			},
+			"feet": {
+				"nbt": "{type:axolotl_boots}"
+			}
+		}
+	}
+}

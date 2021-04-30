@@ -1,0 +1,1 @@
+give @s turtle_spawn_egg{EntityTag:{id:ravager,DeathLootTable:"custom:fauna/crocodile",Tags:["boss"],Health:100,Attributes:[{Name:generic.max_health,Base:100},{Name:generic.armor,Base:30}],CustomName:'{"color":"dark_green","text":"Crocodile"}',ArmorItems:[{},{},{},{id:stone,Count:1,tag:{Enchantments:[{id:vanishing_curse,lvl:1},{id:depth_strider,lvl:10}]}}]}}

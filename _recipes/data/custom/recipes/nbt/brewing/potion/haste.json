@@ -1,0 +1,33 @@
+{
+    "type": "nbtcrafting:brewing",
+    "base": {
+        "item": "minecraft:potion",
+		"data": {
+			"require": {
+				"Potion": "minecraft:awkward"
+			},
+			"deny": {
+				"CustomPotionEffects": []
+			}
+		}
+    },
+    "ingredient": {
+        "item": "minecraft:golden_pickaxe"   
+    },
+    "result": {
+        "item": "minecraft:potion",
+		"data": {
+			"typePotion": "haste",
+			"Potion": "minecraft:awkward",
+			"CustomPotionEffects": [
+				{
+					"Id": 3,
+					"Duration": 1200
+				}
+			],
+			"display": {
+				"Name": "{\"italic\":\"false\",\"text\":\"Potion of Haste\"}"
+			}
+		}
+    }
+}

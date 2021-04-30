@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "Inventory Changed",
+			"color": "white"
+        },
+        "description": {
+            "text": "",
+			"color": "white"
+        },
+        "icon": {
+            "item": "minecraft:chest"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+					}
+				]
+			}
+        }
+    },
+    "parent": "debug/invalid"
+}

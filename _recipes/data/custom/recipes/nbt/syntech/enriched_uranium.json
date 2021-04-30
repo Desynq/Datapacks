@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"111",
+		"121",
+		"111"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:white_dye",
+			"data": {
+				"require": {
+					"type": "uranium_238"
+				}
+			}
+		},
+		"2": {
+			"item": "minecraft:white_dye",
+			"data": {
+				"require": {
+					"type": "uranium_235"
+				}
+			}
+		}
+	},
+	"result": {
+		"item": "minecraft:white_dye",
+		"data": {
+			"CustomModelData": 19,
+			"type": "enriched_uranium",
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"green\",\"text\":\"Enriched Uranium\"}"
+			}
+		}
+	},
+	"group": "custom"
+}

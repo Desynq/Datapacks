@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:2214,type:ram,tier:5,Tags:["banned"],display:{Name:'{"italic":"false","color":"gray","text":"RAM [Tier 3]"}'}}

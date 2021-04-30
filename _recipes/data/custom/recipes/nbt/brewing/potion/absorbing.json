@@ -1,0 +1,38 @@
+{
+    "type": "nbtcrafting:brewing",
+    "base": {
+        "item": "minecraft:potion",
+		"data": {
+			"require": {
+				"Potion": "minecraft:awkward"
+			},
+			"deny": {
+				"CustomPotionEffects": []
+			}
+		}
+    },
+    "ingredient": {
+        "item": "minecraft:golden_apple"   
+    },
+    "result": {
+        "item": "minecraft:potion",
+		"data": {
+			"typePotion": "absorbing",
+			"HideFlags": 32,
+			"Potion": "minecraft:awkward",
+			"CustomPotionEffects": [
+				{
+					"Id": 22,
+					"Duration": 3600,
+					"Amplifier": 10
+				}
+			],
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"white\",\"text\":\"Potion of Absorbing\"}",
+				"Lore": [
+					"{\"italic\":\"false\",\"color\":\"blue\",\"text\":\"Absorption X (3:00)\"}"
+				]
+			}
+		}
+    }
+}

@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:100,Tags:["30rnd_mag","mag"],type:30rnd_7.62s_magazine,ammo:0,Damage:25,display:{Name:'{"italic":"false","text":"7.62s Magazine"}',Lore:['{"italic":"false","color":"gray","text":"0/30 Remaining"}']}}

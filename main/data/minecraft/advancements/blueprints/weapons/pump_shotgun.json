@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Pump-Action Shotgun"
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{CustomModelData:202}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "blueprints/_weapons"
+}

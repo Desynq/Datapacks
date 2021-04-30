@@ -1,0 +1,1 @@
+data modify entity @s Owner set from entity @p UUID

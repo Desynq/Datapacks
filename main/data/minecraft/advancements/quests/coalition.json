@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "The \"Good\" Guys?",
+			"color": "dark_aqua"
+        },
+        "description": {
+            "text": "Enlist within the ranks of the Coalition",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:blue_dye"
+        },
+        "frame": "goal",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "quests/root"
+}

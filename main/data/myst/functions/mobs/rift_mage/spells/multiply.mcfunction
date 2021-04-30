@@ -1,0 +1,3 @@
+summon wither_skeleton ~ ~ ~ {DeathLootTable:"",ActiveEffects:[{Id:20,Duration:2147483647}],Team:mob,CustomName:'{"color":"dark_purple","text":"Rift Mimic"}',HandDropChances:[0.0f],HandItems:[{id:carrot_on_a_stick,Count:1,tag:{CustomModelData:43}}],ArmorItems:[{},{},{},{id:crying_obsidian,Count:1}],Health:10,Attributes:[{Name:generic.max_health,Base:10},{Name:generic.movement_speed,Base:.3},{Name:generic.follow_range,Base:128}]}
+particle reverse_portal ~ ~1 ~ .5 .5 .5 5 1000 force @a
+playsound block.portal.travel master @a ~ ~ ~ .2

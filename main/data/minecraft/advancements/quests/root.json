@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "text": "Quests & Missions",
+            "color": "gray"
+        },
+		"description": {
+            "text": "",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:skull_banner_pattern"
+        },
+        "frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/blackstone.png"
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
+
+{
+	"display": 
+}

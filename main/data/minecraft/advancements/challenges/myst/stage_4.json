@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Bioshock",
+			"color": "aqua"
+        },
+        "description": {
+            "text": "Is that an avocado?",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:beacon"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "challenges/myst/stage_3"
+}

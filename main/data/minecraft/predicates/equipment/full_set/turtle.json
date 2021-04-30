@@ -1,0 +1,20 @@
+{
+	"condition": "entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"head": {
+				"nbt": "{type:turtle_helmet}"
+			},
+			"chest": {
+				"nbt": "{type:turtle_chestplate}"
+			},
+			"legs": {
+				"nbt": "{type:turtle_leggings}"
+			},
+			"feet": {
+				"nbt": "{type:turtle_boots}"
+			}
+		}
+	}
+}

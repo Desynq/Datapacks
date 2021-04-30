@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:7,type:electrostasis_rifle,display:{Name:'{"italic":"false","text":"Electrostasis Rifle"}',Lore:['{"italic":"false","color":"gold","text":"Derelict Special Weapon"}','{"italic":"false","color":"gray","text":"○ Ammo recharges over time"}','{"italic":"false","color":"red","text":"○ Susceptible to EMPs"}']}}

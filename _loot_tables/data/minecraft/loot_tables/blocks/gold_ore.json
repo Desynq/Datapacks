@@ -1,0 +1,46 @@
+{
+	"type": "block",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "alternatives",
+					"children": [
+						{
+							"type": "item",
+							"name": "minecraft:gold_ingot",
+							"conditions": [
+								{
+									"condition": "match_tool",
+									"predicate": {
+										"nbt": "{type:molten_pickaxe}"
+									}
+								}
+							],
+							"functions": [
+								{
+									"function": "apply_bonus",
+									"enchantment": "fortune",
+									"formula": "uniform_bonus_count",
+									"parameters": {
+										"bonusMultiplier": 1
+									}
+								}
+							]
+						},
+						{
+							"type": "item",
+							"name": "minecraft:gold_ore"
+						}
+					]
+				}
+			],
+			"conditions": [
+				{
+					"condition": "survives_explosion"
+				}
+			]
+		}
+	]
+}

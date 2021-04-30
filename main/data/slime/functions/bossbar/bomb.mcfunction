@@ -1,0 +1,1 @@
+summon tnt ~ ~ ~ {Glowing:1,team:mob,Tags:["bomb"],Fuse:12000}

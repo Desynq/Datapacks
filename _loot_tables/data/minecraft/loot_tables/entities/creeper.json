@@ -1,0 +1,54 @@
+{
+	"type": "minecraft:entity",
+	"pools": [
+	{
+		"rolls": 1,
+		"entries": [
+		{
+			"type": "minecraft:item",
+			"name": "minecraft:poisonous_potato",
+			"functions": [
+			{
+				"function": "minecraft:set_nbt",
+				"tag": "{display:{Name:'{\"italic\":\"false\",\"color\":\"green\",\"text\":\"Creeper Flesh\"}',Lore:['{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"contains small trace amounts of nitre\"}']}}"
+			},
+			{
+				"function": "minecraft:set_count",
+				"count": {
+					"min": 0,
+					"max": 1,
+					"type": "minecraft:uniform"
+				}
+			},
+			{
+				"function": "minecraft:looting_enchant",
+				"count": {
+					"min": 0,
+					"max": 1
+				}
+			}
+			]
+		}
+		]
+	},
+	{
+		"rolls": 1,
+		"conditions": [
+		{
+			"condition": "minecraft:entity_properties",
+			"predicate": {
+				"type": "#minecraft:skeletons"
+			},
+			"entity": "killer"
+		}
+		],
+		"entries": [
+		{
+			"type": "minecraft:tag",
+			"name": "minecraft:creeper_drop_music_discs",
+			"expand": true
+		}
+		]
+	}
+	]
+}

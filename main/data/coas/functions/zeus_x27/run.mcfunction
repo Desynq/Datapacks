@@ -1,0 +1,1 @@
+execute if entity @s[scores={u.coas=1..,emp=0},nbt={SelectedItem:{tag:{type:zeus_x27}}}] run function coas:zeus_x27/firing

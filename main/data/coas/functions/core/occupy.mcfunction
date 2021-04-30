@@ -1,0 +1,9 @@
+replaceitem entity @s[nbt=!{SelectedItemSlot:0},nbt=!{Inventory:[{Slot:0b}]}] hotbar.0 wooden_sword{CustomModelData:1,Tags:["preclear"]}
+replaceitem entity @s[nbt=!{SelectedItemSlot:1},nbt=!{Inventory:[{Slot:1b}]}] hotbar.1 wooden_sword{CustomModelData:1,Tags:["preclear"]}
+replaceitem entity @s[nbt=!{SelectedItemSlot:2},nbt=!{Inventory:[{Slot:2b}]}] hotbar.2 wooden_sword{CustomModelData:1,Tags:["preclear"]}
+replaceitem entity @s[nbt=!{SelectedItemSlot:3},nbt=!{Inventory:[{Slot:3b}]}] hotbar.3 wooden_sword{CustomModelData:1,Tags:["preclear"]}
+replaceitem entity @s[nbt=!{SelectedItemSlot:4},nbt=!{Inventory:[{Slot:4b}]}] hotbar.4 wooden_sword{CustomModelData:1,Tags:["preclear"]}
+replaceitem entity @s[nbt=!{SelectedItemSlot:5},nbt=!{Inventory:[{Slot:5b}]}] hotbar.5 wooden_sword{CustomModelData:1,Tags:["preclear"]}
+replaceitem entity @s[nbt=!{SelectedItemSlot:6},nbt=!{Inventory:[{Slot:6b}]}] hotbar.6 wooden_sword{CustomModelData:1,Tags:["preclear"]}
+replaceitem entity @s[nbt=!{SelectedItemSlot:7},nbt=!{Inventory:[{Slot:7b}]}] hotbar.7 wooden_sword{CustomModelData:1,Tags:["preclear"]}
+replaceitem entity @s[nbt=!{SelectedItemSlot:8},nbt=!{Inventory:[{Slot:8b}]}] hotbar.8 wooden_sword{CustomModelData:1,Tags:["preclear"]}

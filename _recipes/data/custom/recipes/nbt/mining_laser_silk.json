@@ -1,0 +1,47 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"121",
+		"232",
+		"121"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:iron_block"
+		},
+		"2": {
+			"item": "minecraft:gold_block"
+		},
+		"3": {
+			"item": "minecraft:carrot_on_a_stick",
+			"data": {
+				"require": {
+					"type": "mining_laser"
+				},
+				"deny": {
+					"Enchantments": []
+				}
+			}
+		}
+	},
+	"result": {
+		"item": "minecraft:carrot_on_a_stick",
+		"data": {
+			"CustomModelData": 52,
+			"type": "mining_laser",
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"yellow\",\"text\":\"Mining Laser\"}",
+				"Lore": [
+					"{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"◘ Avoid looking directly at the barrel\"}"
+				]
+			},
+			"Enchantments": [
+				{
+					"id": "minecraft:silk_touch",
+					"lvl": 1
+				}
+			]
+		}
+	},
+	"group": "custom"
+}

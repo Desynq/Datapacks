@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:arrow"
+		},
+		{
+			"item": "minecraft:arrow"
+		},
+		{
+			"item": "minecraft:paper"
+		},
+		{
+			"item": "minecraft:tnt"
+		}
+	],
+	"result": {
+		"item": "minecraft:tipped_arrow",
+		"count": 2,
+		"data": {
+			"CustomModelData": 1,
+			"type": "explosive_arrow",
+			"HideFlags": 32,
+			"display": {
+				"Name": "{\"italic\":\"false\",\"text\":\"Explosive Arrow\"}"
+			},
+			"CustomPotionEffects": [
+				{
+					"Id": 26,
+					"Duration": 20,
+					"Amplifier": 1
+				}
+			]
+		}
+	},
+	"group": "custom"
+}

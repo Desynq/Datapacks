@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:shaped",
+	"pattern": [
+		"111",
+		"121"
+	],
+	"key": {
+		"1": {
+			"item": ""
+		}
+	}
+}

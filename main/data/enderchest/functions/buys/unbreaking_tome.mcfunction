@@ -1,0 +1,2 @@
+give @s enchanted_book{type:unbreaking_tome,display:{Name:'{"italic":"false","color":"dark_purple","text":"Unbreaking Tome"}',Lore:['{"italic":"false","color":"gray","text":"Drop to make the nearest item unbreakable"}']}}
+scoreboard players remove @s slime 500

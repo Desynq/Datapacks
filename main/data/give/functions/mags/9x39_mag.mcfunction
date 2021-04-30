@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:111,Tags:["20rnd_mag","mag"],type:20rnd_9x39_magazine,ammo:0,Damage:25,display:{Name:'{"italic":"false","text":"9x39 Magazine"}',Lore:['{"italic":"false","color":"gray","text":"0/20 Remaining"}']}}

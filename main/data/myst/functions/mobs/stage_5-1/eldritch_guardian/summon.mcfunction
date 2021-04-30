@@ -1,0 +1,1 @@
+summon wither_skeleton ~ ~ ~ {Team:mob,Tags:["eldritch_guardian","rift_scavenger"],Attributes:[{Name:generic.attack_damage,Base:20},{Name:generic.movement_speed,Base:.2}],HandItems:[{id:bow,Count:1,tag:{Enchantments:[{id:power,lvl:20}]}}],CustomName:'{"color":"dark_purple","text":"Eldritch Guardian"}'}

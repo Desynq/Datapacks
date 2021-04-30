@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "text": "Stood My Ground",
+			"color": "red"
+        },
+        "description": {
+            "text": "Defeat a patrol helicopter",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{CustomModelData:37}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "challenges/overworld"
+}

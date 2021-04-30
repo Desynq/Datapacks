@@ -1,0 +1,1 @@
+give @s potion{type:trinitrotoluene,CustomPotionColor:11839862,display:{Name:'{"italic":"false","text":"Trinitrotoluene"}'}}

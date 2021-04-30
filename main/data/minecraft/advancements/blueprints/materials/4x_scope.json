@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "4x Scope"
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:white_dye",
+			"nbt": "{CustomModelData:23}"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "blueprints/_materials"
+}

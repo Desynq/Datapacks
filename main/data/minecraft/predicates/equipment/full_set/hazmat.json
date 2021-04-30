@@ -1,0 +1,20 @@
+{
+	"condition": "entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"head": {
+				"nbt": "{type:hazmat_hood}"
+			},
+			"chest": {
+				"nbt": "{type:hazmat_overall_top}"
+			},
+			"legs": {
+				"nbt": "{type:hazmat_overall_bottom}"
+			},
+			"feet": {
+				"nbt": "{type:rubber_boots}"
+			}
+		}
+	}
+}

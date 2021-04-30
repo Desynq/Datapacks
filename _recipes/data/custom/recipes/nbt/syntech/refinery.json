@@ -1,0 +1,40 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"121",
+		"343",
+		"151"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:netherite_ingot"
+		},
+		"2": {
+			"item": "minecraft:hopper"
+		},
+		"3": {
+			"item": "minecraft:brewing_stand"
+		},
+		"4": {
+			"item": "minecraft:blast_furnace"
+		},
+		"5": {
+			"item": "minecraft:cauldron"
+		}
+	},
+	"result": {
+		"item": "minecraft:hopper_minecart",
+		"data": {
+			"Tags": [
+				"banned"
+			],
+			"display": {
+				"Name": "{\"italic\":\"false\",\"text\":\"Refinery\"}",
+				"Lore": [
+					"{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"CMP Only!\"}"
+				]
+			}
+		}
+	},
+	"group": "custom"
+}

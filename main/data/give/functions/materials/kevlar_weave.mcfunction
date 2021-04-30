@@ -1,0 +1,1 @@
+give @s white_dye{CustomModelData:32,type:kevlar_weave,display:{Name:'{"italic":"false","color":"white","text":"Kevlar Weave"}'}}

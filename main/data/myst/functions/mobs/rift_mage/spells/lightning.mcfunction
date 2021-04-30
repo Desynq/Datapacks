@@ -1,0 +1,1 @@
+execute at @a[gamemode=!creative,gamemode=!spectator,distance=..32,nbt={Inventory:[{Slot:100b}]}] run summon lightning_bolt

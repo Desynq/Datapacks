@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"121",
+		"121",
+		"121"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:coal"
+		},
+		"2": {
+			"item": "minecraft:iron_ingot"
+		}
+	},
+	"result": {
+		"item": "minecraft:white_dye",
+		"count": 2,
+		"data": {
+			"CustomModelData": 27,
+			"type": "steel_blend",
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"white\",\"text\":\"Steel Blend\"}"
+			}
+		}
+	},
+	"group": "custom"
+}

@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "A Rainy Day",
+			"color": "blue"
+        },
+        "description": {
+            "text": "He lied...",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:phantom_membrane"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "challenges/myst/rift_mage"
+}

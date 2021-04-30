@@ -1,0 +1,1 @@
+give @s white_dye{CustomModelData:2,type:7.62s,ammo:default,display:{Name:'{"italic":"false","text":"7.62mm Soviet"}',Lore:['{"italic":"false","color":"gray","text":"Mundane"}']}}

@@ -1,0 +1,1 @@
+execute if entity @s[gamemode=!spectator,scores={xp=3..,u.coas=1..},nbt={SelectedItem:{tag:{type:mining_laser}}}] positioned ~ ~1.8 ~ run function coas:mining_laser/mine

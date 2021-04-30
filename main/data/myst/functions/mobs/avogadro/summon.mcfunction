@@ -1,0 +1,1 @@
+summon guardian ~ ~ ~ {Silent:1,NoAI:1,HurtTime:1,Tags:["avogadro","boss"],CustomName:'"Avogadro"',Health:750,Attributes:[{Name:generic.max_health,Base:750},{Name:generic.armor,Base:30}],ActiveEffects:[{Id:14,Duration:2147483647,ShowParticles:0b}],Glowing:1}

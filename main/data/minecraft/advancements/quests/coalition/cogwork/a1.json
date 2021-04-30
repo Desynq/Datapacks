@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "text": "Thinking With Portals",
+			"color": "dark_aqua"
+        },
+        "description": {
+            "text": "Help Dr. Cogwork develop a new way to access the temporal rifts",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{CustomModelData:58}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "quests/coalition"
+}

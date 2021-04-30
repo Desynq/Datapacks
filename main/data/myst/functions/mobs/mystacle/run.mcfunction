@@ -1,0 +1,1 @@
+execute unless block ~ ~-1 ~ crying_obsidian in slime:themyst run function myst:mobs/mystacle/fix

@@ -1,0 +1,1 @@
+execute if entity @s[team=militia,tag=] run data merge entity @s {HandItems:[{id:crossbow,Count:1,tag:{CustomModelData:1,Enchantments:[{id:quick_charge,lvl:3}]}}],Tags:["militia.scout"]}

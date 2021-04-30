@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "Lights Out!",
+			"color": "dark_gray"
+        },
+        "description": {
+            "text": "Why did we have to go to the storage bay..."
+        },
+        "icon": {
+            "item": "minecraft:chest"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "challenges/myst/stage_2"
+}

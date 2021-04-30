@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Rift Mage",
+			"color": "gold"
+        },
+        "description": {
+            "text": "Now you're thinking with portals!",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:crying_obsidian"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "challenges/root"
+}

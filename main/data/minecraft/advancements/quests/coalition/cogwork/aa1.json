@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "text": "Is There Anything Else?",
+			"color": "dark_aqua"
+        },
+        "description": {
+            "text": "Obtain the Vector by researching with Dr. Cogwork",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{CustomModelData:36}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "quests/coalition/cogwork/a1"
+}

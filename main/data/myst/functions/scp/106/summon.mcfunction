@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {Tags:["scp106"],Invisible:1,NoGravity:1,DisabledSlots:2039583,ArmorItems:[{},{},{},{id:wither_skeleton_skull,Count:1}],CustomName:'[{"obfuscated":"false","text":""},{"color":"black","text":"SCP-106","obfuscated":"true"}]'}

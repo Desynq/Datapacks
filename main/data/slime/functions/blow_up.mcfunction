@@ -1,0 +1,11 @@
+execute positioned ~-5 ~ ~ run summon tnt
+execute positioned ~-4 ~ ~ run summon tnt
+execute positioned ~-3 ~ ~ run summon tnt
+execute positioned ~-2 ~ ~ run summon tnt
+execute positioned ~-1 ~ ~ run summon tnt
+execute positioned ~0 ~ ~ run summon tnt
+execute positioned ~1 ~ ~ run summon tnt
+execute positioned ~2 ~ ~ run summon tnt
+execute positioned ~3 ~ ~ run summon tnt
+execute positioned ~4 ~ ~ run summon tnt
+execute positioned ~5 ~ ~ run summon tnt

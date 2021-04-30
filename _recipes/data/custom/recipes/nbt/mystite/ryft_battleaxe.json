@@ -1,0 +1,60 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"121",
+		"121",
+		" 2 "
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:white_dye",
+			"data": {
+				"require": {
+					"type": "mystite_ingot"
+				}
+			}
+		},
+		"2": {
+			"item": "minecraft:white_dye",
+			"data": {
+				"require": {
+					"type": "mystite_tool_rod"
+				}
+			}
+		}
+	},
+	"result": {
+		"item": "minecraft:netherite_axe",
+		"count": 1,
+		"data": {
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Ryft Battleaxe\"}"
+			},
+			"AttributeModifiers": [
+				{
+					"AttributeName": "generic.attack_damage",
+					"Amount": 30,
+					"Slot": "mainhand",
+					"UUID": [
+						1288026532,
+						1812645014,
+						2099144902,
+						1528274516
+					]
+				},
+				{
+					"AttributeName": "generic.attack_speed",
+					"Amount": -3.75,
+					"Slot": "mainhand",
+					"UUID": [
+						1327034485,
+						1650293024,
+						1745008396,
+						24076119
+					]
+				}
+			]
+		}
+	},
+	"group": "custom"
+}

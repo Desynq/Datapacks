@@ -1,0 +1,84 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:white_dye",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:25,type:mystite_ore,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"Mystite Ore\"}'}}"
+						},
+						{
+							"function": "set_count",
+							"count": {
+								"min": 2,
+								"max": 8
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:experience_bottle",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 8,
+								"max": 32
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"name": "minecraft:emerald",
+					"functions": [
+						{
+							"function": "set_count",
+							"count": {
+								"min": 10,
+								"max": 50
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"weight": 10,
+					"quality": 4,
+					"name": "minecraft:enchanted_book",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{type:unbreaking_tome,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Unbreaking Tome\"}',Lore:['{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"Drop to make the nearest item unbreakable\"}']}}"
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"weight": 40,
+					"name": "minecraft:air"
+				}
+			]
+		}
+	]
+}

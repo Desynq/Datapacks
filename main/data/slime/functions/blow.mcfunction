@@ -1,0 +1,11 @@
+execute positioned ~ ~ ~-5 run function slime:blow_up
+execute positioned ~ ~ ~-4 run function slime:blow_up
+execute positioned ~ ~ ~-3 run function slime:blow_up
+execute positioned ~ ~ ~-2 run function slime:blow_up
+execute positioned ~ ~ ~-1 run function slime:blow_up
+execute positioned ~ ~ ~0 run function slime:blow_up
+execute positioned ~ ~ ~1 run function slime:blow_up
+execute positioned ~ ~ ~2 run function slime:blow_up
+execute positioned ~ ~ ~3 run function slime:blow_up
+execute positioned ~ ~ ~4 run function slime:blow_up
+execute positioned ~ ~ ~5 run function slime:blow_up

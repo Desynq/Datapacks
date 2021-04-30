@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"111",
+		"121",
+		"111"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:quartz"
+		},
+		"2": {
+			"item": "minecraft:book"
+		}
+	},
+	"result": {
+		"item": "minecraft:enchanted_book",
+		"data": {
+			"StoredEnchantments": [
+				{
+					"id": "minecraft:sharpness",
+					"lvl": 1
+				}
+			]
+		}
+	},
+	"group": "custom"
+}

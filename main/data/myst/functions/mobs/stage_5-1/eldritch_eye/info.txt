@@ -1,0 +1,27 @@
+1000hp 30ap
+
+If phase == 0 and paladin == dead then
+	phase = 1
+If phase == 1 and tick > 599 then
+	phase = 0
+	
+Phase 0
+	At Start
+		Summon 1 Arch Eldritch Guardian
+	Every 100 ticks
+		rand(0,1)
+			if 0 then summon Eldritch Guardian
+	Every tick
+		Laser beam
+
+Phase 1
+	Every 20 ticks
+		rand(0,3)
+			if 0 then summon Shulker Bullet
+			if 1 then summon Soul Flare
+				if not [x=-114.0,z=76.0,distance=..10] then kill
+					--ignoring for now
+	Until end
+		If Y < 240 then
+			Instant Damage I
+			Wither II (0:01)

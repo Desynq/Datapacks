@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:2206,type:hdd,tier:1,maxSpace:5000,Tags:["banned"],display:{Name:'{"italic":"false","color":"gray","text":"HDD [Tier 1]"}',Lore:['{"italic":"false","color":"dark_aqua","text":"0/5000 bytes"}']}}

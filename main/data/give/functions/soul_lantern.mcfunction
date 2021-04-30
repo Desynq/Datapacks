@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:44,type:soul_lantern,display:{Name:'{"italic":"false","color":"dark_aqua","text":"Soul Lantern"}',Lore:['{"italic":"false","color":"dark_purple","text":"◘ Store souls by holding it in your offhand"}']}}

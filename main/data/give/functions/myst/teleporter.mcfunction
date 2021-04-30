@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:58,type:myst_teleporter,display:{Name:'{"italic":"false","color":"dark_aqua","text":"Portable Handheld Rift Portal Device"}'}}

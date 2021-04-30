@@ -1,0 +1,12 @@
+{
+	"condition": "entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"mainhand": {
+				"item": "minecraft:written_book",
+				"nbt": "{type:anonymsg_book}"
+			}
+		}
+	}
+}

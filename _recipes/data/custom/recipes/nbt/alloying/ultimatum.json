@@ -1,0 +1,80 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"ingredients": [
+		{
+			"item": "minecraft:netherite_axe",
+			"data": {
+				"type": "ryft_battleaxe"
+			}
+		},
+		{
+			"item": "minecraft:trident",
+			"data": {
+				"type": "mystacle_trident"
+			}
+		},
+		{
+			"item": "minecraft:carrot_on_a_stick",
+			"data": {
+				"type": "zephyr"
+			}
+		},
+		{
+			"item": "minecraft:carrot_on_a_stick",
+			"data": {
+				"type": "mysts_edge"
+			}
+		}
+	],
+	"result": {
+		"item": "minecraft:carrot_on_a_stick",
+		"data": {
+			"CustomModelData": 50,
+			"type": "ultimatum",
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Ultimatum\"}",
+				"Lore": [
+					"{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"The True Meta...\"}"
+				]
+			},
+			"AttributeModifiers": [
+				{
+					"AttributeName": "generic.attack_damage",
+					"Amount": 40.0,
+					"Slot": "mainhand",
+					"UUID": [
+						518951,
+						5819481,
+						68910681,
+						6018016
+					]
+				},
+				{
+					"AttributeName": "generic.attack_speed",
+					"Amount": 2147483647.0,
+					"Operation": 0,
+					"Slot": "mainhand",
+					"UUID": [
+						91581961,
+						91618631,
+						68437573,
+						13235647
+					]
+				},
+				{
+					"AttributeName": "generic.movement_speed",
+					"Amount": 0.25,
+					"Operation": 1,
+					"Slot": "mainhand",
+					"UUID": [
+						51895691,
+						52189170,
+						5976910,
+						91851874
+					]
+				}
+			]
+		}
+	},
+	"group": "custom"
+}

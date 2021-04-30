@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:2222,type:autosmart_pln_card,display:{Name:'{"italic":"false","color":"gray","text":"AutoSmart™ PLN Card"}',Lore:['{"italic":"false","color":"dark_aqua","text":"Drop To Copy PLN"}']}}

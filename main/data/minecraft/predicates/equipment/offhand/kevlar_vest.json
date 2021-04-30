@@ -1,0 +1,12 @@
+{
+	"condition": "entity_properties",
+	"entity": "this",
+	"predicate": {
+		"equipment": {
+			"offhand": {
+				"item": "minecraft:iron_chestplate",
+				"nbt": "{type:kevlar_vest}"
+			}
+		}
+	}
+}

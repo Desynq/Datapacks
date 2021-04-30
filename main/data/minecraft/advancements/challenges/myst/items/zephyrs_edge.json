@@ -1,0 +1,33 @@
+{
+    "display": {
+        "title": {
+            "text": "Zephyr's Edge",
+			"color": "dark_aqua"
+        },
+        "description": {
+            "text": "The night is howling...",
+			"color": "dark_purple"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{CustomModelData:50}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"nbt": "{type:zephyrs_edge}"
+					}
+				]
+			}
+        }
+    },
+    "parent": "challenges/myst/items/mysts_edge"
+}

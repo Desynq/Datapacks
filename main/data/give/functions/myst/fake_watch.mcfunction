@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:48,type:fake_watch,display:{Name:'{"italic":"false","color":"aqua","text":"Stopwatch"}'}}

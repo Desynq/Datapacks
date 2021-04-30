@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "The Twilight Zone",
+			"color": "dark_aqua"
+        },
+        "description": {
+            "text": "Why is there so much mist?",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:dark_oak_sapling"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "challenges/myst/stage_6"
+}

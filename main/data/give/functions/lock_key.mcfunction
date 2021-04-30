@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:10,type:chest_locker,display:{Name:'{"italic":"false","color":"yellow","text":"Chest Locker"}'}}

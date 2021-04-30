@@ -1,0 +1,34 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"122",
+		"23 "
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:string"
+		},
+		"2": {
+			"item": "minecraft:stick"
+		},
+		"3": {
+			"item": "minecraft:oak_button"
+		}
+	},
+	"result": {
+		"item": "minecraft:carrot_on_a_stick",
+		"data": {
+			"CustomModelData": 208,
+			"type": "eoka",
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"white\",\"text\":\"Eoka Pistol\"}",
+				"Lore": [
+					"{\"color\":\"gray\",\"text\":\"requires stone buttons and gunpowder\"}",
+					"{\"color\":\"red\",\"text\":\"unreliable firing mechanism\"}",
+					"{\"color\":\"red\",\"text\":\"may break after firing\"}"
+				]
+			}
+		}
+	},
+	"group": "custom"
+}

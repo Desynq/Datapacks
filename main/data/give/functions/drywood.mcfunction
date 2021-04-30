@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:39,type:drywood,display:{Name:'{"italic":"false","text":"Drywood"}'}}

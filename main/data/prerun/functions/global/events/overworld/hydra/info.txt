@@ -1,0 +1,35 @@
+900 HP
+7 AP
+
+while true do
+	if not(on fire) then
+		Regeneration X (0:01)
+
+if HP > 600
+	every 1s
+		rand(0,3)
+			if 0 then
+				Spawn a Firefox
+			if 1 then
+				Spawn a Firebat
+
+if 300 > HP < 601
+	every 1s
+		rand(0,3)
+			if 0 then
+				Spawn Fireball targeting Players within 50m
+	every 0.05s
+		rand(0,1)
+			if 0 then
+				Spawn meteor positioned ~ 255 ~ relative to a random player within 30m
+
+if HP < 301
+	every 0.05s
+		Spray fire in a circle with a radius of 20m
+	
+	every 1s
+		rand(0,4)
+			if 0 then
+				Spawn Flame Atronach
+			if 1 then
+				Spawn Flame Wyrm

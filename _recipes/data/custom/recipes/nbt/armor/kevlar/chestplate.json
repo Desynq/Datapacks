@@ -1,0 +1,74 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" 1 ",
+		"232",
+		"222"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:shulker_shell"
+		},
+		"2": {
+			"item": "minecraft:white_dye",
+			"data": {
+				"require": {
+					"type": "kevlar_weave"
+				}
+			}
+		},
+		"3": {
+			"item": "minecraft:iron_chestplate"
+		}
+	},
+	"result": {
+		"item": "minecraft:iron_chestplate",
+		"data": {
+			"CustomModelData": 1,
+			"type": "kevlar_vest",
+			"AttributeModifiers": [
+				{
+					"AttributeName": "generic.movement_speed",
+					"Amount": -0.1,
+					"Slot": "chest",
+					"Operation": 1,
+					"UUID": [
+						105891,
+						5819451,
+						591805851,
+						58191051
+					]
+				},
+				{
+					"AttributeName": "generic.armor",
+					"Amount": 8,
+					"Slot": "chest",
+					"UUID":[
+						589140194,
+						591065930,
+						495983295,
+						1958196
+					]
+				}
+			],
+			"Enchantments": [
+				{
+					"id": "projectile_protection",
+					"lvl": 5
+				},
+				{
+					"id": "protection",
+					"lvl": 5
+				}
+			],
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"white\",\"text\":\"Kevlar Vest\"}",
+				"Lore": [
+					"{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"◘ Contains pouches for storing items\"}",
+					"{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"◘ Prevents backstabs\"}"
+				]
+			}
+		}
+	},
+	"group": "custom"
+}

@@ -1,0 +1,33 @@
+{
+    "display": {
+        "title": {
+            "text": "Myst's Edge",
+			"color": "dark_purple"
+        },
+        "description": {
+            "text": "So now you're copying Terraria?",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{CustomModelData:49}"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"nbt": "{type:mysts_edge}"
+					}
+				]
+			}
+        }
+    },
+    "parent": "challenges/myst/stage_5"
+}

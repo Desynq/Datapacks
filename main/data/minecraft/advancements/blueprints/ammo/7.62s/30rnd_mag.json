@@ -1,0 +1,24 @@
+{
+    "display": {
+        "title": {
+            "text": "30rnd Magazine"
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{CustomModelData:100}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "blueprints/ammo/7.62s"
+}

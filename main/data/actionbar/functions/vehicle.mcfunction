@@ -1,0 +1,1 @@
+execute if entity @s[nbt={RootVehicle:{Entity:{Tags:["offroader"]}}}] run function actionbar:vehicle/offroader

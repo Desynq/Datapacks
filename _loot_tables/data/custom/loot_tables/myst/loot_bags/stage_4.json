@@ -1,0 +1,51 @@
+{
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:loot_table",
+					"name": "custom:myst/loot_bags/base"
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:carrot_on_a_stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:55,type:reactor_core,AttributeModifiers:[{AttributeName:generic.movement_speed,Amount:-0.5,Operation:2,Slot:offhand,UUID:[I;257999559,1280176607,796038888,1213985360]},{AttributeName:generic.max_health,Amount:0.5,Operation:2,Slot:offhand,UUID:[I;58139637,611858666,2012289904,596604024]}],display:{Name:'{\"italic\":\"false\",\"color\":\"dark_green\",\"text\":\"Reactor Core\"}'}}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:carrot_on_a_stick",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{CustomModelData:7,type:electrostasis_rifle,display:{Name:'{\"italic\":\"false\",\"text\":\"Electrostasis Rifle\"}',Lore:['{\"italic\":\"false\",\"color\":\"gold\",\"text\":\"Derelict Special Weapon\"}','{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"○ Ammo recharges over time\"}','{\"italic\":\"false\",\"color\":\"red\",\"text\":\"○ Susceptible to EMPs\"}']}}"
+						}
+					]
+				},
+				{
+					"type": "item",
+					"weight": 1,
+					"name": "minecraft:totem_of_undying",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{type:supercharged_totem,AttributeModifiers:[{AttributeName:generic.attack_damage,Amount:-1,Operation:2,Slot:offhand,UUID:[I;108286192,1148082007,2025439709,373447995]}],display:{Name:'{\"italic\":\"false\",\"color\":\"gold\",\"text\":\"Supercharged Totem of Undying\"}',Lore:['{\"italic\":\"false\",\"color\":\"yellow\",\"text\":\"○ Unkillable when in offhand paired with a mainhand totem\"}']}}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

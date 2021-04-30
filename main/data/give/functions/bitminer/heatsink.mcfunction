@@ -1,0 +1,1 @@
+give @s carrot_on_a_stick{CustomModelData:2215,type:heatsink,tier:1,Tags:["banned"],durability:1000,display:{Name:'{"italic":"false","color":"gray","text":"CPU Heatsink"}',Lore:['{"italic":"false","color":"gray","text":"1000/1000 Remaining"}']}}

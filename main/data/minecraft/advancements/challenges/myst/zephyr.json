@@ -1,0 +1,33 @@
+{
+    "display": {
+        "title": {
+            "text": "\"A Gentle Breeze\"",
+			"color": "blue"
+        },
+        "description": {
+            "text": "Shared loot sucks",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:carrot_on_a_stick",
+			"nbt": "{CustomModelData:47}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"items": [
+					{
+						"nbt": "{type:zephyr}"
+					}
+				]
+			}
+        }
+    },
+    "parent": "challenges/myst/rift_mage"
+}

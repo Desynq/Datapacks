@@ -1,0 +1,40 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"121",
+		"343",
+		"151"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:netherite_ingot"
+		},
+		"2": {
+			"item": "minecraft:hopper"
+		},
+		"3": {
+			"item": "minecraft:piston"
+		},
+		"4": {
+			"item": "minecraft:dispenser"
+		},
+		"5": {
+			"item": "minecraft:redstone"
+		}
+	},
+	"result": {
+		"item": "minecraft:hopper_minecart",
+		"data": {
+			"Tags": [
+				"banned"
+			],
+			"display": {
+				"Name": "{\"italic\":\"false\",\"text\":\"Macerator\"}",
+				"Lore": [
+					"{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"CMP Only!\"}"
+				]
+			}
+		}
+	},
+	"group": "custom"
+}

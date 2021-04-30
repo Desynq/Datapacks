@@ -1,0 +1,4 @@
+execute at @e[type=item,nbt={Item:{tag:{display:{Name:'{"italic":false,"text":"Refinery"}'}}}}] run tag @e[type=item,distance=..1,sort=nearest,limit=1,nbt={Item:{id:"minecraft:hopper"}},tag=!combine] add combine
+execute at @e[type=item,nbt={Item:{id:"minecraft:hopper"}}] run tag @e[type=item,sort=nearest,limit=1,nbt={Item:{tag:{display:{Name:'{"italic":false,"text":"Refinery"}'}}}},tag=!combine] add combine
+execute at @e[type=item,nbt={Item:{id:"minecraft:hopper"}},tag=combine] run summon item ~ ~ ~ {Item:{id:"minecraft:hopper_minecart",Count:1,tag:{display:{Name:'{"italic":"false","text":"Refinery"}'}}}}
+kill @e[type=item,tag=combine]

@@ -1,0 +1,1 @@
+give @s white_dye{CustomModelData:23,type:4x_scope,display:{Name:'{"italic":"false","text":"4x Scope"}'}}

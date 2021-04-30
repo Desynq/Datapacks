@@ -1,0 +1,1 @@
+give @s white_dye{CustomModelData:4,type:9mm,display:{Name:'{"italic":"false","text":"9mm"}'}}
