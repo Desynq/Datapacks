@@ -1,1 +1,0 @@
-execute if entity @e[type=experience_orb,distance=0] if entity @e[type=experience_orb,distance=0.1..2] run function postrun:entity/xp_orb/combine

@@ -18,6 +18,6 @@ execute as @a[tag=rx19_vaccine,tag=rx19] run tag @s remove rx19
 
 
 
-execute as @a[tag=rx19,tag=!px19,tag=!rx19_perm,predicate=!effects/water_breathing] at @s run function slime:status_effects/rx19/rx19
-execute as @a[tag=rx19_perm,predicate=!effects/water_breathing] at @s run function slime:status_effects/rx19/rx19
-execute as @a[tag=px19,tag=!rx19_perm,predicate=!effects/water_breathing] at @s run function slime:status_effects/rx19/px19
+execute as @a[predicate=!effects/water_breathing,tag=rx19,tag=!px19,tag=!rx19_perm] at @s run function slime:status_effects/rx19/rx19
+execute as @a[predicate=!effects/water_breathing,tag=rx19_perm] at @s run function slime:status_effects/rx19/rx19
+execute as @a[predicate=!effects/water_breathing,tag=px19,tag=!rx19_perm] at @s run function slime:status_effects/rx19/px19

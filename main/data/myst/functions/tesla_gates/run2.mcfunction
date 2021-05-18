@@ -1,7 +1,7 @@
 gamerule showDeathMessages false
 
 scoreboard players set limit rng 4
-function debug:rng/run
+function math:rng
 
 execute if score output rng matches 0 run tellraw @a [{"selector":"@s"},{"color":"white","text":" ran through a tesla gate"}]
 execute if score output rng matches 1 run tellraw @a [{"selector":"@s"},{"color":"white","text":" couldn't tell the difference between amps and volts"}]

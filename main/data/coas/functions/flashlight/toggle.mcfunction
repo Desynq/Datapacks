@@ -1,5 +1,5 @@
 scoreboard players set limit rng 1000
-function debug:rng/run
+function math:rng
 execute if score output rng matches 1 run playsound item.flintandsteel.use master @a ~ ~ ~ 2 .75
 execute if score output rng matches 1 run scoreboard players set @s off.flashlight 100
 

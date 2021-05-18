@@ -1,5 +1,4 @@
 execute unless score 20 tick matches 10.. run function slime:bossbar/colors
-execute if score 20 tick matches 20
 
 
 

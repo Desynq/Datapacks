@@ -10,7 +10,7 @@ execute if entity @s[scores={sneak=1..}] run function coas:guns/light_machine_gu
 scoreboard players add @s d.lmg 1
 
 #scoreboard players set limit rng 5
-#function debug:rng/run
+#function math:rng
 #execute if score output rng matches 0 run tp @s[tag=!proning,nbt=!{RootVehicle:{}}] ~ ~ ~ ~ ~-5
 #execute if score output rng matches 1 run tp @s[tag=!proning,nbt=!{RootVehicle:{}}] ~ ~ ~ ~2 ~-5
 #execute if score output rng matches 2 run tp @s[tag=!proning,nbt=!{RootVehicle:{}}] ~ ~ ~ ~-2 ~-5

@@ -1,5 +1,5 @@
 scoreboard players set limit rng 11
-function debug:rng/run
+function math:rng
 execute if score output rng matches 0 run tp -122 52 16
 execute if score output rng matches 1 run tp -117 52 18
 execute if score output rng matches 2 run tp -115 52 22

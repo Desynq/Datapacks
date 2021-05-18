@@ -1,1 +1,0 @@
-function math:rng

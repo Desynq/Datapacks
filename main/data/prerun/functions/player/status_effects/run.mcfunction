@@ -1,1 +1,0 @@
-execute if entity @s[tag=necronoma] run function prerun:player/status_effects/necronoma/run

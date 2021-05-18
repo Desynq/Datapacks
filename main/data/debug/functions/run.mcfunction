@@ -2,6 +2,15 @@
 # Init
 #######
 
+execute as @a at @s unless score @s cmp matches ..-1 unless score @s cmp matches 1.. if entity @s[tag=cmp] run function debug:cmp/re-enter
+scoreboard players enable @a cmp
+execute as @a at @s unless score @s cmp matches 0 run function debug:cmp/run
+execute as @a at @s if score @s cmp matches 0 if entity @s[tag=cmp] run function debug:cmp/exit
+gamemode adventure @a[predicate=dimension/cmp,tag=!cmp,name=!Desynq,name=!sooupe,name=!Starging]
+execute as @a[predicate=dimension/cmp,tag=!cmp,name=!Desynq,name=!sooupe,name=!Starging] in overworld run tp 0 64 0
+
+
+
 execute as @a[scores={damage=1..},nbt={Attributes:[{Modifiers:[{Name:"random_crit"}]}]}] at @s run playsound entity.ender_dragon.hurt master @s ~ ~ ~ 2147483647 2
 execute as @a run attribute @s generic.attack_damage modifier remove 0-0-0-0-0
 execute as @a run attribute @s generic.luck modifier remove 0-0-0-0-1
@@ -34,17 +43,15 @@ scoreboard players add 100 tick 1
 execute if score 50 tick matches ..24 run scoreboard objectives setdisplay belowName player.hp
 execute if score 50 tick matches 25.. run scoreboard objectives setdisplay belowName deathCount
 
-function debug:time
-
 
 
 ##############
 # Pre-Runtime
 ##############
 
-function prerun:global
-execute as @e[type=armor_stand] at @s run function prerun:entity
-execute as @a at @s run function prerun:player
+function global:run
+execute as @e[type=armor_stand] at @s run function entity:prerun
+execute as @a at @s run function player:run
 
 
 
@@ -68,8 +75,8 @@ execute if score 20 tick matches 20 run function debug:stats
 # Post-Runtime
 ###############
 
-execute as @a[predicate=effects/luck_1] at @s run function postrun:entity/custom/he_arrow
-execute as @e[type=!player] at @s run function postrun:entity
+execute as @a[predicate=effects/luck_1] at @s run function entity:custom/died_from_he_arrow
+execute as @e[type=!player] at @s run function entity:run
 
 function gravestones:run
 
@@ -91,7 +98,7 @@ kill @e[type=item,nbt={Item:{tag:{Tags:["craftable"]}}}]
 kill @e[type=item,nbt={Item:{tag:{Tags:["custom"]}}}]
 
 
-execute as @a run function debug:ply_reset
+execute as @a run function player:reset
 
 
 

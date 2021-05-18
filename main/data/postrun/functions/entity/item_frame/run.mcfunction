@@ -1,2 +1,0 @@
-execute if entity @s[tag=!tool_cupboard,nbt={Item:{tag:{type:tool_cupboard}}}] run function postrun:entity/item_frame/tool_cupboard/setup
-execute if entity @s[tag=tool_cupboard] run function postrun:entity/item_frame/tool_cupboard/run

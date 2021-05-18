@@ -27,13 +27,14 @@ function slime:bossbar/run
 	tag @a[tag=adventure] remove adventure
 		tag @a[predicate=dimension/overworld,scores={x=-128..127,z=-128..127}] add adventure
 		tag @a[predicate=equipment/holding/shulker_box] add adventure
-		execute as @a[predicate=dimension/overworld] at @s if entity @e[type=item_frame,tag=tool_cupboard,distance=..64] run function prerun:player/adventure/tool_cupboard
+		execute as @a[predicate=dimension/overworld] at @s if entity @e[type=item_frame,tag=tool_cupboard,distance=..64] run function player:adventure/tool_cupboard
 	gamemode adventure @a[tag=adventure,gamemode=survival]
 
 #function slime:antiair/run
 
 
-execute in overworld at @e[type=spectral_arrow,distance=0..] as @a[limit=1,sort=nearest,distance=..8,predicate=equipment/mainhand/ender_bow] run tp @s ~ ~ ~
+execute as @e[type=spectral_arrow,predicate=dimension/overworld,nbt={inGround:1b},nbt=!{pickup:0b}] store result score @s ent.uuid run data get entity @s Owner[0]
+execute at @a[predicate=dimension/overworld,predicate=equipment/mainhand/ender_bow] as @e[type=spectral_arrow,predicate=dimension/overworld,nbt={inGround:1b},nbt=!{pickup:0b}] if score @p ply.uuid = @s ent.uuid run tp @p @s
 effect give @a[predicate=equipment/mainhand/ender_bow] slow_falling 1 0 true
 kill @e[type=spectral_arrow,nbt={inGround:1b}]
 
@@ -60,7 +61,7 @@ execute as @a[advancements={debug/inventory_changed=true},nbt={Inventory:[{tag:{
 
 
 # Disenchanting
-execute as @e[type=item,predicate=dimension/overworld,nbt={Item:{id:"minecraft:enchanting_table"},OnGround:1b},distance=0..] at @s if block ~ ~-1 ~ crying_obsidian align xyz positioned ~.5 ~.5 ~.5 if entity @e[type=item,nbt={Item:{tag:{Enchantments:[{}]}},OnGround:1b},sort=nearest,limit=1,distance=..1] run function slime:disenchant
+execute as @e[type=item,predicate=dimension/overworld,nbt={Item:{id:"minecraft:enchanting_table"},OnGround:1b}] at @s if block ~ ~-1 ~ crying_obsidian align xyz positioned ~.5 ~.5 ~.5 if entity @e[type=item,nbt={Item:{tag:{Enchantments:[{}]}},OnGround:1b},sort=nearest,limit=1,distance=..1] run function slime:disenchant
 
 
 # No Frost Walker

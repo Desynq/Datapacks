@@ -4,11 +4,11 @@ execute as @e[tag=gun.pos] run tp @p
 
 
 scoreboard players set limit rng 7
-function debug:rng/run
+function math:rng
 scoreboard players operation rng temp = output rng
 
 scoreboard players set limit rng 2
-function debug:rng/run
+function math:rng
 execute if score output rng matches 1 run scoreboard players operation rng temp *= -1 math
 
 execute as @e[type=area_effect_cloud,tag=gun.pos] store result score @s temp run data get entity @s Rotation[0]
@@ -16,11 +16,11 @@ execute as @e[type=area_effect_cloud,tag=gun.pos] store result entity @s Rotatio
 
 
 scoreboard players set limit rng 7
-function debug:rng/run
+function math:rng
 scoreboard players operation rng temp = output rng
 
 scoreboard players set limit rng 2
-function debug:rng/run
+function math:rng
 execute if score output rng matches 1 run scoreboard players operation rng temp *= -1 math
 
 execute as @e[type=area_effect_cloud,tag=gun.pos] store result score @s temp run data get entity @s Rotation[1]

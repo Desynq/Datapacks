@@ -1,5 +1,0 @@
-execute as @a[predicate=dimension/overworld,gamemode=!spectator,gamemode=!creative,distance=..128] at @s run function postrun:entity/mob/custom/tenuem/flare_striking
-execute as @a[predicate=dimension/overworld,gamemode=!spectator,gamemode=!creative,distance=..128] at @s run function postrun:entity/mob/custom/tenuem/flare_striking
-execute as @a[predicate=dimension/overworld,gamemode=!spectator,gamemode=!creative,distance=..128] at @s run function postrun:entity/mob/custom/tenuem/flare_striking
-execute as @a[predicate=dimension/overworld,gamemode=!spectator,gamemode=!creative,distance=..128] at @s run function postrun:entity/mob/custom/tenuem/flare_striking
-execute as @a[predicate=dimension/overworld,gamemode=!spectator,gamemode=!creative,distance=..128] at @s run function postrun:entity/mob/custom/tenuem/flare_striking

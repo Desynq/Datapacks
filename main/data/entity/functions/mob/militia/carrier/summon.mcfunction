@@ -1,0 +1,1 @@
+summon phantom ~ ~ ~ {ActiveEffects:[{Id:12,Duration:2147483647,ShowParticles:0b}],Team:militia,Tags:["carrier_phantom"],Passengers:[{id:boat,Team:militia,Tags:["carrier_boat"],Passengers:[{id:vindicator,HandItems:[{id:iron_sword,Count:1}],Health:100,Attributes:[{Name:generic.max_health,Base:100}]},{id:pillager,Health:100,Attributes:[{Name:generic.max_health,Base:100}]}]}]}

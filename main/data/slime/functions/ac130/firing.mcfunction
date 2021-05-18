@@ -6,7 +6,7 @@ function coas:core/set_motion
 
 
 scoreboard players set limit rng 3
-function debug:rng/run
+function math:rng
 execute if score output rng matches 0 run playsound entity.firework_rocket.large_blast_far master @a[distance=0..] ~ ~ ~ 8 1.225
 execute if score output rng matches 1 run playsound entity.firework_rocket.large_blast_far master @a[distance=0..] ~ ~ ~ 8 1.25
 execute if score output rng matches 2 run playsound entity.firework_rocket.large_blast_far master @a[distance=0..] ~ ~ ~ 8 1.275

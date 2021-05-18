@@ -1,2 +1,0 @@
-execute if entity @s[scores={sneak=1},predicate=equipment/offhand/kevlar_vest] run function prerun:player/armor/kevlar_vest/swap_to_shulker
-execute if entity @s[scores={sneak=0},predicate=equipment/offhand/kevlar_shulker] run function prerun:player/armor/kevlar_vest/swap_to_vest

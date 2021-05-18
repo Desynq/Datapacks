@@ -26,17 +26,6 @@
 				{
 					"type": "item",
 					"weight": 1,
-					"name": "minecraft:carrot_on_a_stick",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:7,type:electrostasis_rifle,display:{Name:'{\"italic\":\"false\",\"text\":\"Electrostasis Rifle\"}',Lore:['{\"italic\":\"false\",\"color\":\"gold\",\"text\":\"Derelict Special Weapon\"}','{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"○ Ammo recharges over time\"}','{\"italic\":\"false\",\"color\":\"red\",\"text\":\"○ Susceptible to EMPs\"}']}}"
-						}
-					]
-				},
-				{
-					"type": "item",
-					"weight": 1,
 					"name": "minecraft:totem_of_undying",
 					"functions": [
 						{

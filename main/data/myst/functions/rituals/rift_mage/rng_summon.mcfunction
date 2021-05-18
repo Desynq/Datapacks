@@ -1,5 +1,5 @@
 scoreboard players set limit rng 10
-function debug:rng/run
+function math:rng
 
 execute if score output rng matches 0..2 run function myst:mobs/rift_scavenger/summon
 execute if score output rng matches 0..2 run spreadplayers ~ ~ 8 8 false @e[type=wither_skeleton,tag=rift_scavenger,sort=nearest,limit=1]

@@ -13,5 +13,5 @@ execute as @a unless score @s stat.luck matches 0.. run scoreboard players set @
 execute as @a run function debug:stats/damage
 execute as @a run function debug:stats/swing
 execute as @a run function debug:stats/health
-execute unless entity @e[type=armor_stand,tag=scp106] as @a run function debug:stats/speed
+execute unless entity @e[type=armor_stand,tag=scp106,distance=0..] as @a run function debug:stats/speed
 execute as @a run function debug:stats/luck

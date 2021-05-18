@@ -6,7 +6,7 @@ gamerule showDeathMessages false
 kill @s
 
 scoreboard players set limit rng 5
-function debug:rng/run
+function math:rng
 
 execute if score output rng matches 0 run tellraw @a [{"selector":"@s"},{"color":"white","text":" ate a SAMwich"}]
 execute if score output rng matches 1 run tellraw @a [{"selector":"@s"},{"color":"white","text":" flew too close to the \"Sun\""}]

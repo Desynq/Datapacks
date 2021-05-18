@@ -6,7 +6,7 @@ function coas:core/set_motion
 
 
 scoreboard players set limit rng 3
-function debug:rng/run
+function math:rng
 execute if score output rng matches 0 run playsound entity.firework_rocket.large_blast_far master @a[distance=0..] ~ ~ ~ 8 1.225
 execute if score output rng matches 1 run playsound entity.firework_rocket.large_blast_far master @a[distance=0..] ~ ~ ~ 8 1.25
 execute if score output rng matches 2 run playsound entity.firework_rocket.large_blast_far master @a[distance=0..] ~ ~ ~ 8 1.275
@@ -19,6 +19,6 @@ execute if entity @s[scores={sneak=1}] run particle smoke ^-.5 ^.7 ^1 .1 .1 .1 .
 effect give @s[scores={sneak=1},nbt=!{Inventory:[{Slot:103b,tag:{type:kevlar_helmet}}]},nbt=!{Inventory:[{Slot:103b,id:"minecraft:leather_helmet"}]},tag=!patrolling] nausea 4 0 true
 
 
-clear @s white_dye{type:7.62x51mm} 1
-execute if entity @s[tag=!patrolling] store result score @s 7.62 run clear @s white_dye{type:7.62x51mm} 0
+clear @s white_dye{type:5.56x45mm} 1
+execute if entity @s[tag=!patrolling] store result score @s ammo run clear @s white_dye{type:5.56x45mm} 0
 kill @e[type=area_effect_cloud,tag=gun.pos]

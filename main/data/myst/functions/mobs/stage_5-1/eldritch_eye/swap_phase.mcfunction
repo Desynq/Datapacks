@@ -1,5 +1,5 @@
 scoreboard players set limit rng 2
-function debug:rng/run
+function math:rng
 
 ############
 # P3_phase = 0 if summon phase

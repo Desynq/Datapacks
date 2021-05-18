@@ -17,7 +17,7 @@ execute if entity @s[nbt={Inventory:[{tag:{s_btype:lapis_lazuli}}]},scores={slim
 
 
 execute if entity @s[nbt={Inventory:[{tag:{s_btype:exchange_slime}}]},scores={slime=10..}] run function enderchest:exchange/slime
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:exchange_xp}}]},scores={xp=1100..}] run function enderchest:exchange/xp
+execute if entity @s[tag=!cmp,nbt={Inventory:[{tag:{s_btype:exchange_xp}}]},scores={xp=1100..}] run function enderchest:exchange/xp
 
 
 

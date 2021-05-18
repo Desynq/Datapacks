@@ -1,7 +1,7 @@
 playsound entity.enderman.teleport ambient @a
 
 scoreboard players set limit rng 8
-function debug:rng/run
+function math:rng
 execute if score output rng matches 0 run tp -126 68 -33
 execute if score output rng matches 1 run tp -136 68 -33
 execute if score output rng matches 2 run tp -136 68 -43
