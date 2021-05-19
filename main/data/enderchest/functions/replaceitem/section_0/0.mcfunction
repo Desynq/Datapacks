@@ -6,7 +6,7 @@ replaceitem entity @s enderchest.4 enchanted_book{Tags:["buyable"],s_btype:mendi
 replaceitem entity @s enderchest.5 enchanted_book{Tags:["buyable"],s_btype:unbreaking_tome,display:{Name:'{"italic":"false","color":"dark_purple","text":"Unbreaking Tome"}',Lore:['{"italic":"false","color":"green","text":"500 Slime"}','{"italic":"false","color":"gray","text":"Drop to make the nearest item unbreakable"}']}}
 replaceitem entity @s enderchest.6 dried_kelp{Tags:["buyable"],s_btype:dried_food,display:{Lore:['{"italic":"false","color":"green","text":"1 Slime"}']}} 2
 
-replaceitem entity @s enderchest.7 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+replaceitem entity @s enderchest.7 oak_sapling{Tags:["buyable"],s_btype:oak_sapling,display:{Lore:['{"italic":"false","color":"green","text":"$1,000"}']}}
 
 replaceitem entity @s enderchest.8 lapis_lazuli{Tags:["buyable"],s_btype:lapis_lazuli,display:{Lore:['{"italic":"false","color":"green","text":"20 Slime"}']}}
 

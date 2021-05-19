@@ -1,6 +1,4 @@
-local a, b = 0, 1
-for i = 1, 101 do
-	io.write("execute if score @s stat.damage matches ",a," run attribute @s generic.attack_damage base set ",b,"\n")
-	a = a + 1
-	b = b + 1
+for i = 0, 100 do
+	local a = 20 + i * 2
+	print("execute if score @s stat.health matches "..i.." run attribute @s generic.health base set "..a)
 end

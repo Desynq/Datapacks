@@ -14,6 +14,8 @@ execute if entity @s[nbt={Inventory:[{tag:{s_btype:dried_food}}]},scores={slime=
 
 execute if entity @s[nbt={Inventory:[{tag:{s_btype:lapis_lazuli}}]},scores={slime=20..}] run function enderchest:buys/lapis_lazuli
 
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:oak_sapling}}]},scores={slime=1000..}] run function enderchest:buys/oak_sapling
+
 
 
 execute if entity @s[nbt={Inventory:[{tag:{s_btype:exchange_slime}}]},scores={slime=10..}] run function enderchest:exchange/slime

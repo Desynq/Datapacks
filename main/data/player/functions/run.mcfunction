@@ -3,6 +3,7 @@
 ########
 
 scoreboard players add @s[scores={fall=1..}] fall 100
+effect clear @s[predicate=effects/absorption,nbt={AbsorptionAmount:0f}] absorption
 
 
 
@@ -35,6 +36,11 @@ tag @s remove OnGround
 tag @s[nbt=!{DeathTime:0s}] add dead
 tag @s[nbt={DeathTime:1s}] add dead_one_tick
 tag @s[nbt={OnGround:1b}] add OnGround
+
+
+execute if entity @s[scores={timeSinceDeath=20}] run function debug:stats
+effect give @s[scores={timeSinceDeath=20}] instant_health 20 126 true
+effect give @s[scores={timeSinceDeath=20}] hunger 1 199 true
 
 
 
@@ -187,42 +193,61 @@ function soup:player_handler
 function actionbar:run
 
 
-### Pocket Dimensions ###
 
-	execute if entity @s[gamemode=!spectator,predicate=dimension/overworld,x=-21,y=27,z=-17,distance=..1] unless entity @s[name=!Desynq,name=!zaxaco,name=!7carmeloanthony] if block ~ ~ ~ warped_door[open=true] run function player:pocket/enter
-
-	execute if entity @s[gamemode=!spectator,predicate=dimension/pocket] if block ~ ~ ~ end_gateway run function player:pocket/exit
-
-
-### Myst ###
-	function player:portals/run
-	kill @s[scores={breath=0},predicate=in_myst]
-
-	gamemode adventure @s[gamemode=survival,predicate=in_adventure_dim]
-
-	execute if entity @s[gamemode=adventure,tag=!scp,predicate=!equipment/feet/soulwalker_boots,predicate=dimension/translocatable] if block ~ ~-.01 ~ crying_obsidian run function myst:portal/exit
-	execute if score portal temp matches 1 if entity @s[gamemode=!spectator,scores={x=-183,y=2,z=-16}] run function myst:portal/enter
-
-	effect clear @s[tag=myst_mining] mining_fatigue
-	tag @s remove myst_mining
-	tag @s[predicate=dimension/trainyard,predicate=equipment/mainhand/mystite_pickaxe] add myst_mining
-	effect give @s[tag=myst_mining] mining_fatigue 2048 1 true
+# Overworld Protection
+	execute if entity @s[tag=!adventure,gamemode=adventure] unless entity @s[predicate=!dimension/overworld,predicate=!dimension/pocket] run gamemode survival @s
+	tag @s[tag=adventure] remove adventure
+		tag @s[predicate=dimension/overworld,scores={x=-128..127,z=-128..127}] add adventure
+		tag @s[predicate=equipment/holding/shulker_box] add adventure
+	gamemode adventure @s[tag=adventure,gamemode=survival]
 
 
-	execute if entity @s[gamemode=adventure,predicate=in_adventure_dim] if block ~ ~ ~ structure_void run kill @s
 
-	execute if entity @s[name=!Desynq,predicate=!equipment/head/air] if entity @e[type=bat,tag=soulfly,distance=..5] run effect give @s nausea 4 0 true
+####################
+# Pocket Dimensions
+####################
 
-### Deadzone ###
+#
 
 
-###############
-# SS Equipment
-###############
+
+#######
+# Myst
+#######
+
+function player:portals/run
+kill @s[scores={breath=0},predicate=in_myst]
+
+gamemode adventure @s[gamemode=survival,predicate=in_adventure_dim]
+
+execute if entity @s[gamemode=adventure,tag=!scp,predicate=!equipment/feet/soulwalker_boots,predicate=dimension/translocatable] if block ~ ~-.01 ~ crying_obsidian run function myst:portal/exit
+execute if score portal temp matches 1 if entity @s[gamemode=!spectator,scores={x=-183,y=2,z=-16}] run function myst:portal/enter
+
+effect clear @s[tag=myst_mining] mining_fatigue
+tag @s remove myst_mining
+tag @s[predicate=dimension/trainyard,predicate=equipment/mainhand/mystite_pickaxe] add myst_mining
+effect give @s[tag=myst_mining] mining_fatigue 2048 1 true
+
+
+execute if entity @s[gamemode=adventure,predicate=in_adventure_dim] if block ~ ~ ~ structure_void run kill @s
+
+execute if entity @s[name=!Desynq,predicate=!equipment/head/air] if entity @e[type=bat,tag=soulfly,distance=..5] run effect give @s nausea 4 0 true
+
+
+
+############
+# Equipment
+############
+
+execute if entity @s[predicate=equipment/feet/frostwalker] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
 
 execute if entity @s[predicate=equipment/feet/soulwalker_boots] if block ~ ~ ~ water run effect give @s instant_damage 1 1 true
 
 execute if entity @s[predicate=equipment/mainhand/mystite_bow] run function player:weapons/mystite_bow/run
+
+effect give @s[predicate=equipment/chest/absorbing_chainmail] absorption 1 0 true
+
+replaceitem entity @s[scores={u.totem=1..},predicate=equipment/offhand/supercharged_totem] weapon.mainhand totem_of_undying
 
 
 
@@ -243,11 +268,13 @@ execute if entity @s[predicate=equipment/mainhand/mystite_bow] run function play
 
 
 
-### Custom Foods ###
+########
+# Foods
+########
+
 	execute if entity @s[scores={u.honey_bottle=1..}] run effect give @s hero_of_the_village 15 0 false
 
-	execute if entity @s[scores={u.poison_potato=1..}] run effect give @s luck 1 1 true
-	execute if entity @s[name=zaxaco,scores={u.poison_potato=1..}] run effect give @s resistance 1 4 true
+	execute if entity @s[scores={u.poison_potato=1..}] run function player:status_effects/poisonous_potato/blow_up
 
 	execute if entity @s[scores={u.notch_apple=1..}] run effect give @s resistance 1000000 1 true
 

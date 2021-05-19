@@ -67,7 +67,7 @@ function myst:run
 
 function soup:run
 
-execute if score 20 tick matches 20 run function debug:stats
+execute if score 20 tick matches 20 as @a at @s run function debug:stats
 
 
 

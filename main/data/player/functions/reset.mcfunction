@@ -13,6 +13,7 @@ scoreboard players set @s[scores={u.rotten_flesh=1..}] u.rotten_flesh 0
 scoreboard players set @s[scores={u.golden_apple=1..}] u.golden_apple 0
 scoreboard players set @s[scores={u.poison_potato=1..}] u.poison_potato 0
 scoreboard players set @s[scores={u.notch_apple=1..}] u.notch_apple 0
+scoreboard players set @s[scores={u.totem=1..}] u.totem 0
 
 scoreboard players set @s[scores={damage=1..}] damage 0
 scoreboard players set @s[scores={damage_taken=1..}] damage_taken 0

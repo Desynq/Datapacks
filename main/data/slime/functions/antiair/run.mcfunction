@@ -1,2 +1,0 @@
-execute as @a[scores={antiair=1..}] unless entity @s[gamemode=!spectator,scores={z=..-25},nbt={FallFlying:1b,Dimension:"minecraft:overworld"}] run scoreboard players reset @s antiair
-execute as @a[gamemode=!spectator,scores={z=..-25},nbt={FallFlying:1b,Dimension:"minecraft:overworld"}] at @s run function slime:antiair/timer
