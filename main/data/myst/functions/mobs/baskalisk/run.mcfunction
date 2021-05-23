@@ -10,4 +10,4 @@ function myst:mobs/baskalisk/timer
 
 execute if score 50 tick matches 50 run function myst:mobs/baskalisk/ambient
 
-execute if entity @a[tag=dead_one_tick] run effect give @s instant_damage 5 4 true
+execute if entity @a[scores={DeathTime=1}] run effect give @s instant_damage 5 4 true

@@ -25,6 +25,12 @@
 					"{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"Don't Place!\"}"
 				]
 			},
+			"Enchantments": [
+				{
+					"id": "minecraft:respiration",
+					"lvl": 3
+				}
+			],
 			"AttributeModifiers": [
 				{
 					"AttributeName": "generic.max_health",

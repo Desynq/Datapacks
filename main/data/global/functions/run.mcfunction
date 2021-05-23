@@ -20,6 +20,9 @@ execute if entity @a if score doDaylightCycle gamerule matches 0 run gamerule do
 	execute if score 20 tick matches 20 store result score day timer store result score day temp run time query day
 	execute if score 20 tick matches 20 store result score moonPhase boolean run scoreboard players operation day temp %= 8 math
 
+	execute if score 20 tick matches 20 run scoreboard players operation @a ply.moonPhase = moonPhase boolean
+	execute if score 20 tick matches 20 run scoreboard players operation @a ply.daytime = daytime timer
+
 
 
 	execute if score daytime timer matches 100 run function global:time/equation/start

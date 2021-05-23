@@ -1,5 +1,3 @@
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:iron_ingot}}]},scores={slime=10..}] run function enderchest:buys/iron_ingot
-
 execute if entity @s[nbt={Inventory:[{tag:{s_btype:diamond}}]},scores={slime=100..}] run function enderchest:buys/diamond
 
 execute if entity @s[nbt={Inventory:[{tag:{s_btype:coal}}]},scores={slime=5..}] run function enderchest:buys/coal
@@ -10,7 +8,7 @@ execute if entity @s[nbt={Inventory:[{tag:{s_btype:mending_book}}]},scores={slim
 
 execute if entity @s[nbt={Inventory:[{tag:{s_btype:feather}}]},scores={slime=5..}] run function enderchest:buys/feather
 
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:dried_food}}]},scores={slime=1..}] run function enderchest:buys/dried_food
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:cookie}}]},scores={slime=1..}] run function enderchest:buys/cookie
 
 execute if entity @s[nbt={Inventory:[{tag:{s_btype:lapis_lazuli}}]},scores={slime=20..}] run function enderchest:buys/lapis_lazuli
 
@@ -20,6 +18,16 @@ execute if entity @s[nbt={Inventory:[{tag:{s_btype:oak_sapling}}]},scores={slime
 
 execute if entity @s[nbt={Inventory:[{tag:{s_btype:exchange_slime}}]},scores={slime=10..}] run function enderchest:exchange/slime
 execute if entity @s[tag=!cmp,nbt={Inventory:[{tag:{s_btype:exchange_xp}}]},scores={xp=1100..}] run function enderchest:exchange/xp
+
+
+
+execute if entity @s[nbt={Inventory:[{tag:{shopType:"race_human"}}]}] run function enderchest:custom/races/human
+execute if entity @s[nbt={Inventory:[{tag:{shopType:"race_creep"}}]}] run function enderchest:custom/races/creep
+execute if entity @s[nbt={Inventory:[{tag:{shopType:"race_sludge"}}]}] run function enderchest:custom/races/sludge
+execute if entity @s[nbt={Inventory:[{tag:{shopType:"race_bloodborne"}}]}] run function enderchest:custom/races/bloodborne
+execute if entity @s[nbt={Inventory:[{tag:{shopType:"race_parasite"}}]}] run function enderchest:custom/races/parasite
+execute if entity @s[nbt={Inventory:[{tag:{shopType:"race_flora"}}]}] run function enderchest:custom/races/flora
+execute if entity @s[nbt={Inventory:[{tag:{shopType:"race_arthropod"}}]}] run function enderchest:custom/races/arthropod
 
 
 

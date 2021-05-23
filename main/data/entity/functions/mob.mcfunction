@@ -1,5 +1,6 @@
 ### Auto-Despawn ###
 	execute if entity @s[type=#nospawn,tag=] run function entity:mob/auto_despawn
+	execute if entity @s[type=bat,tag=,predicate=!dimension/overworld] run function entity:mob/auto_despawn
 
 ### Teams ###
 	execute if entity @s[team=] run function entity:mob/join_team
@@ -63,7 +64,7 @@ execute if entity @s[type=#zombies,predicate=entity/is/baby] run data merge enti
 
 	execute if entity @s[type=elder_guardian,tag=raken] run function myst:mobs/raken/run
 
-	execute as @e[type=wither_skeleton,tag=myster] at @s run function myst:mobs/myster/run
+	execute if entity @s[type=wither_skeleton,tag=myster] at @s run function myst:mobs/myster/run
 
 
 

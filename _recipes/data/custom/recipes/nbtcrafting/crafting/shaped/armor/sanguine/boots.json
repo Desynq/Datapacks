@@ -1,0 +1,64 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"1 1",
+		"1 1"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:white_dye",
+			"data": {
+				"require": {
+					"type": "sanguine_tissue"
+				}
+			}
+		}
+	},
+	"result": {
+		"item": "minecraft:leather_boots",
+		"data": {
+			"type": "sanguine_boots",
+			"raceLocked": 1,
+			"Races": [
+				"bloodborne"
+			],
+			"HideFlags": 64,
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"Sanguine Boots\"}",
+				"color": 11141120
+			},
+			"Enchantments": [
+				{
+					"id": "minecraft:unbreaking",
+					"lvl": 10
+				}
+			],
+			"AttributeModifiers": [
+				{
+					"AttributeName": "generic.attack_damage",
+					"Amount": 0.075,
+					"Operation": 1,
+					"Slot": "feet",
+					"UUID": [
+						35775630,
+						2091782188,
+						587745702,
+						631518794
+					]
+				},
+				{
+					"AttributeName": "generic.attack_speed",
+					"Amount": 0.075,
+					"Operation": 1,
+					"Slot": "feet",
+					"UUID": [
+						698473384,
+						855481481,
+						1799311281,
+						1655823325
+					]
+				}
+			]
+		}
+	}
+}

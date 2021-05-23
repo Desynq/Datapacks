@@ -87,6 +87,7 @@ function gravestones:run
 ##########
 
 execute as @a[advancements={debug/inventory_changed=true},nbt={Inventory:[{tag:{Tags:["clear"]}}]}] run clear @s #all{Tags:["clear"]}
+execute as @a[advancements={debug/inventory_changed=true},nbt={Inventory:[{tag:{raceLocked:1b}}]}] run function debug:player/clear
 
 
 kill @e[type=#arrows,tag=bullet,nbt={inGround:1b}]

@@ -1,3 +1,3 @@
-execute if entity @s[scores={u.coas=1..,a.vector=1..},nbt={SelectedItem:{tag:{type:vector}}}] at @s run function coas:guns/vector/firing
+execute if entity @s[scores={u.coas=1..,mag.mainhand=1,ammo.mainhand=1..,durability.mh=..359},predicate=equipment/mainhand/coas/vector] run function coas:guns/vector/firing
 
-execute if entity @s[scores={u.coas=1..,sneak=1..,m.vector=1},nbt={Inventory:[{Slot:-106b,tag:{type:vector}}]}] at @s run function coas:guns/vector/unload
+execute if entity @s[scores={u.coas=1..,mag.offhand=1..},predicate=entity/is/sneaking,predicate=equipment/offhand/coas/vector] run function coas:guns/vector/unload

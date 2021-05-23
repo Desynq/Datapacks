@@ -4,7 +4,7 @@ execute store result score @s x run data get storage location Pos[0] 1
 execute store result score @s y run data get storage location Pos[1] 1
 execute store result score @s z run data get storage location Pos[2] 1
 
-execute if entity @s[tag=dead_one_tick] run function scoreboards:core/subtracking/deathpoint
+execute if entity @s[scores={DeathTime=1}] run function scoreboards:core/subtracking/deathpoint
 
 execute store result score @s food run data get entity @s foodLevel 1
 execute store result score @s saturation run data get entity @s foodSaturationLevel 1

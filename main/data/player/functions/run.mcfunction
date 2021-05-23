@@ -25,30 +25,14 @@ bossbar set custom_0 players @a
 
 
 
-#######
-# Tags
-#######
-
-tag @s remove dead
-tag @s remove dead_one_tick
-tag @s remove OnGround
-
-tag @s[nbt=!{DeathTime:0s}] add dead
-tag @s[nbt={DeathTime:1s}] add dead_one_tick
-tag @s[nbt={OnGround:1b}] add OnGround
-
-
-execute if entity @s[scores={timeSinceDeath=20}] run function debug:stats
-effect give @s[scores={timeSinceDeath=20}] instant_health 20 126 true
-effect give @s[scores={timeSinceDeath=20}] hunger 1 199 true
-
-
-
 ##############
 # Scoreboards
 ##############
 
-	execute store result score @s regen_amp run data get entity @s ActiveEffects[{Id:10b}].Amplifier
+	execute store result score @s DeathTime run data get entity @s DeathTime 1
+
+	execute store result score @s regen_amp run data get entity @s ActiveEffects[{Id:10b}].Amplifier 1
+	execute store result score @s hunger_amp run data get entity @s ActiveEffects[{Id:17b}].Amplifier 1
 
 
 	execute if entity @s[scores={damage=1..}] run function player:scoreboards/damage
@@ -67,6 +51,14 @@ effect give @s[scores={timeSinceDeath=20}] hunger 1 199 true
 	function player:pay/run
 	function player:pln_show/run
 
+
+	scoreboard players enable @s disableUpgrades
+	scoreboard players enable @s raceUpgrade
+	function player:races/upgrading/run
+
+	scoreboard players reset @s[predicate=!race/parasite] parasite
+	scoreboard players enable @s[predicate=race/parasite] parasite
+
 	scoreboard players enable @s code
 
 	scoreboard players enable @s spawn
@@ -78,9 +70,28 @@ effect give @s[scores={timeSinceDeath=20}] hunger 1 199 true
 
 
 
-#
+#######
+# Tags
+#######
+
+#######
+# Tags
+#######
+
+tag @s remove OnGround
+
+tag @s[nbt={OnGround:1b}] add OnGround
+
+
+execute if entity @s[scores={timeSinceDeath=20}] run function debug:stats
+effect give @s[scores={timeSinceDeath=20}] instant_health 40 124 true
+effect give @s[scores={timeSinceDeath=20}] hunger 1 199 true
+
+
+
+##############
 # Accessories
-#
+##############
 
 	execute if data storage inventory baubles[0].tag{type:"fire_resistance_ring"} run function player:baubles/fire_resistance_ring
 	execute unless data storage inventory baubles[0].tag{type:"fire_resistance_ring"} if data storage inventory baubles[1].tag{type:"fire_resistance_ring"} run function player:baubles/fire_resistance_ring
@@ -239,7 +250,8 @@ execute if entity @s[name=!Desynq,predicate=!equipment/head/air] if entity @e[ty
 # Equipment
 ############
 
-execute if entity @s[predicate=equipment/feet/frostwalker] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
+execute if entity @s[predicate=equipment/feet/frostwalker,predicate=!dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
+execute if entity @s[scores={x=-127..126,z=-127..126},predicate=equipment/feet/frostwalker,predicate=dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
 
 execute if entity @s[predicate=equipment/feet/soulwalker_boots] if block ~ ~ ~ water run effect give @s instant_damage 1 1 true
 

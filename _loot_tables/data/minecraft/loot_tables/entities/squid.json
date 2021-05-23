@@ -1,0 +1,63 @@
+{
+    "type": "minecraft:entity",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1.0,
+                                "max": 3.0,
+                                "type": "minecraft:uniform"
+                            }
+                        },
+                        {
+                            "function": "minecraft:looting_enchant",
+                            "count": {
+                                "min": 0.0,
+                                "max": 1.0
+                            }
+                        }
+                    ],
+                    "name": "minecraft:ink_sac"
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:white_dye",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:34,type:sanguine_tentacle,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"Sanguine Tentacle\"}'}}"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "condition": "minecraft:entity_scores",
+                            "entity": "killer_player",
+                            "scores": {
+                                "ply.moonPhase": 0,
+                                "ply.daytime": {
+                                    "min": 13000,
+                                    "max": 23000
+                                }
+                            }
+                        },
+                        {
+                            "condition": "minecraft:random_chance",
+                            "chance": 0.25
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

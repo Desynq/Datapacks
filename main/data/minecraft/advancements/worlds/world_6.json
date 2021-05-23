@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Swamp",
+			"color": "white"
+        },
+        "description": {
+            "text": "Season 6",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "minecraft:lily_pad"
+        },
+        "frame": "goal",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "parent": "worlds/world_5"
+}

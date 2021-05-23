@@ -15,19 +15,7 @@
 			"layers": [
 				{
 					"height": 1,
-					"block": "minecraft:bedrock"
-				},
-				{
-					"height": 5,
-					"block": "minecraft:sandstone"
-				},
-				{
-					"height": 5,
-					"block": "minecraft:sand"
-				},
-				{
-					"height": 10,
-					"block": "minecraft:water"
+					"block": "minecraft:air"
 				}
 			]
 		}

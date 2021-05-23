@@ -38,28 +38,47 @@
 									"function":"minecraft:explosion_decay"
 								}
 							],
-							"conditions":[
-								{
-									"condition":"minecraft:random_chance",
-									"chance":0.75
-								}
-							],
 							"name":"minecraft:coal"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"conditions": [
+						{
+							"condition": "minecraft:survives_explosion"
 						},
 						{
-							"type":"minecraft:item",
-							"conditions":[
-								{
-									"condition":"minecraft:survives_explosion"
+							"condition": "minecraft:random_chance",
+							"chance": 0.25
+						},
+						{
+							"condition": "minecraft:inverted",
+							"term": {
+								"condition": "minecraft:match_tool",
+								"predicate": {
+									"enchantments": [
+										{
+											"enchantment": "minecraft:silk_touch",
+											"levels": {
+												"min": 1
+											}
+										}
+									]
 								}
-							],
-							"name":"minecraft:firework_star",
-							"functions":[
-								{
-									"function":"set_nbt",
-									"tag":"{type:bitumen,Explosion:{Colors:[I; 1973019]},display:{Name:'{\"italic\":\"false\",\"text\":\"Bitumen\"}',Lore:['{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"Can be refined into Naphtha\"}','{\"italic\":\"false\",\"color\":\"aqua\",\"text\":\"C17H2SNO (Homogenous)\"}']},HideFlags:32}"
-								}
-							]
+							}
+						}
+					],
+					"name": "minecraft:firework_star",
+					"functions": [
+						{
+							"function": "set_nbt",
+							"tag": "{type:bitumen,Explosion:{Colors:[I; 1973019]},display:{Name:'{\"italic\":\"false\",\"text\":\"Bitumen\"}',Lore:['{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"Can be refined into Naphtha\"}','{\"italic\":\"false\",\"color\":\"aqua\",\"text\":\"C17H2SNO (Homogenous)\"}']},HideFlags:32}"
 						}
 					]
 				}

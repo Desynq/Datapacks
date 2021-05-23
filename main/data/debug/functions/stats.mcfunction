@@ -10,9 +10,21 @@ execute unless score @s stat.health matches 0.. run scoreboard players set @s st
 execute unless score @s stat.speed matches 0.. run scoreboard players set @s stat.speed 0
 execute unless score @s stat.luck matches 0.. run scoreboard players set @s stat.luck 0
 
+
+
+execute if predicate race/bloodborne run attribute @s generic.armor base set -30
+
+execute store success score ran temp if entity @s[predicate=race/parasite,scores={parasite=1..}] unless score @s parasite = @s list at @a if score @s parasite = @p list run function debug:stats/parasite
+execute if predicate race/parasite unless score ran temp matches 1 run function debug:stats/parasite_fail
+
+
 function debug:stats/damage
 function debug:stats/swing
-execute unless score @s race matches 3 run function debug:stats/health
-execute if score @s race matches 3 run function debug:stats/health_sludge
+
+execute unless predicate race/sludge run function debug:stats/health
+execute if predicate race/sludge run function debug:stats/health_sludge
+
 execute unless entity @e[type=armor_stand,tag=scp106,distance=0..] run function debug:stats/speed
-function debug:stats/luck
+
+execute unless predicate race/flora run function debug:stats/luck
+execute if predicate race/flora run function debug:stats/luck_flora

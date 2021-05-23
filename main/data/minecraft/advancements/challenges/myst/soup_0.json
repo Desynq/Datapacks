@@ -1,0 +1,31 @@
+{
+    "display": {
+        "title": {
+            "text": "The Office",
+			"color": "gray"
+        },
+        "description": {
+            "text": "So are we going in sneaky beaky like or..?"
+        },
+        "icon": {
+            "item": "minecraft:light_gray_concrete"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{type:loot_bag,myst_stage:100}"
+                    }
+                ]
+            }
+        }
+    },
+    "parent": "challenges/myst/stage_2"
+}

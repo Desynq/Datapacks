@@ -1,0 +1,25 @@
+{
+    "display": {
+        "title": {
+            "text": "Mitosis II | $5000 [21]",
+			"color": "dark_green"
+        },
+        "description": {
+            "text": "○ Regeneration III",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "ender_eye"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "minecraft:races/sludge/2"
+}

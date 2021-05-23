@@ -9,4 +9,4 @@ execute if entity @s[nbt={HurtTime:10s}] run playsound entity.wither.hurt master
 execute if block ~ ~ ~ #soul_flame run playsound entity.wither.death master @s ~ ~ ~ 2147483647 2
 execute if block ~ ~ ~ #soul_flame run particle soul_fire_flame ~ ~1 ~ .3 .3 .3 .1 100 force @a
 execute if block ~ ~ ~ #soul_flame run tag @s remove rifting
-tag @s[tag=dead_one_tick] remove rifting
+tag @s[scores={DeathTime=1}] remove rifting

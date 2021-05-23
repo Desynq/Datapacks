@@ -1,23 +1,30 @@
 {
     "display": {
         "title": {
-            "text": "Lights Out!",
+            "text": "Stage 3",
 			"color": "dark_gray"
         },
         "description": {
-            "text": "Why did we have to go to the storage bay..."
+            "text": "They need better elevators in this damned facility"
         },
         "icon": {
             "item": "minecraft:chest"
         },
         "frame": "task",
         "show_toast": true,
-        "announce_to_chat": true,
+        "announce_to_chat": false,
         "hidden": false
     },
     "criteria": {
         "acquired": {
-            "trigger": "minecraft:impossible"
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{type:loot_bag,myst_stage:3}"
+                    }
+                ]
+            }
         }
     },
     "parent": "challenges/myst/stage_2"

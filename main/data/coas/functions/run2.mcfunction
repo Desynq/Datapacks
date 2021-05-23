@@ -49,10 +49,10 @@ execute if entity @s[scores={m.deagle=0},nbt={SelectedItem:{tag:{type:7rnd_.50ae
 
 
 ### 9mm ###
-execute unless score @s m.vector matches 1.. if entity @s[nbt={SelectedItem:{tag:{type:30rnd_9mm_magazine}},Inventory:[{Slot:-106b,tag:{type:vector}}]}] at @s run function coas:items/mags/30rnd_9mm/vector
-execute unless score @s m.glock matches 1.. if entity @s[nbt={SelectedItem:{tag:{type:30rnd_9mm_magazine}},Inventory:[{Slot:-106b,tag:{type:glock}}]}] at @s run function coas:items/mags/30rnd_9mm/glock
-execute unless score @s m.mp5a3 matches 1.. if entity @s[nbt={SelectedItem:{tag:{type:30rnd_9mm_magazine}},Inventory:[{Slot:-106b,tag:{type:mp5a3}}]}] at @s run function coas:items/mags/30rnd_9mm/mp5a3
-execute unless score @s m.mp5sd matches 1.. if entity @s[nbt={SelectedItem:{tag:{type:30rnd_9mm_magazine}},Inventory:[{Slot:-106b,tag:{type:mp5sd}}]}] at @s run function coas:items/mags/30rnd_9mm/mp5sd
+execute unless score @s mag.offhand matches 1.. if entity @s[nbt={SelectedItem:{tag:{type:30rnd_9mm_magazine}}},predicate=equipment/offhand/coas/vector] at @s run function coas:core/load_mag
+execute unless score @s mag.offhand matches 1.. if entity @s[nbt={SelectedItem:{tag:{type:30rnd_9mm_magazine}}},predicate=equipment/offhand/coas/glock] at @s run function coas:core/load_mag
+execute unless score @s mag.offhand matches 1.. if entity @s[nbt={SelectedItem:{tag:{type:30rnd_9mm_magazine}}},predicate=equipment/offhand/coas/mp5a3] at @s run function coas:items/mags/30rnd_9mm/mp5a3
+execute unless score @s mag.offhand matches 1.. if entity @s[nbt={SelectedItem:{tag:{type:30rnd_9mm_magazine}}},predicate=equipment/offhand/coas/mp5sd] at @s run function coas:items/mags/30rnd_9mm/mp5sd
 
 
 ### 9x39 ###

@@ -1,23 +1,30 @@
 {
     "display": {
         "title": {
-            "text": "Janitor Closet",
+            "text": "Stage 1",
 			"color": "light_purple"
         },
         "description": {
-            "text": "What's that smell?"
+            "text": "Don't step on the purple rocks!"
         },
         "icon": {
             "item": "minecraft:netherite_helmet"
         },
         "frame": "task",
         "show_toast": true,
-        "announce_to_chat": true,
+        "announce_to_chat": false,
         "hidden": false
     },
     "criteria": {
         "acquired": {
-            "trigger": "minecraft:impossible"
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "items": [
+                    {
+                        "nbt": "{type:loot_bag,myst_stage:1}"
+                    }
+                ]
+            }
         }
     },
     "parent": "challenges/myst/rift_mage"

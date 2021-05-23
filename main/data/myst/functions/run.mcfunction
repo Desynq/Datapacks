@@ -1,7 +1,6 @@
-execute in overworld positioned -72 23.5 -1 if entity @a[distance=..32] unless score portal temp matches 1 run particle reverse_portal ~ ~ ~ .5 2 .5 .1 50 force @a[distance=..32]
-execute in overworld positioned -72 23.5 -1 if entity @a[distance=..32] if score portal temp matches 1 run particle portal ~ ~ ~ .5 2 .5 .1 50 force @a[distance=..32]
+execute in overworld positioned -72 23.5 -1 if entity @a[distance=..32] if score portal temp matches 1 run particle white_ash ~ ~ ~ 0.5 2 1 .05 100 force @a[distance=..32]
 
-execute if score portal temp matches 1 as @a[gamemode=!spectator,predicate=dimension/overworld,x=-72,y=23.5,z=-1,distance=..1] at @s run function myst:portal/enter
+execute if score portal temp matches 1 as @a[gamemode=!spectator,predicate=dimension/overworld,scores={x=-72,y=21..25,z=-1}] at @s run function myst:portal/enter
 
 execute as @e[type=armor_stand,tag=scp106] at @s run function myst:scp/106/run
 

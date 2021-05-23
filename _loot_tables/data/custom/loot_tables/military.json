@@ -77,7 +77,7 @@
         },
 		{
           "type": "item",
-          "name": "minecraft:slime_block",
+          "name": "minecraft:emerald",
           "functions": [
             {
               "function": "set_count",

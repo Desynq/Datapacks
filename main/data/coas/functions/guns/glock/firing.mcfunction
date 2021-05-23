@@ -8,8 +8,6 @@ function coas:core/set_motion
 
 playsound entity.firework_rocket.blast master @a[distance=0..] ~ ~ ~ 4 .5
 
-scoreboard players add @s d.glock 1
-
 
 
 execute in overworld run replaceitem block 0 0 1 container.0 stone
@@ -19,6 +17,9 @@ execute in overworld run data modify block 0 0 1 Items[{Slot:0b}].Count set from
 execute in overworld run data modify block 0 0 1 Items[{Slot:0b}].tag set from entity @s SelectedItem.tag
 
 execute in overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.ammo int 1 run scoreboard players remove @s ammo.mainhand 1
+execute in overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.durability int 1 run scoreboard players add @s durability.mh 1
+execute in overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.Damage int 0.049 run scoreboard players remove @s durability.mh 510
+execute store result score @s durability.mh run data get entity @s SelectedItem.tag.durability 1
 
 execute in overworld run loot replace entity @s weapon.mainhand 1 mine 0 0 1 air{drop_contents:true}
 

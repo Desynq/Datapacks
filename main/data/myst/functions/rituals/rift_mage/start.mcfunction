@@ -32,7 +32,7 @@ data merge entity @s {NoGravity:1,Invulnerable:1,PickupDelay:32767,Age:-32768,Mo
 
 particle enchanted_hit ~ ~.3 ~ .5 .5 .5 0 10 force @a
 particle ash ~ ~3 ~ .5 .5 .5 0 50 force @a
-particle reverse_portal ~ ~3.5 ~ .5 0 .5 .05 30 force @a
+particle reverse_portal ~ ~3.5 ~ .5 0 .5 .05 20 force @a
 
 execute if score 100 tick matches 100 run function myst:rituals/rift_mage/rng_summon
 

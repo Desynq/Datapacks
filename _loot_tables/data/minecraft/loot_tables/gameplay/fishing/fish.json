@@ -48,8 +48,8 @@
 						{
 							"function": "set_count",
 							"count": {
-								"min": 2,
-								"max": 4
+								"min": 1,
+								"max": 2
 							}
 						}
 					]
@@ -63,13 +63,6 @@
 						{
 							"function": "set_nbt",
 							"tag": "{CustomModelData:28,type:axolotl_gills,display:{Name:'{\"italic\":\"false\",\"color\":\"light_purple\",\"text\":\"Axolotl Gills\"}'}}"
-						},
-						{
-							"function": "set_count",
-							"count": {
-								"min": 1,
-								"max": 2
-							}
 						}
 					]
 				}
