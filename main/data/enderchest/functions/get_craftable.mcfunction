@@ -34,6 +34,8 @@ execute if entity @s[nbt={Inventory:[{tag:{craftID:17}}]}] run function enderche
 
 execute if entity @s[nbt={Inventory:[{tag:{craftID:18}}]}] run function enderchest:craft/light_machine_gun
 
+execute if entity @s[nbt={Inventory:[{tag:{craftID:19}}]}] run function enderchest:craft/pump-action_shotgun
+
 
 
 clear @s #all{Tags:["craftable"]}

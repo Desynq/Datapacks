@@ -1,3 +1,4 @@
+execute unless entity @s[scores={a.mgl=0..}] run scoreboard players set @s a.mgl 0
 execute unless entity @s[scores={type.mgl=0..}] run scoreboard players set @s type.mgl 0
 
 # firing

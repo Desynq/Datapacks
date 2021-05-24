@@ -18,7 +18,7 @@ execute if entity @s[tag=reloadable,predicate=equipment/offhand/coas/bolt-action
 # Zoom
 #
 
-execute store success score ran temp run execute if entity @s[predicate=entity/is/sneaking,predicate=equipment/mainhand/coas/bolt-action_rifle]
+execute store success score ran temp run execute if entity @s[scores={sneak=1},predicate=equipment/mainhand/coas/bolt-action_rifle]
 
 
 execute unless score ran temp matches 1 if entity @s[scores={z.bar=10}] run effect give @s blindness 1 0 true

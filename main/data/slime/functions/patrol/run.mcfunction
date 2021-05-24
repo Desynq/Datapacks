@@ -1,4 +1,4 @@
-execute if score 20 tick matches 20 run tp @s ~ ~3 ~
+execute if score 40 tick matches 40 run tp @s ~ ~3 ~
 particle smoke ~ ~3 ~ .1 .1 .1 .01 10 force @a
 
 execute store result score hp patrol run data get entity @s Health

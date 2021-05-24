@@ -9,6 +9,9 @@ function slime:status_effects/run
 # Patrol
 	execute at @a[tag=patrolling] as @e[type=iron_golem,sort=nearest,limit=1,tag=patrol] run function slime:patrol/run
 
+# Anti-Air
+	function slime:antiair/run
+
 
 
 # Bossbars
@@ -29,4 +32,4 @@ execute as @a[advancements={debug/inventory_changed=true},nbt={Inventory:[{tag:{
 
 
 # Disenchanting
-execute as @e[type=item,predicate=dimension/overworld,nbt={Item:{id:"minecraft:enchanting_table"},OnGround:1b}] at @s if block ~ ~-1 ~ crying_obsidian align xyz positioned ~.5 ~.5 ~.5 if entity @e[type=item,nbt={Item:{tag:{Enchantments:[{}]}},OnGround:1b},sort=nearest,limit=1,distance=..1] run function slime:disenchant
+function slime:rituals/run

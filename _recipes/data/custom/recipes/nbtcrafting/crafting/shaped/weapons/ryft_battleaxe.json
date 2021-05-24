@@ -44,7 +44,8 @@
 				},
 				{
 					"AttributeName": "generic.attack_speed",
-					"Amount": -3.75,
+					"Amount": -0.9,
+					"Operation": 2,
 					"Slot": "mainhand",
 					"UUID": [
 						1327034485,

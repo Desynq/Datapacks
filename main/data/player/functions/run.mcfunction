@@ -84,6 +84,7 @@ tag @s[nbt={OnGround:1b}] add OnGround
 
 
 execute if entity @s[scores={timeSinceDeath=20}] run function debug:stats
+effect give @s[scores={timeSinceDeath=20}] resistance 4 4 true
 effect give @s[scores={timeSinceDeath=20}] instant_health 40 124 true
 effect give @s[scores={timeSinceDeath=20}] hunger 1 199 true
 

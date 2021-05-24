@@ -1,0 +1,26 @@
+{
+    "display": {
+        "title": {
+            "text": "Chemical Tolerance | $500 [2]",
+			"color": "dark_green"
+        },
+        "description": {
+            "text": "○ Poison Immunity\n○ Chlorine Gas Immunity",
+			"color": "gray"
+        },
+        "icon": {
+            "item": "firework_star",
+            "nbt": "{Explosion:{Colors:[I;11250603,14602026]}}"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "minecraft:races/flora/root"
+}

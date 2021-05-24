@@ -69,7 +69,7 @@ title @s[nbt={Inventory:[{Slot:-106b,tag:{type:remington}}]}] actionbar [{"color
 
 
 #mgl.mainhand/offhand
-execute unless entity @s[nbt=!{SelectedItem:{tag:{type:mgl}}},nbt=!{Inventory:[{Slot:-106b,tag:{type:mgl}}]}] run function actionbar:mgl
+execute unless entity @s[predicate=!equipment/mainhand/coas/mgl,predicate=!equipment/offhand/coas/mgl] run function actionbar:mgl
 
 #glock
 title @s[nbt={SelectedItem:{tag:{type:glock}}}] actionbar [{"color":"black","text":"D:"},{"color":"dark_red","score":{"objective":"d.glock","name":"@s"}},{"color":"dark_red","text":"/510"}]

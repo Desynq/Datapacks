@@ -7,6 +7,7 @@ tellraw @s [{"color":"dark_red","text":"You feel your body metamorph into a new 
 gamerule showDeathMessages true
 
 advancement grant @s only races/flora/root
+advancement grant @s only races/flora/1
 
 advancement revoke @s from races/human/root
 advancement revoke @s from races/creep/root
