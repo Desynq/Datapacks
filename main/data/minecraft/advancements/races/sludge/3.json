@@ -1,16 +1,15 @@
 {
     "display": {
         "title": {
-            "text": "Thinking With Portals",
-			"color": "dark_aqua"
+            "text": "Hardened Aero-Gel | $2,500 [3]",
+			"color": "dark_green"
         },
         "description": {
-            "text": "Help Dr. Cogwork develop a new way to access the temporal rifts",
+            "text": "○ While on fire: Players within 8 blocks, excluding you, gain Resistance II",
 			"color": "gray"
         },
         "icon": {
-            "item": "minecraft:carrot_on_a_stick",
-			"nbt": "{CustomModelData:58}"
+            "item": "minecraft:slime_ball"
         },
         "frame": "task",
         "show_toast": true,
@@ -22,5 +21,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "quests/coalition"
+    "parent": "minecraft:races/sludge/root"
 }

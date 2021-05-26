@@ -9,7 +9,7 @@
 			"color": "gray"
         },
         "icon": {
-            "item": "ender_pearl"
+            "item": "minecraft:golden_apple"
         },
         "frame": "task",
         "show_toast": true,

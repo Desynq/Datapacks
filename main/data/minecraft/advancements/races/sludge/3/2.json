@@ -1,16 +1,15 @@
 {
     "display": {
         "title": {
-            "text": "Is There Anything Else?",
-			"color": "dark_aqua"
+            "text": "Sustaining Gel | $15,000 [32]",
+			"color": "dark_green"
         },
         "description": {
-            "text": "Obtain the Vector by researching with Dr. Cogwork",
+            "text": "○ Every 60 seconds, you gain Saturation I for 5 seconds",
 			"color": "gray"
         },
         "icon": {
-            "item": "minecraft:carrot_on_a_stick",
-			"nbt": "{CustomModelData:36}"
+            "item": "minecraft:mushroom_stew"
         },
         "frame": "task",
         "show_toast": true,
@@ -22,5 +21,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "quests/coalition/cogwork/a1"
+    "parent": "minecraft:races/sludge/3"
 }

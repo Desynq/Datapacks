@@ -27,7 +27,7 @@
 			"display": {
 				"Name": "{\"italic\":\"false\",\"color\":\"white\",\"text\":\"Mana Cloak\"}",
 				"Lore": [
-					"{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"○ 25xp/5s if xp < 500\"}",
+					"{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"○ 5xp/s if xp < 1000\"}",
 					"{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"○ 1 Insulation\"}"
 				]
 			}

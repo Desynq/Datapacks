@@ -9,7 +9,7 @@
 			"color": "gray"
         },
         "icon": {
-            "item": "emerald"
+            "item": "minecraft:emerald"
         },
         "frame": "task",
         "show_toast": true,

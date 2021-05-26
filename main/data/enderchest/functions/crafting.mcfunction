@@ -46,6 +46,8 @@ execute if entity @s[scores={craftID=10,crafting=0}] run function give:9mm
 execute if entity @s[scores={craftID=11,crafting=0}] run function give:4x_scope
 
 execute if entity @s[scores={craftID=12,crafting=0}] run function give:12gauge
+execute if entity @s[scores={craftID=12,crafting=0}] run function give:12gauge
+execute if entity @s[scores={craftID=12,crafting=0}] run function give:12gauge
 
 execute if entity @s[scores={craftID=13,crafting=0}] run function give:bolt-action_rifle
 
@@ -59,6 +61,8 @@ execute if entity @s[scores={craftID=16,crafting=0}] run function give:materials
 execute if entity @s[scores={craftID=17,crafting=0}] run function give:materials/autofire
 
 execute if entity @s[scores={craftID=18,crafting=0}] run function give:lmg
+
+execute if entity @s[scores={craftID=19,crafting=0}] run function give:guns/pump-action_shotgun
 
 
 

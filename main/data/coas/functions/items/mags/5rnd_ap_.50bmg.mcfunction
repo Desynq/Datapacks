@@ -1,5 +1,5 @@
 playsound block.piston.contract master @a ~ ~ ~ .5 2
 
-execute store result score @s a.amr run data get entity @s SelectedItem.tag.ammo
+execute store result score @s a.amr run data get storage inventory SelectedItem.tag.ammo
 scoreboard players set @s m.amr 2
 replaceitem entity @s weapon.mainhand air

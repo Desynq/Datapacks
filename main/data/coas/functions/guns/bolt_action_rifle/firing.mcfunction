@@ -20,11 +20,7 @@ execute at @s run tp @s[tag=!proning,nbt=!{RootVehicle:{}},scores={sneak=1}] ~ ~
 
 
 
-execute in overworld run replaceitem block 0 0 1 container.0 stone
-
-execute in overworld run data modify block 0 0 1 Items[{Slot:0b}].id set from entity @s SelectedItem.id
-execute in overworld run data modify block 0 0 1 Items[{Slot:0b}].Count set from entity @s SelectedItem.Count
-execute in overworld run data modify block 0 0 1 Items[{Slot:0b}].tag set from entity @s SelectedItem.tag
+function coas:core/get_data/mainhand
 
 execute in overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.ammo int 1 run scoreboard players remove @s ammo.mainhand 1
 execute in overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.durability int 1 run scoreboard players add @s durability.mh 1

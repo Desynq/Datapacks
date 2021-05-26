@@ -1,4 +1,6 @@
 particle soul ~ ~1 ~ .3 .3 .3 .01 1 force @a
+effect clear @s regeneration
+effect clear @s resistance
 effect give @s wither 2 0 true
 effect give @s fire_resistance 1 0 true
 effect give @s weakness 1 255 true

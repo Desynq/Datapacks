@@ -1,7 +1,7 @@
 tag @a remove myst_spawn
 tag @a[scores={x=-185..-175,y=5..15,z=0..10}] add myst_spawn
 
-execute in slime:themyst as @p[gamemode=adventure,scores={DeathTime=0},distance=0..,tag=!myst_spawn] facing entity @s[distance=..3] feet as @e[type=armor_stand,tag=scp106] run tp ^ ^ ^.05
+execute in slime:themyst as @p[gamemode=adventure,scores={DeathTime=0},distance=0..,tag=!myst_spawn] facing entity @s[distance=..3] feet as @e[type=armor_stand,tag=scp106] run tp ^ ^ ^.07
 execute in slime:themyst as @p[gamemode=adventure,scores={DeathTime=0},distance=0..,tag=!myst_spawn] facing entity @s[distance=3..20] feet as @e[type=armor_stand,tag=scp106] run tp ^ ^ ^.1
 execute in slime:themyst as @p[gamemode=adventure,scores={DeathTime=0},distance=0..,tag=!myst_spawn] facing entity @s[distance=20..] feet as @e[type=armor_stand,tag=scp106] run tp ^ ^ ^.5
 

@@ -11,9 +11,11 @@ effect clear @s[predicate=effects/absorption,nbt={AbsorptionAmount:0f}] absorpti
 # Data Storage
 ###############
 
-data merge storage inventory {baubles:[{},{}]}
+data merge storage inventory {baubles:[{},{}],SelectedItem:{},OffhandItem:{}}
 data modify storage inventory baubles[0] set from entity @s Inventory[{Slot:34b}]
 data modify storage inventory baubles[1] set from entity @s Inventory[{Slot:35b}]
+data modify storage inventory SelectedItem set from entity @s SelectedItem
+data modify storage inventory OffhandItem set from entity @s Inventory[{Slot:-106b}]
 
 
 
@@ -33,6 +35,8 @@ bossbar set custom_0 players @a
 
 	execute store result score @s regen_amp run data get entity @s ActiveEffects[{Id:10b}].Amplifier 1
 	execute store result score @s hunger_amp run data get entity @s ActiveEffects[{Id:17b}].Amplifier 1
+
+	function math:xp/run
 
 
 	execute if entity @s[scores={damage=1..}] run function player:scoreboards/damage
@@ -120,6 +124,9 @@ effect give @s[scores={timeSinceDeath=20}] hunger 1 199 true
 
 	execute if data storage inventory baubles[0].tag{type:"winter_coat"} run scoreboard players add @s insulation 2
 	execute if data storage inventory baubles[1].tag{type:"winter_coat"} run scoreboard players add @s insulation 2
+
+	execute if data storage inventory baubles[0].tag{type:"mana_cloak"} run function player:accessories/mana_cloak/run
+	execute if data storage inventory baubles[1].tag{type:"mana_cloak"} run function player:accessories/mana_cloak/run
 
 
 

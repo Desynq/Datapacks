@@ -9,6 +9,6 @@ playsound item.crossbow.shoot master @a[distance=0..] ~ ~ ~ 4 1
 playsound item.crossbow.shoot master @a[distance=0..] ~ ~ ~ 4 1.1
 playsound item.crossbow.shoot master @a[distance=0..] ~ ~ ~ 4 1.2
 
-scoreboard players set @s c.spell 10
-xp add @s -10 points
+scoreboard players set @s c.spell 50
+xp add @s -50 points
 clear @s arrow 1

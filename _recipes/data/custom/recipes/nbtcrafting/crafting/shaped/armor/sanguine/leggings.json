@@ -26,7 +26,7 @@
 			"HideFlags": 64,
 			"display": {
 				"Name": "{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"Sanguine Leggings\"}",
-				"color": 11141120
+				"color": 7483191
 			},
 			"Enchantments": [
 				{
@@ -37,7 +37,7 @@
 			"AttributeModifiers": [
 				{
 					"AttributeName": "generic.attack_damage",
-					"Amount": 0.075,
+					"Amount": 0.125,
 					"Operation": 1,
 					"Slot": "legs",
 					"UUID": [
@@ -49,7 +49,7 @@
 				},
 				{
 					"AttributeName": "generic.attack_speed",
-					"Amount": 0.075,
+					"Amount": 0.125,
 					"Operation": 1,
 					"Slot": "legs",
 					"UUID": [

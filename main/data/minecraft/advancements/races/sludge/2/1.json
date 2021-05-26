@@ -1,7 +1,7 @@
 {
     "display": {
         "title": {
-            "text": "Mitosis II | $5000 [21]",
+            "text": "Mitosis III | $5000 [21]",
 			"color": "dark_green"
         },
         "description": {
@@ -9,7 +9,7 @@
 			"color": "gray"
         },
         "icon": {
-            "item": "ender_eye"
+            "item": "enchanted_golden_apple"
         },
         "frame": "task",
         "show_toast": true,

@@ -19,7 +19,7 @@
 					"functions": [
 						{
 							"function": "set_nbt",
-							"tag": "{type:mystacle_trident,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"Mystacle Trident\"}',Lore:['\"\"','{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"When in main hand:\"}','{\"italic\":\"false\",\"color\":\"dark_green\",\"text\":\" 10 Attack Damage\"}','{\"italic\":\"false\",\"color\":\"dark_green\",\"text\":\"  ∞ Attack Speed\"}']},Enchantments:[{id:impaling,lvl:10},{id:loyalty,lvl:10}],AttributeModifiers:[{AttributeName:generic.attack_damage,Slot:mainhand,Amount:10,UUID:[I;45819,5184981,51848,51889]},{AttributeName:generic.attack_speed,Slot:mainhand,Amount:20,UUID:[I;5819,517817,521781,51781]}],HideFlags:2}"
+							"tag": "{type:mystacle_trident,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"Mystacle Trident\"}'},Enchantments:[{id:impaling,lvl:10},{id:loyalty,lvl:10}],AttributeModifiers:[{AttributeName:generic.attack_damage,Slot:mainhand,Amount:10,UUID:[I;45819,5184981,51848,51889]},{AttributeName:generic.attack_speed,Slot:mainhand,Amount:5,Operation:1,UUID:[I;5819,517817,521781,51781]}]}"
 						}
 					]
 				},
@@ -31,6 +31,30 @@
 						{
 							"function": "set_nbt",
 							"tag": "{CustomModelData:4004,type:clownfish_necklace,durability:1440,display:{Name:'{\"italic\":\"false\",\"color\":\"light_purple\",\"text\":\"Clownfish Necklace\"}',Lore:['{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"When in a Bauble Slot:\"}','{\"italic\":\"false\",\"color\":\"blue\",\"text\":\" +100% Luck\"}','{\"italic\":\"false\",\"color\":\"yellow\",\"text\":\"Durability: 1440/1440\"}']}}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:shield",
+					"functions": [
+						{
+							"function": "minecraft:set_nbt",
+							"tag": "{type:\"gelatin_shield\",raceLocked:1b,Races:[\"sludge\"],display:{Name:'{\"italic\":\"false\",\"color\":\"dark_green\",\"text\":\"Gelatin Shield\"}',Lore:['{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"○ Deflects damage to mobs within 3 blocks\"}','{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"○ Instant Damage II for every blocked hit\"}','{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"○ Sludge Only\"}']}}"
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:entity_scores",
+							"entity": "this",
+							"scores": {
+								"race": 3
+							}
 						}
 					]
 				}

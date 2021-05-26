@@ -1,4 +1,4 @@
-execute store result score bag_id temp run data get entity @s SelectedItem.tag.myst_stage
+execute store result score bag_id temp run data get storage inventory SelectedItem.tag.myst_stage
 
 
 

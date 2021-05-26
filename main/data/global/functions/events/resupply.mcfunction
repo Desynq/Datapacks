@@ -48,6 +48,13 @@ tellraw @a {"color":"dark_green","text":"|> The Deadzone has been resupplied"}
 	data merge block -84 63 19 {LootTable:"custom:radtown/news_press"}
 	data merge block -70 68 19 {LootTable:"custom:radtown/news_press"}
 	data merge block -80 73 18 {LootTable:"custom:radtown/news_press"}
+
+
+
+# Radio Tower
+	data merge block -59 115 -17 {LootTable:"custom:vault"}
+
+
 	
 # Excavator
 	data merge block -92 76 -57 {LootTable:"custom:military"}

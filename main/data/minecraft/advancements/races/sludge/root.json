@@ -1,12 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "Sludge",
+            "text": "][            Sludge            ][",
             "color": "dark_red"
         },
         "description": {
-            "text": "Mostly composed of a gelatinous substance, sludges are naturally acidic and focus mostly on health",
-            "color": "gray"
+            "text": "Sludges are covered in a thick flammable coating of mucous, making them perfect to fit a tank role",
+            "color": "gray",
+            "italic": "true"
         },
         "icon": {
             "item": "minecraft:slime_ball"
