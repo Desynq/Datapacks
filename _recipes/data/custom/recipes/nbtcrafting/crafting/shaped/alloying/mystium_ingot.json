@@ -28,9 +28,9 @@
 		"count": 1,
 		"data": {
 			"CustomModelData": 31,
-			"type": "mystiumite_ingot",
+			"type": "mystium_ingot",
 			"display": {
-				"Name": "{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Mystiumite Ingot\"}"
+				"Name": "{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Mystium Ingot\"}"
 			}
 		}
 	},

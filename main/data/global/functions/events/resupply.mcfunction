@@ -61,6 +61,14 @@ tellraw @a {"color":"dark_green","text":"|> The Deadzone has been resupplied"}
 	data merge block -95 76 -59 {LootTable:"custom:military"}
 
 
+	data merge block -3 99 -92 {LootTable:"custom:vault"}
+
+	data merge block 0 67 -88 {LootTable:"custom:admin_base/miner"}
+	data merge block -23 81 -88 {LootTable:"custom:admin_base/miner"}
+	data merge block -19 76 -90 {LootTable:"custom:admin_base/miner"}
+	data merge block -3 90 -90 {LootTable:"custom:admin_base/miner"}
+
+
 
 # Cave Chasm
 	data merge block 16 38 -65 {LootTable:"custom:admin_base/miner"}

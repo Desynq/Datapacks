@@ -27,8 +27,9 @@
 		"item": "minecraft:netherite_axe",
 		"count": 1,
 		"data": {
+			"type": "rift_battleaxe",
 			"display": {
-				"Name": "{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Ryft Battleaxe\"}"
+				"Name": "{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Rift Battleaxe\"}"
 			},
 			"AttributeModifiers": [
 				{
@@ -44,7 +45,7 @@
 				},
 				{
 					"AttributeName": "generic.attack_speed",
-					"Amount": -0.9,
+					"Amount": -0.8,
 					"Operation": 2,
 					"Slot": "mainhand",
 					"UUID": [
@@ -56,6 +57,5 @@
 				}
 			]
 		}
-	},
-	"group": "custom"
+	}
 }

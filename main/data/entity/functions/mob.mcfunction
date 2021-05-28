@@ -13,6 +13,7 @@ execute if entity @s[scores={t.airblast=1..}] run function entity:mob/airblast
 
 execute if entity @s[predicate=effects/luck_1] run function entity:custom/died_from_he_arrow
 execute if entity @s[predicate=effects/luck_2] run function entity:custom/died_from_he_charged_arrow
+execute if entity @s[predicate=effects/luck_3] run function entity:custom/died_from_he_supercharged_arrow
 
 effect clear @s[team=mob,predicate=effects/levitation_0] levitation
 

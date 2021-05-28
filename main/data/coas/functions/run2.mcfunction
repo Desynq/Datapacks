@@ -25,7 +25,7 @@ execute if entity @s[scores={kc=0..}] at @s run function coas:keycards/run
 
 	execute unless score stopwatch timer matches 1.. if entity @s[scores={xp=250..},nbt={SelectedItem:{tag:{type:watch}}}] run function coas:items/stopwatch/run
 	
-	execute if entity @s[nbt={SelectedItem:{tag:{type:myst_teleporter}}}] run function coas:items/myst_teleporter/run
+	execute if entity @s[nbt={SelectedItem:{tag:{type:pocket_teleporter}}}] run function coas:items/pocket_teleporter/run
 
 
 ###########

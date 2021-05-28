@@ -11,6 +11,7 @@ execute if entity @s[predicate=entity/is/on_fire,advancements={races/sludge/3=tr
 effect give @s[predicate=entity/is/on_fire,advancements={races/sludge/3/1=true}] resistance 5 1 true
 
 
-execute if score 600 tick matches 600 run effect give @s[advancements={races/sludge/3/2=true}] saturation 1 1 true
+execute if score 600 tick matches 600 run effect give @s[advancements={races/sludge/3/2=true,races/sludge/3/2/1=false}] saturation 1 1 true
+execute if score 300 tick matches 300 run effect give @s[advancements={races/sludge/3/2/1=true}] saturation 1 1 true
 
 execute if entity @s[predicate=equipment/offhand/gelatin_shield,scores={blockedDamage=1..}] run function player:races/sludge/gelatin_shield

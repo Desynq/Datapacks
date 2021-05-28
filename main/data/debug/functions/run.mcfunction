@@ -35,6 +35,7 @@ scoreboard players add 20 tick 1
 scoreboard players add 40 tick 1
 scoreboard players add 50 tick 1
 scoreboard players add 100 tick 1
+scoreboard players add 300 tick 1
 scoreboard players add 600 tick 1
 
 
@@ -71,6 +72,7 @@ execute if score 20 tick matches 20 as @a at @s run function debug:stats
 
 execute as @a[predicate=effects/luck_1] at @s run function entity:custom/died_from_he_arrow
 execute as @a[predicate=effects/luck_2] at @s run function entity:custom/died_from_he_charged_arrow
+execute as @a[predicate=effects/luck_3] at @s run function entity:custom/died_from_he_supercharged_arrow
 execute as @e[type=!player] at @s run function entity:run
 
 function gravestones:run
@@ -110,4 +112,5 @@ execute if score 20 tick matches 20.. run scoreboard players set 20 tick 0
 execute if score 40 tick matches 40.. run scoreboard players set 40 tick 0
 execute if score 50 tick matches 50.. run scoreboard players set 50 tick 0
 execute if score 100 tick matches 100.. run scoreboard players set 100 tick 0
+execute if score 300 tick matches 300.. run scoreboard players set 300 tick 0
 execute if score 600 tick matches 600.. run scoreboard players set 600 tick 0

@@ -1,0 +1,75 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "enchantments": [
+                                            {
+                                                "enchantment": "minecraft:silk_touch",
+                                                "levels": {
+                                                    "min": 1
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "condition": "minecraft:inverted",
+                                    "term": {
+                                        "condition": "minecraft:match_tool",
+                                        "predicate": {
+                                            "nbt": "{type:\"carbonite_drill\"}"
+                                        }
+                                    }
+                                }
+                            ],
+                            "name": "minecraft:diamond_ore"
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:white_dye",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_nbt",
+                                    "tag": "{CustomModelData:36,type:\"carbonite\",display:{Name:'{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"Carbonite\"}'}}"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:match_tool",
+                                    "predicate": {
+                                        "nbt": "{type:\"carbonite_drill\"}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "functions": [
+                                {
+                                    "function": "minecraft:apply_bonus",
+                                    "enchantment": "minecraft:fortune",
+                                    "formula": "minecraft:ore_drops"
+                                },
+                                {
+                                    "function": "minecraft:explosion_decay"
+                                }
+                            ],
+                            "name": "minecraft:diamond"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

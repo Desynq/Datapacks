@@ -9,7 +9,7 @@
 			"item": "minecraft:white_dye",
 			"data": {
 				"require": {
-					"type": "mystiumite_ingot"
+					"type": "mystium_ingot"
 				}
 			}
 		}
@@ -17,14 +17,14 @@
 	"result": {
 		"item": "minecraft:netherite_boots",
 		"data": {
-			"CustomModelData": 2,
+			"CustomModelData": 1,
 			"display": {
-				"Name": "{\"italic\":\"false\",\"color\":\"#450f50\",\"text\":\"Mystiumite Boots\"}"
+				"Name": "{\"italic\":\"false\",\"color\":\"#450f50\",\"text\":\"Mystium Boots\"}"
 			},
 			"Enchantments": [
 				{
 					"id": "minecraft:protection",
-					"lvl": 5
+					"lvl": 7
 				}
 			],
 			"AttributeModifiers": [
@@ -98,6 +98,5 @@
 				}
 			]
 		}
-	},
-	"group": "custom"
+	}
 }

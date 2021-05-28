@@ -7,6 +7,7 @@ execute if entity @s[tag=chemx.bullet] run function coas:guns/chemx/bullet
 
 execute if entity @s[nbt={inGround:1b,CustomPotionEffects:[{Id:26b,Amplifier:1b}]}] run function entity:arrow/he_arrow
 execute if entity @s[nbt={inGround:1b,CustomPotionEffects:[{Id:26b,Amplifier:2b}]}] run function entity:arrow/he_charged_arrow
+execute if entity @s[nbt={inGround:1b,CustomPotionEffects:[{Id:26b,Amplifier:3b}]}] run function entity:arrow/he_supercharged_arrow
 
 
 kill @s[tag=,predicate=in_adventure_dim,nbt={inGround:1b}]
