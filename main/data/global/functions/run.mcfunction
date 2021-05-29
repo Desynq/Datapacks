@@ -58,6 +58,6 @@ execute if entity @a if score doDaylightCycle gamerule matches 0 run gamerule do
 # Cleanup
 #
 
-	execute if score 20 tick matches 20 store result score count temp run execute if entity @e[type=item,tag=,predicate=dimension/overworld]
+	execute if score 20 tick matches 20 store result score count temp run execute if entity @e[type=item,tag=]
 	execute if score 20 tick matches 20 if score count temp matches 256.. run tellraw @a {"color":"yellow","text":"|> Clearing unnecessary items..."}
-	execute if score 20 tick matches 20 if score count temp matches 256.. as @e[type=item,tag=,predicate=dimension/overworld] unless data entity @s Thrower at @s unless entity @a[gamemode=!spectator,distance=..8] run kill @s
+	execute if score 20 tick matches 20 if score count temp matches 256.. as @e[type=item,tag=] unless data entity @s Thrower at @s unless entity @a[gamemode=!spectator,distance=..8] run kill @s

@@ -18,6 +18,7 @@
 		"item": "minecraft:netherite_boots",
 		"data": {
 			"CustomModelData": 1,
+			"type": "mystium_boots",
 			"display": {
 				"Name": "{\"italic\":\"false\",\"color\":\"#450f50\",\"text\":\"Mystium Boots\"}"
 			},

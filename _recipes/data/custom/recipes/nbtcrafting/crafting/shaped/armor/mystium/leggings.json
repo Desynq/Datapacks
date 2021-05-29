@@ -19,6 +19,7 @@
 		"item": "minecraft:netherite_leggings",
 		"data": {
 			"CustomModelData": 1,
+			"type": "mystium_leggings",
 			"display": {
 				"Name": "{\"italic\":\"false\",\"color\":\"#450f50\",\"text\":\"Mystium Leggings\"}"
 			},

@@ -21,18 +21,19 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:name_tag",
+                    "weight": 25,
+                    "quality": 1,
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
                             "tag": "{type:invalidation_potion,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Invalidation Token\"}',Lore:['{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"Reedem at Desynq for a race change\"}']}}"
                         }
-                    ],
-                    "conditions": [
-                        {
-                            "condition": "minecraft:random_chance",
-                            "chance": 0.2
-                        }
                     ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:air",
+                    "weight": 75
                 }
             ]
         }

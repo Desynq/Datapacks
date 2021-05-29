@@ -1,5 +1,8 @@
 execute if entity @s[scores={raceUpgrade=1,slime=2500..},advancements={races/creep/1=false}] run function player:races/upgrading/creep/1
 
+execute if entity @s[scores={raceUpgrade=11,slime=3000..},advancements={races/creep/1=true,races/creep/1/1=false}] run function player:races/upgrading/creep/11
+execute if entity @s[scores={raceUpgrade=12,slime=25000..},advancements={races/creep/1=true,races/creep/1/2=false}] run function player:races/upgrading/creep/12
+
 
 
 execute if entity @s[scores={raceUpgrade=2,slime=1000..},advancements={races/creep/2=false}] run function player:races/upgrading/creep/2

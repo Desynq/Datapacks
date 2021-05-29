@@ -2,7 +2,7 @@
 # In Water
 ###########
 
-execute unless score season timer matches 1 if score 5 tick matches 5 if block ~ ~ ~ water if score @s temperature matches 35.. run scoreboard players remove @s temperature 1
+execute unless score season timer matches 1 if score 5 tick matches 5 if block ~ ~ ~ water if score @s temperature matches 36.. run scoreboard players remove @s temperature 1
 
 execute if score season timer matches 1 if score 5 tick matches 5 if block ~ ~ ~ water unless score @s temperature matches ..0 unless entity @s[nbt={RootVehicle:{Entity:{id:"minecraft:boat"}}}] run function player:temperature/lower
 

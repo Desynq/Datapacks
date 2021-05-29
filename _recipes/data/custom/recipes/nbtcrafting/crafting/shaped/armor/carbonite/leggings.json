@@ -2,15 +2,23 @@
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
 		"111",
-		"1 1",
-		"1 1"
+		"121",
+		"111"
 	],
 	"key": {
 		"1": {
 			"item": "minecraft:white_dye",
 			"data": {
 				"require": {
-					"type": "mystite_ingot"
+					"type": "carbonite"
+				}
+			}
+		},
+		"2": {
+			"item": "minecraft:netherite_leggings",
+			"data": {
+				"require": {
+					"type": "mystite_leggings"
 				}
 			}
 		}
@@ -18,14 +26,16 @@
 	"result": {
 		"item": "minecraft:netherite_leggings",
 		"data": {
-			"type": "mystite_leggings",
+			"CustomModelData": 3,
+			"type": "carbonite_leggings",
+			"Unbreakable": 1,
 			"display": {
-				"Name": "{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"Mystite Leggings\"}"
+				"Name": "{\"italic\":\"false\",\"color\":\"#3D3643\",\"text\":\"Carbonite Leggings\"}"
 			},
 			"Enchantments": [
 				{
 					"id": "minecraft:protection",
-					"lvl": 5
+					"lvl": 6
 				}
 			],
 			"AttributeModifiers": [
@@ -34,10 +44,10 @@
 					"Amount": 6,
 					"Slot": "legs",
 					"UUID": [
-						781948899,
-						150047078,
-						1023086638,
-						1415337052
+						1535885007,
+						326100088,
+						1770591207,
+						815914554
 					]
 				},
 				{
@@ -45,45 +55,46 @@
 					"Amount": 3,
 					"Slot": "legs",
 					"UUID": [
-						2076425116,
-						56786632,
-						293602797,
-						1997309631
+						841358472,
+						182712789,
+						82492346,
+						340211232
 					]
 				},
 				{
 					"AttributeName": "generic.knockback_resistance",
-					"Amount": 0.1,
+					"Amount": 0.25,
 					"Slot": "legs",
 					"UUID": [
-						150642143,
-						829856255,
-						1432513667,
-						757995677
+						439020937,
+						678470722,
+						1521510977,
+						791722277
 					]
 				},
 				{
 					"AttributeName": "generic.max_health",
-					"Amount": 0.05,
+					"Amount": 0.125,
 					"Operation": 1,
 					"Slot": "legs",
 					"UUID": [
-						628762885,
-						1626554879,
-						791638817,
-						626635469
+						97175980,
+						1635668211,
+						872658971,
+						1298989767,
+						1315096928
 					]
 				},
 				{
 					"AttributeName": "generic.attack_damage",
-					"Amount": 0.05,
+					"Amount": 0.125,
 					"Operation": 1,
 					"Slot": "legs",
 					"UUID": [
-						1250074063,
-						316687141,
-						982906808,
-						1646164121
+						2143272573,
+						119419400,
+						1485185806,
+						1891870162
 					]
 				}
 			]

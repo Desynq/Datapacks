@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Entropic Fragmentation | $5,000 [11]",
+            "text": "[11] $3,000 | Entropy Explosion",
 			"color": "dark_green"
         },
         "description": {
-            "text": "○ Explosion is created when entropic shield breaks",
+            "text": "○ 2x Explosion is created when entropic shield breaks",
 			"color": "gray"
         },
         "icon": {

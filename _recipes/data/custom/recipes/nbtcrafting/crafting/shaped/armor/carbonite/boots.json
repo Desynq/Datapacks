@@ -1,15 +1,24 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"1 1",
-		"1 1"
+		"111",
+		"121",
+		"111"
 	],
 	"key": {
 		"1": {
 			"item": "minecraft:white_dye",
 			"data": {
 				"require": {
-					"type": "mystite_ingot"
+					"type": "carbonite"
+				}
+			}
+		},
+		"2": {
+			"item": "minecraft:netherite_boots",
+			"data": {
+				"require": {
+					"type": "mystite_boots"
 				}
 			}
 		}
@@ -17,14 +26,16 @@
 	"result": {
 		"item": "minecraft:netherite_boots",
 		"data": {
-			"type": "mystite_boots",
+			"CustomModelData": 3,
+			"type": "carbonite_boots",
+			"Unbreakable": 1,
 			"display": {
-				"Name": "{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"Mystite Boots\"}"
+				"Name": "{\"italic\":\"false\",\"color\":\"#3D3643\",\"text\":\"Carbonite Boots\"}"
 			},
 			"Enchantments": [
 				{
 					"id": "minecraft:protection",
-					"lvl": 5
+					"lvl": 6
 				}
 			],
 			"AttributeModifiers": [
@@ -33,10 +44,10 @@
 					"Amount": 3,
 					"Slot": "feet",
 					"UUID": [
-						443110209,
-						306370827,
-						988845310,
-						1281020008
+						1640453560,
+						1861433946,
+						1188808857,
+						809025023
 					]
 				},
 				{
@@ -44,45 +55,45 @@
 					"Amount": 3,
 					"Slot": "feet",
 					"UUID": [
-						1335423119,
-						1842728587,
-						175886245,
-						612978612
+						1318826440,
+						654271082,
+						795477351,
+						341841261
 					]
 				},
 				{
 					"AttributeName": "generic.knockback_resistance",
-					"Amount": 0.1,
+					"Amount": 0.25,
 					"Slot": "feet",
 					"UUID": [
-						1461606314,
-						223380034,
-						1732848966,
-						390221723
+						1395234764,
+						1120258272,
+						1395969248,
+						520275732
 					]
 				},
 				{
 					"AttributeName": "generic.max_health",
-					"Amount": 0.05,
+					"Amount": 0.125,
 					"Operation": 1,
 					"Slot": "feet",
 					"UUID": [
-						1946219846,
-						2044398180,
-						848104865,
-						193998662
+						1625555208,
+						444932949,
+						2085902840,
+						1583056520
 					]
 				},
 				{
 					"AttributeName": "generic.attack_damage",
-					"Amount": 0.05,
+					"Amount": 0.125,
 					"Operation": 1,
 					"Slot": "feet",
 					"UUID": [
-						1613387286,
-						238122456,
-						6645758,
-						1688410342
+						1305260304,
+						57056171,
+						1084722342,
+						243849479
 					]
 				}
 			]

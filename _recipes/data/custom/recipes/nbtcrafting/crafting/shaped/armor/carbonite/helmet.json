@@ -2,14 +2,23 @@
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
 		"111",
-		"1 1"
+		"121",
+		"111"
 	],
 	"key": {
 		"1": {
 			"item": "minecraft:white_dye",
 			"data": {
 				"require": {
-					"type": "mystite_ingot"
+					"type": "carbonite"
+				}
+			}
+		},
+		"2": {
+			"item": "minecraft:netherite_helmet",
+			"data": {
+				"require": {
+					"type": "mystite_helmet"
 				}
 			}
 		}
@@ -17,14 +26,16 @@
 	"result": {
 		"item": "minecraft:netherite_helmet",
 		"data": {
-			"type": "mystite_helmet",
+			"CustomModelData": 3,
+			"type": "carbonite_helmet",
+			"Unbreakable": 1,
 			"display": {
-				"Name": "{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"Mystite Helmet\"}"
+				"Name": "{\"italic\":\"false\",\"color\":\"#3D3643\",\"text\":\"Carbonite Helmet\"}"
 			},
 			"Enchantments": [
 				{
 					"id": "minecraft:protection",
-					"lvl": 5
+					"lvl": 6
 				}
 			],
 			"AttributeModifiers": [
@@ -33,10 +44,10 @@
 					"Amount": 3,
 					"Slot": "head",
 					"UUID": [
-						2131428773,
-						1628153313,
-						2127079725,
-						1512200119
+						779406377,
+						1493580947,
+						365777162,
+						1316060439
 					]
 				},
 				{
@@ -44,45 +55,45 @@
 					"Amount": 3,
 					"Slot": "head",
 					"UUID": [
-						953436930,
-						1457458767,
-						2096135940,
-						310570987
+						1056187789,
+						873310816,
+						1808248022,
+						655049945
 					]
 				},
 				{
 					"AttributeName": "generic.knockback_resistance",
-					"Amount": 0.1,
+					"Amount": 0.25,
 					"Slot": "head",
 					"UUID": [
-						956499763,
-						1507555321,
-						87036489,
-						1139966516
+						200652746,
+						1689659453,
+						710205810,
+						204153052
 					]
 				},
 				{
 					"AttributeName": "generic.max_health",
-					"Amount": 0.05,
+					"Amount": 0.125,
 					"Operation": 1,
 					"Slot": "head",
 					"UUID": [
-						1894587630,
-						2102199758,
-						67069758,
-						271832582
+						775791865,
+						1876246771,
+						1728993781,
+						778728449
 					]
 				},
 				{
 					"AttributeName": "generic.attack_damage",
-					"Amount": 0.05,
+					"Amount": 0.125,
 					"Operation": 1,
 					"Slot": "head",
 					"UUID": [
-						149063085,
-						2087225890,
-						1082855487,
-						576042165
+						1560014302,
+						462188354,
+						1040670583,
+						1323088731
 					]
 				}
 			]

@@ -41,6 +41,16 @@
 					"{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"○ Absorption I\"}"
 				]
 			},
+			"Enchantments": [
+				{
+					"id": "minecraft:blast_protection",
+					"lvl": 10
+				},
+				{
+					"id": "minecraft:protection",
+					"lvl": 5
+				}
+			],
 			"AttributeModifiers": [
 				{
 					"AttributeName": "generic.armor",

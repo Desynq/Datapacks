@@ -1,15 +1,15 @@
 {
     "display": {
         "title": {
-            "text": "Entropic Shield | $2,500 [1]",
+            "text": "[12] $25,000 | Condensed Entropy",
 			"color": "dark_green"
         },
         "description": {
-            "text": "○ Absorption V shield is created if none is present\n○ Consumes one gunpowder in inventory when creating shield",
+            "text": "○ Entropic shield is upgraded from Absorption V to Absorption X",
 			"color": "gray"
         },
         "icon": {
-            "item": "shield"
+            "item": "tnt"
         },
         "frame": "task",
         "show_toast": true,
@@ -21,5 +21,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "minecraft:races/creep/root"
+    "parent": "minecraft:races/creep/1"
 }

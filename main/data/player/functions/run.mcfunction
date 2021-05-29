@@ -3,7 +3,7 @@
 ########
 
 scoreboard players add @s[scores={fall=1..}] fall 100
-effect clear @s[predicate=effects/absorption,nbt={AbsorptionAmount:0f}] absorption
+execute if entity @s[predicate=effects/absorption,nbt={AbsorptionAmount:0.0f}] run function player:status_effects/clear/absorption
 
 
 
@@ -32,6 +32,7 @@ bossbar set custom_0 players @a
 ##############
 
 	execute store result score @s DeathTime run data get entity @s DeathTime 1
+	execute store result score @s HurtTime run data get entity @s HurtTime 1
 
 	execute store result score @s regen_amp run data get entity @s ActiveEffects[{Id:10b}].Amplifier 1
 	execute store result score @s hunger_amp run data get entity @s ActiveEffects[{Id:17b}].Amplifier 1
@@ -78,10 +79,6 @@ bossbar set custom_0 players @a
 # Tags
 #######
 
-#######
-# Tags
-#######
-
 tag @s remove OnGround
 
 tag @s[nbt={OnGround:1b}] add OnGround
@@ -104,8 +101,8 @@ effect give @s[scores={timeSinceDeath=20}] hunger 1 199 true
 	execute if data storage inventory baubles[0].tag{type:"wither_resistance_ring"} run function player:baubles/wither_resistance_ring
 	execute unless data storage inventory baubles[0].tag{type:"wither_resistance_ring"} if data storage inventory baubles[1].tag{type:"wither_resistance_ring"} run function player:baubles/wither_resistance_ring
 
-	execute if data storage inventory baubles[0].tag{type:"firespark_ring"} if entity @s[nbt=!{HurtTime:0s}] run function player:baubles/firespark_ring
-	execute unless data storage inventory baubles[0].tag{type:"firespark_ring"} if data storage inventory baubles[1].tag{type:"firespark_ring"} if entity @s[nbt=!{HurtTime:0s}] run function player:baubles/firespark_ring
+	execute if data storage inventory baubles[0].tag{type:"firespark_ring"} if entity @s[scores={HurtTime=1..}] run function player:baubles/firespark_ring
+	execute unless data storage inventory baubles[0].tag{type:"firespark_ring"} if data storage inventory baubles[1].tag{type:"firespark_ring"} if entity @s[scores={HurtTime=1..}] run function player:baubles/firespark_ring
 
 	execute if data storage inventory baubles[0].tag{type:"baskalisk_heart"} if entity @s[tag=!rifting] run function player:baubles/baskalisk_heart
 	execute unless data storage inventory baubles[0].tag{type:"baskalisk_heart"} if data storage inventory baubles[1].tag{type:"baskalisk_heart"} if entity @s[tag=!rifting] run function player:baubles/baskalisk_heart

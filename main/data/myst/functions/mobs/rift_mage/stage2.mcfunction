@@ -1,5 +1,5 @@
-effect give @s resistance 10 4 true
-effect give @s[tag=!remaster] instant_damage 100 1 true
+effect give @s resistance 5 4 true
+effect give @s[tag=!remaster] instant_damage 100 0 true
 effect give @s[tag=remaster] instant_damage 200 3 true
 effect clear @s absorption
 

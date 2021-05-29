@@ -41,6 +41,12 @@
 					"{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"○ Absorption II\"}"
 				]
 			},
+			"Enchantments": [
+				{
+					"id": "minecraft:protection",
+					"lvl": 5
+				}
+			],
 			"AttributeModifiers": [
 				{
 					"AttributeName": "generic.armor",

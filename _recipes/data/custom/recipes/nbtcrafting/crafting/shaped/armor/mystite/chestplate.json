@@ -18,6 +18,7 @@
 	"result": {
 		"item": "minecraft:netherite_chestplate",
 		"data": {
+			"type": "mystite_chestplate",
 			"display": {
 				"Name": "{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"Mystite Chestplate\"}"
 			},
@@ -87,6 +88,5 @@
 				}
 			]
 		}
-	},
-	"group": "custom"
+	}
 }
