@@ -1,3 +1,5 @@
+scoreboard players set 10 math 10
+
 scoreboard players operation @s last_damage_int = @s damage
 scoreboard players operation @s last_damage_int /= 10 math
 scoreboard players operation @s last_damage_dec = @s damage

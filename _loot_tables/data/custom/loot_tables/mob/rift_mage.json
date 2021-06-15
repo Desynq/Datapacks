@@ -1,4 +1,5 @@
 {
+    "type": "minecraft:entity",
     "pools": [
         {
             "rolls": 1,
@@ -26,13 +27,12 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{type:invalidation_potion,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Invalidation Token\"}',Lore:['{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"Reedem at Desynq for a race change\"}']}}"
+                            "tag": "{type:invalidation_potion,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Invalidation Token\"}',Lore:['{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"Reedem for a race change\"}']}}"
                         }
                     ]
                 },
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:air",
+                    "type": "minecraft:empty",
                     "weight": 75
                 }
             ]

@@ -1,1 +1,3 @@
-give @s carrot_on_a_stick{CustomModelData:19,type:assault_rifle,Tags:["actionbar"],display:{Name:'{"italic":"false","text":"AK-47"}',Lore:['{"italic":"false","color":"gold","text":"◘ Calibre Standard Rifle"}','{"italic":"false","color":"gray","text":"◘ Cooldown: 50ms"}','{"italic":"false","color":"gray","text":"◘ Caliber: 7.62 Soviet"}','{"italic":"false","color":"green","text":"◘ Crouch: Reduce Recoil"}']}}
+loot spawn ~ ~ ~ loot custom:item/gun/assault_rifle
+
+execute as @e[type=item,nbt={Item:{tag:{fromLootTable:"item"}}}] run function give:_data

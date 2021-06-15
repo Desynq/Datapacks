@@ -1,4 +1,4 @@
-scoreboard players set limit rng 8
+scoreboard players set limit rng 6
 function math:rng
 
 execute if score output rng matches 0 if entity @a[gamemode=!creative,gamemode=!spectator,scores={DeathTime=0},distance=..64] run function myst:mobs/stage_5-1/eldritch_overseer/spells/shulker_bullet

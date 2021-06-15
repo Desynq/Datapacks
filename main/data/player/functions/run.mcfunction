@@ -47,11 +47,11 @@ bossbar set custom_0 players @a
 
 
 	execute unless score @s ply.uuid matches ..-1 unless score @s ply.uuid matches 0.. store result score @s ply.uuid run data get entity @s UUID[0]
-	execute unless entity @s[scores={list=1..}] run function scoreboards:uuid/list
+	execute unless entity @s[scores={list=1..}] run function player:scoreboards/uuid/list
 
-	function scoreboards:core/tracking
-	function scoreboards:dummies/keycards
-	function scoreboards:core/enable
+	function player:scoreboards/core/tracking
+	function player:scoreboards/dummies/keycards
+	function player:scoreboards/core/enable
 
 	function player:pay/run
 	function player:pln_show/run

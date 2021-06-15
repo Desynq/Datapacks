@@ -24,8 +24,7 @@ execute if score bag_id temp matches 100 run loot spawn ~ ~ ~ loot custom:myst/l
 
 
 
-execute as @e[type=item,distance=..1] run data modify entity @s Thrower set from entity @p UUID
-execute as @e[type=item,distance=..1] run data merge entity @s {PickupDelay:0}
+execute as @e[type=item,distance=..1] unless data entity @s Thrower unless data entity @s Owner run function entity:item/give_nearby
 
 
 

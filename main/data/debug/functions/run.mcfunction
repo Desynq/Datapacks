@@ -2,12 +2,12 @@
 # Init
 #######
 
-execute as @a at @s unless score @s cmp matches ..-1 unless score @s cmp matches 1.. if entity @s[tag=cmp] run function debug:cmp/re-enter
-scoreboard players enable @a cmp
-execute as @a at @s unless score @s cmp matches 0 run function debug:cmp/run
-execute as @a at @s if score @s cmp matches 0 if entity @s[tag=cmp] run function debug:cmp/exit
-gamemode adventure @a[predicate=dimension/cmp,tag=!cmp,name=!Desynq,name=!sooupe,name=!Starging]
-execute as @a[predicate=dimension/cmp,tag=!cmp,name=!Desynq,name=!sooupe,name=!Starging] in overworld run tp 0 64 0
+#execute as @a at @s unless score @s cmp matches ..-1 unless score @s cmp matches 1.. if entity @s[tag=cmp] run function debug:cmp/re-enter
+#scoreboard players enable @a cmp
+#execute as @a at @s unless score @s cmp matches 0 run function debug:cmp/run
+#execute as @a at @s if score @s cmp matches 0 if entity @s[tag=cmp] run function debug:cmp/exit
+#gamemode adventure @a[predicate=dimension/cmp,tag=!cmp,name=!Desynq,name=!sooupe,name=!Starging]
+#execute as @a[predicate=dimension/cmp,tag=!cmp,name=!Desynq,name=!sooupe,name=!Starging] in overworld run tp 0 64 0
 
 
 

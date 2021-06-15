@@ -1,3 +1,7 @@
+execute unless entity @s[predicate=!equipment/mainhand/coas/glock,predicate=!equipment/offhand/coas/glock] run function actionbar:coas/glock
+
+
+
 #assault_rifle.mainhand
 title @s[nbt={SelectedItem:{tag:{type:assault_rifle}}}] actionbar [{"color":"black","text":"Durability:"},{"color":"dark_red","score":{"name":"@s","objective":"d.ar"}},{"color":"dark_red","text":"/720"}]
 
@@ -70,10 +74,6 @@ title @s[nbt={Inventory:[{Slot:-106b,tag:{type:remington}}]}] actionbar [{"color
 
 #mgl.mainhand/offhand
 execute unless entity @s[predicate=!equipment/mainhand/coas/mgl,predicate=!equipment/offhand/coas/mgl] run function actionbar:mgl
-
-#glock
-title @s[nbt={SelectedItem:{tag:{type:glock}}}] actionbar [{"color":"black","text":"D:"},{"color":"dark_red","score":{"objective":"d.glock","name":"@s"}},{"color":"dark_red","text":"/510"}]
-title @s[nbt={Inventory:[{Slot:-106b,tag:{type:glock}}]}] actionbar [{"color":"black","text":"D:"},{"color":"dark_red","score":{"objective":"d.glock","name":"@s"}},{"color":"dark_red","text":"/510"}]
 
 #vss
 title @s[nbt={SelectedItem:{tag:{type:vss}}}] actionbar [{"color":"black","text":"D:"},{"color":"dark_red","score":{"objective":"d.vss","name":"@s"}},{"color":"dark_red","text":"/200"}]

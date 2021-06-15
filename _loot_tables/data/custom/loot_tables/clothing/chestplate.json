@@ -15,7 +15,7 @@
             },
 			{
 			  "function": "set_nbt",
-			  "tag": "{type:clothing,display:{Name:'{\"italic\":\"false\",\"color\":\"gold\",\"text\":\"Worn Shirt\"}'}}"
+			  "tag": "{fromLootTable:\"clothing\",type:clothing,display:{Name:'{\"italic\":\"false\",\"color\":\"gold\",\"text\":\"Worn Shirt\"}'}}"
 			}
             ]
         }
