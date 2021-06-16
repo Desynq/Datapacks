@@ -1,6 +1,6 @@
 {
     "pack": {
-        "pack_format": 3,
+        "pack_format": 6,
         "description": "Custom advancements used for tracking progress"
     }
 }

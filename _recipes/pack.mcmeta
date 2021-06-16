@@ -1,6 +1,6 @@
 {
        "pack": {
-           "pack_format": 3,
-           "description": "Custom recipes for survival"
+           "pack_format": 6,
+           "description": "Removes some vanilla recipes and adds custom recipes with some using nbt-crafting"
        }
    }

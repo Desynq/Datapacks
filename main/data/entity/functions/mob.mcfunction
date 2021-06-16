@@ -29,6 +29,8 @@ execute if entity @s[type=cave_spider,predicate=dimension/overworld,nbt={HurtTim
 # Categorised
 ##############
 
+execute if entity @s[tag=custom] run function entity:mob/custom/run
+
 execute if entity @s[type=pillager] run function entity:mob/illager
 
 execute if entity @s[type=#zombies,predicate=entity/is/baby] run data merge entity @s {Health:0}

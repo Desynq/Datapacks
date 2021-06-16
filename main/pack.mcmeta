@@ -1,6 +1,6 @@
 {
        "pack": {
-           "pack_format": 3,
-           "description": "Complete Rewrite of my previous code"
+           "pack_format": 6,
+           "description": "Contains all functions, predicates, and tags for the CMP and Slime Survival"
        }
    }

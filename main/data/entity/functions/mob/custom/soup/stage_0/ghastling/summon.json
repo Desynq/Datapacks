@@ -1,12 +1,4 @@
 {
-    "Team": "mob",
-    "Tags": [
-        "custom",
-        "ghastling"
-    ],
-    "CustomName": "{\"color\":\"gray\",\"text\":\"Ghastling\"}",
-    "CanPickupLoot": false,
-    "DeathLootTable": "",
     "HandDropChances": [
         0,
         0
@@ -17,7 +9,16 @@
         0,
         0
     ],
-    "Health": 50,
+    "Team": "mob",
+    "Tags": [
+        "custom",
+        "ghastling"
+    ],
+    "CustomName": "{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"Ghastling\"}",
+    "Silent": true,
+    "CanPickupLoot": false,
+    "DeathLootTable": "",
+    "Health": 30,
     "Attributes": [
         {
             "Name": "minecraft:generic.armor",
@@ -45,7 +46,7 @@
         },
         {
             "Name": "minecraft:generic.max_health",
-            "Base": 50
+            "Base": 30
         },
         {
             "Name": "minecraft:generic.movement_speed",
@@ -66,10 +67,15 @@
     ],
     "HandItems": [
         {
-            "id": "minecraft:iron_sword",
+            "id": "minecraft:bow",
             "Count": 1,
             "tag": {
-                "AttributeModifiers": []
+                "Enchantments": [
+                    {
+                        "id": "minecraft:power",
+                        "lvl": 20
+                    }
+                ]
             }
         }
     ],

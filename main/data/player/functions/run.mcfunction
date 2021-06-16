@@ -179,9 +179,7 @@ function enderchest:run
 
 ### Join Script ###
 
-	execute unless entity @s[scores={join=0}] run playsound entity.experience_orb.pickup master @a ~ ~ ~ 2147483647 2
-	execute unless entity @s[scores={join=0}] run tellraw @s [{"color":"dark_red","text":"|> Rules\n|>> 1. No unapproved mods/clients/resourcepacks\n|>> 2. No Glitching/Exploiting\n|>> 3. No Griefing*\n|>>> Only break or destroy blocks for utility (ie. transportation) or stealing"}]
-	scoreboard players set @s join 0
+	execute unless score @s join matches 0 run function player:server/join
 
 
 
