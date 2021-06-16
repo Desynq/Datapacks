@@ -17,7 +17,6 @@ execute as @a run attribute @s generic.luck modifier remove 0-0-0-0-1
 execute as @a run attribute @s generic.luck modifier remove 0-0-0-0-2
 
 tag @a[tag=zapped] remove zapped
-tag @a[tag=dead] remove dead
 scoreboard players reset @a[scores={diedFrom=1..}] diedFrom
 scoreboard players set @a insulation 0
 
