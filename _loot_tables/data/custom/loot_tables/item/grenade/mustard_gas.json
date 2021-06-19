@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:firework_star",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{fromLootTable:\"item\",type:\"mustard_gas_grenade\",HideFlags:32,Explosion:{Colors:[I;11250603,14602026]},display:{Name:'{\"italic\":\"false\",\"color\":\"white\",\"text\":\"Mustard Gas Grenade\"}',Lore:['{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"○ Deploys mustard gas upon impact with the ground\"}','{\"italic\":\"false\",\"color\":\"yellow\",\"text\":\"○ Duration: 30s\"}']}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
