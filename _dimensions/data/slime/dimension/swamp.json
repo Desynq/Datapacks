@@ -1,5 +1,5 @@
 {
-	"type": "slime:swamp_type",
+	"type": "slime:swamp",
 	"generator": {
 		"type": "minecraft:flat",
 		"seed": 0,

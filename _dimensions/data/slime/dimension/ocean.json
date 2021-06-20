@@ -1,5 +1,5 @@
 {
-	"type": "slime:paradise_type",
+	"type": "slime:paradise",
 	"generator": {
 		"type": "minecraft:flat",
 		"seed": 0,
