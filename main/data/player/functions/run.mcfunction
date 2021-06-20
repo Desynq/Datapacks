@@ -80,7 +80,6 @@ bossbar set custom_0 players @a
 #######
 
 tag @s remove OnGround
-
 tag @s[nbt={OnGround:1b}] add OnGround
 
 

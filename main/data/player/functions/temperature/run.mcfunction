@@ -16,7 +16,7 @@ effect give @s[scores={temperature=..10}] mining_fatigue 1 1 true
 effect give @s[scores={temperature=..5}] weakness 1 1 true
 
 effect clear @s[scores={temperature=0}] absorption
-effect give @s[scores={temperature=0}] instant_damage 1 0 true
+effect give @s[scores={temperature=0},predicate=!effects/poison] poison 5 0 true
 
 
 
@@ -30,6 +30,8 @@ effect give @s[scores={temperature=50..}] nausea 4 0 true
 
 
 
+########
+# Reset
+########
 
-execute if entity @s[scores={DeathTime=0,player.hp=..4,timeSinceDeath=20..,temperature=0}] run function player:temperature/frostbite
 scoreboard players set @s[scores={DeathTime=1..}] temperature 35
