@@ -263,7 +263,7 @@ effect give @s[predicate=equipment/chest/absorbing_chainmail] absorption 1 0 tru
 effect give @s[predicate=race/sludge,predicate=equipment/chest/sticky_chestplate] absorption 1 1 true
 effect give @s[predicate=race/creep,predicate=equipment/chest/creeping_chestplate] absorption 1 0 true
 
-replaceitem entity @s[scores={u.totem=1..},predicate=equipment/offhand/supercharged_totem] weapon.mainhand totem_of_undying
+item replace entity @s[scores={u.totem=1..},predicate=equipment/offhand/supercharged_totem] weapon.mainhand with totem_of_undying
 
 
 

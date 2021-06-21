@@ -1,6 +1,6 @@
 execute store result score @s soulSword1 run data get entity @s[nbt={SelectedItem:{tag:{type:soul_sword}}}] SelectedItem.tag.AttributeModifiers[0].Amount 1
 execute store result score @s soulSword2 run data get entity @s[nbt={SelectedItem:{tag:{type:soul_sword}}}] SelectedItem.tag.AttributeModifiers[1].Amount 1000000
-replaceitem entity @s weapon.mainhand air
+item replace entity @s weapon.mainhand with air
 xp add @s -10 points
 
 summon item ~ ~ ~ {Tags:["soul_sword"],Item:{id:stone_sword,Count:1,tag:{type:soul_sword,Unbreakable:0b,RepairCost:40,Enchantments:[{id:unbreaking,lvl:5}],AttributeModifiers:[{AttributeName:generic.attack_damage,Amount:0,Slot:mainhand,UUID:[I;585819,69081,58916,772185]},{AttributeName:generic.attack_speed,Amount:0,Operation:2,Slot:mainhand,UUID:[I;585781,678261,657185,57817]}],display:{Name:'{"italic":"false","color":"dark_purple","text":"Soulbound Sword"}'}}}}

@@ -83,10 +83,10 @@ function gravestones:run
 ##########
 
 execute as @a[advancements={debug/inventory_changed=true},nbt={Inventory:[{tag:{Tags:["clear"]}}]}] run clear @s #all{Tags:["clear"]}
-execute as @a[advancements={debug/inventory_changed=true},nbt={Inventory:[{tag:{raceLocked:1b}}]}] run function debug:player/clear
+execute as @a[advancements={debug/inventory_changed=true},nbt={Inventory:[{tag:{RaceLocked:true}}]}] run function debug:player/clear
 
 
-kill @e[type=#arrows,tag=bullet,nbt={inGround:1b}]
+kill @e[type=#arrows,tag=bullet,nbt={inGround:true}]
 kill @e[type=area_effect_cloud,tag=RootVehicle,nbt=!{Passengers:[{}]}]
 
 kill @e[type=item,nbt={Item:{tag:{Tags:["clear"]}}}]

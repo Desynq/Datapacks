@@ -5,4 +5,4 @@ execute if entity @s[tag=rifting] run playsound entity.wither.death master @s ~ 
 execute if entity @s[tag=rifting] run particle soul_fire_flame ~ ~1 ~ .3 .3 .3 .1 100 force @a
 execute if entity @s[tag=rifting] run tag @s remove rifting
 
-replaceitem entity @s weapon.mainhand air
+item replace entity @s weapon.mainhand with air

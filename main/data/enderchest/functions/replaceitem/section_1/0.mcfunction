@@ -28,34 +28,34 @@
 
 execute if predicate race/parasite run function enderchest:replaceitem/section_1/parasite/1-5
 
-replaceitem entity @s enderchest.6 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.7 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.8 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.6 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.7 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.8 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 
 
 
 #buying
 	function enderchest:replaceitem/section_1/default/9
 
-replaceitem entity @s enderchest.10 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.11 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.12 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.13 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.14 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.15 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.16 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.17 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.10 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.11 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.12 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.13 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.14 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.15 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.16 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.17 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 
 
 
-replaceitem entity @s enderchest.18 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.19 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.20 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.21 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.22 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.23 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-replaceitem entity @s enderchest.24 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.18 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.19 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.20 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.21 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.22 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.23 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.24 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 
-replaceitem entity @s enderchest.25 blue_stained_glass_pane{Tags:["buyable"],type:main_shop,display:{Name:'{"italic":"false","color":"dark_aqua","text":"Main Shop"}'}}
+item replace entity @s enderchest.25 with blue_stained_glass_pane{Tags:["buyable"],type:main_shop,display:{Name:'{"italic":"false","color":"dark_aqua","text":"Main Shop"}'}}
 
-replaceitem entity @s enderchest.26 red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+item replace entity @s enderchest.26 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}

@@ -1,8 +1,6 @@
-execute in overworld run replaceitem block 0 0 1 container.0 stone
+execute in overworld run item replace block 0 0 1 container.0 from entity @s inventory.26
 
-execute in overworld run data modify block 0 0 1 Items[{Slot:0b}].id set from storage inventory baubles[{Slot:35b}].id
-execute in overworld run data modify block 0 0 1 Items[{Slot:0b}].Count set from storage inventory baubles[{Slot:35b}].Count
-execute in overworld run data modify block 0 0 1 Items[{Slot:0b}].tag set from storage inventory baubles[{Slot:35b}].tag
+
 
 execute in overworld store result block 0 0 1 Items[{Slot:0b}].tag.durability int 1 run scoreboard players remove ice_cube durability 1
 
@@ -11,4 +9,6 @@ execute in overworld run data modify block 0 0 1 Items[{Slot:0b}].tag.display.Lo
 
 execute in overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.Damage int -0.025 run scoreboard players remove ice_cube durability 1000
 
-execute in overworld run loot replace entity @s inventory.26 1 mine 0 0 1 air{drop_contents:true}
+
+
+execute in overworld run item replace entity @s inventory.26 from block 0 0 1 container.0

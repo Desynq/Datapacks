@@ -1,3 +1,3 @@
 tag @s add handcuffed
 playsound item.armor.equip_iron master @a
-replaceitem entity @s weapon.offhand air
+item replace entity @s weapon.offhand with air

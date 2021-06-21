@@ -8,10 +8,10 @@ execute store result entity @s Items[{Slot:1b}].Count byte 1 run scoreboard play
 
 scoreboard players set limit rng 10
 function math:rng
-execute if score output rng matches 0 run replaceitem entity @s container.3 white_dye{CustomModelData:16,type:uranium_235,Tags:["radioactive"],display:{Name:'{"italic":"false","color":"dark_green","text":"Uranium 235"}'}}
-execute if score output rng matches 1.. run replaceitem entity @s container.3 white_dye{CustomModelData:15,type:uranium_238,Tags:["radioactive"],display:{Name:'{"italic":"false","text":"Uranium 238"}'}}
+execute if score output rng matches 0 run item replace entity @s container.3 with white_dye{CustomModelData:16,type:uranium_235,Tags:["radioactive"],display:{Name:'{"italic":"false","color":"dark_green","text":"Uranium 235"}'}}
+execute if score output rng matches 1.. run item replace entity @s container.3 with white_dye{CustomModelData:15,type:uranium_238,Tags:["radioactive"],display:{Name:'{"italic":"false","text":"Uranium 238"}'}}
 
 scoreboard players set limit rng 3
 function math:rng
-execute if score output rng matches 0 run replaceitem entity @s container.4 cobblestone
-execute if score output rng matches 1 run replaceitem entity @s container.4 emerald
+execute if score output rng matches 0 run item replace entity @s container.4 with cobblestone
+execute if score output rng matches 1 run item replace entity @s container.4 with emerald

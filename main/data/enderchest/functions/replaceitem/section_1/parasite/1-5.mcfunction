@@ -1,5 +1,5 @@
-replaceitem entity @s enderchest.1 barrier{Tags:["buyable"],display:{Name:'[{"italic":"false","color":"dark_red","text":"Sorry, we don\'t serve "},{"italic":"true","bold":"true","text":"your "},"kind"]'}}
-replaceitem entity @s enderchest.2 barrier{Tags:["buyable"],display:{Name:'[{"italic":"false","color":"dark_red","text":"Sorry, we don\'t serve "},{"italic":"true","bold":"true","text":"your "},"kind"]'}}
-replaceitem entity @s enderchest.3 barrier{Tags:["buyable"],display:{Name:'[{"italic":"false","color":"dark_red","text":"Sorry, we don\'t serve "},{"italic":"true","bold":"true","text":"your "},"kind"]'}}
-replaceitem entity @s enderchest.4 barrier{Tags:["buyable"],display:{Name:'[{"italic":"false","color":"dark_red","text":"Sorry, we don\'t serve "},{"italic":"true","bold":"true","text":"your "},"kind"]'}}
-replaceitem entity @s enderchest.5 barrier{Tags:["buyable"],display:{Name:'[{"italic":"false","color":"dark_red","text":"Sorry, we don\'t serve "},{"italic":"true","bold":"true","text":"your "},"kind"]'}}
+item replace entity @s enderchest.1 with barrier{Tags:["buyable"],display:{Name:'[{"italic":"false","color":"dark_red","text":"Sorry, we don\'t serve "},{"italic":"true","bold":"true","text":"your "},"kind"]'}}
+item replace entity @s enderchest.2 with barrier{Tags:["buyable"],display:{Name:'[{"italic":"false","color":"dark_red","text":"Sorry, we don\'t serve "},{"italic":"true","bold":"true","text":"your "},"kind"]'}}
+item replace entity @s enderchest.3 with barrier{Tags:["buyable"],display:{Name:'[{"italic":"false","color":"dark_red","text":"Sorry, we don\'t serve "},{"italic":"true","bold":"true","text":"your "},"kind"]'}}
+item replace entity @s enderchest.4 with barrier{Tags:["buyable"],display:{Name:'[{"italic":"false","color":"dark_red","text":"Sorry, we don\'t serve "},{"italic":"true","bold":"true","text":"your "},"kind"]'}}
+item replace entity @s enderchest.5 with barrier{Tags:["buyable"],display:{Name:'[{"italic":"false","color":"dark_red","text":"Sorry, we don\'t serve "},{"italic":"true","bold":"true","text":"your "},"kind"]'}}

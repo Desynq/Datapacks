@@ -5,4 +5,4 @@ tellraw @s[tag=!necronoma] {"italic":"true","color":"dark_green","text":"God, th
 effect give @s[tag=!necronoma] nausea 30 0 true
 tellraw @s[tag=necronoma] {"italic":"true","color":"dark_red","text":"More..."}
 
-replaceitem entity @s weapon.mainhand air
+item replace entity @s weapon.mainhand with air

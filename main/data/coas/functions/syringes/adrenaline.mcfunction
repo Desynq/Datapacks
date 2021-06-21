@@ -5,4 +5,4 @@ playsound block.conduit.ambient master @a ~ ~ ~ 1 1.5
 
 scoreboard players add @s overdose 600
 
-replaceitem entity @s weapon.mainhand air
+item replace entity @s weapon.mainhand with air

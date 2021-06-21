@@ -10,7 +10,7 @@ playsound entity.firework_rocket.blast master @a[distance=0..] ~ ~ ~ 4 1
 
 scoreboard players set limit rng 4
 function math:rng
-execute if score output rng matches 0 run replaceitem entity @s weapon.mainhand air
+execute if score output rng matches 0 run item replace entity @s weapon.mainhand with air
 execute if score output rng matches 0 run playsound item.shield.break master @a[distance=0..] ~ ~ ~ 1
 
 scoreboard players set @s a.eoka 0

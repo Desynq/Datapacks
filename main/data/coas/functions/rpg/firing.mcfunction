@@ -12,5 +12,5 @@ scoreboard players remove @s a.rpg 1
 scoreboard players add @s d.rpg 1
 
 execute if entity @s[scores={d.rpg=50..}] run playsound item.shield.break master @a ~ ~ ~ 2
-execute if entity @s[scores={d.rpg=50..}] run replaceitem entity @s weapon.mainhand air
+execute if entity @s[scores={d.rpg=50..}] run item replace entity @s weapon.mainhand with air
 execute if entity @s[scores={d.rpg=50..}] run scoreboard players set @s d.rpg 0

@@ -11,4 +11,4 @@ execute as @e[tag=he.marker] store result entity @e[tag=he.grenade,sort=nearest,
 
 tag @e[tag=he.grenade,tag=marked] remove marked
 
-replaceitem entity @s weapon.mainhand air
+item replace entity @s weapon.mainhand with air

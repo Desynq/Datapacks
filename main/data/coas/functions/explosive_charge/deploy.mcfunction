@@ -25,4 +25,4 @@ kill @e[type=area_effect_cloud,tag=c4.marker]
 playsound entity.player.attack.sweep master @a[distance=0..] ~ ~ ~ .5 1.5
 playsound entity.firework_rocket.blast_far master @a[distance=0..] ~ ~ ~ 4
 
-replaceitem entity @s weapon.mainhand air
+item replace entity @s weapon.mainhand with air
