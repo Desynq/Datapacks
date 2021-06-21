@@ -1,5 +1,5 @@
 {
-	"type": "slime:default",
+	"type": "slime:cmp",
 	"generator": {
 		"type": "minecraft:flat",
 		"seed": -869534043192993783,
