@@ -41,3 +41,7 @@ item replace entity @e[type=chest_minecart,tag=grave.2,tag=!marked,limit=1] cont
 item replace entity @e[type=chest_minecart,tag=grave.2,tag=!marked,limit=1] container.10 from entity @s armor.legs
 item replace entity @e[type=chest_minecart,tag=grave.2,tag=!marked,limit=1] container.11 from entity @s armor.chest
 item replace entity @e[type=chest_minecart,tag=grave.2,tag=!marked,limit=1] container.12 from entity @s armor.head
+
+
+
+tag @e[type=chest_minecart,tag=grave,tag=!marked,limit=1] add marked
