@@ -47,7 +47,7 @@ execute if entity @s[type=#zombies,predicate=entity/is/baby] run data merge enti
 
 
 ### Militia ###
-	execute if entity @s[type=husk,tag=militia.heavy] if entity @a[gamemode=!creative,gamemode=!spectator,distance=..64] run function entity:mob/militia/heavy/run
+	execute if entity @s[type=husk,tag=militia.heavy,predicate=entity/targeting/anything] run function entity:mob/militia/heavy/run
 
 ### SCP ###
 	execute if entity @s[tag=457] run function myst:scp/457/run
