@@ -5,12 +5,27 @@
             "rolls": 1,
             "entries": [
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:firework_star",
-                    "functions": [
+                    "type": "minecraft:alternatives",
+                    "children": [
                         {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{fromLootTable:\"item\",type:\"chlorine_gas_grenade\",HideFlags:32,Explosion:{Colors:[I;14602026,14602026,14602026,4312372]},display:{Name:'{\"italic\":\"false\",\"color\":\"white\",\"text\":\"Chlorine Gas Grenade\"}',Lore:['{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"○ Deploys chlorine gas upon impact with the ground\"}','{\"italic\":\"false\",\"color\":\"yellow\",\"text\":\"○ Duration: 15s\"}']}}"
+                            "type": "minecraft:loot_table",
+                            "name": "custom:raw_item/grenade/chlorine_gas",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_nbt",
+                                    "tag": "{SpawnedFromLootTable:true}"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "reference",
+                                    "name": "entity/has_tag/giving_item"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "name": "custom:raw_item/grenade/chlorine_gas"
                         }
                     ]
                 }

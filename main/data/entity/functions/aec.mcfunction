@@ -9,3 +9,12 @@ execute if entity @s[nbt={Effects:[{Id:26b,Amplifier:2b}]}] run function debug:e
 execute if entity @s[tag=cobweb,nbt={Age:199}] if block ~ ~ ~ cobweb run particle poof ~ ~.5 ~ .2 .2 .2 .1 10 force @a
 execute if entity @s[tag=cobweb,nbt={Age:199}] if block ~ ~ ~ cobweb run setblock ~ ~ ~ air
 execute if entity @s[tag=cobweb] at @s unless block ~ ~ ~ cobweb run kill @s
+
+
+
+################
+# Creative AECs
+################
+
+execute if entity @s[tag=setupElevator] if block ~ ~ ~ #air run function entity:aec/setup/elevator
+execute if entity @s[tag=elevator] run function entity:aec/elevator/run

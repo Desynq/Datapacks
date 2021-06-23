@@ -14,6 +14,9 @@ execute at @s[tag=rpg.bullet] run function coas:rpg/bullet
 
 
 
+#######
+# Myst
+#######
 
 execute if entity @s[tag=spawn.rift_scavenger] run function myst:mobs/rift_scavenger/summon
 execute if entity @s[tag=spawn.ralamari] run function myst:mobs/ralamari/summon

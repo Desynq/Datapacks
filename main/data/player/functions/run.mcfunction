@@ -12,10 +12,20 @@ execute if entity @s[predicate=effects/absorption,nbt={AbsorptionAmount:0.0f}] r
 ###############
 
 data merge storage inventory {baubles:[{},{}],SelectedItem:{},OffhandItem:{}}
-data modify storage inventory baubles[0] set from entity @s Inventory[{Slot:34b}]
-data modify storage inventory baubles[1] set from entity @s Inventory[{Slot:35b}]
-data modify storage inventory SelectedItem set from entity @s SelectedItem
-data modify storage inventory OffhandItem set from entity @s Inventory[{Slot:-106b}]
+
+execute in overworld run item replace block 0 0 1 container.0 from entity @s inventory.25
+execute in overworld run data modify storage inventory baubles[0] set from block 0 0 1 container.0
+
+execute in overworld run item replace block 0 0 1 container.0 from entity @s inventory.26
+execute in overworld run data modify storage inventory baubles[0] set from block 0 0 1 container.0
+
+
+
+execute in overworld run item replace block 0 0 1 container.0 from entity @s weapon.mainhand
+execute in overworld run data modify storage inventory SelectedItem set from block 0 0 1 container.0
+
+execute in overworld run item replace block 0 0 1 container.0 from entity @s weapon.offhand
+execute in overworld run data modify storage inventory OffhandItem set from block 0 0 1 container.0
 
 
 
@@ -24,6 +34,14 @@ data modify storage inventory OffhandItem set from entity @s Inventory[{Slot:-10
 ###########
 
 bossbar set custom_0 players @a
+
+
+
+########
+# Teams
+########
+
+execute if entity @s[team=] run team join survivor
 
 
 
@@ -66,6 +84,8 @@ bossbar set custom_0 players @a
 
 	scoreboard players enable @s code
 
+	scoreboard players enable @s arbitrary
+
 	scoreboard players enable @s spawn
 		execute if entity @s[predicate=dimension/overworld,gamemode=!adventure] unless score @s spawn matches 0 run tellraw @a [{"selector":"@s"},{"color":"yellow","text":" warped to spawn"}]
 		execute if entity @s[predicate=dimension/overworld,gamemode=!adventure] unless score @s spawn matches 0 run tp @s 0 64 0
@@ -81,6 +101,18 @@ bossbar set custom_0 players @a
 
 tag @s remove OnGround
 tag @s[nbt={OnGround:1b}] add OnGround
+
+
+
+execute if entity @s[tag=elevating] run effect clear @s levitation
+execute if entity @s[tag=elevating] run tag @s remove elevating
+
+execute if entity @s[tag=de-elevating] run effect clear @s slow_falling
+execute if entity @s[tag=de-elevating] run tag @s remove de-elevating
+
+
+
+
 
 
 execute if entity @s[scores={timeSinceDeath=20}] run function debug:stats

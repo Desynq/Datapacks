@@ -18,6 +18,10 @@ execute if entity @s[predicate=effects/luck_3] run function entity:custom/died_f
 effect clear @s[team=mob,predicate=effects/levitation_0] levitation
 
 
+#########
+# Blocks
+#########
+
 execute if entity @s[predicate=dimension/translocatable] if block ~ ~ ~ structure_void run kill @s
 
 

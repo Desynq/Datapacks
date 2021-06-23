@@ -1,4 +1,4 @@
-effect clear @s[predicate=effects/jump_boost_129,predicate=!equipment/mainhand/coas/minigun] jump_boost
+effect clear @s[predicate=effects/jump_boost_129,predicate=!equipment/mainhand/coas/gun/minigun] jump_boost
 
 execute if entity @s[predicate=equipment/holding/coas] run function coas:coas
 

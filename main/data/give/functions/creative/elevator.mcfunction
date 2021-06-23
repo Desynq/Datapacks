@@ -1,0 +1,1 @@
+give @s ghast_spawn_egg{EntityTag:{id:"minecraft:area_effect_cloud",Tags:["setupElevator"]},display:{Name:'{"italic":"false","color":"blue","text":"Elevator"}',Lore:['{"italic":"false","color":"gray","text":"○ Uses nearest arbitrary score for MaxY"}']}}

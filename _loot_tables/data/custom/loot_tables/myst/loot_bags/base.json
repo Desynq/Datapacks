@@ -63,8 +63,8 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"weight": 10,
-					"quality": 4,
+					"weight": 20,
+					"quality": 10,
 					"name": "minecraft:enchanted_book",
 					"functions": [
 						{
@@ -74,9 +74,8 @@
 					]
 				},
 				{
-					"type": "minecraft:item",
-					"weight": 40,
-					"name": "minecraft:air"
+					"type": "minecraft:empty",
+					"weight": 80
 				}
 			]
 		}

@@ -1,1 +1,0 @@
-give @s firework_star{type:chlorine_gas_grenade,Explosion:{Colors:[I;11250603,14602026]},HideFlags:32,display:{Name:'{"italic":"false","text":"Chlorine Gas Grenade"}',Lore:['{"italic":"false","color":"dark_aqua","text":"◘ Deploys chlorine gas upon impact with the ground"}','{"italic":"false","color":"gray","text":"◘ Duration: 15s"}']}}

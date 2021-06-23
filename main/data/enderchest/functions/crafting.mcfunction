@@ -30,7 +30,7 @@ execute if entity @s[scores={craftID=7,crafting=0}] run function give:7.62s_mag
 
 execute if entity @s[scores={craftID=8,crafting=0}] run function give:wrench
 
-execute if entity @s[scores={craftID=9,crafting=0}] run function give:assault_rifle
+execute if entity @s[scores={craftID=9,crafting=0}] run function give:gun/assault_rifle
 
 execute if entity @s[scores={craftID=10,crafting=0}] run function give:9mm
 execute if entity @s[scores={craftID=10,crafting=0}] run function give:9mm
@@ -54,15 +54,15 @@ execute if entity @s[scores={craftID=13,crafting=0}] run function give:bolt-acti
 execute if entity @s[scores={craftID=14,crafting=0}] run function give:9x39
 execute if entity @s[scores={craftID=14,crafting=0}] run function give:9x39
 
-execute if entity @s[scores={craftID=15,crafting=0}] run function give:materials/singlefire
+execute if entity @s[scores={craftID=15,crafting=0}] run function give:material/singlefire
 
-execute if entity @s[scores={craftID=16,crafting=0}] run function give:materials/burstfire
+execute if entity @s[scores={craftID=16,crafting=0}] run function give:material/burstfire
 
-execute if entity @s[scores={craftID=17,crafting=0}] run function give:materials/autofire
+execute if entity @s[scores={craftID=17,crafting=0}] run function give:material/autofire
 
 execute if entity @s[scores={craftID=18,crafting=0}] run function give:lmg
 
-execute if entity @s[scores={craftID=19,crafting=0}] run function give:guns/pump-action_shotgun
+execute if entity @s[scores={craftID=19,crafting=0}] run function give:gun/pump-action_shotgun
 
 
 
