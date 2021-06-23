@@ -10,5 +10,4 @@ execute if entity @s[nbt={inGround:1b,CustomPotionEffects:[{Id:26b,Amplifier:2b}
 execute if entity @s[nbt={inGround:1b,CustomPotionEffects:[{Id:26b,Amplifier:3b}]}] run function entity:arrow/he_supercharged_arrow
 
 
-kill @s[tag=,predicate=in_adventure_dim,nbt={inGround:1b}]
-execute if entity @s[tag=,nbt={inGround:1b,pickup:0b}] run kill @s
+execute if entity @s[tag=,nbt={inGround:true},nbt=!{pickup:true},nbt=!{inBlockState:{Name:"minecraft:target"}}] run kill @s
