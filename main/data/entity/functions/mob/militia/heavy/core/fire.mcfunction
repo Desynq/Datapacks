@@ -9,4 +9,3 @@ function coas:core/set_motion
 
 
 playsound entity.firework_rocket.large_blast master @a ~ ~ ~ 4 2
-execute at @s rotated ~ 0 run tp @s ^ ^ ^-0.05

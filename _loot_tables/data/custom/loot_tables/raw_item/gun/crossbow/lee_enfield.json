@@ -10,7 +10,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomModelData:1,type:\"lee_enfield\",Enchantments:[{id:\"minecraft:quick_charge\",lvl:3}],display:{Name:'{\"italic\":\"false\",\"color\":\"white\",\"text\":\"Lee Enfield\"}'}}"
+                            "tag": "{CustomModelData:1,type:\"lee_enfield\",Enchantments:[{id:\"minecraft:quick_charge\",lvl:3}],AttributeModifiers:[{AttributeName:\"minecraft:generic.attack_damage\",Amount:5,Operation:0,Slot:\"mainhand\",UUID:[I;1447664139,267054096,262590030,1514817288]},{AttributeName:\"minecraft:generic.attack_speed\",Amount:-0.6,Operation:2,Slot:\"mainhand\",UUID:[I;1573172873,711493451,461396510,1515460910]}],display:{Name:'{\"italic\":\"false\",\"color\":\"white\",\"text\":\"Lee Enfield\"}'}}"
                         }
                     ]
                 }

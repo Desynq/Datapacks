@@ -74,8 +74,6 @@ execute as @a[predicate=effects/luck_2] at @s run function entity:custom/died_fr
 execute as @a[predicate=effects/luck_3] at @s run function entity:custom/died_from_he_supercharged_arrow
 execute as @e[type=!player] at @s run function entity:run
 
-function gravestones:run
-
 
 
 ##########
