@@ -1,12 +1,15 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		" 1 ",
 		"121",
-		" 1 "
+		"232",
+		"121"
 	],
 	"key": {
 		"1": {
+			"item": "minecraft:amethyst_shard"
+		},
+		"2": {
 			"item": "minecraft:white_dye",
 			"data": {
 				"require": {
@@ -14,7 +17,7 @@
 				}
 			}
 		},
-		"2": {
+		"3": {
 			"item": "minecraft:white_dye",
 			"data": {
 				"require": {
@@ -30,7 +33,7 @@
 			"CustomModelData": 31,
 			"type": "mystium_ingot",
 			"display": {
-				"Name": "{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Mystium Ingot\"}"
+				"Name": "{\"italic\":\"false\",\"color\":\"#b39eb5\",\"text\":\"Mystium Ingot\"}"
 			}
 		}
 	},

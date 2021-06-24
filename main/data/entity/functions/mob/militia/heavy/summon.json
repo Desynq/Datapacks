@@ -1,0 +1,109 @@
+{
+    "Team": "militia",
+    "Tags": [
+        "temp",
+        "custom",
+        "tearling"
+    ],
+    "CustomName": "{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"Tearling\"}",
+
+    "CustomNameVisible": false,
+    "Glowing": false,
+    "Invulnerable": false,
+    "NoAI": false,
+    "NoGravity": false,
+    "PersistenceRequired": false,
+    "Silent": true,
+    "CanPickupLoot": false,
+    "IsBaby": false,
+
+    "DeathLootTable": "",
+
+    "Health": 30,
+    "Attributes": [
+        {
+            "Name": "minecraft:generic.armor",
+            "Base": 10
+        },
+        {
+            "Name": "minecraft:generic.armor_toughness",
+            "Base": 20
+        },
+        {
+            "Name": "minecraft:generic.attack_damage",
+            "Base": 25
+        },
+        {
+            "Name": "minecraft:generic.attack_knockback",
+            "Base": 0
+        },
+        {
+            "Name": "minecraft:generic.follow_range",
+            "Base": 64
+        },
+        {
+            "Name": "minecraft:generic.knockback_resistance",
+            "Base": 0
+        },
+        {
+            "Name": "minecraft:generic.max_health",
+            "Base": 30
+        },
+        {
+            "Name": "minecraft:generic.movement_speed",
+            "Base": 0.325
+        },
+        {
+            "Name": "minecraft:zombie.spawn_reinforcements",
+            "Base": 0
+        }
+    ],
+    "ActiveEffects": [
+        {
+            "Id": 12,
+            "Duration": 2147483647,
+            "ShowParticles": false
+        },
+        {
+            "Id": 14,
+            "Duration": 2147483647,
+            "ShowParticles": false
+        }
+    ],
+
+    "HandItems": [
+        {
+            "id": "minecraft:bow",
+            "Count": 1,
+            "tag": {
+                "Enchantments": [
+                    {
+                        "id": "minecraft:power",
+                        "lvl": 15
+                    }
+                ]
+            }
+        }
+    ],
+    "ArmorItems": [
+        {},
+        {},
+        {
+            "id": "minecraft:iron_chestplate",
+            "Count": 1,
+            "tag": {
+                "AttributeModifiers": [],
+                "display": {
+                    "Name": "\"Kevlar Vest\""
+                }
+            }
+        },
+        {
+            "id": "minecraft:player_head",
+            "Count": 1,
+            "tag": {
+                "SkullOwner": "MHF_Ghast"
+            }
+        }
+    ]
+}

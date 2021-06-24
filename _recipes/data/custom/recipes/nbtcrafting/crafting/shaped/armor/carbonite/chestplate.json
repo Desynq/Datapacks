@@ -28,14 +28,14 @@
 		"data": {
 			"CustomModelData": 3,
 			"type": "carbonite_chestplate",
-			"Unbreakable": 1,
+			"Unbreakable": true,
 			"display": {
 				"Name": "{\"italic\":\"false\",\"color\":\"#3D3643\",\"text\":\"Carbonite Chestplate\"}"
 			},
 			"Enchantments": [
 				{
 					"id": "minecraft:protection",
-					"lvl": 6
+					"lvl": 5
 				}
 			],
 			"AttributeModifiers": [
@@ -52,7 +52,7 @@
 				},
 				{
 					"AttributeName": "generic.armor_toughness",
-					"Amount": 3,
+					"Amount": 5,
 					"Slot": "chest",
 					"UUID": [
 						204557586,

@@ -101,7 +101,9 @@ function player:scoreboards/core/enable
 
 function player:pay/run
 
-function player:pln_show/run
+
+function player:scoreboards/triggers/show_pln/run
+function player:scoreboards/triggers/show_stats/run
 
 
 

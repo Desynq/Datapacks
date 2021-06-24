@@ -44,7 +44,7 @@
 				},
 				{
 					"AttributeName": "generic.armor",
-					"Amount": 3,
+					"Amount": 1,
 					"Slot": "feet",
 					"UUID": [
 						918491581,

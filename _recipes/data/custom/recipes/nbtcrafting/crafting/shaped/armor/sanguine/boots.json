@@ -18,7 +18,7 @@
 		"item": "minecraft:leather_boots",
 		"data": {
 			"type": "sanguine_boots",
-			"raceLocked": 1,
+			"raceLocked": true,
 			"Races": [
 				"bloodborne"
 			],
@@ -34,6 +34,18 @@
 				}
 			],
 			"AttributeModifiers": [
+				{
+					"AttributeName": "minecraft:generic.armor",
+					"Amount": 3,
+					"Operation": 0,
+					"Slot": "feet",
+					"UUID": [
+						953649962,
+						1255789942,
+						357080320,
+						1242437452
+					]
+				},
 				{
 					"AttributeName": "generic.attack_damage",
 					"Amount": 0.125,

@@ -19,7 +19,7 @@
 		"item": "minecraft:leather_leggings",
 		"data": {
 			"type": "sanguine_leggings",
-			"raceLocked": 1,
+			"raceLocked": true,
 			"Races": [
 				"bloodborne"
 			],
@@ -35,6 +35,18 @@
 				}
 			],
 			"AttributeModifiers": [
+				{
+					"AttributeName": "minecraft:generic.armor",
+					"Amount": 6,
+					"Operation": 0,
+					"Slot": "legs",
+					"UUID": [
+						841314713,
+						2039109715,
+						443913182,
+						2011254942
+					]
+				},
 				{
 					"AttributeName": "generic.attack_damage",
 					"Amount": 0.125,

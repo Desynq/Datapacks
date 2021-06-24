@@ -39,7 +39,7 @@
 				},
 				{
 					"AttributeName": "generic.armor",
-					"Amount": 8,
+					"Amount": 5,
 					"Slot": "chest",
 					"UUID": [
 						481698,

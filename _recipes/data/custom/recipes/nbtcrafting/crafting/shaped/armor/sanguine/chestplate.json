@@ -19,7 +19,7 @@
 		"item": "minecraft:leather_chestplate",
 		"data": {
 			"type": "sanguine_chestplate",
-			"raceLocked": 1,
+			"raceLocked": true,
 			"Races": [
 				"bloodborne"
 			],
@@ -35,6 +35,18 @@
 				}
 			],
 			"AttributeModifiers": [
+				{
+					"AttributeName": "minecraft:generic.armor",
+					"Amount": 8,
+					"Operation": 0,
+					"Slot": "chest",
+					"UUID": [
+						454135880,
+						1876148490,
+						1347074589,
+						380266904
+					]
+				},
 				{
 					"AttributeName": "generic.attack_damage",
 					"Amount": 0.125,

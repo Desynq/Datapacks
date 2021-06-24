@@ -25,13 +25,13 @@
 			"Enchantments": [
 				{
 					"id": "minecraft:protection",
-					"lvl": 7
+					"lvl": 5
 				}
 			],
 			"AttributeModifiers": [
 				{
 					"AttributeName": "generic.armor",
-					"Amount": 3,
+					"Amount": 6,
 					"Slot": "head",
 					"UUID": [
 						384759253,
@@ -42,7 +42,7 @@
 				},
 				{
 					"AttributeName": "generic.armor_toughness",
-					"Amount": 3,
+					"Amount": 5,
 					"Slot": "head",
 					"UUID": [
 						789885084,

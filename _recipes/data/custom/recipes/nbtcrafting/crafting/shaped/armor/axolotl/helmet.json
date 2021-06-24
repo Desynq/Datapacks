@@ -46,7 +46,7 @@
 				},
 				{
 					"AttributeName": "generic.armor",
-					"Amount": 3,
+					"Amount": 2,
 					"Slot": "head",
 					"UUID": [
 						518915,
