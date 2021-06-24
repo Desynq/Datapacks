@@ -7,7 +7,7 @@ execute unless score @s stat.damage matches 100.. if entity @s[scores={ply.lvl_l
 
 execute unless score @s stat.health matches 100.. if entity @s[predicate=!race/bloodborne,scores={ply.lvl_left=1..},nbt={Inventory:[{tag:{type:stat_health}}]}] run function enderchest:stats/health
 
-execute unless score @s stat.swing matches 100.. if entity @s[predicate=!race/bloodborne,predicate=!race/arthropod,scores={ply.lvl_left=1..},nbt={Inventory:[{tag:{type:stat_swing}}]}] run function enderchest:stats/swing
+execute unless score @s stat.swing matches 100.. if entity @s[predicate=!race/bloodborne,scores={ply.lvl_left=1..},nbt={Inventory:[{tag:{type:stat_swing}}]}] run function enderchest:stats/swing
 
 
 execute unless score @s stat.speed matches 50.. if entity @s[scores={ply.lvl_left=1..},nbt={Inventory:[{tag:{type:stat_speed}}]}] run function enderchest:stats/speed

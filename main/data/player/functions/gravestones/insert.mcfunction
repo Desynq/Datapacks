@@ -44,4 +44,4 @@ item replace entity @e[type=chest_minecart,tag=grave.2,tag=!marked,limit=1] cont
 
 
 
-tag @e[type=chest_minecart,tag=grave,tag=!marked,limit=1] add marked
+tag @e[type=chest_minecart,tag=grave,tag=!marked] add marked

@@ -7,9 +7,9 @@
 
 #attack speed
 	execute if entity @s[predicate=!race/parasite,predicate=!race/bloodborne,predicate=!race/arthropod] run function enderchest:replaceitem/section_1/default/2
+	execute if entity @s[predicate=race/arthropod] run function enderchest:replaceitem/section_1/arthropod/2
 
 	execute if entity @s[predicate=race/bloodborne] run function enderchest:replaceitem/section_1/locked/2
-	execute if entity @s[predicate=race/arthropod] run function enderchest:replaceitem/section_1/locked/2
 
 #max health
 	execute if entity @s[predicate=!race/parasite,predicate=!race/sludge,predicate=!race/bloodborne] run function enderchest:replaceitem/section_1/default/3

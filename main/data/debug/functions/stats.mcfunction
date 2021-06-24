@@ -15,7 +15,10 @@ execute if predicate race/parasite unless score ran temp matches 1 run function 
 
 
 function debug:stats/damage
-function debug:stats/swing
+
+
+execute unless predicate race/arthropod run function debug:stats/swing
+execute if predicate race/arthropod run function debug:stats/swing_arthropod
 
 execute unless predicate race/sludge run function debug:stats/health
 execute if predicate race/sludge run function debug:stats/health_sludge
