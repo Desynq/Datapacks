@@ -1,6 +1,7 @@
-function coas:core/get_data/offhand
-function coas:guns/glock/reload/loop
-playsound item.armor.equip_iron master @a
+execute in overworld run item replace block 0 0 1 container.0 from entity @s weapon.offhand
 
-execute in overworld run loot replace entity @s weapon.offhand 1 mine 0 0 1 air{drop_contents:true}
+function coas:guns/glock/reload/loop
+execute in overworld run item replace entity @s weapon.offhand from block 0 0 1 container.0
+
+playsound item.armor.equip_iron master @a
 scoreboard players set @s reload 0

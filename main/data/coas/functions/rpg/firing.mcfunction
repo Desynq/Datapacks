@@ -5,7 +5,7 @@ scoreboard players operation @e[tag=rpg.bullet,sort=nearest,limit=1] ent.list = 
 execute as @e[tag=rpg.bullet,distance=..1] run tp ~ ~.8 ~
 
 playsound block.anvil.land voice @a ~ ~ ~ 4
-tp @s[nbt=!{RootVehicle:{}},tag=!proning] ~ ~ ~ ~ ~-30
+tp @s[predicate=!entity/riding/anything,tag=!proning] ~ ~ ~ ~ ~-30
 playsound item.crossbow.loading_end master @a
 
 scoreboard players remove @s a.rpg 1

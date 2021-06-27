@@ -5,7 +5,7 @@
 			"entries": [
 				{
 					"type": "minecraft:loot_table",
-					"name": "custom:myst/loot_bags/base"
+					"name": "custom:loot_bag/myst/base"
 				}
 			]
 		},
@@ -45,16 +45,13 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{type:\"gelatin_shield\",raceLocked:1b,Races:[\"sludge\"],display:{Name:'{\"italic\":\"false\",\"color\":\"dark_green\",\"text\":\"Gelatin Shield\"}',Lore:['{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"○ Deflects damage to mobs within 3 blocks\"}','{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"○ Instant Damage II for every blocked hit\"}','{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"○ Sludge Only\"}']}}"
+							"tag": "{type:\"gelatin_shield\",raceLocked:true,Races:[\"sludge\"],display:{Name:'{\"italic\":\"false\",\"color\":\"dark_green\",\"text\":\"Gelatin Shield\"}',Lore:['{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"○ Deflects damage to mobs within 3 blocks\"}','{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"○ Instant Damage II for every blocked hit\"}','{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"○ Sludge Only\"}']}}"
 						}
 					],
 					"conditions": [
 						{
-							"condition": "minecraft:entity_scores",
-							"entity": "this",
-							"scores": {
-								"race": 3
-							}
+							"condition": "reference",
+							"name": "race/sludge"
 						}
 					]
 				}

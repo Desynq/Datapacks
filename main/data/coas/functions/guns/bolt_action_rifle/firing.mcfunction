@@ -13,8 +13,8 @@ playsound entity.firework_rocket.large_blast master @a[distance=0..] ~ ~ ~ 4
 
 function coas:guns/bolt_action_rifle/cooldown
 
-execute at @s run tp @s[tag=!proning,nbt=!{RootVehicle:{}},scores={sneak=0}] ~ ~ ~ ~ ~-30
-execute at @s run tp @s[tag=!proning,nbt=!{RootVehicle:{}},scores={sneak=1}] ~ ~ ~ ~ ~-15
+execute at @s run tp @s[tag=!proning,predicate=!entity/riding/anything,scores={sneak=0}] ~ ~ ~ ~ ~-30
+execute at @s run tp @s[tag=!proning,predicate=!entity/riding/anything,scores={sneak=1}] ~ ~ ~ ~ ~-15
 
 
 

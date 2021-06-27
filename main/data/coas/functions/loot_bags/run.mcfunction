@@ -4,19 +4,19 @@ execute store result score bag_id temp run data get storage inventory SelectedIt
 
 
 
-execute if score bag_id temp matches 1 run loot spawn ~ ~ ~ loot custom:loot_bag/stage_1
+execute if score bag_id temp matches 1 run loot spawn ~ ~ ~ loot custom:loot_bag/myst/stage_1
 
-execute if score bag_id temp matches 2 run loot spawn ~ ~ ~ loot custom:loot_bag/stage_2
+execute if score bag_id temp matches 2 run loot spawn ~ ~ ~ loot custom:loot_bag/myst/stage_2
 
-execute if score bag_id temp matches 3 run loot spawn ~ ~ ~ loot custom:loot_bag/stage_3
+execute if score bag_id temp matches 3 run loot spawn ~ ~ ~ loot custom:loot_bag/myst/stage_3
 
-execute if score bag_id temp matches 4 run loot spawn ~ ~ ~ loot custom:loot_bag/stage_4
+execute if score bag_id temp matches 4 run loot spawn ~ ~ ~ loot custom:loot_bag/myst/stage_4
 
-execute if score bag_id temp matches 5 run loot spawn ~ ~ ~ loot custom:loot_bag/stage_5
+execute if score bag_id temp matches 5 run loot spawn ~ ~ ~ loot custom:loot_bag/myst/stage_5
 
 
 
-execute if score bag_id temp matches 100 run loot spawn ~ ~ ~ loot custom:loot_bag/soup_0
+execute if score bag_id temp matches 100 run loot spawn ~ ~ ~ loot custom:loot_bag/soup/stage_0
 
 
 

@@ -10,15 +10,7 @@
 #execute as @a[predicate=dimension/cmp,tag=!cmp,name=!Desynq,name=!sooupe,name=!Starging] in overworld run tp 0 64 0
 
 
-
-execute as @a[scores={damage=1..},nbt={Attributes:[{Modifiers:[{Name:"random_crit"}]}]}] at @s run playsound entity.ender_dragon.hurt master @s ~ ~ ~ 2147483647 2
-execute as @a run attribute @s generic.attack_damage modifier remove 0-0-0-0-0
-execute as @a run attribute @s generic.luck modifier remove 0-0-0-0-1
-execute as @a run attribute @s generic.luck modifier remove 0-0-0-0-2
-
-tag @a[tag=zapped] remove zapped
-scoreboard players reset @a[scores={diedFrom=1..}] diedFrom
-scoreboard players set @a insulation 0
+execute as @a at @s run function debug:init/player
 
 
 
@@ -85,7 +77,7 @@ execute as @a[advancements={debug/inventory_changed=true},nbt={Inventory:[{tag:{
 
 
 kill @e[type=#arrows,tag=bullet,nbt={inGround:true}]
-kill @e[type=area_effect_cloud,tag=RootVehicle,nbt=!{Passengers:[{}]}]
+kill @e[type=area_effect_cloud,tag=RootVehicle,predicate=entity/ridden_by/anything]
 
 kill @e[type=item,nbt={Item:{tag:{Tags:["clear"]}}}]
 kill @e[type=item,nbt={Item:{tag:{Tags:["buyable"]}}}]

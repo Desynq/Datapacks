@@ -4,7 +4,7 @@ summon armor_stand ^ ^.8 ^ {Small:1,Marker:1,Invisible:1,ArmorItems:[{},{},{},{i
 execute positioned ^ ^.8 ^ as @e[tag=railgun_bullet,distance=..1] run tp @s ^ ^ ^ ~ ~
 
 playsound block.anvil.land voice @a ~ ~ ~ 4
-tp @s[nbt=!{RootVehicle:{}},tag=!proning] ~ ~ ~ ~ ~-30
+tp @s[predicate=!entity/riding/anything,tag=!proning] ~ ~ ~ ~ ~-30
 summon item ^-.5 ^1 ^.5 {Invulnerable:1,PickupDelay:32767,Item:{id:minecart,Count:1},Tags:["railgun_casing"]}
 playsound item.crossbow.loading_end master @a
 scoreboard players remove @s[scores={a.rg=1..}] a.rg 1

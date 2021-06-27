@@ -2,7 +2,35 @@
     "",
     {
         "color": "dark_red",
-        "text": "🗡"
+        "text": "❤"
+    },
+    {
+        "underlined": "true",
+        "bold": "true",
+        "color": "dark_red",
+        "score": {
+            "name": "@s",
+            "objective": "player.hp"
+        }
+    },
+    {
+        "underlined": "true",
+        "bold": "true",
+        "color": "dark_red",
+        "text": "/"
+    },
+    {
+        "underlined": "true",
+        "bold": "true",
+        "color": "dark_red",
+        "score": {
+            "name": "@s",
+            "objective": "ply.max_hp"
+        }
+    },
+    {
+        "color": "dark_red",
+        "text": " | 🗡"
     },
     {
         "underlined": "true",

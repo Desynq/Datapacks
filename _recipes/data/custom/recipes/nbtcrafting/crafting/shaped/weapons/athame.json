@@ -55,7 +55,7 @@
                 },
                 {
                     "AttributeName": "minecraft:generic.max_health",
-                    "Amount": -0.2,
+                    "Amount": -0.25,
                     "Operation": 2,
                     "Slot": "mainhand",
                     "UUID": [

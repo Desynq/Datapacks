@@ -29,17 +29,17 @@ data merge storage inventory {baubles:[{},{}],SelectedItem:{},OffhandItem:{}}
 
 
 execute in overworld run item replace block 0 0 1 container.0 from entity @s inventory.25
-execute in overworld run data modify storage inventory baubles[0] set from block 0 0 1 container.0
+execute in overworld run data modify storage inventory baubles[0] set from block 0 0 1 Items[{Slot:0b}]
 
 execute in overworld run item replace block 0 0 1 container.0 from entity @s inventory.26
-execute in overworld run data modify storage inventory baubles[1] set from block 0 0 1 container.0
+execute in overworld run data modify storage inventory baubles[1] set from block 0 0 1 Items[{Slot:0b}]
 
 
 execute in overworld run item replace block 0 0 1 container.0 from entity @s weapon.mainhand
-execute in overworld run data modify storage inventory SelectedItem set from block 0 0 1 container.0
+execute in overworld run data modify storage inventory SelectedItem set from block 0 0 1 Items[{Slot:0b}]
 
 execute in overworld run item replace block 0 0 1 container.0 from entity @s weapon.offhand
-execute in overworld run data modify storage inventory OffhandItem set from block 0 0 1 container.0
+execute in overworld run data modify storage inventory OffhandItem set from block 0 0 1 Items[{Slot:0b}]
 
 
 ###########
@@ -120,6 +120,7 @@ scoreboard players enable @s code
 
 
 scoreboard players enable @s arbitrary
+scoreboard players enable @s arbitrary2
 
 
 ## KYS

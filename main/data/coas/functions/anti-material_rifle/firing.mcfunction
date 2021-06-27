@@ -8,7 +8,7 @@ playsound entity.firework_rocket.large_blast master @a ~ ~ ~ 4 .5
 summon item ^-.5 ^1 ^ {Invulnerable:1,PickupDelay:32767,Item:{id:carrot_on_a_stick,Count:1,tag:{CustomModelData:2100}},Tags:["amr_casing"]}
 playsound item.crossbow.loading_end master @a
 
-tp @s[scores={sneak=0},nbt=!{RootVehicle:{}},tag=!proning] ~ ~ ~ ~ ~-30
+tp @s[scores={sneak=0},predicate=!entity/riding/anything,tag=!proning] ~ ~ ~ ~ ~-30
 
 
 

@@ -41,15 +41,8 @@
                     ],
                     "conditions": [
                         {
-                            "condition": "minecraft:entity_scores",
-                            "entity": "killer_player",
-                            "scores": {
-                                "ply.moonPhase": 0,
-                                "ply.daytime": {
-                                    "min": 13000,
-                                    "max": 23000
-                                }
-                            }
+                            "condition": "minecraft:reference",
+                            "name": "world/full_moon"
                         },
                         {
                             "condition": "minecraft:random_chance",

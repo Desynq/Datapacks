@@ -14,7 +14,7 @@ tag @e[tag=m14.bullet,tag=!marked] add marked
 
 playsound entity.iron_golem.repair master @a ~ ~ ~ 4 2
 
-tp @s[tag=!proning,nbt=!{RootVehicle:{}}] ~ ~ ~ ~ ~-10
+tp @s[tag=!proning,predicate=!entity/riding/anything] ~ ~ ~ ~ ~-10
 scoreboard players remove @s a.m14 1
 
 scoreboard players add @s d.m14 1

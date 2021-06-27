@@ -1,9 +1,8 @@
 execute positioned ~ ~1.8 ~ run function entity:armor_stand/summon/muzzle_flash
 summon area_effect_cloud ^ ^ ^50 {Tags:["bullet.marker"],Radius:0}
 
-summon arrow ~ ~1.75 ~ {Tags:["bullet","ar.bullet"],SoundEvent:block.anvil.break,damage:3,Color:-1,Team:Militia}
+summon arrow ~ ~1.8 ~ {Tags:["bullet","ar.bullet"],CustomName:'"[λ] Heavy Infantry"',SoundEvent:block.anvil.break,damage:3,Color:-1,Team:Militia}
 
-data modify entity @e[type=arrow,tag=bullet,sort=nearest,limit=1,tag=!marked] Owner set from entity @s UUID
 function coas:core/set_motion
 
 

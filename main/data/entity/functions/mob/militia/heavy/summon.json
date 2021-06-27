@@ -3,23 +3,24 @@
     "Tags": [
         "temp",
         "custom",
-        "tearling"
+        "boss",
+        "militia.heavy"
     ],
-    "CustomName": "{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"Tearling\"}",
+    "CustomName": "{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"Heavy Infantry\"}",
 
-    "CustomNameVisible": false,
-    "Glowing": false,
+    "CustomNameVisible": true,
+    "Glowing": true,
     "Invulnerable": false,
     "NoAI": false,
     "NoGravity": false,
-    "PersistenceRequired": false,
-    "Silent": true,
+    "PersistenceRequired": true,
+    "Silent": false,
     "CanPickupLoot": false,
     "IsBaby": false,
 
-    "DeathLootTable": "",
+    "DeathLootTable": "custom:entity/militia/heavy",
 
-    "Health": 30,
+    "Health": 500,
     "Attributes": [
         {
             "Name": "minecraft:generic.armor",
@@ -31,7 +32,7 @@
         },
         {
             "Name": "minecraft:generic.attack_damage",
-            "Base": 25
+            "Base": 0
         },
         {
             "Name": "minecraft:generic.attack_knockback",
@@ -43,15 +44,15 @@
         },
         {
             "Name": "minecraft:generic.knockback_resistance",
-            "Base": 0
+            "Base": 1
         },
         {
             "Name": "minecraft:generic.max_health",
-            "Base": 30
+            "Base": 500
         },
         {
             "Name": "minecraft:generic.movement_speed",
-            "Base": 0.325
+            "Base": 0.3
         },
         {
             "Name": "minecraft:zombie.spawn_reinforcements",
@@ -59,29 +60,15 @@
         }
     ],
     "ActiveEffects": [
-        {
-            "Id": 12,
-            "Duration": 2147483647,
-            "ShowParticles": false
-        },
-        {
-            "Id": 14,
-            "Duration": 2147483647,
-            "ShowParticles": false
-        }
     ],
 
     "HandItems": [
         {
-            "id": "minecraft:bow",
+            "id": "minecraft:crossbow",
             "Count": 1,
             "tag": {
-                "Enchantments": [
-                    {
-                        "id": "minecraft:power",
-                        "lvl": 15
-                    }
-                ]
+                "CustomModelData": 6,
+                "Charged": true
             }
         }
     ],
@@ -93,16 +80,14 @@
             "Count": 1,
             "tag": {
                 "AttributeModifiers": [],
-                "display": {
-                    "Name": "\"Kevlar Vest\""
-                }
+                "CustomModelData": 1
             }
         },
         {
             "id": "minecraft:player_head",
             "Count": 1,
             "tag": {
-                "SkullOwner": "MHF_Ghast"
+                "SkullOwner": "MHF_Illager"
             }
         }
     ]

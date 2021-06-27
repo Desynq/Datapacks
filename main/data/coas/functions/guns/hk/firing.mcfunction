@@ -20,16 +20,16 @@ scoreboard players add @s d.hk 1
 execute if score @s d.hk matches 900.. run function coas:guns/hk/break
 
 scoreboard players remove @s a.hk 1
-tp @s[tag=!proning,nbt=!{RootVehicle:{}},scores={f.hk=1}] ~ ~ ~ ~ ~-3
+tp @s[tag=!proning,predicate=!entity/riding/anything,scores={f.hk=1}] ~ ~ ~ ~ ~-3
 
 
 scoreboard players set limit rng 4
 function math:rng
 
-execute if score output rng matches 0 run tp @s[tag=!proning,nbt=!{RootVehicle:{}},scores={f.hk=2}] ~ ~ ~ ~1 ~-1.5
-execute if score output rng matches 1 run tp @s[tag=!proning,nbt=!{RootVehicle:{}},scores={f.hk=2}] ~ ~ ~ ~-1 ~-1.5
-execute if score output rng matches 2 run tp @s[tag=!proning,nbt=!{RootVehicle:{}},scores={f.hk=2}] ~ ~ ~ ~1 ~1.5
-execute if score output rng matches 3 run tp @s[tag=!proning,nbt=!{RootVehicle:{}},scores={f.hk=2}] ~ ~ ~ ~-1 ~1.5
+execute if score output rng matches 0 run tp @s[tag=!proning,predicate=!entity/riding/anything,scores={f.hk=2}] ~ ~ ~ ~1 ~-1.5
+execute if score output rng matches 1 run tp @s[tag=!proning,predicate=!entity/riding/anything,scores={f.hk=2}] ~ ~ ~ ~-1 ~-1.5
+execute if score output rng matches 2 run tp @s[tag=!proning,predicate=!entity/riding/anything,scores={f.hk=2}] ~ ~ ~ ~1 ~1.5
+execute if score output rng matches 3 run tp @s[tag=!proning,predicate=!entity/riding/anything,scores={f.hk=2}] ~ ~ ~ ~-1 ~1.5
 
 execute if score output rng matches 0 run tp @s[scores={f.hk=2,sneak=1}] ~ ~ ~ ~.5 ~-.75
 execute if score output rng matches 1 run tp @s[scores={f.hk=2,sneak=1}] ~ ~ ~ ~-.5 ~-.75

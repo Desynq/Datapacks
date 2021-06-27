@@ -10,7 +10,7 @@ playsound gun.m870.fire master @a ~ ~ ~ 4 2
 
 function coas:guns/remington/cooldown
 
-tp @s[tag=!proning,nbt=!{RootVehicle:{}},scores={sneak=0}] ~ ~ ~ ~ ~-15
+tp @s[tag=!proning,predicate=!entity/riding/anything,scores={sneak=0}] ~ ~ ~ ~ ~-15
 
 
 

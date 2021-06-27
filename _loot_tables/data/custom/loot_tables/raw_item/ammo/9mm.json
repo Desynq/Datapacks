@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:white_dye",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:4,type:\"9mm\",display:{Name:'{\"italic\":\"false\",\"color\":\"white\",\"text\":\"9mm\"}'}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

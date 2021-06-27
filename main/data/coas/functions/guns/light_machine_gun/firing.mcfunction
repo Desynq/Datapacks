@@ -9,12 +9,4 @@ playsound entity.firework_rocket.large_blast master @a ~ ~ ~ 4 1.5
 execute if entity @s[scores={sneak=1..}] run function coas:guns/light_machine_gun/cooldown
 scoreboard players add @s d.lmg 1
 
-#scoreboard players set limit rng 5
-#function math:rng
-#execute if score output rng matches 0 run tp @s[tag=!proning,nbt=!{RootVehicle:{}}] ~ ~ ~ ~ ~-5
-#execute if score output rng matches 1 run tp @s[tag=!proning,nbt=!{RootVehicle:{}}] ~ ~ ~ ~2 ~-5
-#execute if score output rng matches 2 run tp @s[tag=!proning,nbt=!{RootVehicle:{}}] ~ ~ ~ ~-2 ~-5
-#execute if score output rng matches 3 run tp @s[tag=!proning,nbt=!{RootVehicle:{}}] ~ ~ ~ ~3 ~
-#execute if score output rng matches 4 run tp @s[tag=!proning,nbt=!{RootVehicle:{}}] ~ ~ ~ ~-3 ~
-
 scoreboard players remove @s a.lmg 1

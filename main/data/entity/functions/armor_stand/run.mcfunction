@@ -1,3 +1,11 @@
+execute if entity @s[predicate=equipment/head/player_head/name/artillery_shell] run function entity:armor_stand/artillery/run
+
+
+
+#############
+# Raycasting
+#############
+
 execute at @s[tag=railgun_bullet] run function coas:railgun/bullet
 execute at @s[tag=railgun_bullet] run function coas:railgun/bullet
 execute at @s[tag=railgun_bullet] run function coas:railgun/bullet

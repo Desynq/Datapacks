@@ -24,6 +24,6 @@ execute if score @s d.hk matches 900.. run function coas:guns/hk/break
 
 clear @s firework_rocket 1
 
-tp @s[tag=!proning,nbt=!{RootVehicle:{}}] ~ ~ ~ ~ ~-15
+tp @s[tag=!proning,predicate=!entity/riding/anything] ~ ~ ~ ~ ~-15
 
 function coas:guns/hk/cooldown2
