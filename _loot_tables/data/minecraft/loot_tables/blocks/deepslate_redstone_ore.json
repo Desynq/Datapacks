@@ -2,14 +2,14 @@
     "type": "minecraft:block",
     "pools": [
         {
-            "rolls": 1.0,
-            "bonus_rolls": 0.0,
+            "rolls": 1,
             "entries": [
                 {
                     "type": "minecraft:alternatives",
                     "children": [
                         {
                             "type": "minecraft:item",
+                            "name": "minecraft:deepslate_redstone_ore",
                             "conditions": [
                                 {
                                     "condition": "minecraft:match_tool",
@@ -24,44 +24,46 @@
                                         ]
                                     }
                                 }
-                            ],
-                            "name": "minecraft:iron_ore"
+                            ]
                         },
                         {
                             "type": "minecraft:item",
+                            "name": "minecraft:white_dye",
                             "functions": [
                                 {
-                                    "function": "minecraft:apply_bonus",
-                                    "enchantment": "minecraft:fortune",
-                                    "formula": "minecraft:ore_drops"
-                                },
-                                {
-                                    "function": "minecraft:explosion_decay"
+                                    "function": "minecraft:set_nbt",
+                                    "tag": "{CustomModelData:25,type:\"mystite_ore\",display:{Name:'{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"Mystite Ore\"}'}}"
                                 }
                             ],
                             "conditions": [
                                 {
                                     "condition": "minecraft:match_tool",
                                     "predicate": {
-                                        "nbt": "{type:\"molten_pickaxe\"}"
+                                        "nbt": "{type:\"mystite_pickaxe\"}"
                                     }
+                                },
+                                {
+                                    "condition": "minecraft:random_chance",
+                                    "chance": 0.1
                                 }
-                            ],
-                            "name": "minecraft:iron_ingot"
+                            ]
                         },
                         {
                             "type": "minecraft:item",
+                            "name": "minecraft:redstone",
                             "functions": [
                                 {
-                                    "function": "minecraft:apply_bonus",
-                                    "enchantment": "minecraft:fortune",
-                                    "formula": "minecraft:ore_drops"
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "min": 4.0,
+                                        "max": 5.0,
+                                        "type": "minecraft:uniform"
+                                    }
                                 },
                                 {
                                     "function": "minecraft:explosion_decay"
                                 }
-                            ],
-                            "name": "minecraft:raw_iron"
+                            ]
                         }
                     ]
                 }

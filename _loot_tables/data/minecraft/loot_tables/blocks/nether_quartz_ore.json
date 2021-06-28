@@ -10,7 +10,7 @@
 						{
 							"condition": "minecraft:match_tool",
 							"predicate": {
-								"nbt": "{type:mystite_pickaxe}"
+								"nbt": "{type:\"mystite_pickaxe\"}"
 							}
 						}
 					],
@@ -18,7 +18,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:30,type:mystium_shard,display:{Name:'{\"italic\":\"false\",\"color\":\"light_purple\",\"text\":\"Mystium Shard\"}'}}"
+							"tag": "{CustomModelData:30,type:\"mystium_shard\",display:{Name:'{\"italic\":\"false\",\"color\":\"light_purple\",\"text\":\"Mystium Shard\"}'}}"
 						},
 						{
 							"function": "set_count",
@@ -40,7 +40,7 @@
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
-							"tag": "{CustomModelData:1,type:mystium_placeholder}"
+							"tag": "{CustomModelData:1,type:\"mystium_placeholder\"}"
 						}
 					]
 				}

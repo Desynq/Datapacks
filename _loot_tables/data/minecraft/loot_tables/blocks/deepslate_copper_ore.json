@@ -25,11 +25,20 @@
                                     }
                                 }
                             ],
-                            "name": "minecraft:iron_ore"
+                            "name": "minecraft:deepslate_copper_ore"
                         },
                         {
                             "type": "minecraft:item",
                             "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "type": "minecraft:uniform",
+                                        "min": 2.0,
+                                        "max": 3.0
+                                    },
+                                    "add": false
+                                },
                                 {
                                     "function": "minecraft:apply_bonus",
                                     "enchantment": "minecraft:fortune",
@@ -47,11 +56,20 @@
                                     }
                                 }
                             ],
-                            "name": "minecraft:iron_ingot"
+                            "name": "minecraft:copper_ingot"
                         },
                         {
                             "type": "minecraft:item",
                             "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "type": "minecraft:uniform",
+                                        "min": 2.0,
+                                        "max": 3.0
+                                    },
+                                    "add": false
+                                },
                                 {
                                     "function": "minecraft:apply_bonus",
                                     "enchantment": "minecraft:fortune",
@@ -61,7 +79,7 @@
                                     "function": "minecraft:explosion_decay"
                                 }
                             ],
-                            "name": "minecraft:raw_iron"
+                            "name": "minecraft:raw_copper"
                         }
                     ]
                 }
