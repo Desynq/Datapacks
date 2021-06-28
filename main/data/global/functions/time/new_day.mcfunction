@@ -1,7 +1,7 @@
 execute store result score day temp run time query day
 scoreboard players operation day temp %= 5 math
 
-execute if score day temp matches 0 run function global:events/resupply
+execute if score day temp matches 0 in overworld run function global:events/resupply
 
 
 execute store result score season timer run time query day
