@@ -1,6 +1,24 @@
-execute in overworld run summon marker 0 0 0 {Tags:["onLoad"]}
+########################
+# Scoreboard Objectives
+########################
 
-tellraw @a {"color":"yellow","text":"Datapack Reloaded!"}
+
+
+
+################
+# Compatability
+################
+
+execute store success score ran temp run datapack disable vanilla
+execute if score ran temp matches 1 run function debug:reorder
+
+
+
+##############
+# Other Stuff
+##############
+
+execute in overworld run summon marker 0 0 0 {Tags:["onLoad"]}
 
 
 
@@ -46,6 +64,10 @@ scoreboard players set c rng 12345
 
 
 
+##########
+# Cleanup
+##########
 
-## Cleanup
 kill @e[type=marker,tag=onLoad]
+
+tellraw @a {"color":"dark_purple","text":"Reloaded All Datapacks!"}
