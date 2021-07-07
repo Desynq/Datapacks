@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Default World",
+            "text": "World IX | The Default World",
 			"color": "white"
         },
         "description": {
-            "text": "Season 9",
+            "text": "A rather strange world. The Overworld, as the name implies, was set in a default world with normal terrain generation. Due to a larger world border, most players based far away from each other, leading to a disconnect in the playerbase. A clan, known as the \"Mafia Empire\" *snickers*, posed an initial threat but was soon realized to be a rather unstable and \"cowardly\" clan incapable of dealing with low-tier players.",
 			"color": "gray"
         },
         "icon": {

@@ -1,11 +1,11 @@
 {
     "display": {
         "title": {
-            "text": "Mt. Rift",
+            "text": "World 1 | Mt. Rift",
 			"color": "white"
         },
         "description": {
-            "text": "Season 1",
+            "text": "A default superflat world that had custom terrain and protected zones.",
 			"color": "gray"
         },
         "icon": {
