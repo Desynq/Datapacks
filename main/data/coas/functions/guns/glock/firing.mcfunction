@@ -1,4 +1,4 @@
-summon armor_stand ~ ~ ~ {Small:1,Invisible:1,Marker:1,ArmorItems:[{},{},{},{id:lantern,Count:1,tag:{CustomModelData:1}}],Tags:["muzzle_flash"]}
+execute anchored eyes run summon armor_stand ^ ^ ^ {Small:1,Invisible:1,Marker:1,ArmorItems:[{},{},{},{id:lantern,Count:1,tag:{CustomModelData:1}}],Tags:["muzzle_flash"]}
 
 
 execute anchored eyes run summon arrow ^ ^ ^ {Tags:["bullet","glock.bullet"],damage:4,Color:-1}
@@ -9,7 +9,7 @@ execute as @e[type=arrow,tag=bullet,tag=!marked] run function coas:core/set_moti
 
 
 
-playsound entity.firework_rocket.blast master @a[distance=0..] ~ ~ ~ 4 .5
+execute anchored eyes run playsound entity.firework_rocket.blast master @a[distance=0..] ^ ^ ^ 4 .5
 
 
 

@@ -9,6 +9,9 @@
 #gamemode adventure @a[predicate=dimension/cmp,tag=!cmp,name=!Desynq,name=!sooupe,name=!Starging]
 #execute as @a[predicate=dimension/cmp,tag=!cmp,name=!Desynq,name=!sooupe,name=!Starging] in overworld run tp 0 64 0
 
+execute in overworld run summon marker 0 0 0 {Tags:["rng"]}
+execute store result score x rng run data get entity @e[type=marker,tag=rng,limit=1] UUID[0] 1
+kill @e[type=marker,tag=rng]
 
 execute as @a at @s run function debug:init/player
 
