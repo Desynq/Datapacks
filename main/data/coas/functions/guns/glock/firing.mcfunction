@@ -1,15 +1,16 @@
 execute anchored eyes run summon armor_stand ^ ^ ^ {Small:1,Invisible:1,Marker:1,ArmorItems:[{},{},{},{id:lantern,Count:1,tag:{CustomModelData:1}}],Tags:["muzzle_flash"]}
 
 
+
 execute anchored eyes run summon arrow ^ ^ ^ {Tags:["bullet","glock.bullet"],damage:4,Color:-1}
 data modify entity @e[type=arrow,tag=bullet,sort=nearest,limit=1,tag=!marked] Owner set from entity @s UUID
 
-execute in overworld positioned 0.0 0.0 0.0 run summon area_effect_cloud ^ ^ ^5 {Tags:["bullet.marker"],Radius:0}
+execute in overworld positioned 0.0 0.0 0.0 run summon marker ^ ^ ^5 {Tags:["bullet.marker"]}
 execute as @e[type=arrow,tag=bullet,tag=!marked] run function coas:core/set_motion
 
 
 
-execute anchored eyes run playsound entity.firework_rocket.blast master @a[distance=0..] ^ ^ ^ 4 .5
+execute anchored eyes run playsound entity.firework_rocket.blast master @a[distance=0..] ^ ^ ^ 16 .5
 
 
 

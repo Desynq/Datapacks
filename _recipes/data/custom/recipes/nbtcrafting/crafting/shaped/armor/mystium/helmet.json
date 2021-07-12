@@ -31,7 +31,7 @@
 			"AttributeModifiers": [
 				{
 					"AttributeName": "generic.armor",
-					"Amount": 6,
+					"Amount": 3,
 					"Slot": "head",
 					"UUID": [
 						384759253,

@@ -5,11 +5,11 @@
 			"color": "dark_green"
         },
         "description": {
-            "text": "○ 2x Explosion is created when entropic shield breaks",
+            "text": "• 2x Explosion is created when entropic shield breaks",
 			"color": "gray"
         },
         "icon": {
-            "item": "tnt"
+            "item": "minecraft:flint"
         },
         "frame": "task",
         "show_toast": true,

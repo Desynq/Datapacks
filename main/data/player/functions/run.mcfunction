@@ -8,6 +8,7 @@ execute store result score @s HurtTime run data get entity @s HurtTime 1
 
 execute store result score @s regen_amp run data get entity @s ActiveEffects[{Id:10b}].Amplifier 1
 execute store result score @s hunger_amp run data get entity @s ActiveEffects[{Id:17b}].Amplifier 1
+execute store result score @s poison_amp run data get entity @s ActiveEffects[{Id:19b}].Amplifier 1
 
 
 
@@ -71,7 +72,7 @@ execute if entity @s[scores={damage_taken=1..}] run scoreboard players reset @s 
 execute unless entity @s[scores={damage_taken=1..}] run scoreboard players add @s timer.undamaged 1
 
 
-execute unless score @s ply.uuid matches ..-1 unless score @s ply.uuid matches 0.. store result score @s ply.uuid run data get entity @s UUID[0]
+execute unless score @s plyUUID matches -2147483648..2147483647 store result score @s plyUUID run data get entity @s UUID[0]
 execute unless entity @s[scores={list=1..}] run function player:scoreboards/uuid/list
 
 function player:scoreboards/core/tracking
@@ -130,7 +131,7 @@ scoreboard players enable @s kys
 
 scoreboard players enable @s spawn
 	execute if entity @s[predicate=dimension/overworld,gamemode=!adventure] unless score @s spawn matches 0 run tellraw @a [{"selector":"@s"},{"color":"yellow","text":" warped to spawn"}]
-	execute if entity @s[predicate=dimension/overworld,gamemode=!adventure] unless score @s spawn matches 0 run tp @s 0 64 0
+	execute if entity @s[predicate=dimension/overworld,gamemode=!adventure] unless score @s spawn matches 0 run tp @s 0 32 0
 	execute if entity @s[predicate=dimension/overworld,gamemode=adventure] unless score @s spawn matches 0 run tellraw @s {"color":"red","text":"[!] You cannot warp to spawn in Adventure Mode [!]"}
 	execute if entity @s[predicate=!dimension/overworld] unless score @s spawn matches 0 run tellraw @s {"color":"red","text":"[!] You must be in the overworld to warp to spawn [!]"}
 	execute unless score @s spawn matches 0 run scoreboard players set @s spawn 0
@@ -272,20 +273,25 @@ function actionbar:run
 
 
 
+#######################
 # Overworld Protection
-	execute if entity @s[tag=!adventure,gamemode=adventure] unless entity @s[predicate=!dimension/overworld,predicate=!dimension/pocket] run gamemode survival @s
-	tag @s[tag=adventure] remove adventure
-		tag @s[predicate=dimension/overworld,scores={x=-128..127,z=-128..127}] add adventure
-		tag @s[predicate=equipment/holding/shulker_box] add adventure
-	gamemode adventure @s[tag=adventure,gamemode=survival]
+#######################
+
+execute if entity @s[tag=!adventure,gamemode=adventure] unless entity @s[predicate=!dimension/overworld,predicate=!dimension/pocket] run gamemode survival @s
+tag @s[tag=adventure] remove adventure
+
+execute if entity @s[predicate=dimension/overworld,scores={x=-128..127,z=-128..127}] run tag @s add adventure
+execute if entity @s[predicate=equipment/adventure_only] run tag @s add adventure
+
+gamemode adventure @s[tag=adventure,gamemode=survival]
 
 
 
-####################
-# Pocket Dimensions
-####################
+############
+# Locations
+############
 
-#
+execute if entity @s[predicate=biome/wasteland] run function player:location/wasteland
 
 
 
@@ -320,15 +326,28 @@ execute if entity @s[name=!Desynq,predicate=!equipment/head/air] if entity @e[ty
 execute if entity @s[predicate=equipment/feet/frostwalker,predicate=!dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
 execute if entity @s[scores={x=-127..126,z=-127..126},predicate=equipment/feet/frostwalker,predicate=dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
 
+
+
+effect give @a[predicate=equipment/mainhand/ender_bow] slow_falling 1 0 true
+
+
+
 execute if entity @s[predicate=equipment/feet/soulwalker_boots] if block ~ ~ ~ water run effect give @s instant_damage 1 1 true
 
-execute if entity @s[predicate=equipment/mainhand/mystite_bow] run function player:weapons/mystite_bow/run
+
 
 effect give @s[predicate=equipment/chest/absorbing_chainmail] absorption 1 0 true
 effect give @s[predicate=race/sludge,predicate=equipment/chest/sticky_chestplate] absorption 1 1 true
 effect give @s[predicate=race/creep,predicate=equipment/chest/creeping_chestplate] absorption 1 0 true
 
+
+
 item replace entity @s[scores={u.totem=1..},predicate=equipment/offhand/supercharged_totem] weapon.mainhand with totem_of_undying
+
+
+
+execute if entity @s[predicate=dimension/overworld,scores={x=-128..127,z=-128..127},predicate=equipment/mainhand/wilderness_only] run item replace entity @s weapon.mainhand with air
+execute if entity @s[predicate=!dimension/overworld,predicate=equipment/mainhand/wilderness_only] run item replace entity @s weapon.mainhand with air
 
 
 
@@ -338,14 +357,6 @@ item replace entity @s[scores={u.totem=1..},predicate=equipment/offhand/supercha
 
 	execute if entity @s[tag=173] at @s run function myst:scp/173
 	execute if entity @s[tag=zephyr] at @s run function myst:scp/zephyr/run
-
-
-
-#################
-# Nuclear Winter
-#################
-
-#execute unless predicate clear_weather in overworld if blocks ~ ~1 ~ ~ 255 ~ ~ ~3 ~ masked run effect give @s[predicate=effects/hunger,distance=0..] hunger 5 1 true
 
 
 

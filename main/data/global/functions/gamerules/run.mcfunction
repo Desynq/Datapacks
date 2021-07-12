@@ -15,8 +15,8 @@ execute if score doMobSpawning gamerule matches 1 run gamerule doMobSpawning tru
 # doDaylightCycle
 ##################
 
-execute if score doDaylightCycle gamerules matches -1 unless entity @a run gamerule doDaylightCycle false
-execute if score doDaylightCycle gamerules matches -1 if entity @a run gamerule doDaylightCycle true
+execute if score doDaylightCycle gamerule matches -1 unless entity @a[name=!Desynq,name=!sooupe] run gamerule doDaylightCycle false
+execute if score doDaylightCycle gamerule matches -1 if entity @a[name=!Desynq,name=!sooupe] run gamerule doDaylightCycle true
 
 execute if score doDaylightCycle gamerule matches 0 run gamerule doDaylightCycle false
 execute if score doDaylightCycle gamerule matches 1 run gamerule doDaylightCycle true

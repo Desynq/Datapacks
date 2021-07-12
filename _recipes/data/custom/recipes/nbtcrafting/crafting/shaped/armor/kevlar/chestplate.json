@@ -29,11 +29,11 @@
 			"Enchantments": [
 				{
 					"id": "minecraft:projectile_protection",
-					"lvl": 5
+					"lvl": 4
 				},
 				{
 					"id": "minecraft:protection",
-					"lvl": 5
+					"lvl": 4
 				}
 			],
 			"AttributeModifiers": [
@@ -65,8 +65,13 @@
 			"display": {
 				"Name": "{\"italic\":\"false\",\"color\":\"white\",\"text\":\"Kevlar Vest\"}",
 				"Lore": [
-					"{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"○ Integrated shulker box\"}",
-					"{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"○ Prevents backstabs\"}"
+					"{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"════════════════\"}",
+					"{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"• Integrated shulker box\"}",
+					"{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"• Prevents backstabs\"}",
+					"{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"════════════════\"}",
+					"{\"italic\":\"false\",\"color\":\"yellow\",\"text\":\"• Vest -> Shulker: Hold sneak while in offhand then swap to mainhand\"}",
+					"{\"italic\":\"false\",\"color\":\"yellow\",\"text\":\"• Vest <- Shulker: Swap to offhand then back to mainhand\"}",
+					"{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"════════════════\"}"
 				]
 			}
 		}

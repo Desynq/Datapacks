@@ -22,6 +22,7 @@
             "CustomModelData": 4,
             "type": "athame",
             "Unbreakable": false,
+            "RepairCost": 32767,
             "Enchantments": [
                 {
                     "id": "minecraft:smite",
@@ -69,8 +70,12 @@
             "display": {
                 "Name": "{\"italic\":\"false\",\"color\":\"#953553\",\"text\":\"Athame\"}",
                 "Lore": [
-                    "{\"italic\":\"true\",\"color\":\"#953553\",\"text\":\"The consecrated sacrificial dagger yearns for blood... even yours...\"}",
-                    "{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"○ Cannot be made Unbreakable!\"}"
+                    "{\"italic\":\"true\",\"color\":\"#953553\",\"text\":\"The consecrated sacrificial dagger emanates such radiant energy\"}",
+                    "{\"italic\":\"true\",\"color\":\"#953553\",\"text\":\"that even your own soul trembles...\"}",
+                    "{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"════════════════\"}",
+                    "{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"✗ Cannot be made unbreakable\"}",
+                    "{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"✗ Cannot be enchanted nor repaired\"}",
+                    "{\"italic\":\"false\",\"color\":\"dark_gray\",\"text\":\"════════════════\"}"
                 ]
             }
         }

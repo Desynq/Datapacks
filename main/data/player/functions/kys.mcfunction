@@ -17,7 +17,7 @@ execute if score output rng matches 8 run tellraw @a [{"selector":"@s"},{"color"
 execute if score output rng matches 9 run tellraw @a [{"selector":"@s"},{"color":"white","text":" found the easy way out"}]
 execute if score output rng matches 10 run tellraw @a [{"selector":"@s"},{"color":"white","text":" died of cowardice"}]
 execute if score output rng matches 11 run tellraw @a [{"selector":"@s"},{"color":"white","text":" self destructed"}]
-execute if score output rng matches 12 run tellraw @a [{"selector":"@s"},{"color":"white","text":" was demonetised"}]
+execute if score output rng matches 12 run tellraw @a [{"selector":"@s"},{"color":"white","text":" ran into a curb"}]
 execute if score output rng matches 13 run tellraw @a [{"selector":"@s"},{"color":"white","text":" took a cyanide pill"}]
 execute if score output rng matches 14 run tellraw @a [{"selector":"@s"},{"color":"white","text":" couldn't handle not dying"}]
 execute if score output rng matches 15 run tellraw @a [{"selector":"@s"},{"color":"white","text":" couldn't find their way back home"}]

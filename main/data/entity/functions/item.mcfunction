@@ -34,7 +34,7 @@ execute if entity @s[predicate=entity/is/on_fire,nbt={Item:{id:"minecraft:poison
 # Spawner Pickup
 #################
 
-execute if entity @s[predicate=dimension/overworld,predicate=!biome/mushroom_fields,nbt={Item:{id:"minecraft:spawner"},OnGround:1b}] if data entity @s Thrower if block ~ ~ ~ air run function entity:item/spawners/place
+execute if entity @s[predicate=dimension/overworld,predicate=!biome/wasteland,nbt={Item:{id:"minecraft:spawner"},OnGround:true}] if data entity @s Thrower if block ~ ~ ~ air run function entity:item/spawners/place
 
 
 

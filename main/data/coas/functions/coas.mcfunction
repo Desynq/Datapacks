@@ -50,7 +50,7 @@ execute unless entity @s[predicate=!equipment/mainhand/coas/gun/semi-auto_rifle,
 execute unless entity @s[predicate=!equipment/mainhand/coas/gun/hk416,predicate=!equipment/offhand/coas/hk416] run function coas:guns/hk/run
 
 #pump-action
-execute unless entity @s[predicate=!equipment/mainhand/coas/gun/pump-action_shotgun,predicate=!equipment/offhand/coas/pump-action_shotgun] run function coas:guns/remington/run
+execute unless entity @s[predicate=!equipment/mainhand/coas/gun/pump-action_shotgun,predicate=!equipment/offhand/coas/pump-action_shotgun] run function coas:guns/pump-action_shotgun/run
 
 #vss
 execute unless entity @s[predicate=!equipment/mainhand/coas/gun/vss,predicate=!equipment/offhand/coas/vss] run function coas:guns/vss/run

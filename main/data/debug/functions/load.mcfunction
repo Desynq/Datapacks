@@ -41,7 +41,7 @@ gamerule maxCommandChainLength 1048576
 gamerule maxEntityCramming 16
 gamerule playersSleepingPercentage 50
 gamerule showDeathMessages true
-gamerule spawnRadius 32
+gamerule spawnRadius 1
 gamerule spectatorsGenerateChunks true
 gamerule universalAnger true
 

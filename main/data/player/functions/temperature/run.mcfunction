@@ -16,7 +16,7 @@ effect give @s[scores={temperature=..10}] mining_fatigue 1 1 true
 effect give @s[scores={temperature=..5}] weakness 1 1 true
 
 effect clear @s[scores={temperature=0}] absorption
-effect give @s[scores={temperature=0},predicate=!effects/poison] poison 5 0 true
+effect give @s[scores={temperature=0,poison_amp=..2}] poison 5 3 true
 
 
 

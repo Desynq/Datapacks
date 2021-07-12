@@ -7,7 +7,7 @@ execute as @e[type=marker,tag=amr.bullet] at @s run function coas:anti-material_
 
 
 
-execute anchored eyes run playsound entity.firework_rocket.large_blast master @a ^ ^ ^ 4 .5
+execute anchored eyes run playsound entity.firework_rocket.large_blast master @a[distance=0..] ^ ^ ^ 32 .5
 summon item ^-.5 ^1 ^ {Tags:["amr_casing"],Invulnerable:true,PickupDelay:32767,Item:{id:"minecraft:carrot_on_a_stick",Count:1,tag:{CustomModelData:2100}}}
 playsound item.crossbow.loading_end master @a
 

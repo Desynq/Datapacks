@@ -9,7 +9,7 @@
                     "children": [
                         {
                             "type": "minecraft:loot_table",
-                            "name": "custom:raw_item/gun/assault_rifle",
+                            "name": "custom:reference/gun/assault_rifle",
                             "functions": [
                                 {
                                     "function": "minecraft:set_nbt",
@@ -25,7 +25,7 @@
                         },
                         {
                             "type": "minecraft:loot_table",
-                            "name": "custom:raw_item/gun/assault_rifle"
+                            "name": "custom:reference/gun/assault_rifle"
                         }
                     ]
                 }

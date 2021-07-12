@@ -9,7 +9,7 @@
                     "children": [
                         {
                             "type": "minecraft:loot_table",
-                            "name": "custom:raw_item/",
+                            "name": "custom:reference/",
                             "functions": [
                                 {
                                     "function": "minecraft:set_nbt",
@@ -25,7 +25,7 @@
                         },
                         {
                             "type": "minecraft:loot_table",
-                            "name": "custom:raw_item/"
+                            "name": "custom:reference/"
                         }
                     ]
                 }

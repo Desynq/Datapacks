@@ -1,5 +1,5 @@
 summon armor_stand ~ ~1.75 ~ {Small:1,Invisible:1,Marker:1,ArmorItems:[{},{},{},{id:lantern,Count:1,tag:{CustomModelData:1}}],Tags:["muzzle_flash"]}
-summon area_effect_cloud ^ ^ ^100 {Tags:["bullet.marker"],Radius:0}
+summon marker ^ ^ ^100 {Tags:["bullet.marker"]}
 summon arrow ~ ~1.75 ~ {Tags:["bullet","minigun.bullet"],SoundEvent:block.stone.hit,damage:1,Color:-1}
 data modify entity @e[type=arrow,tag=bullet,sort=nearest,limit=1,tag=!marked] Owner set from entity @s UUID
 function coas:core/set_motion

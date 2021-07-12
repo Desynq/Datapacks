@@ -1,15 +1,15 @@
 {
     "display": {
         "title": {
-            "text": "[12] $25,000 | Condensed Entropy",
+            "text": "[12] $25,000 | Entropy II",
 			"color": "dark_green"
         },
         "description": {
-            "text": "○ Entropic shield is upgraded from Absorption V to Absorption X",
+            "text": "• Entropic shield is upgraded from Absorption V to Absorption X",
 			"color": "gray"
         },
         "icon": {
-            "item": "tnt"
+            "item": "minecraft:netherite_chestplate"
         },
         "frame": "task",
         "show_toast": true,

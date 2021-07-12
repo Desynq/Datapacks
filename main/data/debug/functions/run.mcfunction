@@ -39,7 +39,7 @@ scoreboard players add 600 tick 1
 ##############
 
 function global:run
-execute as @e[type=armor_stand] at @s run function entity:prerun
+execute as @e[type=!player] at @s run function entity:prerun
 execute as @a at @s run function player:run
 
 
@@ -64,10 +64,11 @@ execute if score 20 tick matches 20 as @a at @s run function debug:stats
 # Post-Runtime
 ###############
 
+execute as @e[type=!player] at @s run function entity:run
+
 execute as @a[predicate=effects/luck_1] at @s run function entity:custom/died_from_he_arrow
 execute as @a[predicate=effects/luck_2] at @s run function entity:custom/died_from_he_charged_arrow
 execute as @a[predicate=effects/luck_3] at @s run function entity:custom/died_from_he_supercharged_arrow
-execute as @e[type=!player] at @s run function entity:run
 
 
 

@@ -4,8 +4,8 @@ execute unless entity @s[scores={z.vss=0..}] run scoreboard players set @s z.vss
 
 execute if entity @s[scores={c.vss=1..}] at @s run function coas:guns/vss/cooldown
 
-execute unless entity @s[scores={d.vss=200..}] if entity @s[scores={u.coas=1..,c.vss=0,a.vss=1..,z.vss=5},predicate=equipment/mainhand/coas/vss] at @s run function coas:guns/vss/firing
-execute unless entity @s[scores={d.vss=200..}] if entity @s[scores={u.coas=1..,c.vss=0,a.vss=1..,z.vss=..4},predicate=equipment/mainhand/coas/vss] at @s run function coas:guns/vss/noscope
+execute if entity @s[scores={u.coas=1..,c.vss=0,a.vss=1..,z.vss=5},predicate=equipment/mainhand/coas/vss] at @s run function coas:guns/vss/firing
+execute if entity @s[scores={u.coas=1..,c.vss=0,a.vss=1..,z.vss=..4},predicate=equipment/mainhand/coas/vss] at @s run function coas:guns/vss/noscope
 
 
 execute if entity @s[scores={u.coas=1..,sneak=1..,m.vss=1..},predicate=equipment/offhand/coas/vss] unless entity @s[predicate=equipment/mainhand/air,predicate=!equipment/mainhand/mag/20rnd_9x39] at @s run function coas:guns/vss/unload

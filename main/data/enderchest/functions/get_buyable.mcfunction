@@ -1,3 +1,5 @@
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:"iron_ingot"}}]},scores={slime=20..}] run function enderchest:buys/iron_ingot
+
 execute if entity @s[nbt={Inventory:[{tag:{s_btype:diamond}}]},scores={slime=100..}] run function enderchest:buys/diamond
 
 execute if entity @s[nbt={Inventory:[{tag:{s_btype:coal}}]},scores={slime=5..}] run function enderchest:buys/coal

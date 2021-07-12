@@ -24,11 +24,7 @@ item replace entity @s enderchest.6 with red_stained_glass_pane{Tags:["buyable"]
 item replace entity @s enderchest.7 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.8 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 
-
-item replace entity @s[advancements={blueprints/ammo/7.62s/30rnd_mag=true}] enderchest.9 with carrot_on_a_stick{CustomModelData:100,craftID:7,Tags:["craftable"],display:{Name:'{"italic":"false","text":"7.62s Magazine"}',Lore:['{"italic":"false","color":"yellow","text":"1x | 5s"}','{"italic":"false","color":"blue","text":"◘ 2 Steel Ingots"}','{"italic":"false","color":"blue","text":"◘ 1 Chain"}']}}
-item replace entity @s[advancements={blueprints/ammo/7.62s/30rnd_mag=false}] enderchest.9 with filled_map{Tags:["buyable"],display:{Name:'{"italic":"false","text":"7.62s Magazine"}',Lore:['{"italic":"false","color":"red","text":"Blueprint Required!"}']}}
-
-
+item replace entity @s enderchest.9 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.10 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.11 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.12 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
@@ -37,6 +33,7 @@ item replace entity @s enderchest.14 with red_stained_glass_pane{Tags:["buyable"
 item replace entity @s enderchest.15 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.16 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.17 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
+
 item replace entity @s enderchest.18 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.19 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.20 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}

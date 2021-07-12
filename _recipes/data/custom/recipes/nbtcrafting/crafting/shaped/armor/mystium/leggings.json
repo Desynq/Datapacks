@@ -32,7 +32,7 @@
 			"AttributeModifiers": [
 				{
 					"AttributeName": "generic.armor",
-					"Amount": 12,
+					"Amount": 6,
 					"Slot": "legs",
 					"UUID": [
 						581848984,

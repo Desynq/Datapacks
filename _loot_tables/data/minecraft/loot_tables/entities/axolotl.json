@@ -1,0 +1,14 @@
+{
+    "type": "entity",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:loot_table",
+                    "name": "custom:reference/material/axolotl_gills"
+                }
+            ]
+        }
+    ]
+}

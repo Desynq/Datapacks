@@ -1,14 +1,13 @@
 item replace entity @s enderchest.0 with carrot_on_a_stick{CustomModelData:39,craftID:1,Tags:["craftable"],display:{Name:'{"italic":"false","text":"[1] Drywood"}',Lore:['{"italic":"false","color":"yellow","text":"3s"}','{"italic":"false","color":"blue","text":"◘ 9 Sticks"}']}}
-item replace entity @s enderchest.1 with potion{CustomPotionColor:11839862,HideFlags:32,craftID:2,Tags:["craftable"],display:{Name:'{"italic":"false","text":"[1] Trinitrotoluene"}',Lore:['{"italic":"false","color":"yellow","text":"10s"}','{"italic":"false","color":"blue","text":"◘ 1 Glass Bottle"}','{"italic":"false","color":"blue","text":"◘ 4 Gunpowder"}','{"italic":"false","color":"blue","text":"◘ 4 Sand"}']}}
-item replace entity @s enderchest.2 with white_dye{CustomModelData:21,craftID:3,Tags:["craftable"],display:{Name:'{"italic":"false","text":"[1] Tape"}',Lore:['{"italic":"false","color":"yellow","text":"5s"}','{"italic":"false","color":"blue","text":"◘ 1 Stick"}','{"italic":"false","color":"blue","text":"◘ 4 Paper"}','{"italic":"false","color":"blue","text":"◘ 2 Slime Balls"}']}}
+item replace entity @s enderchest.1 with white_dye{CustomModelData:21,craftID:3,Tags:["craftable"],display:{Name:'{"italic":"false","text":"[1] Tape"}',Lore:['{"italic":"false","color":"yellow","text":"5s"}','{"italic":"false","color":"blue","text":"◘ 1 Stick"}','{"italic":"false","color":"blue","text":"◘ 4 Paper"}','{"italic":"false","color":"blue","text":"◘ 2 Slime Balls"}']}}
+
+item replace entity @s enderchest.2 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.3 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.4 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.5 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.6 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.7 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
-
-item replace entity @s enderchest.8 with white_dye{CustomModelData:23,craftID:11,Tags:["craftable"],display:{Name:'{"italic":"false","text":"4x Scope"}',Lore:['{"italic":"false","color":"yellow","text":"1x | 10s"}','{"italic":"false","color":"blue","text":"◘ 8 Glass Panes"}','{"italic":"false","color":"blue","text":"◘ 4 Iron Ingots"}','{"italic":"false","color":"blue","text":"◘ 2 Black Dye"}']}}
-
+item replace entity @s enderchest.8 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 
 
 item replace entity @s[advancements={blueprints/materials/singlefire=true}] enderchest.9 with carrot_on_a_stick{CustomModelData:3000,craftID:15,Tags:["craftable"],display:{Name:'{"italic":"false","text":"Semi-Auto Firing Mechanism"}',Lore:['{"italic":"false","color":"yellow","text":"1x | 5s"}','{"italic":"false","color":"blue","text":"◘ 1 Piston"}','{"italic":"false","color":"blue","text":"◘ 1 Lever"}']}}

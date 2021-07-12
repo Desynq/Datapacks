@@ -1,31 +1,44 @@
-summon area_effect_cloud ~ ~ ~ {Tags:["gun.pos"],Radius:0,Duration:2147483647}
-execute as @e[tag=gun.pos] run tp @p
+scoreboard players set 314 math 314
 
 
 
-scoreboard players set limit rng 7
+###############
+# Calculations
+###############
+
+scoreboard players set limit rng 30
+scoreboard players operation limit rng *= 314 math
 function math:rng
-scoreboard players operation rng temp = output rng
+function math:aimcone/sin_ry
 
-scoreboard players set limit rng 2
+scoreboard players set limit rng 30
+scoreboard players operation limit rng *= 314 math
 function math:rng
-execute if score output rng matches 1 run scoreboard players operation rng temp *= -1 math
-
-execute as @e[type=area_effect_cloud,tag=gun.pos] store result score @s temp run data get entity @s Rotation[0]
-execute as @e[type=area_effect_cloud,tag=gun.pos] store result entity @s Rotation[0] float 1 run scoreboard players operation @s temp += rng temp
+function math:aimcone/cos_rx
 
 
-scoreboard players set limit rng 7
+
+scoreboard players set limit rng 25
 function math:rng
-scoreboard players operation rng temp = output rng
+scoreboard players operation in sqrt = output rng
+function math:sqrt/init
+scoreboard players operation Yf spread *= x sqrt
 
-scoreboard players set limit rng 2
+scoreboard players set limit rng 25
 function math:rng
-execute if score output rng matches 1 run scoreboard players operation rng temp *= -1 math
-
-execute as @e[type=area_effect_cloud,tag=gun.pos] store result score @s temp run data get entity @s Rotation[1]
-execute as @e[type=area_effect_cloud,tag=gun.pos] store result entity @s Rotation[1] float 1 run scoreboard players operation @s temp += rng temp
-
+scoreboard players operation in sqrt = output rng
+function math:sqrt/init
+scoreboard players operation Xf spread *= x sqrt
 
 
-execute at @e[tag=gun.pos] run function coas:guns/minigun/firing
+
+##############
+# Application
+##############
+
+summon marker ~ ~ ~ {Tags:["bullet.spread_vector"]}
+execute store result entity @e[type=marker,tag=bullet.spread_vector,limit=1] Rotation[0] float 0.001 run scoreboard players operation Yf spread += ply_ry spread
+execute store result entity @e[type=marker,tag=bullet.spread_vector,limit=1] Rotation[1] float 0.001 run scoreboard players operation Xf spread += ply_rx spread
+execute rotated as @e[type=marker,tag=bullet.spread_vector,limit=1] run function coas:guns/minigun/firing
+
+kill @e[type=marker,tag=bullet.spread_vector]

@@ -26,11 +26,11 @@
 			"Enchantments": [
 				{
 					"id": "minecraft:protection",
-					"lvl": 5
+					"lvl": 4
 				},
 				{
 					"id": "minecraft:projectile_protection",
-					"lvl": 5
+					"lvl": 4
 				},
 				{
 					"id": "minecraft:unbreaking",

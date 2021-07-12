@@ -1,4 +1,4 @@
-tellraw @s {"color":"yellow","text":"-----"}
+tellraw @s {"color":"yellow","text":"════════════════"}
 ##
 
 
@@ -10,7 +10,7 @@ tellraw @s [{"color":"gray","text":"Luck = "},{"color":"gold","score":{"name":"@
 
 
 ##
-tellraw @s {"color":"yellow","text":"-----"}
+tellraw @s {"color":"yellow","text":"════════════════"}
 
 
 

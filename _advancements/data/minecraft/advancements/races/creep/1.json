@@ -9,7 +9,7 @@
 			"color": "gray"
         },
         "icon": {
-            "item": "shield"
+            "item": "minecraft:chainmail_chestplate"
         },
         "frame": "task",
         "show_toast": true,
