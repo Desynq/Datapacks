@@ -1,3 +1,9 @@
+bossbar set patrol_cooldown visible true
+bossbar set patrol_cooldown players @a
+execute store result bossbar patrol_cooldown value run scoreboard players get 40 tick
+
+
+
 execute if score 40 tick matches 40 run tp @s ~ ~3 ~
 particle smoke ~ ~3 ~ .1 .1 .1 .01 10 force @a
 

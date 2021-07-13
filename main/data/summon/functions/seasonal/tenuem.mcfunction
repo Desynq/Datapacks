@@ -1,0 +1,7 @@
+summon phantom ~ ~ ~ {Size:25,Health:5000,Tags:["boss","tenuem"],Attributes:[{Name:generic.max_health,Base:5000},{Name:generic.attack_damage,Base:500}],DeathLootTable:"custom:tenuem",CustomName:'{"color":"dark_purple","text":"Tenuem"}',Glowing:1,Invulnerable:1,PersistenceRequired:true}
+
+summon phantom ~ ~ ~ {Size:15,Health:1000,Tags:["boss","tenuem_acolyte"],Attributes:[{Name:generic.max_health,Base:1000},{Name:generic.attack_damage,Base:500}],CustomName:'{"color":"dark_purple","text":"Tenuem Acolyte"}',Glowing:1,PersistenceRequired:true}
+summon phantom ~ ~ ~ {Size:15,Health:1000,Tags:["boss","tenuem_acolyte"],Attributes:[{Name:generic.max_health,Base:1000},{Name:generic.attack_damage,Base:500}],CustomName:'{"color":"dark_purple","text":"Tenuem Acolyte"}',Glowing:1}
+summon phantom ~ ~ ~ {Size:15,Health:1000,Tags:["boss","tenuem_acolyte"],Attributes:[{Name:generic.max_health,Base:1000},{Name:generic.attack_damage,Base:500}],CustomName:'{"color":"dark_purple","text":"Tenuem Acolyte"}',Glowing:1}
+summon phantom ~ ~ ~ {Size:15,Health:1000,Tags:["boss","tenuem_acolyte"],Attributes:[{Name:generic.max_health,Base:1000},{Name:generic.attack_damage,Base:500}],CustomName:'{"color":"dark_purple","text":"Tenuem Acolyte"}',Glowing:1}
+summon phantom ~ ~ ~ {Size:15,Health:1000,Tags:["boss","tenuem_acolyte"],Attributes:[{Name:generic.max_health,Base:1000},{Name:generic.attack_damage,Base:500}],CustomName:'{"color":"dark_purple","text":"Tenuem Acolyte"}',Glowing:1}

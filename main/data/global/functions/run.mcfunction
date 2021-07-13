@@ -32,6 +32,13 @@ function global:gamerules/run
 	execute if score daytime timer matches 0 run function global:time/new_day
 
 
+##########
+# Seasons
+##########
+
+execute if score season timer matches 3 unless predicate clear_weather run weather clear 24000
+
+
 
 #
 # Runtime

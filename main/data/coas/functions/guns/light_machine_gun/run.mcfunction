@@ -4,7 +4,8 @@ execute if entity @s[scores={c.lmg=1..}] at @s run function coas:guns/light_mach
 
 
 
-execute if entity @s[scores={u.coas=1..,ammo.mainhand=1..,durability.mh=..999,c.lmg=0},predicate=equipment/mainhand/coas/gun/light_machine_gun] run function coas:guns/light_machine_gun/aimspread
+execute if entity @s[scores={sneak=0,u.coas=1..,ammo.mainhand=1..,durability.mh=..999,c.lmg=0},predicate=equipment/mainhand/coas/gun/light_machine_gun] run function coas:guns/light_machine_gun/aimspread
+execute if entity @s[scores={sneak=1,u.coas_full=1..,ammo.mainhand=1..,durability.mh=..999,c.lmg=0},predicate=equipment/mainhand/coas/gun/light_machine_gun] run function coas:guns/light_machine_gun/aimspread
 
 
 

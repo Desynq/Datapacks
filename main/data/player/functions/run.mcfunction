@@ -25,22 +25,26 @@ execute if score gravestones datapack matches 1 as @a[gamemode=adventure,predica
 # Data Storage
 ###############
 
-data merge storage inventory {baubles:[{},{}],SelectedItem:{},OffhandItem:{}}
+data merge storage inventory {baubles:[{},{},{}],SelectedItem:{},OffhandItem:{}}
 
 
+
+execute in overworld run item replace block 0 0 1 container.0 from entity @s inventory.24
+execute in overworld run data modify storage inventory baubles[0] set from block 0 0 1 Items[0]
 
 execute in overworld run item replace block 0 0 1 container.0 from entity @s inventory.25
-execute in overworld run data modify storage inventory baubles[0] set from block 0 0 1 Items[{Slot:0b}]
+execute in overworld run data modify storage inventory baubles[1] set from block 0 0 1 Items[0]
 
 execute in overworld run item replace block 0 0 1 container.0 from entity @s inventory.26
-execute in overworld run data modify storage inventory baubles[1] set from block 0 0 1 Items[{Slot:0b}]
+execute in overworld run data modify storage inventory baubles[2] set from block 0 0 1 Items[0]
+
 
 
 execute in overworld run item replace block 0 0 1 container.0 from entity @s weapon.mainhand
-execute in overworld run data modify storage inventory SelectedItem set from block 0 0 1 Items[{Slot:0b}]
+execute in overworld run data modify storage inventory SelectedItem set from block 0 0 1 Items[0]
 
 execute in overworld run item replace block 0 0 1 container.0 from entity @s weapon.offhand
-execute in overworld run data modify storage inventory OffhandItem set from block 0 0 1 Items[{Slot:0b}]
+execute in overworld run data modify storage inventory OffhandItem set from block 0 0 1 Items[0]
 
 
 ###########
@@ -105,12 +109,13 @@ function player:pay/run
 
 function player:scoreboards/triggers/show_pln/run
 function player:scoreboards/triggers/show_stats/run
+function player:scoreboards/triggers/low_detail_mode/run
+
+function player:scoreboards/triggers/race_upgrade/run
 
 
 
 scoreboard players enable @s disableUpgrades
-scoreboard players enable @s raceUpgrade
-	function player:races/upgrading/run
 
 
 scoreboard players reset @s[predicate=!race/parasite] parasite
@@ -376,5 +381,4 @@ execute if entity @s[predicate=!dimension/overworld,predicate=equipment/mainhand
 # Diseases
 ###########
 
-execute if entity @s[tag=!necronoma,scores={kb.zombie_v=1..}] run tag @s add necronoma
-execute if entity @s[tag=necronoma] run function player:status_effects/run
+function player:status_effects/run

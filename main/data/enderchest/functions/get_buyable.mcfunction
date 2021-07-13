@@ -1,20 +1,22 @@
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:"iron_ingot"}}]},scores={slime=20..}] run function enderchest:buys/iron_ingot
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:"iron_ingot"}}]},scores={slime=20..}] run function enderchest:buy/iron_ingot
 
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:diamond}}]},scores={slime=100..}] run function enderchest:buys/diamond
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:diamond}}]},scores={slime=100..}] run function enderchest:buy/diamond
 
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:coal}}]},scores={slime=5..}] run function enderchest:buys/coal
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:coal}}]},scores={slime=5..}] run function enderchest:buy/coal
 
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:unbreaking_tome}}]},scores={slime=500..}] run function enderchest:buys/unbreaking_tome
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:unbreaking_tome}}]},scores={slime=500..}] run function enderchest:buy/unbreaking_tome
 
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:mending_book}}]},scores={slime=200..}] run function enderchest:buys/mending_book
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:mending_book}}]},scores={slime=200..}] run function enderchest:buy/mending_book
 
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:feather}}]},scores={slime=5..}] run function enderchest:buys/feather
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:feather}}]},scores={slime=5..}] run function enderchest:buy/feather
 
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:cookie}}]},scores={slime=1..}] run function enderchest:buys/cookie
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:cookie}}]},scores={slime=1..}] run function enderchest:buy/cookie
 
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:lapis_lazuli}}]},scores={slime=20..}] run function enderchest:buys/lapis_lazuli
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:lapis_lazuli}}]},scores={slime=20..}] run function enderchest:buy/lapis_lazuli
 
-execute if entity @s[nbt={Inventory:[{tag:{s_btype:oak_sapling}}]},scores={slime=1000..}] run function enderchest:buys/oak_sapling
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:oak_sapling}}]},scores={slime=1000..}] run function enderchest:buy/oak_sapling
+
+execute if entity @s[nbt={Inventory:[{tag:{s_btype:cactus}}]},scores={slime=1000..}] run function enderchest:buy/cactus
 
 
 

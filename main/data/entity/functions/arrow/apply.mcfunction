@@ -13,10 +13,16 @@ execute if data entity @s Owner as @a[predicate=equipment/mainhand/crossbow,pred
 
 
 
+
+
 ## Creep Race
 execute at @a[predicate=race/creep,scores={disableUpgrades=0},advancements={races/creep/3=true,races/creep/3/1=false,races/creep/3/1/1=false}] if score @s entOwner = @p plyUUID unless data entity @s CustomPotionEffects run function entity:arrow/apply/demolitionist/tier_1
 execute at @a[predicate=race/creep,scores={disableUpgrades=0},advancements={races/creep/3/1=true,races/creep/3/1/1=false}] if score @s entOwner = @p plyUUID unless data entity @s CustomPotionEffects run function entity:arrow/apply/demolitionist/tier_2
 execute at @a[predicate=race/creep,scores={disableUpgrades=0},advancements={races/creep/3/1/1=true}] if score @s entOwner = @p plyUUID unless data entity @s CustomPotionEffects run function entity:arrow/apply/demolitionist/tier_3
+
+## Arthropod Race
+execute at @a[predicate=race/arthropod,advancements={races/arthropod/1=true}] if score @s entOwner = @p plyUUID unless data entity @s CustomPotionEffects run function entity:arrow/apply/ensnaring
+
 
 
 

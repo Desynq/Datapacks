@@ -1,1 +1,1 @@
-execute if entity @s[gamemode=!spectator,scores={xp=3..,u.coas=1..},nbt={SelectedItem:{tag:{type:mining_laser}}}] positioned ~ ~1.8 ~ run function coas:mining_laser/mine
+execute if entity @s[gamemode=!spectator,scores={xp=3..,u.coas=1..},predicate=dimension/overworld,predicate=!biome/wasteland,predicate=equipment/mainhand/coas/mining_laser] anchored eyes run function coas:mining_laser/raycast

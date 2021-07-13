@@ -19,6 +19,10 @@ execute if entity @s[scores={reload=1..}] run function coas:core/reload
 scoreboard players set @s[scores={spray=180..}] spray 179
 scoreboard players remove @s[scores={spray_delay=0,spray=1..}] spray 1
 scoreboard players remove @s[scores={spray_delay=1..}] spray_delay 1
+
+execute if score @s u.coas_full matches 4.. run scoreboard players set @s u.coas_full 0
+execute if score @s u.coas_full matches 1.. run scoreboard players add @s u.coas_full 1
+execute if score @s u.coas matches 1.. unless score @s u.coas_full matches 1.. run scoreboard players set @s u.coas_full 1
 ###
 
 

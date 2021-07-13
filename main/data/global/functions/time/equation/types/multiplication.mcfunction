@@ -1,8 +1,8 @@
-scoreboard players set limit rng 13
+scoreboard players set limit rng 14
 function math:rng
 scoreboard players operation a daily_equation = output rng
 
-scoreboard players set limit rng 13
+scoreboard players set limit rng 14
 function math:rng
 scoreboard players operation b daily_equation = output rng
 

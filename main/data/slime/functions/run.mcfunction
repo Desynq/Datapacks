@@ -7,7 +7,8 @@ function slime:status_effects/run
 
 
 # Patrol
-	execute at @a[tag=patrolling] as @e[type=iron_golem,sort=nearest,limit=1,tag=patrol] run function slime:patrol/run
+execute unless entity @e[type=iron_golem,tag=patrol] run bossbar set patrol_cooldown visible false
+execute at @a[tag=patrolling] as @e[type=iron_golem,sort=nearest,limit=1,tag=patrol] run function slime:patrol/run
 
 # Anti-Air
 	#function slime:antiair/run

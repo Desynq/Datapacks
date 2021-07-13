@@ -76,3 +76,23 @@ data merge block -12 35 -88 {LootTable:"custom:container/mining"}
 data merge block -31 44 -90 {LootTable:"custom:container/mining"}
 data merge block -35 49 -88 {LootTable:"custom:container/mining"}
 data merge block -15 58 -90 {LootTable:"custom:container/mining"}
+
+
+
+## Militia Base
+data merge block 120 32 -124 {LootTable:"custom:military"}
+
+data merge block 118 31 -124 {LootTable:"custom:wasteland"}
+data merge block 122 31 -120 {LootTable:"custom:wasteland"}
+
+
+
+## Militia Bunker
+data merge block 117 17 -87 {LootTable:"custom:military"}
+data merge block 112 18 -83 {LootTable:"custom:military"}
+
+data merge block 111 17 -96 {LootTable:"custom:wasteland"}
+data merge block 111 17 -106 {LootTable:"custom:wasteland"}
+data merge block 119 17 -108 {LootTable:"custom:wasteland"}
+data merge block 119 17 -103 {LootTable:"custom:wasteland"}
+data merge block 119 17 -100 {LootTable:"custom:wasteland"}

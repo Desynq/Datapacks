@@ -1,0 +1,54 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		" 12",
+		"1 2",
+		" 12"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:white_dye",
+			"data": {
+				"require": {
+					"type": "mystite_tool_rod"
+				}
+			}
+		},
+		"2": {
+			"item": "minecraft:white_dye",
+			"data": {
+				"require": {
+					"type": "soul_string"
+				}
+			}
+		}
+	},
+	"result": {
+		"item": "minecraft:bow",
+		"count": 1,
+		"data": {
+			"CustomModelData": 1,
+			"type": "mystite_bow",
+			"Enchantments": [
+				{
+					"id": "minecraft:power",
+					"lvl": 10
+				},
+				{
+					"id": "minecraft:piercing",
+					"lvl": 10
+				},
+				{
+					"id": "minecraft:infinity",
+					"lvl": 1
+				}
+			],
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"dark_aqua\",\"text\":\"Mystite Bow\"}",
+				"Lore": [
+					"{\"italic\":\"false\",\"color\":\"gray\",\"text\":\"○ Arrows shot pierce enemies\"}"
+				]
+			}
+		}
+	}
+}

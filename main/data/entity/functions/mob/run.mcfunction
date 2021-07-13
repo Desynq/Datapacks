@@ -74,6 +74,8 @@ execute if entity @s[type=#zombies,predicate=entity/is/baby] run data merge enti
 
 	execute if entity @s[type=wither_skeleton,tag=myster] at @s run function myst:mobs/myster/run
 
+	execute if entity @s[type=phantom,tag=tenuem] run function entity:mob/custom/tenuem/run
+
 
 
 	execute if entity @s[type=wither,tag=,predicate=dimension/overworld] run data merge entity @s {Health:1000,Attributes:[{Name:generic.max_health,Base:1000}],Tags:["boss","charged"]}

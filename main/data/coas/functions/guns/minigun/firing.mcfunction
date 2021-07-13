@@ -2,10 +2,10 @@ execute anchored eyes run summon armor_stand ^ ^ ^ {Small:1,Invisible:1,Marker:1
 
 
 
-execute anchored eyes run summon arrow ^ ^ ^ {Tags:["bullet","minigun.bullet"],SoundEvent:block.stone.hit,damage:10,Color:-1}
+execute anchored eyes run summon arrow ^ ^ ^ {Tags:["bullet","minigun.bullet"],SoundEvent:block.stone.hit,damage:5,Color:-1}
 data modify entity @e[type=arrow,tag=bullet,sort=nearest,limit=1,tag=!marked] Owner set from entity @s UUID
 
-execute in overworld positioned 0.0 0.0 0.0 run summon marker ^ ^ ^5 {Tags:["bullet.marker"]}
+execute in overworld positioned 0.0 0.0 0.0 run summon marker ^ ^ ^10 {Tags:["bullet.marker"]}
 execute as @e[type=arrow,tag=bullet,tag=!marked] run function coas:core/set_motion
 
 
