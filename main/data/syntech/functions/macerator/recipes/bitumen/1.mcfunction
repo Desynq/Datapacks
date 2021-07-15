@@ -1,3 +1,3 @@
-scoreboard players add @s temp.timer 1
+scoreboard players add @s entTimer 1
 
-execute if score @s temp.timer matches 200.. run function syntech:macerator/recipes/bitumen/2
+execute if score @s entTimer matches 200.. run function syntech:macerator/recipes/bitumen/2

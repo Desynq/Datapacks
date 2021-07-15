@@ -1,5 +1,5 @@
 execute in slime:themyst if entity @s[distance=0..] run tp -225 26 158
-execute if entity @s[predicate=dimension/overworld] run tp -49 62 -60
+execute if entity @s[predicate=minecraft:dimension/overworld] run tp -49 62 -60
 
 execute if entity @s[nbt=!{Fire:-1s}] run data merge entity @s {Fire:-1}
 

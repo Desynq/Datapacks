@@ -1,7 +1,7 @@
 {
     "Team": "militia",
     "Tags": [
-        "temp",
+        "noDrops",
         "custom",
         "boss",
         "militia.heavy"
@@ -24,7 +24,7 @@
     "Attributes": [
         {
             "Name": "minecraft:generic.armor",
-            "Base": 10
+            "Base": 20
         },
         {
             "Name": "minecraft:generic.armor_toughness",
@@ -32,7 +32,7 @@
         },
         {
             "Name": "minecraft:generic.attack_damage",
-            "Base": 0
+            "Base": 30
         },
         {
             "Name": "minecraft:generic.attack_knockback",

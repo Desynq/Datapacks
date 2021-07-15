@@ -2,8 +2,8 @@ summon tnt ^ ^ ^2 {Fuse:100,Tags:["artilleryShell"]}
 
 
 
-execute in overworld run summon area_effect_cloud 0 0 0 {Tags:["artilleryMarker"]}
-execute in overworld run tp @e[type=area_effect_cloud,tag=artilleryMarker,limit=1] 0 0 0 ~ ~
+execute in minecraft:overworld run summon area_effect_cloud 0 0 0 {Tags:["artilleryMarker"]}
+execute in minecraft:overworld run tp @e[type=area_effect_cloud,tag=artilleryMarker,limit=1] 0 0 0 ~ ~
 execute store result score rotX temp run data get entity @e[type=area_effect_cloud,tag=artilleryMarker,limit=1] Rotation[1] 1
 execute store result entity @e[type=area_effect_cloud,tag=artilleryMarker,limit=1] Rotation[1] float 1 run scoreboard players operation rotX temp += @s entRotX2
 execute as @e[type=area_effect_cloud,tag=artilleryMarker] at @s run function entity:armor_stand/artillery/set_distance

@@ -1,6 +1,6 @@
 execute unless score @s temperature matches 0.. run scoreboard players set @s temperature 35
 
-execute store success score ran temp if entity @s[gamemode=!spectator,gamemode=!creative,predicate=dimension/overworld,tag=!scp,predicate=!race/human] run function player:temperature/run2
+execute store success score ran temp if entity @s[gamemode=!spectator,gamemode=!creative,predicate=minecraft:dimension/overworld,tag=!scp,predicate=!race/human] run function player:temperature/run2
 execute unless score ran temp matches 1 unless score @s temperature matches 35 run scoreboard players set @s temperature 35
 
 

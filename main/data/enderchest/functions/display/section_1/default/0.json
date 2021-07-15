@@ -1,0 +1,30 @@
+[
+    {
+        "italic": "false",
+        "color": "dark_aqua",
+        "score": {
+            "name": "@a[tag=temp]",
+            "objective": "ply.lvl_left"
+        }
+    },
+    " / ",
+    {
+        "color": "gold",
+        "score": {
+            "name": "@a[tag=temp]",
+            "objective": "ply.lvl_max"
+        }
+    },
+    " ; ",
+    {
+        "color": "dark_aqua",
+        "score": {
+            "name": "@a[tag=temp]",
+            "objective": "ply.lvl"
+        }
+    },
+    {
+        "color": "dark_gray",
+        "text": " / 100"
+    }
+]

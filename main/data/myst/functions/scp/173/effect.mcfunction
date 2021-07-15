@@ -1,2 +1,2 @@
-effect give @s invisibility 1 0 true
-effect give @s speed 1 9 true
+effect give @s invisibility 2048 0 true
+effect give @s speed 2048 9 true

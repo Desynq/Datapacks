@@ -12,20 +12,22 @@
 execute store success score ran temp run datapack disable vanilla
 execute if score ran temp matches 1 run function debug:reorder
 
+commandaliases reload
+
 
 
 ##############
 # Other Stuff
 ##############
 
-execute in overworld run summon marker 0 0 0 {Tags:["onLoad"]}
+execute in minecraft:overworld run summon marker 0 0 0 {Tags:["onLoad"]}
 
 
 
 
 
-execute in overworld positioned 0 0 0 unless block ~ ~ ~ oak_sign run setblock ~ ~ ~ oak_sign
-execute in overworld positioned 0 0 1 unless block ~ ~ ~ shulker_box run setblock ~ ~ ~ shulker_box
+execute in minecraft:overworld positioned 0 0 0 unless block ~ ~ ~ oak_sign run setblock ~ ~ ~ oak_sign
+execute in minecraft:overworld positioned 0 0 1 unless block ~ ~ ~ shulker_box run setblock ~ ~ ~ shulker_box
 
 
 
@@ -71,3 +73,4 @@ scoreboard players set c rng 12345
 kill @e[type=marker,tag=onLoad]
 
 tellraw @a {"color":"dark_purple","text":"Reloaded All Datapacks!"}
+tellraw @a {"color":"dark_purple","text":"Reloaded All Custom Commands!"}

@@ -1,1 +1,0 @@
-summon phantom ~ ~ ~ {ActiveEffects:[{Id:12,Duration:2147483647,ShowParticles:0b}],Team:militia,Tags:["carrier_phantom"],Passengers:[{id:boat,Team:militia,Tags:["carrier_boat"],Passengers:[{id:ravager}]}]}

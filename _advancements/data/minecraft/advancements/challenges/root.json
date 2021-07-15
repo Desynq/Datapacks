@@ -9,7 +9,7 @@
             "color": "dark_aqua"
         },
         "icon": {
-            "item": "minecraft:emerald"
+            "item": "minecraft:bell"
         },
         "frame": "challenge",
         "show_toast": false,

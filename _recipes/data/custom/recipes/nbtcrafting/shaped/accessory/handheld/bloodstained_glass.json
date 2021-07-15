@@ -1,0 +1,50 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"111",
+		"121",
+		"111"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:white_dye",
+			"data": {
+				"require": {
+					"type": "sanguine_tentacle"
+				}
+			}
+		},
+		"2": {
+			"item": "minecraft:carrot_on_a_stick",
+			"data": {
+				"require": {
+					"type": "shaped_glass"
+				}
+			}
+		}
+	},
+	"result": {
+		"item": "minecraft:carrot_on_a_stick",
+		"data": {
+			"CustomModelData": 4005,
+			"type": "bloodstained_glass",
+			"AttributeModifiers": [
+				{
+					"AttributeName": "minecraft:generic.attack_damage",
+					"Amount": 1,
+					"Operation": 1,
+					"Slot": "offhand",
+					"UUID": [
+						2114952624,
+						1431782609,
+						1226308320,
+						350750536
+					]
+				}
+			],
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"dark_red\",\"text\":\"Bloodstained Glass\"}"
+			}
+		}
+	}
+}

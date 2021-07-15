@@ -1,3 +1,7 @@
+function player:init/run
+
+
+
 #####################
 # Scoreboard Logging
 #####################
@@ -5,10 +9,15 @@
 
 execute store result score @s DeathTime run data get entity @s DeathTime 1
 execute store result score @s HurtTime run data get entity @s HurtTime 1
+execute store result score @s Health run data get entity @s Health 1
 
 execute store result score @s regen_amp run data get entity @s ActiveEffects[{Id:10b}].Amplifier 1
 execute store result score @s hunger_amp run data get entity @s ActiveEffects[{Id:17b}].Amplifier 1
 execute store result score @s poison_amp run data get entity @s ActiveEffects[{Id:19b}].Amplifier 1
+
+
+
+execute unless score @s lowDetailMode matches 0..1 run scoreboard players set @s lowDetailMode 0
 
 
 
@@ -17,7 +26,7 @@ execute store result score @s poison_amp run data get entity @s ActiveEffects[{I
 # Gravestones
 ##############
 
-execute if score gravestones datapack matches 1 as @a[gamemode=adventure,predicate=dimension/overworld,scores={DeathTime=1,x=-128..127,z=-128..127}] at @s unless entity @s[scores={x=-32..31,z=-32..31}] run function player:gravestones/run
+execute if score gravestones datapack matches 1 as @a[gamemode=adventure,predicate=minecraft:dimension/overworld,scores={DeathTime=1,x=-128..127,z=-128..127}] at @s unless entity @s[scores={x=-32..31,z=-32..31}] run function player:gravestones/run
 
 
 
@@ -25,26 +34,8 @@ execute if score gravestones datapack matches 1 as @a[gamemode=adventure,predica
 # Data Storage
 ###############
 
-data merge storage inventory {baubles:[{},{},{}],SelectedItem:{},OffhandItem:{}}
+function player:init/storage
 
-
-
-execute in overworld run item replace block 0 0 1 container.0 from entity @s inventory.24
-execute in overworld run data modify storage inventory baubles[0] set from block 0 0 1 Items[0]
-
-execute in overworld run item replace block 0 0 1 container.0 from entity @s inventory.25
-execute in overworld run data modify storage inventory baubles[1] set from block 0 0 1 Items[0]
-
-execute in overworld run item replace block 0 0 1 container.0 from entity @s inventory.26
-execute in overworld run data modify storage inventory baubles[2] set from block 0 0 1 Items[0]
-
-
-
-execute in overworld run item replace block 0 0 1 container.0 from entity @s weapon.mainhand
-execute in overworld run data modify storage inventory SelectedItem set from block 0 0 1 Items[0]
-
-execute in overworld run item replace block 0 0 1 container.0 from entity @s weapon.offhand
-execute in overworld run data modify storage inventory OffhandItem set from block 0 0 1 Items[0]
 
 
 ###########
@@ -75,10 +66,6 @@ execute if entity @s[scores={damage=1..}] run function player:scoreboards/damage
 execute if entity @s[scores={damage_taken=1..}] run scoreboard players reset @s timer.undamaged
 execute unless entity @s[scores={damage_taken=1..}] run scoreboard players add @s timer.undamaged 1
 
-
-execute unless score @s plyUUID matches -2147483648..2147483647 store result score @s plyUUID run data get entity @s UUID[0]
-execute unless entity @s[scores={list=1..}] run function player:scoreboards/uuid/list
-
 function player:scoreboards/core/tracking
 function player:scoreboards/dummies/keycards
 
@@ -102,21 +89,7 @@ execute if entity @s[scores={DeathTime=1..,ateDiamondApple=1..}] run give @s enc
 # Triggers
 ###########
 
-function player:scoreboards/core/enable
-
-function player:pay/run
-
-
-function player:scoreboards/triggers/show_pln/run
-function player:scoreboards/triggers/show_stats/run
-function player:scoreboards/triggers/low_detail_mode/run
-
-function player:scoreboards/triggers/race_upgrade/run
-
-
-
 scoreboard players enable @s disableUpgrades
-
 
 scoreboard players reset @s[predicate=!race/parasite] parasite
 scoreboard players enable @s[predicate=race/parasite] parasite
@@ -129,34 +102,13 @@ scoreboard players enable @s arbitrary
 scoreboard players enable @s arbitrary2
 
 
-## KYS
-scoreboard players enable @s kys
-	execute if entity @s[scores={kys=1..}] run function player:kys
-
-
-scoreboard players enable @s spawn
-	execute if entity @s[predicate=dimension/overworld,gamemode=!adventure] unless score @s spawn matches 0 run tellraw @a [{"selector":"@s"},{"color":"yellow","text":" warped to spawn"}]
-	execute if entity @s[predicate=dimension/overworld,gamemode=!adventure] unless score @s spawn matches 0 run tp @s 0 32 0
-	execute if entity @s[predicate=dimension/overworld,gamemode=adventure] unless score @s spawn matches 0 run tellraw @s {"color":"red","text":"[!] You cannot warp to spawn in Adventure Mode [!]"}
-	execute if entity @s[predicate=!dimension/overworld] unless score @s spawn matches 0 run tellraw @s {"color":"red","text":"[!] You must be in the overworld to warp to spawn [!]"}
-	execute unless score @s spawn matches 0 run scoreboard players set @s spawn 0
-
-
 
 #######
 # Tags
 #######
 
 tag @s remove OnGround
-tag @s[nbt={OnGround:1b}] add OnGround
-
-
-
-execute if entity @s[tag=elevating] run effect clear @s levitation
-execute if entity @s[tag=elevating] run tag @s remove elevating
-
-execute if entity @s[tag=de-elevating] run effect clear @s slow_falling
-execute if entity @s[tag=de-elevating] run tag @s remove de-elevating
+tag @s[nbt={OnGround:true}] add OnGround
 
 
 
@@ -174,41 +126,13 @@ effect give @s[scores={timeSinceDeath=20}] hunger 1 199 true
 # Accessories
 ##############
 
-execute if data storage inventory baubles[0].tag{type:"fire_resistance_ring"} run function player:baubles/fire_resistance_ring
-execute unless data storage inventory baubles[0].tag{type:"fire_resistance_ring"} if data storage inventory baubles[1].tag{type:"fire_resistance_ring"} run function player:baubles/fire_resistance_ring
-
-execute if data storage inventory baubles[0].tag{type:"wither_resistance_ring"} run function player:baubles/wither_resistance_ring
-execute unless data storage inventory baubles[0].tag{type:"wither_resistance_ring"} if data storage inventory baubles[1].tag{type:"wither_resistance_ring"} run function player:baubles/wither_resistance_ring
-
-execute if data storage inventory baubles[0].tag{type:"firespark_ring"} if entity @s[scores={HurtTime=1..}] run function player:baubles/firespark_ring
-execute unless data storage inventory baubles[0].tag{type:"firespark_ring"} if data storage inventory baubles[1].tag{type:"firespark_ring"} if entity @s[scores={HurtTime=1..}] run function player:baubles/firespark_ring
-
-execute if data storage inventory baubles[0].tag{type:"baskalisk_heart"} if entity @s[tag=!rifting] run function player:baubles/baskalisk_heart
-execute unless data storage inventory baubles[0].tag{type:"baskalisk_heart"} if data storage inventory baubles[1].tag{type:"baskalisk_heart"} if entity @s[tag=!rifting] run function player:baubles/baskalisk_heart
-
-execute if data storage inventory baubles[0].tag{type:"slimy_eye"} run function player:baubles/slimy_eye
-execute unless data storage inventory baubles[0].tag{type:"slimy_eye"} if data storage inventory baubles[1].tag{type:"slimy_eye"} run function player:baubles/slimy_eye
-
-execute if data storage inventory baubles[0].tag{type:"ghastly_amulet"} run function player:baubles/ghastly_amulet
-execute unless data storage inventory baubles[0].tag{type:"ghastly_amulet"} if data storage inventory baubles[1].tag{type:"ghastly_amulet"} run function player:baubles/ghastly_amulet
-
-execute if data storage inventory baubles[0].tag{type:"clownfish_necklace"} run function player:baubles/clownfish_necklace/run_a
-execute unless data storage inventory baubles[0].tag{type:"clownfish_necklace"} if data storage inventory baubles[1].tag{type:"clownfish_necklace"} run function player:baubles/clownfish_necklace/run_b
-
-execute if data storage inventory baubles[0].tag{type:"ice_cube_hat"} run function player:baubles/ice_cube/run_a
-execute unless data storage inventory baubles[0].tag{type:"ice_cube_hat"} if data storage inventory baubles[1].tag{type:"ice_cube_hat"} run function player:baubles/ice_cube/run_b
-
-execute if data storage inventory baubles[0].tag{type:"winter_coat"} run scoreboard players add @s insulation 2
-execute if data storage inventory baubles[1].tag{type:"winter_coat"} run scoreboard players add @s insulation 2
-
-execute if data storage inventory baubles[0].tag{type:"mana_cloak"} run function player:accessories/mana_cloak/run
-execute if data storage inventory baubles[1].tag{type:"mana_cloak"} run function player:accessories/mana_cloak/run
+function player:accessories/run
 
 
 
-execute store result score @s ply.max_hp run attribute @s generic.max_health get
-execute store result score @s ply.armor run attribute @s generic.armor get
-execute store result score @s ply.luck run attribute @s generic.luck get
+execute store result score @s ply.max_hp run attribute @s minecraft:generic.max_health get 1
+execute store result score @s ply.armor run attribute @s minecraft:generic.armor get 1
+execute store result score @s ply.luck run attribute @s minecraft:generic.luck get 1
 
 
 
@@ -253,6 +177,15 @@ function enderchest:run
 
 
 
+##############
+# Admin Tools
+##############
+
+execute if score @s admin.vanish matches 1 run effect give @s minecraft:invisibility 2048 0 true
+execute if score @s admin.vanish matches 1 as @e[type=item,distance=..3] run data merge entity @s {PickupDelay:2}
+
+
+
 ###################
 # Salvaging Script
 ###################
@@ -282,10 +215,10 @@ function actionbar:run
 # Overworld Protection
 #######################
 
-execute if entity @s[tag=!adventure,gamemode=adventure] unless entity @s[predicate=!dimension/overworld,predicate=!dimension/pocket] run gamemode survival @s
+execute if entity @s[tag=!adventure,gamemode=adventure] unless entity @s[predicate=!minecraft:dimension/overworld,predicate=!dimension/pocket] run gamemode survival @s
 tag @s[tag=adventure] remove adventure
 
-execute if entity @s[predicate=dimension/overworld,scores={x=-128..127,z=-128..127}] run tag @s add adventure
+execute if entity @s[predicate=minecraft:dimension/overworld,scores={x=-128..127,z=-128..127}] run tag @s add adventure
 execute if entity @s[predicate=equipment/adventure_only] run tag @s add adventure
 
 gamemode adventure @s[tag=adventure,gamemode=survival]
@@ -328,8 +261,8 @@ execute if entity @s[name=!Desynq,predicate=!equipment/head/air] if entity @e[ty
 # Equipment
 ############
 
-execute if entity @s[predicate=equipment/feet/frostwalker,predicate=!dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
-execute if entity @s[scores={x=-127..126,z=-127..126},predicate=equipment/feet/frostwalker,predicate=dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
+execute if entity @s[predicate=equipment/feet/frostwalker,predicate=!minecraft:dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
+execute if entity @s[scores={x=-127..126,z=-127..126},predicate=equipment/feet/frostwalker,predicate=minecraft:dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
 
 
 
@@ -351,8 +284,8 @@ item replace entity @s[scores={u.totem=1..},predicate=equipment/offhand/supercha
 
 
 
-execute if entity @s[predicate=dimension/overworld,scores={x=-128..127,z=-128..127},predicate=equipment/mainhand/wilderness_only] run item replace entity @s weapon.mainhand with air
-execute if entity @s[predicate=!dimension/overworld,predicate=equipment/mainhand/wilderness_only] run item replace entity @s weapon.mainhand with air
+execute if entity @s[predicate=minecraft:dimension/overworld,scores={x=-128..127,z=-128..127},predicate=equipment/mainhand/wilderness_only] run item replace entity @s weapon.mainhand with air
+execute if entity @s[predicate=!minecraft:dimension/overworld,predicate=equipment/mainhand/wilderness_only] run item replace entity @s weapon.mainhand with air
 
 
 
@@ -369,11 +302,11 @@ execute if entity @s[predicate=!dimension/overworld,predicate=equipment/mainhand
 # Foods
 ########
 
-	execute if entity @s[scores={u.honey_bottle=1..}] run effect give @s hero_of_the_village 15 0 false
+	execute if entity @s[scores={ateHoneyBottle=1..}] run effect give @s minecraft:hero_of_the_village 15 0 false
 
-	execute if entity @s[scores={u.poison_potato=1..}] run function player:status_effects/poisonous_potato/blow_up
+	execute if entity @s[scores={atePoisonPotato=1..}] run function player:status_effects/poisonous_potato/blow_up
 
-	execute if entity @s[scores={ateDiamondApple=1..}] run effect give @s resistance 1000000 1 true
+	execute if entity @s[scores={ateDiamondApple=1..}] run effect give @s minecraft:resistance 1000000 1 true
 
 
 

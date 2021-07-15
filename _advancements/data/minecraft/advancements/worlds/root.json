@@ -9,7 +9,7 @@
             "color": "gray"
         },
         "icon": {
-            "item": "minecraft:grass_block"
+            "item": "minecraft:flowering_azalea"
         },
         "frame": "challenge",
         "show_toast": false,

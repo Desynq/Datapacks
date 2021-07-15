@@ -34,7 +34,7 @@ execute if entity @s[predicate=entity/is/on_fire,nbt={Item:{id:"minecraft:poison
 # Spawner Pickup
 #################
 
-execute if entity @s[predicate=dimension/overworld,predicate=!biome/wasteland,nbt={Item:{id:"minecraft:spawner"},OnGround:true}] if data entity @s Thrower if block ~ ~ ~ air run function entity:item/spawners/place
+execute if entity @s[predicate=minecraft:dimension/overworld,predicate=!biome/wasteland,nbt={Item:{id:"minecraft:spawner"},OnGround:true}] if data entity @s Thrower if block ~ ~ ~ air run function entity:item/spawners/place
 
 
 
@@ -42,7 +42,7 @@ execute if entity @s[predicate=dimension/overworld,predicate=!biome/wasteland,nb
 # Rift Mage Ritual
 ###################
 
-execute if entity @s[predicate=dimension/overworld,nbt={Item:{id:"minecraft:end_crystal"}}] unless entity @e[type=item,tag=ritual.rift_mage,distance=.5..] if block ~ ~ ~ air if block ~ ~-1 ~ crying_obsidian run function myst:rituals/rift_mage/start
+execute if entity @s[predicate=minecraft:dimension/overworld,nbt={Item:{id:"minecraft:end_crystal"}}] unless entity @e[type=item,tag=ritual.rift_mage,distance=.5..] if block ~ ~ ~ air if block ~ ~-1 ~ crying_obsidian run function myst:rituals/rift_mage/start
 execute if entity @s[tag=ritual.rift_mage,nbt={Item:{id:"minecraft:end_crystal"}}] unless block ~ ~ ~ air unless block ~ ~-1 ~ crying_obsidian run kill @s
 
 

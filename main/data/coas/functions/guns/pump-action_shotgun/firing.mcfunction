@@ -16,17 +16,17 @@ tp @s[tag=!proning,predicate=!entity/riding/anything,scores={sneak=0}] ~ ~ ~ ~ ~
 
 
 
-execute in overworld run item replace block 0 0 1 container.0 from entity @s weapon.mainhand
+execute in minecraft:overworld run item replace block 0 0 1 container.0 from entity @s weapon.mainhand
 
-execute in overworld store result score x temp run data get block 0 0 1 Items[{Slot:0b}].tag.ammo 1
-execute in overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.ammo int 1 run scoreboard players remove x temp 1
+execute in minecraft:overworld store result score x temp run data get block 0 0 1 Items[{Slot:0b}].tag.ammo 1
+execute in minecraft:overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.ammo int 1 run scoreboard players remove x temp 1
 
-execute in overworld store result score x temp run data get block 0 0 1 Items[{Slot:0b}].tag.durability 1
-execute in overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.durability int 1 run scoreboard players add x temp 1
+execute in minecraft:overworld store result score x temp run data get block 0 0 1 Items[{Slot:0b}].tag.durability 1
+execute in minecraft:overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.durability int 1 run scoreboard players add x temp 1
 
-execute in overworld store result score x temp run data get block 0 0 1 Items[{Slot:0b}].tag.durability 1
-execute in overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.Damage int -0.3125 run scoreboard players remove x temp 80
-execute in overworld store result score x temp run data get block 0 0 1 Items[{Slot:0b}].tag.Damage 1
-execute in overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.Damage int -1 run scoreboard players remove x temp 25
+execute in minecraft:overworld store result score x temp run data get block 0 0 1 Items[{Slot:0b}].tag.durability 1
+execute in minecraft:overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.Damage int -0.3125 run scoreboard players remove x temp 80
+execute in minecraft:overworld store result score x temp run data get block 0 0 1 Items[{Slot:0b}].tag.Damage 1
+execute in minecraft:overworld run execute store result block 0 0 1 Items[{Slot:0b}].tag.Damage int -1 run scoreboard players remove x temp 25
 
-execute in overworld run item replace entity @s weapon.mainhand from block 0 0 1 container.0
+execute in minecraft:overworld run item replace entity @s weapon.mainhand from block 0 0 1 container.0

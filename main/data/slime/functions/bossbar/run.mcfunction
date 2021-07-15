@@ -31,4 +31,4 @@
 	execute if entity @e[type=tnt,tag=bomb] run bossbar set fuse visible true
 	execute unless entity @e[type=tnt,tag=bomb] run bossbar set fuse visible false
 
-	execute store result bossbar fuse value run data get entity @e[type=tnt,tag=bomb,limit=1] Fuse
+	execute store result bossbar fuse value run data get entity @e[type=tnt,tag=bomb,limit=1] Fuse 1

@@ -1,4 +1,4 @@
-tag @a[predicate=effects/levitation_0,predicate=!dimension/overworld,tag=!rifting] add rifting
+tag @a[predicate=effects/levitation_0,predicate=!minecraft:dimension/overworld,tag=!rifting] add rifting
 execute as @a[tag=rifting] at @s run function slime:status_effects/rifting/run
 
 

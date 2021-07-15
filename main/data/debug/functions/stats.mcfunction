@@ -10,6 +10,18 @@ execute unless score @s stat.health matches 0.. run scoreboard players set @s st
 execute unless score @s stat.speed matches 0.. run scoreboard players set @s stat.speed 0
 execute unless score @s stat.luck matches 0.. run scoreboard players set @s stat.luck 0
 
+
+
+
+execute if entity @s[advancements={minecraft:races/bloodborne/1=true},predicate=minecraft:race/bloodborne] run attribute @s minecraft:generic.knockback_resistance base set 1
+
+
+
+
+
+
+
+
 execute store success score ran temp if entity @s[predicate=race/parasite,scores={parasite=1..}] unless score @s parasite = @s list at @a if score @s parasite = @p list run function debug:stats/parasite
 execute if predicate race/parasite unless score ran temp matches 1 run function debug:stats/parasite_fail
 

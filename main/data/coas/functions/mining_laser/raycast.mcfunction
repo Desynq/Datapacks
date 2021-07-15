@@ -4,10 +4,10 @@ scoreboard players add @s ray.timer 1
 
 
 
-execute unless block ^ ^ ^ #air unless block ^ ^ ^ #indestructible unless predicate biome/wasteland run function coas:mining_laser/mine
-execute unless block ^ ^ ^ #air unless block ^ ^ ^ #indestructible unless predicate biome/wasteland run scoreboard players set @s ray.timer 20
+execute store success score ran temp run execute unless block ^ ^ ^ #air unless block ^ ^ ^ #indestructible unless block ^ ^ ^ water unless block ^ ^ ^ lava unless predicate biome/wasteland run function coas:mining_laser/mine
+execute if score ran temp matches 1 run scoreboard players set @s ray.timer 20
 
-execute if block ^ ^ ^ #indestructible run scoreboard players set @s ray.timer 20
+execute if block ^ ^ ^ #indestructible run function coas:mining_laser/blocked
 
 
 

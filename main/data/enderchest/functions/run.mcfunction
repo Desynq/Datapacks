@@ -15,9 +15,9 @@ execute if entity @s[scores={openShop=1..}] run function enderchest:menu_handler
 
 
 
-execute if entity @s[advancements={debug/inventory_changed=true},nbt={Inventory:[{tag:{Tags:["custom"]}}]}] run function enderchest:get_custom
-execute if entity @s[advancements={debug/inventory_changed=true},nbt={Inventory:[{tag:{Tags:["buyable"]}}]}] run function enderchest:get_buyable
-execute if entity @s[advancements={debug/inventory_changed=true},nbt={Inventory:[{tag:{Tags:["craftable"]}}]}] run function enderchest:get_craftable
+execute if entity @s[advancements={debug:inventory_changed=true},nbt={Inventory:[{tag:{Tags:["custom"]}}]}] run function enderchest:get_custom
+execute if entity @s[advancements={debug:inventory_changed=true},nbt={Inventory:[{tag:{Tags:["buyable"]}}]}] run function enderchest:get_buyable
+execute if entity @s[advancements={debug:inventory_changed=true},nbt={Inventory:[{tag:{Tags:["craftable"]}}]}] run function enderchest:get_craftable
 
 
 execute if entity @s[scores={craftID=1..}] run function enderchest:crafting

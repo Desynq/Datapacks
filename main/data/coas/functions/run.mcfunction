@@ -6,11 +6,11 @@ tag @s[tag=!reloadable,predicate=entity/riding/anything] add reloadable
 execute unless score @s spray matches 0.. run scoreboard players set @s spray 0
 execute unless score @s spray_delay matches 0.. run scoreboard players set @s spray_delay 0
 
-execute store result score @s ammo.mainhand run data get storage inventory SelectedItem.tag.ammo 1
-execute store result score @s ammo.offhand run data get storage inventory OffhandItem.tag.ammo 1
+execute store result score @s ammo.mainhand run data get storage minecraft:inventory SelectedItem.tag.ammo 1
+execute store result score @s ammo.offhand run data get storage minecraft:inventory OffhandItem.tag.ammo 1
 
-execute store result score @s durability.mh run data get storage inventory SelectedItem.tag.durability 1
-execute store result score @s durability.oh run data get storage inventory OffhandItem.tag.durability 1
+execute store result score @s durability.mh run data get storage minecraft:inventory SelectedItem.tag.durability 1
+execute store result score @s durability.oh run data get storage minecraft:inventory OffhandItem.tag.durability 1
 
 
 execute unless entity @s[scores={reload=0..}] run scoreboard players set @s reload 0

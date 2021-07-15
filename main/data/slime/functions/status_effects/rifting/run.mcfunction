@@ -1,14 +1,26 @@
-particle soul ~ ~1 ~ .3 .3 .3 .01 1 force @a
-effect clear @s regeneration
-effect clear @s resistance
-effect give @s wither 2 0 true
-effect give @s fire_resistance 1 0 true
-effect give @s weakness 1 255 true
-effect clear @s[predicate=effects/levitation_0] levitation
+execute if predicate minecraft:effects/levitation_0 run playsound minecraft:entity.wither.spawn voice @s ~ ~ ~ 2147483647 2
+execute if predicate minecraft:effects/levitation_0 run effect clear @s minecraft:levitation
 
-execute if entity @s[scores={HurtTime=10}] run playsound entity.wither.hurt master @s ~ ~ ~ 1 2
 
-execute if block ~ ~ ~ #soul_flame run playsound entity.wither.death master @s ~ ~ ~ 2147483647 2
-execute if block ~ ~ ~ #soul_flame run particle soul_fire_flame ~ ~1 ~ .3 .3 .3 .1 100 force @a
-execute if block ~ ~ ~ #soul_flame run tag @s remove rifting
-tag @s[scores={DeathTime=1}] remove rifting
+
+particle minecraft:soul ~ ~1 ~ .3 .3 .3 .01 1 force @a
+
+
+
+effect clear @s minecraft:regeneration
+effect clear @s minecraft:resistance
+
+effect give @s minecraft:wither 2048 1 true
+effect give @s minecraft:slowness 2048 1 true
+effect give @s minecraft:weakness 2048 255 true
+
+effect give @s minecraft:fire_resistance 2 0 true
+
+
+
+execute if entity @s[scores={HurtTime=10}] run playsound minecraft:entity.wither.hurt voice @s ~ ~ ~ 1 2
+
+
+
+execute if block ~ ~ ~ #minecraft:soul_flame run function slime:status_effects/rifting/cure
+execute if score @s DeathTime matches 1 run tag @s remove rifting

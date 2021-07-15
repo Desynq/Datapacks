@@ -1,13 +1,21 @@
-clear @s[predicate=!race/human] #all{raceLocked:1b,Races:["human"]}
+clear @s #minecraft:all{Tags:["clear"]}
 
-clear @s[predicate=!race/creep] #all{raceLocked:1b,Races:["creep"]}
 
-clear @s[predicate=!race/sludge] #all{raceLocked:1b,Races:["sludge"]}
 
-clear @s[predicate=!race/bloodborne] #all{raceLocked:1b,Races:["bloodborne"]}
+execute if entity @s[predicate=!equipment/head/eod_armor] run clear @s #minecraft:all{Tags:["eod_armour"]}
 
-clear @s[predicate=!race/parasite] #all{raceLocked:1b,Races:["parasite"]}
 
-clear @s[predicate=!race/flora] #all{raceLocked:1b,Races:["flora"]}
 
-clear @s[predicate=!race/arthropod] #all{raceLocked:1b,Races:["arthropod"]}
+execute if entity @s[predicate=!race/human] run clear @s #minecraft:all{raceLocked:true,Races:["human"]}
+
+execute if entity @s[predicate=!race/creep] run clear @s #minecraft:all{raceLocked:true,Races:["creep"]}
+
+execute if entity @s[predicate=!race/sludge] run clear @s #minecraft:all{raceLocked:true,Races:["sludge"]}
+
+execute if entity @s[predicate=!race/bloodborne] run clear @s #minecraft:all{raceLocked:true,Races:["bloodborne"]}
+
+execute if entity @s[predicate=!race/parasite] run clear @s #minecraft:all{raceLocked:true,Races:["parasite"]}
+
+execute if entity @s[predicate=!race/flora] run clear @s #minecraft:all{raceLocked:true,Races:["flora"]}
+
+execute if entity @s[predicate=!race/arthropod] run clear @s #minecraft:all{raceLocked:true,Races:["arthropod"]}

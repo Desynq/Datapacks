@@ -1,0 +1,42 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"  1",
+		" 12",
+		"1 2"
+	],
+	"key": {
+		"1": {
+			"item": "minecraft:white_dye",
+			"data": {
+				"require": {
+					"type": "mystite_tool_rod"
+				}
+			}
+		},
+		"2": {
+			"item": "minecraft:white_dye",
+			"data": {
+				"require": {
+					"type": "soul_string"
+				}
+			}
+		}
+	},
+	"result": {
+		"item": "minecraft:fishing_rod",
+		"data": {
+			"CustomModelData": 1,
+			"type": "mystite_fishing_rod",
+			"Enchantments": [
+				{
+					"id": "minecraft:lure",
+					"lvl": 5
+				}
+			],
+			"display": {
+				"Name": "{\"italic\":\"false\",\"color\":\"#4710a8\",\"text\":\"Mystite Fishing Rod\"}"
+			}
+		}
+	}
+}

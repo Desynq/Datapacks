@@ -35,3 +35,8 @@ execute unless entity @s[predicate=!equipment/mainhand/coas/gun/light_machine_gu
 
 ## Light Machine Gun
 execute unless entity @s[predicate=!equipment/mainhand/coas/gun/pump-action_shotgun,predicate=!equipment/offhand/coas/gun/pump-action_shotgun] run function actionbar:coas/gun/pump-action_shotgun
+
+
+
+## Railgun
+execute unless entity @s[predicate=!equipment/mainhand/coas/gun/railgun,predicate=!equipment/offhand/coas/gun/railgun] run function actionbar:coas/gun/railgun/run

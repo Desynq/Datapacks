@@ -1,27 +1,27 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		"111",
+		" 1 ",
 		"121",
-		"111"
+		" 1 "
 	],
 	"key": {
 		"1": {
 			"item": "minecraft:arrow"
 		},
 		"2": {
-			"item": "minecraft:tnt"
+			"item": "minecraft:gunpowder"
 		}
 	},
 	"result": {
 		"item": "minecraft:tipped_arrow",
-		"count": 8,
+		"count": 4,
 		"data": {
 			"CustomModelData": 1,
 			"type": "explosive_arrow",
 			"HideFlags": 32,
 			"display": {
-				"Name": "{\"italic\":\"false\",\"text\":\"Explosive Arrow\"}"
+				"Name": "{\"italic\":\"false\",\"color\":\"dark_green\",\"text\":\"Explosive Arrow\"}"
 			},
 			"CustomPotionEffects": [
 				{

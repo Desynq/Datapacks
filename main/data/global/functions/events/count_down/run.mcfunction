@@ -1,1 +1,0 @@
-function global:events/count_down/3

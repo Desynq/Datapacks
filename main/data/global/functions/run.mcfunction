@@ -11,6 +11,7 @@ function global:gamerules/run
 #
 
 	execute store result score daytime timer run time query daytime
+
 	execute if score 20 tick matches 20 store result score day timer store result score day temp run time query day
 	execute if score 20 tick matches 20 store result score moonPhase boolean run scoreboard players operation day temp %= 8 math
 

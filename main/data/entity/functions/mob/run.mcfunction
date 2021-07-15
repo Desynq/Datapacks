@@ -1,7 +1,3 @@
-### Auto-Despawn ###
-	execute if entity @s[type=#nospawn,tag=] run function entity:mob/auto_despawn
-	execute if entity @s[type=bat,tag=,predicate=!dimension/overworld] run function entity:mob/auto_despawn
-
 ### Teams ###
 execute if entity @s[team=] run function entity:mob/join_team
 
@@ -25,7 +21,7 @@ effect clear @s[team=mob,predicate=effects/levitation_0] levitation
 execute if entity @s[predicate=dimension/translocatable] if block ~ ~ ~ structure_void run kill @s
 
 
-execute if entity @s[type=cave_spider,predicate=dimension/overworld,nbt={HurtTime:10s}] align xyz if block ~ ~ ~ #air run function entity:mob/spiderweb
+execute if entity @s[type=cave_spider,predicate=minecraft:dimension/overworld,nbt={HurtTime:10s}] align xyz if block ~ ~ ~ #air run function entity:mob/spiderweb
 
 
 
@@ -35,7 +31,7 @@ execute if entity @s[type=cave_spider,predicate=dimension/overworld,nbt={HurtTim
 
 execute if entity @s[tag=custom] run function entity:mob/custom/run
 
-execute if entity @s[type=pillager] run function entity:mob/illager
+execute if entity @s[type=pillager,team=militia,tag=] run function entity:mob/militia/scout/modify
 
 execute if entity @s[type=#zombies,predicate=entity/is/baby] run data merge entity @s {Health:0}
 
@@ -78,7 +74,8 @@ execute if entity @s[type=#zombies,predicate=entity/is/baby] run data merge enti
 
 
 
-	execute if entity @s[type=wither,tag=,predicate=dimension/overworld] run data merge entity @s {Health:1000,Attributes:[{Name:generic.max_health,Base:1000}],Tags:["boss","charged"]}
+	execute if entity @s[type=wither,tag=,predicate=minecraft:dimension/overworld] run data merge entity @s {Health:1000,Attributes:[{Name:generic.max_health,Base:1000}],Tags:["boss","charged"]}
+	execute if entity @s[type=wither,tag=charged] store result score @s entHealth run data get entity @s Health 1
 	execute if score 100 tick matches 100 if entity @s[type=wither,tag=charged] run function myst:mobs/rift_scavenger/summon_decayed
 	execute if score 100 tick matches 100 if entity @s[type=wither,tag=charged] run function myst:mobs/rift_scavenger/summon_decayed
 

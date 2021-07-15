@@ -9,7 +9,7 @@
 			"color": "gray"
         },
         "icon": {
-            "item": "minecraft:azalea"
+            "item": "minecraft:budding_amethyst"
         },
         "frame": "goal",
         "show_toast": false,

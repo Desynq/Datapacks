@@ -1,21 +1,15 @@
 {
     "display": {
-        "title": {
-            "text": "Bloodborne",
-            "color": "dark_red"
-        },
-        "description": {
-            "text": "A combat-centered race that focuses on strong and fast attacks instead of defence",
-            "color": "gray"
-        },
+        "title": "Bloodborne Upgrades",
+        "description": "",
         "icon": {
-            "item": "minecraft:netherite_sword"
+            "item": "minecraft:nether_star"
         },
         "frame": "challenge",
         "show_toast": false,
         "announce_to_chat": false,
         "hidden": false,
-        "background": "minecraft:textures/block/fire_coral_block.png"
+        "background": "minecraft:textures/block/deepslate_redstone_ore.png"
     },
     "criteria": {
         "acquired": {

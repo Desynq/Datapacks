@@ -4,11 +4,11 @@
 		{
 			"item": "minecraft:carrot_on_a_stick",
 			"data": {
-				"type": "ice_cube_hat"
+				"type": "ice_cube"
 			}
 		},
 		{
-			"item": "minecraft:blue_ice"
+			"item": "minecraft:packed_ice"
 		}
 	],
 	"result": {
@@ -16,7 +16,7 @@
 		"count": 1,
 		"data": {
 			"CustomModelData": 4003,
-			"type": "ice_cube_hat",
+			"type": "ice_cube",
 			"durability": 1000,
 			"display": {
 				"Name": "{\"italic\":\"false\",\"color\":\"white\",\"text\":\"Ice Cube\"}",

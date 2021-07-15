@@ -5,7 +5,7 @@
 			"color": "dark_green"
         },
         "description": {
-            "text": "All shot projectiles become explosive on contact with entities or blocks",
+            "text": "Arrows you fire become create a Power 3 explosion on contact with blocks or entities",
 			"color": "gray"
         },
         "icon": {
