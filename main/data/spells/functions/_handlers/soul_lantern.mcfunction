@@ -18,7 +18,7 @@ execute if entity @s[nbt={SelectedItem:{id:"minecraft:bone"}},scores={u.coas=1..
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:shulker_shell"}},scores={u.coas=1..,c.spell=0,xp=20..},tag=rifting] run function spells:soul_cleanse/run
 
 
-execute if entity @s[nbt={SelectedItem:{id:"minecraft:arrow"}},scores={u.coas=1..,c.spell=0,xp=50..}] run function spells:arrow_storm/run
+execute if entity @s[nbt={SelectedItem:{id:"minecraft:arrow"}},scores={u.coas=1..,c.spell=0,xp=250..}] run function spells:arrow_storm/run
 
 
 execute if entity @s[nbt={SelectedItem:{id:"minecraft:fermented_spider_eye"}},scores={u.coas=1..,c.spell=0,xp=10..}] run function spells:aoe_invis/run

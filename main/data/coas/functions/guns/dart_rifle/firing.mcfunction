@@ -20,4 +20,4 @@ playsound entity.firework_rocket.large_blast master @a ~ ~ ~ 4
 function coas:guns/chemx/cooldown
 clear @s tipped_arrow 1
 scoreboard players add @s d.chemx 1
-tp @s[tag=!proning,predicate=!entity/riding/anything] ~ ~ ~ ~ ~-30
+tp @s[tag=!proning,predicate=!entity:riding/anything] ~ ~ ~ ~ ~-30

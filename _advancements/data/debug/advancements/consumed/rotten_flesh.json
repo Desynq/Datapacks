@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "Rotten Flesh"
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:rotten_flesh"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:rotten_flesh"
+                    ]
+                }
+            }
+        }
+    },
+    "parent": "debug:consume_item"
+}

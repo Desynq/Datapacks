@@ -16,6 +16,6 @@ tag @e[tag=mgl.bullet,tag=!marked] add marked
 playsound entity.arrow.shoot master @a ~ ~ ~ 4 .75
 playsound item.crossbow.loading_end master @a ~ ~ ~ 2 1
 
-tp @s[predicate=!entity/riding/anything,tag=!proning] ~ ~ ~ ~ ~-5
+tp @s[predicate=!entity:riding/anything,tag=!proning] ~ ~ ~ ~ ~-5
 
 scoreboard players remove @s a.mgl 1

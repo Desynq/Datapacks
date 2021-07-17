@@ -1,0 +1,30 @@
+{
+    "display": {
+        "title": {
+            "text": "Honey Bottle"
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:honey_bottle"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:honey_bottle"
+                    ]
+                }
+            }
+        }
+    },
+    "parent": "debug:consume_item"
+}

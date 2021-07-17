@@ -18,5 +18,5 @@ playsound entity.firework_rocket.large_blast master @a ~ ~ ~ 4 .75
 
 function coas:guns/desert_eagle/cooldown
 scoreboard players add @s d.deagle 1
-tp @s[tag=!proning,predicate=!entity/riding/anything] ~ ~ ~ ~ ~-20
+tp @s[tag=!proning,predicate=!entity:riding/anything] ~ ~ ~ ~ ~-20
 scoreboard players remove @s a.deagle 1

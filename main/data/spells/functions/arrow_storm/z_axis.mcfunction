@@ -1,0 +1,11 @@
+execute positioned ~ ~ ~-5 run function spells:arrow_storm/summon_arrow
+execute positioned ~ ~ ~-4 run function spells:arrow_storm/summon_arrow
+execute positioned ~ ~ ~-3 run function spells:arrow_storm/summon_arrow
+execute positioned ~ ~ ~-2 run function spells:arrow_storm/summon_arrow
+execute positioned ~ ~ ~-1 run function spells:arrow_storm/summon_arrow
+execute positioned ~ ~ ~ run function spells:arrow_storm/summon_arrow
+execute positioned ~ ~ ~1 run function spells:arrow_storm/summon_arrow
+execute positioned ~ ~ ~2 run function spells:arrow_storm/summon_arrow
+execute positioned ~ ~ ~3 run function spells:arrow_storm/summon_arrow
+execute positioned ~ ~ ~4 run function spells:arrow_storm/summon_arrow
+execute positioned ~ ~ ~5 run function spells:arrow_storm/summon_arrow

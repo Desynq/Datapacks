@@ -9,8 +9,8 @@
 # Compatability
 ################
 
-execute store success score ran temp run datapack disable vanilla
-execute if score ran temp matches 1 run function debug:reorder
+execute store success score %bool global run datapack disable vanilla
+execute if score %bool global matches 1 run function debug:load/reorder
 
 commandaliases reload
 
@@ -21,6 +21,10 @@ commandaliases reload
 ##############
 
 execute in minecraft:overworld run summon marker 0 0 0 {Tags:["onLoad"]}
+
+
+
+function debug:load/bossbars
 
 
 

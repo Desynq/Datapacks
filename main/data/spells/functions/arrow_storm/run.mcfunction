@@ -1,7 +1,9 @@
-summon area_effect_cloud ~ ~ ~ {Tags:["arrow_storm.ray"],Radius:0}
-tp @e[tag=arrow_storm.ray] @s
-scoreboard players operation @e[tag=arrow_storm.ray,limit=1] ent.list = @s list
-execute as @e[type=area_effect_cloud,tag=arrow_storm.ray] at @s run function spells:arrow_storm/raycast
+summon marker ~ ~ ~ {Tags:["arrow_storm.ray"]}
+execute anchored eyes run tp @e[type=marker,tag=arrow_storm.ray] ~ ~ ~ ~ ~
+scoreboard players operation @e[type=marker,tag=arrow_storm.ray] entList = @s list
+execute as @e[type=marker,tag=arrow_storm.ray] at @s run function spells:arrow_storm/raycast
+
+
 
 playsound item.crossbow.shoot master @a[distance=0..] ~ ~ ~ 4 .8
 playsound item.crossbow.shoot master @a[distance=0..] ~ ~ ~ 4 .9
@@ -9,6 +11,9 @@ playsound item.crossbow.shoot master @a[distance=0..] ~ ~ ~ 4 1
 playsound item.crossbow.shoot master @a[distance=0..] ~ ~ ~ 4 1.1
 playsound item.crossbow.shoot master @a[distance=0..] ~ ~ ~ 4 1.2
 
+
+
 scoreboard players set @s c.spell 50
-xp add @s -50 points
+xp add @s -250 points
+function math:xp/run
 clear @s arrow 1

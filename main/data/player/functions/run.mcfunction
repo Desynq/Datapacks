@@ -12,7 +12,6 @@ execute store result score @s HurtTime run data get entity @s HurtTime 1
 execute store result score @s Health run data get entity @s Health 1
 
 execute store result score @s regen_amp run data get entity @s ActiveEffects[{Id:10b}].Amplifier 1
-execute store result score @s hunger_amp run data get entity @s ActiveEffects[{Id:17b}].Amplifier 1
 execute store result score @s poison_amp run data get entity @s ActiveEffects[{Id:19b}].Amplifier 1
 
 
@@ -80,8 +79,8 @@ execute if entity @s[predicate=effects/absorption,nbt={AbsorptionAmount:0.0f}] r
 
 
 ## fixes edibles being consumed after death
-execute if entity @s[scores={DeathTime=1..,ateGoldenApple=1..}] run give @s golden_apple
-execute if entity @s[scores={DeathTime=1..,ateDiamondApple=1..}] run give @s enchanted_golden_apple
+execute if entity @s[scores={DeathTime=1..},advancements={debug:consumed/golden_apple=true}] run give @s golden_apple
+execute if entity @s[scores={DeathTime=1..},advancements={debug:consumed/diamond_apple=true}] run give @s enchanted_golden_apple
 
 
 
@@ -302,11 +301,11 @@ execute if entity @s[predicate=!minecraft:dimension/overworld,predicate=equipmen
 # Foods
 ########
 
-	execute if entity @s[scores={ateHoneyBottle=1..}] run effect give @s minecraft:hero_of_the_village 15 0 false
+	execute if entity @s[advancements={debug:consumed/honey_bottle=true}] run effect give @s minecraft:hero_of_the_village 15 0 false
 
-	execute if entity @s[scores={atePoisonPotato=1..}] run function player:status_effects/poisonous_potato/blow_up
+	execute if entity @s[advancements={debug:consumed/poisonous_potato=true}] run function player:status_effects/poisonous_potato/blow_up
 
-	execute if entity @s[scores={ateDiamondApple=1..}] run effect give @s minecraft:resistance 1000000 1 true
+	execute if entity @s[advancements={debug:consumed/diamond_apple=true}] run effect give @s minecraft:resistance 1000000 1 true
 
 
 

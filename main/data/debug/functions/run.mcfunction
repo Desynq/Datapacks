@@ -78,7 +78,7 @@ execute as @a[advancements={debug:inventory_changed=true}] run function debug:pl
 
 
 kill @e[type=#arrows,tag=bullet,nbt={inGround:true}]
-kill @e[type=area_effect_cloud,tag=RootVehicle,predicate=entity/ridden_by/anything]
+kill @e[type=area_effect_cloud,tag=RootVehicle,predicate=entity:ridden_by/anything]
 
 kill @e[type=item,nbt={Item:{tag:{Tags:["clear"]}}}]
 kill @e[type=item,nbt={Item:{tag:{Tags:["buyable"]}}}]

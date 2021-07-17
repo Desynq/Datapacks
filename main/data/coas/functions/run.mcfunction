@@ -1,6 +1,6 @@
 tag @s[tag=reloadable] remove reloadable
 tag @s[tag=!reloadable,scores={sneak=1..}] add reloadable
-tag @s[tag=!reloadable,predicate=entity/riding/anything] add reloadable
+tag @s[tag=!reloadable,predicate=entity:riding/anything] add reloadable
 
 
 execute unless score @s spray matches 0.. run scoreboard players set @s spray 0

@@ -1,7 +1,41 @@
-bossbar set bosshp color blue
+#################
+# Team Detection
+#################
 
-execute store success score ran temp if entity @s[type=#mob,tag=patrol] run bossbar set bosshp color yellow
+execute store success score %bool global run execute if entity @s[team=militia]
+execute if score %bool global matches 1 run bossbar set custom:boss color green
+execute if score %bool global matches 1 run scoreboard players reset %bool global
 
-execute store success score ran temp if entity @s[type=wither_skeleton] run bossbar set bosshp color purple
 
-execute store success score ran temp if entity @s[type=#mob,team=militia] run bossbar set bosshp color green
+
+#################
+# Type Detection
+#################
+
+execute if score %bool global matches 0 store success score %bool global run execute if entity @s[type=wither_skeleton]
+execute if score %bool global matches 1 run bossbar set custom:boss color purple
+execute if score %bool global matches 1 run scoreboard players reset %bool global
+
+
+
+execute if score %bool global matches 0 store success score %bool global run execute if entity @s[type=player]
+execute if score %bool global matches 1 run bossbar set custom:boss color white
+execute if score %bool global matches 1 run scoreboard players reset %bool global
+
+
+
+################
+# Tag Detection
+################
+
+execute if score %bool global matches 0 store success score %bool global run execute if entity @s[tag=patrol]
+execute if score %bool global matches 1 run bossbar set custom:boss color yellow
+execute if score %bool global matches 1 run scoreboard players reset %bool global
+
+
+
+#################
+# Else Condition
+#################
+
+execute if score %bool global matches 0 run bossbar set custom:boss color blue

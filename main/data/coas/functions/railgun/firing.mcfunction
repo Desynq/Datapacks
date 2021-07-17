@@ -18,6 +18,6 @@ summon item ^-.5 ^1 ^.5 {Invulnerable:true,PickupDelay:32767,Item:{id:"minecraft
 
 
 
-tp @s[predicate=!entity/riding/anything,tag=!proning] ~ ~ ~ ~ ~-30
+tp @s[predicate=!entity:riding/anything,tag=!proning] ~ ~ ~ ~ ~-30
 
 scoreboard players remove @s[scores={a.rg=1..}] a.rg 1

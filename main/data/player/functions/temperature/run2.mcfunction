@@ -22,7 +22,7 @@ execute if score season timer matches 3 if score 10 tick matches 10 if score @s 
 # Winter
 #########
 
-execute if score season timer matches 1 if score 5 tick matches 5 if block ~ ~ ~ water unless score @s temperature matches ..0 unless entity @s[predicate=entity/riding/boat] run function player:temperature/lower
+execute if score season timer matches 1 if score 5 tick matches 5 if block ~ ~ ~ water unless score @s temperature matches ..0 unless entity @s[predicate=entity:riding/boat] run function player:temperature/lower
 
 execute if score season timer matches 1 if score 20 tick matches 20 if entity @s[predicate=light/0-12] unless score @s temperature matches ..0 run function player:temperature/lower
 execute if score season timer matches 1 if score 20 tick matches 20 if entity @s[predicate=!clear_weather,predicate=!biome/dry] if blocks ~ ~1 ~ ~ 255 ~ ~ ~3 ~ masked if score @s temperature matches 1.. run function player:temperature/lower

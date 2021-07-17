@@ -1,20 +1,24 @@
 ### Init ###
 
-	bossbar set bosshp players @a
-	bossbar set fuse players @a
+	bossbar set custom:boss players @a
+	bossbar set minecraft:fuse players @a
 
 ### Visibility ###
 
-	execute if entity @e[type=#mob,type=!wither,tag=boss,tag=!fakeboss] run bossbar set bosshp visible true
-	execute unless entity @e[type=#mob,type=!wither,tag=boss,tag=!fakeboss] run bossbar set bosshp visible false
+	execute store success score %bool global run execute if entity @e[type=#mob,type=!wither,tag=boss]
+
+	execute if score %bool global matches 1 run bossbar set custom:boss visible true
+	execute if score %bool global matches 0 run bossbar set custom:boss visible false
 
 
 
 ### I don't know why this works ###
 
 	execute unless entity @e[type=#mob,type=!wither,tag=boss,tag=bossbar] run tag @e[type=#mob,tag=boss,tag=!bossbar,limit=1] add bossbar
-	execute if entity @e[type=#mob,type=!wither,tag=boss,tag=!fakeboss,nbt=!{HurtTime:0s}] run tag @e[type=#mob,tag=boss,tag=!fakeboss,tag=bossbar] remove bossbar
-	tag @e[type=#mob,type=!wither,tag=boss,tag=!fakeboss,nbt=!{HurtTime:0s}] add bossbar
+
+	execute if entity @e[type=#mob,type=!wither,tag=boss,nbt=!{HurtTime:0s}] run tag @e[type=#mob,tag=boss,tag=bossbar] remove bossbar
+
+	tag @e[type=#mob,type=!wither,tag=boss,nbt=!{HurtTime:0s}] add bossbar
 
 
 ### Run ###
@@ -28,7 +32,9 @@
 
 ### Bomb ###
 
-	execute if entity @e[type=tnt,tag=bomb] run bossbar set fuse visible true
-	execute unless entity @e[type=tnt,tag=bomb] run bossbar set fuse visible false
+	execute store success score %bool global run execute if entity @e[type=tnt,tag=bomb]
 
-	execute store result bossbar fuse value run data get entity @e[type=tnt,tag=bomb,limit=1] Fuse 1
+	execute if score %bool global matches 1 run bossbar set minecraft:fuse visible true
+	execute if score %bool global matches 0 run bossbar set minecraft:fuse visible false
+
+	execute store result bossbar minecraft:fuse value run data get entity @e[type=tnt,tag=bomb,limit=1] Fuse 1

@@ -48,7 +48,10 @@ data merge block -65 31 57 {LootTable:"custom:radtown/warehouse"}
 data merge block -65 31 60 {LootTable:"custom:radtown/warehouse"}
 data merge block -70 36 54 {LootTable:"custom:radtown/warehouse"}
 data merge block -70 31 44 {LootTable:"custom:radtown/warehouse"}
+
 data merge block -70 39 65 {LootTable:"custom:elite"}
+
+data merge block -70 40 47 {LootTable:"custom:military"}
 
 
 
@@ -70,12 +73,12 @@ data merge block 110 31 106 {LootTable:"custom:wasteland"}
 
 	
 ## Excavator
-data merge block -15 67 -92 {LootTable:"custom:container/treasure"}
+data merge block -15 68 -92 {LootTable:"custom:container/treasure"}
 
-data merge block -12 35 -88 {LootTable:"custom:container/mining"}
-data merge block -31 44 -90 {LootTable:"custom:container/mining"}
-data merge block -35 49 -88 {LootTable:"custom:container/mining"}
-data merge block -15 58 -90 {LootTable:"custom:container/mining"}
+data merge block -12 36 -88 {LootTable:"custom:container/mining"}
+data merge block -31 45 -90 {LootTable:"custom:container/mining"}
+data merge block -35 50 -88 {LootTable:"custom:container/mining"}
+data merge block -15 59 -90 {LootTable:"custom:container/mining"}
 
 
 

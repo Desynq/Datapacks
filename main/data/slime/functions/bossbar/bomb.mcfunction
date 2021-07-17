@@ -1,1 +1,1 @@
-summon tnt ~ ~ ~ {Glowing:1,team:mob,Tags:["bomb"],Fuse:12000}
+summon tnt ~ ~ ~ {Glowing:1,Team:mob,Tags:["bomb"],Fuse:12000}

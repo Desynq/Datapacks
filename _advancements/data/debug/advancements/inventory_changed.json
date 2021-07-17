@@ -18,14 +18,8 @@
     },
     "criteria": {
         "acquired": {
-            "trigger": "minecraft:inventory_changed",
-			"conditions": {
-				"items": [
-					{
-					}
-				]
-			}
+            "trigger": "minecraft:inventory_changed"
         }
     },
-    "parent": "debug:invalid"
+    "parent": "debug:root"
 }

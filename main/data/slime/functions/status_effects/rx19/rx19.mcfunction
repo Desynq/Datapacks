@@ -5,6 +5,6 @@ effect give @s[advancements={challenges/myst/stage_3=true},predicate=!minecraft:
 effect give @s[advancements={challenges/myst/stage_4=true}] minecraft:weakness 2048 1 true
 
 
-execute if entity @s[predicate=!minecraft:entity/riding/boat] run function slime:status_effects/rx19/hydrophobia
+execute if entity @s[predicate=!entity:riding/boat] run function slime:status_effects/rx19/hydrophobia
 
-execute if entity @s[predicate=minecraft:entity/is/on_fire] run function slime:status_effects/rx19/on_fire
+execute if entity @s[predicate=entity:is/on_fire] run function slime:status_effects/rx19/on_fire

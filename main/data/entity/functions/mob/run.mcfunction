@@ -33,7 +33,7 @@ execute if entity @s[tag=custom] run function entity:mob/custom/run
 
 execute if entity @s[type=pillager,team=militia,tag=] run function entity:mob/militia/scout/modify
 
-execute if entity @s[type=#zombies,predicate=entity/is/baby] run data merge entity @s {Health:0}
+execute if entity @s[type=#zombies,predicate=entity:is/baby] run data merge entity @s {Health:0}
 
 
 
@@ -43,7 +43,7 @@ execute if entity @s[type=#zombies,predicate=entity/is/baby] run data merge enti
 
 
 ### Militia ###
-	execute if entity @s[type=husk,tag=militia.heavy,predicate=entity/targeting/anything] run function entity:mob/militia/heavy/run
+	execute if entity @s[type=husk,tag=militia.heavy,predicate=entity:targeting/anything] run function entity:mob/militia/heavy/run
 
 ### SCP ###
 	execute if entity @s[tag=457] run function myst:scp/457/run

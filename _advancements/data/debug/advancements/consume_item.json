@@ -1,15 +1,13 @@
 {
     "display": {
         "title": {
-            "text": "Invalid",
-			"color": "white"
+            "text": "Consumed Item"
         },
         "description": {
-            "text": "",
-			"color": "white"
+            "text": ""
         },
         "icon": {
-            "item": "minecraft:barrier"
+            "item": "minecraft:apple"
         },
         "frame": "task",
         "show_toast": false,
@@ -18,7 +16,7 @@
     },
     "criteria": {
         "acquired": {
-            "trigger": "minecraft:impossible"
+            "trigger": "minecraft:consume_item"
         }
     },
     "parent": "debug:root"

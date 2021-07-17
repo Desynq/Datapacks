@@ -7,6 +7,6 @@ execute positioned ^ ^.8 ^ as @e[tag=zeus_electrode,distance=..1] run tp @s ~ ~ 
 
 
 playsound entity.zombie_villager.cure master @a ~ ~ ~ 4
-tp @s[predicate=!entity/riding/anything,tag=!proning] ~ ~ ~ ~ ~-5
+tp @s[predicate=!entity:riding/anything,tag=!proning] ~ ~ ~ ~ ~-5
 playsound entity.item.pickup master @a
 item replace entity @s weapon.mainhand with air

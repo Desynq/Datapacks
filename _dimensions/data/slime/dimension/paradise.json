@@ -8,14 +8,26 @@
 			"lakes": false,
 			"lava_lakes": false,
 			"features": true,
-			"biome": "minecraft:lukewarm_ocean",
+			"biome": "slime:paradise_ocean",
 			"structures": {
 				"structures": {}
 			},
 			"layers": [
 				{
-					"height": 1,
+					"height": 168,
 					"block": "minecraft:air"
+				},
+				{
+					"height": 1,
+					"block": "minecraft:sandstone"
+				},
+				{
+					"height": 5,
+					"block": "minecraft:sand"
+				},
+				{
+					"height": 10,
+					"block": "minecraft:water"
 				}
 			]
 		}

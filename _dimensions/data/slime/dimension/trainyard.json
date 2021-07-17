@@ -1,5 +1,5 @@
 {
-	"type": "slime:trainyard",
+	"type": "myst:trainyard",
 	"generator": {
 		"type": "minecraft:flat",
 		"seed": 0,

@@ -19,7 +19,7 @@
                             "conditions": [
                                 {
                                     "condition": "reference",
-                                    "name": "entity/has_tag/giving_item"
+                                    "name": "entity:has_tag/giving_item"
                                 }
                             ]
                         },

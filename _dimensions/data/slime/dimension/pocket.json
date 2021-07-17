@@ -1,5 +1,5 @@
 {
-	"type": "slime:default",
+	"type": "slime:pocket",
 	"generator": {
 		"type": "minecraft:flat",
 		"seed": 0,

@@ -1,5 +1,5 @@
 {
-	"type": "slime:default",
+	"type": "minecraft:overworld",
 	"generator": {
 		"type": "minecraft:flat",
 		"seed": 2043603658,

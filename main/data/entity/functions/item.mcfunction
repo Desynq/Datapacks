@@ -28,7 +28,7 @@ scoreboard players add @s[tag=grenade] despawn.timer 1
 
 execute if entity @s[tag=he.grenade,scores={despawn.timer=40..}] run function debug:explode/kill_after/small
 
-execute if entity @s[predicate=entity/is/on_fire,nbt={Item:{id:"minecraft:poisonous_potato"}}] run function debug:explode/kill_after/small
+execute if entity @s[predicate=entity:is/on_fire,nbt={Item:{id:"minecraft:poisonous_potato"}}] run function debug:explode/kill_after/small
 
 #################
 # Spawner Pickup
@@ -63,6 +63,6 @@ execute if entity @s[tag=ritual.rift_mage,nbt={Item:{id:"minecraft:end_crystal"}
 #########
 
 execute if entity @s[predicate=dimension/the_myst,x=-224.5,y=26,z=121.5,distance=..1,nbt={Item:{tag:{type:zephyr_token}},OnGround:1b}] run function entity:item/event/zephyr
-execute if entity @s[tag=zephyr_spawn,predicate=entity/is/on_fire] run data merge entity @s {Fire:0s}
+execute if entity @s[tag=zephyr_spawn,predicate=entity:is/on_fire] run data merge entity @s {Fire:0s}
 execute if entity @s[tag=zephyr_spawn,nbt=!{PickupDelay:0s}] run particle splash ~ ~0.5 ~ 0.25 0.25 0.25 0.1 10 force @a
 execute if entity @s[tag=zephyr_spawn,nbt=!{PickupDelay:0s}] run particle cloud ~ ~0.5 ~ 3 0.25 3 0.1 10 force @a
