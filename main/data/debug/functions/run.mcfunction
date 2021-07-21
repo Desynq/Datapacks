@@ -14,6 +14,9 @@ execute store result score x rng run data get entity @e[type=marker,tag=rng,limi
 kill @e[type=marker,tag=rng]
 
 
+execute as @a run function debug:clear_effects
+
+
 
 ##########
 # Ticking
@@ -64,9 +67,10 @@ execute if score 20 tick matches 20 as @a at @s run function debug:stats
 
 execute as @e[type=!player] at @s run function entity:run
 
-execute as @a[predicate=effects/luck_1] at @s run function entity:custom/died_from_he_arrow
-execute as @a[predicate=effects/luck_2] at @s run function entity:custom/died_from_he_charged_arrow
-execute as @a[predicate=effects/luck_3] at @s run function entity:custom/died_from_he_supercharged_arrow
+execute as @a[predicate=effects/luck_1] at @s run function entity:custom/hit_by/he_arrow/tier_1
+execute as @a[predicate=effects/luck_2] at @s run function entity:custom/hit_by/he_arrow/tier_2
+execute as @a[predicate=effects/luck_3] at @s run function entity:custom/hit_by/he_arrow/tier_3
+execute as @a[predicate=effects/luck_4] at @s run function entity:custom/hit_by/he_arrow/tier_4
 
 
 
@@ -87,7 +91,7 @@ kill @e[type=item,nbt={Item:{tag:{Tags:["custom"]}}}]
 kill @e[type=item,nbt={Item:{tag:{Tags:["eod_armour"]}}}]
 
 
-execute as @a run function player:reset
+execute as @a at @s run function player:reset
 
 
 

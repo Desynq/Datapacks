@@ -6,4 +6,4 @@ effect give @s saturation 100 0 false
 
 
 xp add @s -50 points
-scoreboard players set @s c.spell 20
+scoreboard players set @s c.spell 50

@@ -1,6 +1,10 @@
-execute positioned ~ ~-1.8 ~ at @e[type=#mob,distance=..1] unless score @e[type=#mob,sort=nearest,limit=1] list = @s list run effect give @e[type=#mob,sort=nearest,limit=1] instant_health 1 0 true
+execute as @e[type=#mob,dx=0] unless score @s list = @p list run effect give @s minecraft:instant_health 1 0 true
 
-particle dust 1 0 0 1 ^ ^ ^1 .1 .1 .1 .1 10 force @a
+
+
+execute if score @s t.heal_beam matches 1.. run particle minecraft:dust 1 0 0 1 ~ ~ ~ .1 .1 .1 .1 5 force @a
+
+
 
 scoreboard players add @s t.heal_beam 1
 

@@ -19,9 +19,6 @@ execute if score %result global matches 0 run function player:init/player_storag
 execute if score @s droppedItem matches 1.. run advancement grant @s only debug:inventory_changed
 
 
-function player:init/clear_effects
-
-
 
 #############
 # Attributes

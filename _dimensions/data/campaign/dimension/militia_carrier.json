@@ -1,5 +1,5 @@
 {
-	"type": "slime:ocean",
+	"type": "campaign:ocean",
 	"generator": {
 		"type": "minecraft:flat",
 		"seed": 0,
@@ -8,7 +8,7 @@
 			"lakes": false,
 			"lava_lakes": false,
 			"features": true,
-			"biome": "minecraft:deep_cold_ocean",
+			"biome": "campaign:cold_sea",
 			"structures": {
 				"structures": {}
 			},

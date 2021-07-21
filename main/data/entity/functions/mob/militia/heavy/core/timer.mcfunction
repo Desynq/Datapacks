@@ -4,7 +4,7 @@ tag @s remove selectorA
 
 
 
-execute positioned ~ ~1.8 ~ run function entity:mob/militia/heavy/core/raycast
+execute anchored eyes positioned ^ ^ ^ run function entity:mob/militia/heavy/core/raycast
 
 tag @e[type=#mob,tag=targeted] remove targeted
 scoreboard players reset @s entTimer

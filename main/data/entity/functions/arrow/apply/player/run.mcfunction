@@ -3,12 +3,12 @@ execute as @e[type=marker,tag=player_storage] if score @s entOwner = @p plyUUID 
 
 
 ## Bow with Piercing
-execute if entity @s[predicate=minecraft:equipment/mainhand/bow,predicate=minecraft:equipment/mainhand/enchantment/piercing] as @e[type=#arrows,tag=selectorArrow] run function entity:arrow/apply/piercing
+execute if entity @s[predicate=entity:equipment/mainhand/bow,predicate=entity:equipment/mainhand/enchantment/piercing] as @e[type=#arrows,tag=selectorArrow] run function entity:arrow/apply/piercing
 
 
 
 ## Crossbow with Power
-execute if entity @s[predicate=minecraft:equipment/mainhand/crossbow,predicate=minecraft:equipment/mainhand/enchantment/power] run function entity:arrow/apply/power
+execute if entity @s[predicate=entity:equipment/mainhand/crossbow,predicate=entity:equipment/mainhand/enchantment/power] run function entity:arrow/apply/power
 
 
 

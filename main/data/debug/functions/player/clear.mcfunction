@@ -2,7 +2,7 @@ clear @s #minecraft:all{Tags:["clear"]}
 
 
 
-execute if entity @s[predicate=!equipment/head/eod_armor] run clear @s #minecraft:all{Tags:["eod_armour"]}
+execute if entity @s[predicate=!entity:equipment/head/eod_armor] run clear @s #minecraft:all{Tags:["eod_armour"]}
 
 
 

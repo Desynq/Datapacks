@@ -3,14 +3,14 @@ execute unless entity @s[scores={craftID=0..}] run scoreboard players set @s cra
 execute if entity @s[tag=!stat_checked] run function enderchest:stats/reset
 
 
-execute if entity @s[tag=!cmp,predicate=equipment/offhand/slime_ball] run function enderchest:sell/slime_ball
-execute if entity @s[tag=!cmp,predicate=equipment/offhand/slime_block] run function enderchest:sell/slime_block
-execute if entity @s[tag=!cmp,predicate=equipment/offhand/emerald] run function enderchest:sell/emerald
-execute if entity @s[tag=!cmp,predicate=equipment/offhand/ink_sac] run function enderchest:sell/ink_sac
+execute if entity @s[tag=!cmp,predicate=entity:equipment/offhand/slime_ball] run function enderchest:sell/slime_ball
+execute if entity @s[tag=!cmp,predicate=entity:equipment/offhand/slime_block] run function enderchest:sell/slime_block
+execute if entity @s[tag=!cmp,predicate=entity:equipment/offhand/emerald] run function enderchest:sell/emerald
+execute if entity @s[tag=!cmp,predicate=entity:equipment/offhand/ink_sac] run function enderchest:sell/ink_sac
 
 
 
-execute if entity @s[predicate=equipment/mainhand/ender_chest] run scoreboard players set @s openShop 1
+execute if entity @s[predicate=entity:equipment/mainhand/ender_chest] run scoreboard players set @s openShop 1
 execute if entity @s[scores={openShop=1..}] run function enderchest:menu_handler
 
 

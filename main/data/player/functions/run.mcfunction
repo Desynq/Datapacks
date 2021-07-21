@@ -20,7 +20,6 @@ execute unless score @s lowDetailMode matches 0..1 run scoreboard players set @s
 
 
 
-
 ##############
 # Gravestones
 ##############
@@ -218,7 +217,7 @@ execute if entity @s[tag=!adventure,gamemode=adventure] unless entity @s[predica
 tag @s[tag=adventure] remove adventure
 
 execute if entity @s[predicate=minecraft:dimension/overworld,scores={x=-128..127,z=-128..127}] run tag @s add adventure
-execute if entity @s[predicate=equipment/adventure_only] run tag @s add adventure
+execute if entity @s[predicate=entity:equipment/adventure_only] run tag @s add adventure
 
 gamemode adventure @s[tag=adventure,gamemode=survival]
 
@@ -241,18 +240,18 @@ kill @s[scores={breath=0},predicate=in_myst]
 
 gamemode adventure @s[gamemode=survival,predicate=in_adventure_dim]
 
-execute if entity @s[gamemode=adventure,tag=!scp,predicate=!equipment/feet/soulwalker_boots,predicate=dimension/translocatable] if block ~ ~-.01 ~ crying_obsidian run function myst:portal/exit
+execute if entity @s[gamemode=adventure,tag=!scp,predicate=!entity:equipment/feet/soulwalker_boots,predicate=dimension/translocatable] if block ~ ~-.01 ~ crying_obsidian run function myst:portal/exit
 execute if score portal temp matches 1 if entity @s[gamemode=!spectator,scores={x=-183,y=2,z=-16}] run function myst:portal/enter
 
 effect clear @s[tag=myst_mining] mining_fatigue
 tag @s remove myst_mining
-tag @s[predicate=dimension/trainyard,predicate=equipment/mainhand/mystite_pickaxe] add myst_mining
+tag @s[predicate=dimension/trainyard,predicate=entity:equipment/mainhand/mystite_pickaxe] add myst_mining
 effect give @s[tag=myst_mining] mining_fatigue 2048 1 true
 
 
 execute if entity @s[gamemode=adventure,predicate=in_adventure_dim] if block ~ ~ ~ structure_void run kill @s
 
-execute if entity @s[name=!Desynq,predicate=!equipment/head/air] if entity @e[type=bat,tag=soulfly,distance=..5] run effect give @s nausea 4 0 true
+execute if entity @s[name=!Desynq,predicate=!entity:equipment/head/air] if entity @e[type=bat,tag=soulfly,distance=..5] run effect give @s nausea 4 0 true
 
 
 
@@ -260,31 +259,35 @@ execute if entity @s[name=!Desynq,predicate=!equipment/head/air] if entity @e[ty
 # Equipment
 ############
 
-execute if entity @s[predicate=equipment/feet/frostwalker,predicate=!minecraft:dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
-execute if entity @s[scores={x=-127..126,z=-127..126},predicate=equipment/feet/frostwalker,predicate=minecraft:dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
+execute if entity @s[predicate=entity:equipment/feet/frostwalker,predicate=!minecraft:dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
+execute if entity @s[scores={x=-127..126,z=-127..126},predicate=entity:equipment/feet/frostwalker,predicate=minecraft:dimension/overworld] run fill ~-15 ~-1 ~-15 ~15 ~1 ~15 water replace frosted_ice
 
 
 
-effect give @a[predicate=equipment/mainhand/ender_bow] slow_falling 1 0 true
+effect give @s[predicate=entity:equipment/head/player_head/name/the_sack] minecraft:blindness 2048 0 true
 
 
 
-execute if entity @s[predicate=equipment/feet/soulwalker_boots] if block ~ ~ ~ water run effect give @s instant_damage 1 1 true
+effect give @s[predicate=entity:equipment/mainhand/ender_bow] slow_falling 1 0 true
 
 
 
-effect give @s[predicate=equipment/chest/absorbing_chainmail] absorption 1 0 true
-effect give @s[predicate=race/sludge,predicate=equipment/chest/sticky_chestplate] absorption 1 1 true
-effect give @s[predicate=race/creep,predicate=equipment/chest/creeping_chestplate] absorption 1 0 true
+execute if entity @s[predicate=entity:equipment/feet/soulwalker_boots] if block ~ ~ ~ water run effect give @s instant_damage 1 1 true
 
 
 
-item replace entity @s[scores={u.totem=1..},predicate=equipment/offhand/supercharged_totem] weapon.mainhand with totem_of_undying
+effect give @s[predicate=entity:equipment/chest/absorbing_chainmail] absorption 1 0 true
+effect give @s[predicate=race/sludge,predicate=entity:equipment/chest/sticky_chestplate] absorption 1 1 true
+effect give @s[predicate=race/creep,predicate=entity:equipment/chest/creeping_chestplate] absorption 1 0 true
 
 
 
-execute if entity @s[predicate=minecraft:dimension/overworld,scores={x=-128..127,z=-128..127},predicate=equipment/mainhand/wilderness_only] run item replace entity @s weapon.mainhand with air
-execute if entity @s[predicate=!minecraft:dimension/overworld,predicate=equipment/mainhand/wilderness_only] run item replace entity @s weapon.mainhand with air
+item replace entity @s[scores={u.totem=1..},predicate=entity:equipment/offhand/supercharged_totem] weapon.mainhand with totem_of_undying
+
+
+
+execute if entity @s[predicate=minecraft:dimension/overworld,scores={x=-128..127,z=-128..127},predicate=entity:equipment/mainhand/wilderness_only] run item replace entity @s weapon.mainhand with air
+execute if entity @s[predicate=!minecraft:dimension/overworld,predicate=entity:equipment/mainhand/wilderness_only] run item replace entity @s weapon.mainhand with air
 
 
 

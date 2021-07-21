@@ -76,5 +76,5 @@ scoreboard players set c rng 12345
 
 kill @e[type=marker,tag=onLoad]
 
-tellraw @a {"color":"dark_purple","text":"Reloaded All Datapacks!"}
-tellraw @a {"color":"dark_purple","text":"Reloaded All Custom Commands!"}
+#tellraw @a {"color":"dark_purple","text":"Reloaded All Datapacks!"}
+#tellraw @a {"color":"dark_purple","text":"Reloaded All Custom Commands!"}

@@ -8,7 +8,7 @@ particle dust 1 1 0 10 ~ ~1.5 ~ 3 1 3 0 2 normal @a[scores={lowDetailMode=1}]
 
 
 execute as @a[gamemode=!creative,gamemode=!spectator,scores={DeathTime=0,HurtTime=0},distance=..5] at @s unless entity @s[predicate=race/flora,advancements={races/flora/2=true}] run function entity:item/chlorine_gas/player
-effect give @e[type=#mob,type=!player,type=!#undead,tag=!boss,predicate=!equipment/head/gas_mask,distance=..5] instant_damage 1 1 true
+effect give @e[type=#mob,type=!player,type=!#undead,tag=!boss,predicate=!entity:equipment/head/gas_mask,distance=..5] instant_damage 1 1 true
 
 
 

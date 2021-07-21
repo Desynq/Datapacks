@@ -9,4 +9,4 @@ execute in slime:vietnam positioned -91 240 73 run kill @s[distance=..5]
 execute in slime:trainyard positioned -134 88 20 run kill @s[distance=..2]
 execute in slime:trainyard positioned -134 88 0 run kill @s[distance=..2]
 
-execute positioned ~ ~-1 ~ as @a[distance=..1,gamemode=!creative,gamemode=!spectator,scores={DeathTime=0,timeSinceDeath=20..},predicate=!equipment/offhand/soulwalker_shield] at @s run function myst:mobs/rift_mage/spells/spikes/kill_player
+execute positioned ~ ~-1 ~ as @a[distance=..1,gamemode=!creative,gamemode=!spectator,scores={DeathTime=0,timeSinceDeath=20..},predicate=!entity:equipment/offhand/soulwalker_shield] at @s run function myst:mobs/rift_mage/spells/spikes/kill_player

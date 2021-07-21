@@ -8,4 +8,4 @@ execute anchored feet positioned ~ ~1.8 ~ run function coas:electrostasis_rifle/
 playsound entity.zombie_villager.cure master @a ~ ~ ~ .5 2
 playsound item.crossbow.loading_end master @a
 scoreboard players remove @s a.esr 1
-scoreboard players remove @s[predicate=equipment/offhand/coas/electrostasis_rifle] a.esr 1
+scoreboard players remove @s[predicate=entity:equipment/offhand/coas/electrostasis_rifle] a.esr 1

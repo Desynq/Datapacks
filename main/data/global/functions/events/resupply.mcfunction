@@ -20,18 +20,18 @@ data merge block -112 31 60 {LootTable:"custom:radtown/mechanic_shop"}
 
 
 ## Supermarket
-data merge block -59 32 13 {LootTable:"custom:radtown/supermarket"}
-data merge block -59 31 13 {LootTable:"custom:radtown/supermarket"}
-data merge block -58 31 13 {LootTable:"custom:radtown/supermarket"}
-data merge block -58 31 12 {LootTable:"custom:radtown/supermarket"}
-data merge block -59 31 12 {LootTable:"custom:radtown/supermarket"}
+data merge block -59 32 13 {LootTable:"custom:container/radtown/supermarket/back_storage"}
+data merge block -59 31 13 {LootTable:"custom:container/radtown/supermarket/back_storage"}
+data merge block -58 31 13 {LootTable:"custom:container/radtown/supermarket/back_storage"}
+data merge block -58 31 12 {LootTable:"custom:container/radtown/supermarket/back_storage"}
+data merge block -59 31 12 {LootTable:"custom:container/radtown/supermarket/back_storage"}
 
-data merge block -56 31 13 {LootTable:"custom:radtown/supermarket"}
-data merge block -56 31 12 {LootTable:"custom:radtown/supermarket"}
-data merge block -56 32 12 {LootTable:"custom:radtown/supermarket"}
-data merge block -55 31 12 {LootTable:"custom:radtown/supermarket"}
-data merge block -55 31 13 {LootTable:"custom:radtown/supermarket"}
-data merge block -55 32 13 {LootTable:"custom:radtown/supermarket"}
+data merge block -56 31 13 {LootTable:"custom:container/radtown/supermarket/back_storage"}
+data merge block -56 31 12 {LootTable:"custom:container/radtown/supermarket/back_storage"}
+data merge block -56 32 12 {LootTable:"custom:container/radtown/supermarket/back_storage"}
+data merge block -55 31 12 {LootTable:"custom:container/radtown/supermarket/back_storage"}
+data merge block -55 31 13 {LootTable:"custom:container/radtown/supermarket/back_storage"}
+data merge block -55 32 13 {LootTable:"custom:container/radtown/supermarket/back_storage"}
 
 data merge block -53 20 14 {LootTable:"custom:military"}
 data merge block -50 20 18 {LootTable:"custom:military"}

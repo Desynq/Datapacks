@@ -21,7 +21,31 @@ execute if entity @s[type=minecraft:tnt_minecart] run function entity:prerun/tnt
 
 
 
+execute if entity @s[type=creeper,tag=explosive] if data entity @s ActiveEffects run function entity:prerun/creeper/explosive
+
+
+
+#######
+# Mobs
+#######
+
+
+
 execute if entity @s[type=minecraft:husk,tag=,predicate=minecraft:biome/wasteland] run function entity:prerun/husk/id
+
+
+
+
+
+execute if entity @s[type=pillager,tag=] run function entity:prerun/militia/scout/modify
+execute if entity @s[type=vindicator,tag=] run function entity:prerun/militia/soldier/modify
+
+
+
+
+
+
+
 
 
 
@@ -30,3 +54,11 @@ execute if entity @s[type=minecraft:pufferfish,name="Puffy"] run function entity
 
 
 execute if entity @s[tag=noDrops] run data merge entity @s {HandDropChances:[0F,0F],ArmorDropChances:[0F,0F,0F,0F]}
+
+
+
+#
+#
+#
+
+scoreboard players set @s entApplied 1

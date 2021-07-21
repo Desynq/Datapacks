@@ -1,4 +1,4 @@
-execute store result score @s ammo run clear @s white_dye{type:5.56x45mm} 0
+execute store result score @s ammo run clear @s minecraft:white_dye{type:5.56x45mm} 0
 scoreboard players set @s[tag=patrolling] ammo 1
 
 
@@ -11,4 +11,4 @@ execute if entity @s[tag=!proning,scores={u.coas_full=1..,emp=0,ammo=1..}] at @s
 
 
 
-effect give @s jump_boost 2048 129 true
+effect give @s minecraft:jump_boost 2048 128 true

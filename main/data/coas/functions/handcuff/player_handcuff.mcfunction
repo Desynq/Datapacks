@@ -1,3 +1,4 @@
-execute if entity @a[distance=..1,sort=nearest,limit=1,tag=!handcuffed,nbt=!{SelectedItem:{}}] run playsound item.armor.equip_iron master @a
-execute if entity @a[distance=..1,sort=nearest,limit=1,tag=!handcuffed,nbt=!{SelectedItem:{}}] run clear @s carrot_on_a_stick{type:handcuffs} 1
-tag @a[distance=..1,sort=nearest,limit=1,tag=!handcuffed,nbt=!{SelectedItem:{}}] add handcuffed
+execute at @a[distance=0.5..3,gamemode=!spectator,tag=!handcuffed,predicate=entity:equipment/mainhand/air] run function coas:handcuff/looking_at/tag
+execute at @a[tag=targeted] run function coas:handcuff/looking_at/handcuff
+
+tag @a remove targeted

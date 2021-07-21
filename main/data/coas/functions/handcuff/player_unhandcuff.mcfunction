@@ -1,3 +1,4 @@
-execute if entity @a[distance=...5,sort=nearest,limit=1,tag=handcuffed] run playsound entity.sheep.shear master @a
-execute if entity @a[distance=...5,sort=nearest,limit=1,tag=handcuffed] run give @s carrot_on_a_stick{CustomModelData:10,type:handcuffs,display:{Name:'{"italic":"false","text":"Handcuffs"}',Lore:['{"italic":"false","color":"gray","text":"Steel locking hand restraints"}','{"italic":"false","color":"dark_aqua","text":"Handcuffed players can\'t hold items"}','{"italic":"false","color":"green","text":"Offhand: Self-handcuff"}','{"italic":"false","color":"green","text":"Use: Handcuff unarmed player (<=2m) in front of you"}']}}
-tag @a[distance=...5,sort=nearest,limit=1,tag=handcuffed] remove handcuffed
+execute at @a[distance=0.5..3,gamemode=!spectator,tag=handcuffed] run function coas:handcuff/looking_at/tag
+execute at @a[tag=targeted] run function coas:handcuff/looking_at/unhandcuff
+
+tag @a remove targeted

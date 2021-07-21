@@ -7,9 +7,10 @@ execute if entity @s[scores={t.airblast=1..}] run function entity:mob/airblast
 
 
 
-execute if entity @s[predicate=effects/luck_1] run function entity:custom/died_from_he_arrow
-execute if entity @s[predicate=effects/luck_2] run function entity:custom/died_from_he_charged_arrow
-execute if entity @s[predicate=effects/luck_3] run function entity:custom/died_from_he_supercharged_arrow
+execute if entity @s[predicate=effects/luck_1] run function entity:custom/hit_by/he_arrow/tier_1
+execute if entity @s[predicate=effects/luck_2] run function entity:custom/hit_by/he_arrow/tier_2
+execute if entity @s[predicate=effects/luck_3] run function entity:custom/hit_by/he_arrow/tier_3
+execute if entity @s[predicate=effects/luck_4] run function entity:custom/hit_by/he_arrow/tier_4
 
 effect clear @s[team=mob,predicate=effects/levitation_0] levitation
 
@@ -30,8 +31,6 @@ execute if entity @s[type=cave_spider,predicate=minecraft:dimension/overworld,nb
 ##############
 
 execute if entity @s[tag=custom] run function entity:mob/custom/run
-
-execute if entity @s[type=pillager,team=militia,tag=] run function entity:mob/militia/scout/modify
 
 execute if entity @s[type=#zombies,predicate=entity:is/baby] run data merge entity @s {Health:0}
 

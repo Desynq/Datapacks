@@ -2,7 +2,7 @@ playsound block.bell.resonate master @a ~ ~ ~ 2147483647 2
 particle flash ~ ~1 ~ .3 .3 .3 .1 100 force @a
 
 
-effect give @a[distance=.5..32] invisibility 5 0 true
+effect give @a[distance=.5..32] minecraft:invisibility 180 0 true
 
 
 xp add @s -10 points

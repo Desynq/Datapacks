@@ -1,7 +1,7 @@
 effect give @s resistance 1 1 true
 
-execute if predicate night run effect give @s strength 1 1 true
-execute unless predicate night run effect give @s weakness 1 1 true
+execute if predicate night run effect give @s strength 2048 1 true
+execute unless predicate night run effect give @s weakness 2048 1 true
 
 scoreboard players add @s timer.necro 1
 

@@ -45,5 +45,5 @@ advancement revoke @s from debug:consume_item
 
 
 
-effect clear @s luck
-effect clear @s unluck
+effect clear @s minecraft:luck
+effect clear @s minecraft:unluck
