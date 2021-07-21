@@ -2,13 +2,6 @@
 # Init
 #######
 
-#execute as @a at @s unless score @s cmp matches ..-1 unless score @s cmp matches 1.. if entity @s[tag=cmp] run function debug:cmp/re-enter
-#scoreboard players enable @a cmp
-#execute as @a at @s unless score @s cmp matches 0 run function debug:cmp/run
-#execute as @a at @s if score @s cmp matches 0 if entity @s[tag=cmp] run function debug:cmp/exit
-#gamemode adventure @a[predicate=dimension/cmp,tag=!cmp,name=!Desynq,name=!sooupe,name=!Starging]
-#execute as @a[predicate=dimension/cmp,tag=!cmp,name=!Desynq,name=!sooupe,name=!Starging] in minecraft:overworld run tp 0 64 0
-
 execute in minecraft:overworld run summon marker 0 0 0 {Tags:["rng"]}
 execute store result score x rng run data get entity @e[type=marker,tag=rng,limit=1] UUID[0] 1
 kill @e[type=marker,tag=rng]
@@ -40,7 +33,9 @@ scoreboard players add 600 tick 1
 ##############
 
 function global:run
+
 execute as @e[type=!player] at @s run function entity:prerun
+
 execute as @a at @s run function player:run
 
 
@@ -78,17 +73,17 @@ execute as @a[predicate=effects/luck_4] at @s run function entity:custom/hit_by/
 # Cleanup
 ##########
 
-execute as @a[advancements={debug:inventory_changed=true}] run function debug:player/clear
+execute as @a[advancements={debug:inventory_changed=true}] run function debug:cleanup/clear_player
+
 
 
 kill @e[type=#arrows,tag=bullet,nbt={inGround:true}]
+
 kill @e[type=area_effect_cloud,tag=RootVehicle,predicate=entity:ridden_by/anything]
 
-kill @e[type=item,nbt={Item:{tag:{Tags:["clear"]}}}]
-kill @e[type=item,nbt={Item:{tag:{Tags:["buyable"]}}}]
-kill @e[type=item,nbt={Item:{tag:{Tags:["craftable"]}}}]
-kill @e[type=item,nbt={Item:{tag:{Tags:["custom"]}}}]
-kill @e[type=item,nbt={Item:{tag:{Tags:["eod_armour"]}}}]
+
+execute as @e[type=item,nbt={Item:{tag:{Tags:[]}}}] run function debug:cleanup/tagged_item
+
 
 
 execute as @a at @s run function player:reset
