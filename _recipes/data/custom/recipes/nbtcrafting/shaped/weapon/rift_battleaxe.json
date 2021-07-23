@@ -34,7 +34,7 @@
 			"AttributeModifiers": [
 				{
 					"AttributeName": "generic.attack_damage",
-					"Amount": 30,
+					"Amount": 25,
 					"Slot": "mainhand",
 					"UUID": [
 						1288026532,

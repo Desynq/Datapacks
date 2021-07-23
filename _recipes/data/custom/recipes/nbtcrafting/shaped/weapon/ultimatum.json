@@ -20,7 +20,7 @@
 			}
 		},
 		{
-			"item": "minecraft:carrot_on_a_stick",
+			"item": "minecraft:iron_sword",
 			"data": {
 				"type": "mysts_edge"
 			}
