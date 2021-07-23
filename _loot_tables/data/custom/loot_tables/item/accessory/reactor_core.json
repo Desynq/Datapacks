@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:loot_table",
+                            "name": "custom:reference/accessory/reactor_core",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_nbt",
+                                    "tag": "{SpawnedFromLootTable:true}"
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "reference",
+                                    "name": "entity:has_tag/giving_item"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:loot_table",
+                            "name": "custom:reference/accessory/reactor_core"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -13,18 +13,12 @@
 			"rolls": 1,
 			"entries": [
 				{
-					"type": "item",
+					"type": "minecraft:loot_table",
 					"weight": 1,
-					"name": "minecraft:carrot_on_a_stick",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:55,type:reactor_core,AttributeModifiers:[{AttributeName:generic.movement_speed,Amount:-0.5,Operation:2,Slot:offhand,UUID:[I;257999559,1280176607,796038888,1213985360]},{AttributeName:generic.max_health,Amount:0.5,Operation:2,Slot:offhand,UUID:[I;58139637,611858666,2012289904,596604024]}],display:{Name:'{\"italic\":\"false\",\"color\":\"dark_green\",\"text\":\"Reactor Core\"}'}}"
-						}
-					]
+					"name": "custom:item/accessory/reactor_core"
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"weight": 1,
 					"name": "minecraft:totem_of_undying",
 					"functions": [
@@ -35,7 +29,7 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:item",
 					"weight": 1,
 					"name": "minecraft:name_tag",
 					"functions": [

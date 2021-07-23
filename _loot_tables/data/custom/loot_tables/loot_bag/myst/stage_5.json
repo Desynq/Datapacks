@@ -35,15 +35,9 @@
 					]
 				},
 				{
-					"type": "item",
+					"type": "minecraft:loot_table",
 					"weight": 1,
-					"name": "minecraft:carrot_on_a_stick",
-					"functions": [
-						{
-							"function": "set_nbt",
-							"tag": "{CustomModelData:49,type:mysts_edge,display:{Name:'{\"italic\":\"false\",\"color\":\"dark_purple\",\"text\":\"Myst\\'s Edge\"}'},AttributeModifiers:[{AttributeName:generic.attack_damage,Amount:30,Slot:mainhand,UUID:[I;8291,190156,19065738,58196716]},{AttributeName:generic.attack_speed,Amount:-0.6,Operation:2,Slot:mainhand,UUID:[I;8915,2184918,58198,683791]}]}"
-						}
-					]
+					"name": "custom:reference/melee/mysts_edge"
 				}
 			]
 		}

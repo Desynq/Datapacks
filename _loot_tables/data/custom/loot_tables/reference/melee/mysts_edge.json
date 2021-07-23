@@ -1,0 +1,47 @@
+{
+    "type": "minecraft:generic",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_sword",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "italic": "false",
+                                "color": "dark_purple",
+                                "text": "Myst's Edge"
+                            }
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:5,type:\"mysts_edge\",Unbreakable:1}"
+                        },
+                        {
+                            "function": "minecraft:set_attributes",
+                            "modifiers": [
+                                {
+                                    "name": "",
+                                    "attribute": "minecraft:generic.attack_damage",
+                                    "operation": "addition",
+                                    "amount": 35,
+                                    "slot": "mainhand"
+                                },
+                                {
+                                    "name": "",
+                                    "attribute": "minecraft:generic.attack_speed",
+                                    "operation": "multiply_total",
+                                    "amount": -0.6,
+                                    "slot": "mainhand"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
