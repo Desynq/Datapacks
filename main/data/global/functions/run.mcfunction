@@ -6,9 +6,9 @@ function global:gamerules/run
 
 
 
-#
+#######
 # Time
-#
+#######
 
 	execute store result score daytime timer run time query daytime
 
@@ -41,9 +41,9 @@ execute if score season timer matches 3 unless predicate clear_weather run weath
 
 
 
-#
+##########
 # Runtime
-#
+##########
 
 	#function global:prestiges/scale/run
 
@@ -53,9 +53,9 @@ execute if score season timer matches 3 unless predicate clear_weather run weath
 
 
 
-#
+##########
 # Cleanup
-#
+##########
 
 	execute if score 20 tick matches 20 store result score count temp run execute if entity @e[type=item,tag=]
 	execute if score 20 tick matches 20 if score count temp matches 256.. run tellraw @a {"color":"yellow","text":"|> Clearing unnecessary items..."}
