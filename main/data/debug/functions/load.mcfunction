@@ -25,6 +25,7 @@ execute in minecraft:overworld run summon marker 0 0 0 {Tags:["onLoad"]}
 
 
 function debug:load/bossbars
+function debug:load/upgrades/run
 
 
 
