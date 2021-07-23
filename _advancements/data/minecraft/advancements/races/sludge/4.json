@@ -1,9 +1,9 @@
 {
     "display": {
-        "title": "Enhanced Mitosis I",
+        "title": "Homeostatic Shielding",
         "description": "",
         "icon": {
-            "item": "minecraft:slime_ball"
+            "item": "minecraft:golden_carrot"
         },
         "frame": "task",
         "show_toast": true,

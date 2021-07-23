@@ -1,9 +1,9 @@
 {
     "display": {
-        "title": "Enhanced Mitosis I",
+        "title": "Acidic Regurgitation",
         "description": "",
         "icon": {
-            "item": "minecraft:slime_ball"
+            "item": "minecraft:rotten_flesh"
         },
         "frame": "task",
         "show_toast": true,
@@ -15,5 +15,5 @@
             "trigger": "minecraft:impossible"
         }
     },
-    "parent": "minecraft:races/sludge/root"
+    "parent": "minecraft:races/sludge/4"
 }

@@ -1,13 +1,7 @@
 {
     "display": {
-        "title": {
-            "text": "Sustaining Gel | $15,000 [32]",
-			"color": "dark_green"
-        },
-        "description": {
-            "text": "○ Every 30 seconds, you gain Saturation II for one tick",
-			"color": "gray"
-        },
+        "title": "Sustaining Gel I",
+        "description": "",
         "icon": {
             "item": "minecraft:mushroom_stew"
         },

@@ -1,13 +1,7 @@
 {
     "display": {
-        "title": {
-            "text": "Natural Economist | $5000 [1]",
-			"color": "dark_green"
-        },
-        "description": {
-            "text": "○ Items sold in the offhand are worth twice as much",
-			"color": "gray"
-        },
+        "title": "Natural Economist",
+        "description": "",
         "icon": {
             "item": "minecraft:emerald"
         },

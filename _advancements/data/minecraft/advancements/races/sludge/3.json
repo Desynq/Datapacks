@@ -1,15 +1,9 @@
 {
     "display": {
-        "title": {
-            "text": "Hardened Aero-Gel | $2,500 [3]",
-			"color": "dark_green"
-        },
-        "description": {
-            "text": "○ While on fire: Players within 8 blocks, excluding you, gain Resistance II",
-			"color": "gray"
-        },
+        "title": "Endothermic Shielding",
+        "description": "",
         "icon": {
-            "item": "minecraft:slime_ball"
+            "item": "minecraft:soul_campfire"
         },
         "frame": "task",
         "show_toast": true,

@@ -1,15 +1,9 @@
 {
     "display": {
-        "title": {
-            "text": "Hardening Gel | $5,000 [31]",
-			"color": "dark_green"
-        },
-        "description": {
-            "text": "○ While on fire: You also gain Resistance II",
-			"color": "gray"
-        },
+        "title": "Exothermic Shielding",
+        "description": "",
         "icon": {
-            "item": "minecraft:netherite_chestplate"
+            "item": "minecraft:campfire"
         },
         "frame": "task",
         "show_toast": true,
