@@ -169,9 +169,11 @@ function enderchest:run
 
 
 
-### Join Script ###
+#########
+# Server
+#########
 
-	execute unless score @s join matches 0 run function player:server/join
+execute unless score @s join matches 0 run function player:server/join
 
 
 
