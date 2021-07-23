@@ -1,5 +1,6 @@
 execute store result score @s entUUID run data get entity @s UUID[0] 1
-execute store result score @s entOwner run data get entity @s Owner[0] 1
+
+execute if data entity @s Owner store result score @s entOwner run data get entity @s Owner[0] 1
 
 execute store result score @s entX run data get entity @s Pos[0] 1
 execute store result score @s entY run data get entity @s Pos[1] 1

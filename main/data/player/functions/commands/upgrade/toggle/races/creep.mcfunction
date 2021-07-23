@@ -27,6 +27,7 @@ execute if score %success global matches 1 run tellraw @s ["",{"color":"green","
 execute if score %success global matches 1 run function player:commands/upgrade/toggle/reset
 
 
+
 execute store success score %success global if entity @s[scores={disableUpgrade=3111},advancements={minecraft:races/creep/3/1/1/1=true}] as @e[type=marker,tag=player_storage] if score @s entOwner = @p plyUUID unless data entity @s data{DisabledUpgrades:[{id:3111}]} run data modify entity @s data.DisabledUpgrades append value {id:3111}
 execute if score %success global matches 1 run tellraw @s ["",{"color":"red","text":"Disabled "},{"color":"gray","translate":"upgrade.race.creep.title.311"}]
 execute if score %success global matches 1 run function player:commands/upgrade/toggle/reset
