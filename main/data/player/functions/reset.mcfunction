@@ -24,6 +24,12 @@ scoreboard players set @s[scores={damage_taken=1..}] damage_taken 0
 scoreboard players set @s[scores={blockedDamage=1..}] blockedDamage 0
 
 
+
+#########
+# Deaths
+#########
+
+
 scoreboard players set @s[scores={kb.zombie_v=1..}] kb.zombie_v 0
 
 
