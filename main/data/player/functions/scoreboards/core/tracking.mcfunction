@@ -6,7 +6,6 @@ execute store result score @s z run data get storage location Pos[2] 1
 
 execute if entity @s[scores={DeathTime=1}] run function player:scoreboards/core/subtracking/deathpoint
 
-execute store result score @s food run data get entity @s foodLevel 1
 execute store result score @s saturation run data get entity @s foodSaturationLevel 1
 execute store result score @s exhaustion run data get entity @s foodExhaustionLevel 10
 
