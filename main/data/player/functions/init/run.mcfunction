@@ -33,16 +33,19 @@ execute if score @s damage matches 1.. if data storage minecraft:attributes Attr
 
 
 # random_crit
-attribute @s generic.attack_damage modifier remove 0-0-0-0-0
+attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-0
 
 # clownfish necklace slot0
-attribute @s generic.luck modifier remove 0-0-0-0-1
+attribute @s minecraft:generic.luck modifier remove 0-0-0-0-1
 
 # clownfish necklace slot1
-attribute @s generic.luck modifier remove 0-0-0-0-2
+attribute @s minecraft:generic.luck modifier remove 0-0-0-0-2
+
+# reactor_core
+attribute @s minecraft:generic.max_health modifier remove 0-0-0-0-3
 
 # warriors_adrenaline
-attribute @s generic.attack_damage modifier remove 0-0-0-0-4
+attribute @s minecraft:generic.attack_damage modifier remove 0-0-0-0-4
 
 
 

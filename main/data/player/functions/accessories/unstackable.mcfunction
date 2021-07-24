@@ -19,3 +19,7 @@ execute if data storage minecraft:inventory baubles[{tag:{type:"slimy_eye"}}] ru
 
 
 execute if data storage minecraft:inventory baubles[{tag:{type:"ghastly_amulet"}}] run function player:accessories/unstackable/ghastly_amulet/run
+
+
+
+execute if data storage minecraft:inventory baubles[{tag:{type:"reactor_core"}}] run function player:accessories/unstackable/reactor_core/run
