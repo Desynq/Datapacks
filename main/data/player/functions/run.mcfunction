@@ -124,13 +124,13 @@ effect give @s[scores={timeSinceDeath=20}] hunger 1 199 true
 # Accessories
 ##############
 
+function math:player/attributes
+
+
 function player:accessories/run
 
 
-
-execute store result score @s ply.max_hp run attribute @s minecraft:generic.max_health get 1
-execute store result score @s ply.armor run attribute @s minecraft:generic.armor get 1
-execute store result score @s ply.luck run attribute @s minecraft:generic.luck get 1
+function math:player/attributes
 
 
 
