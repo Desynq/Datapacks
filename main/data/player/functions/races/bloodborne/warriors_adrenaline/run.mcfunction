@@ -4,7 +4,7 @@ scoreboard players set 5 math 5
 
 scoreboard players operation %health temp = @s Health
 scoreboard players operation %health temp *= 100 math
-scoreboard players operation %health temp /= @s ply.max_hp
+scoreboard players operation %health temp /= @s attr.maxHealth
 scoreboard players set %ans temp 100
 scoreboard players operation %ans temp -= %health temp
 scoreboard players operation %ans temp /= 5 math
