@@ -24,11 +24,12 @@ execute if score @s droppedItem matches 1.. run advancement grant @s only debug:
 # Attributes
 #############
 
+data remove storage minecraft:attributes Attributes
 data modify storage minecraft:attributes Attributes set from entity @s Attributes
 
 
 
-execute if score @s damage matches 1.. if data storage minecraft:attributes Attributes[{Name:"minecraft:generic.attack_damage"}].Modifiers[{Name:"random_crit"}] run playsound entity.ender_dragon.hurt master @s ~ ~ ~ 2147483647 2
+execute if score @s damage matches 1.. if data storage minecraft:attributes Attributes[{Name:"minecraft:generic.attack_damage"}].Modifiers[{Name:"random_crit"}] run playsound minecraft:entity.ender_dragon.hurt master @s ~ ~ ~ 2147483647 2
 
 
 
