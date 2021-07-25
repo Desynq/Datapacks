@@ -48,6 +48,7 @@ scoreboard players set @s[scores={killWolf=1..}] killWolf 0
 
 advancement revoke @s from debug:inventory_changed
 advancement revoke @s from debug:consume_item
+advancement revoke @s from debug:was_hurt
 
 
 
