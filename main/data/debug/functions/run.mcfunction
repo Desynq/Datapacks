@@ -2,11 +2,6 @@
 # Init
 #######
 
-execute in minecraft:overworld run summon marker 0 0 0 {Tags:["rng"]}
-execute store result score x rng run data get entity @e[type=marker,tag=rng,limit=1] UUID[0] 1
-kill @e[type=marker,tag=rng]
-
-
 execute as @a run function debug:clear_effects
 
 
@@ -82,7 +77,7 @@ kill @e[type=#arrows,tag=bullet,nbt={inGround:true}]
 kill @e[type=area_effect_cloud,tag=RootVehicle,predicate=entity:ridden_by/anything]
 
 
-execute as @e[type=item,nbt={Item:{tag:{Tags:[]}}}] run function debug:cleanup/tagged_item
+execute as @e[type=item] if data entity @s Item.tag.Tags run function debug:cleanup/tagged_item
 
 
 

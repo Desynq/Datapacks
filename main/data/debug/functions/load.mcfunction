@@ -64,10 +64,6 @@ gamerule witherGriefing false
 
 function math:math_table
 
-execute store result score x rng run data get entity @e[type=marker,tag=onLoad,limit=1] UUID[0] 1
-scoreboard players set a rng 1103515245
-scoreboard players set c rng 12345
-
 
 
 
