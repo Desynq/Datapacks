@@ -20,8 +20,7 @@ item replace entity @s enderchest.8 with lapis_lazuli{Tags:["buyable"],s_btype:l
 ##
 
 
-item replace entity @s enderchest.9 with cactus{Tags:["buyable"],s_btype:cactus,display:{Lore:['{"italic":"false","color":"green","text":"1000 Slime"}']}}
-
+item replace entity @s enderchest.9 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.10 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.11 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
 item replace entity @s enderchest.12 with red_stained_glass_pane{Tags:["buyable"],display:{Name:'""'}}
