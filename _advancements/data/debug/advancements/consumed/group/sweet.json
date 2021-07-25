@@ -1,0 +1,39 @@
+{
+    "display": {
+        "title": {
+            "text": "Sweet Foods"
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:book"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:apple",
+                        "minecraft:cake",
+                        "minecraft:cookie",
+                        "minecraft:melon",
+                        "minecraft:pumpkin_pie",
+                        "minecraft:beetroot",
+                        "minecraft:beetroot_soup",
+                        "minecraft:sweet_berries",
+                        "minecraft:glow_berries",
+                        "minecraft:honey_bottle"
+                    ]
+                }
+            }
+        }
+    },
+    "parent": "debug:consume_item"
+}

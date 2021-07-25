@@ -1,0 +1,33 @@
+{
+    "display": {
+        "title": {
+            "text": "Bad Foods"
+        },
+        "description": {
+            "text": ""
+        },
+        "icon": {
+            "item": "minecraft:book"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "items": [
+                        "minecraft:pufferfish",
+                        "minecraft:rotten_flesh",
+                        "minecraft:spider_eye",
+                        "minecraft:poisonous_potato"
+                    ]
+                }
+            }
+        }
+    },
+    "parent": "debug:consume_item"
+}
