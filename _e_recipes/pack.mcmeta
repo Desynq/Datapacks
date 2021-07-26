@@ -1,6 +1,0 @@
-{
-       "pack": {
-           "pack_format": 6,
-           "description": "Removes some vanilla recipes and adds custom recipes with some using nbt-crafting"
-       }
-   }
