@@ -1,0 +1,8 @@
+{
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "minecraft:races/sludge/3/2"
+}

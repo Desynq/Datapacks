@@ -1,0 +1,23 @@
+{
+    "display": {
+        "title": {
+            "translate": "upgrade.race.bloodborne.title.1"
+        },
+        "description": {
+            "translate": "upgrade.race.bloodborne.description.1"
+        },
+        "icon": {
+            "item": "minecraft:air"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "minecraft:races/bloodborne/root"
+}
