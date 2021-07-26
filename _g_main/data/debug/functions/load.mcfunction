@@ -9,8 +9,7 @@
 # Compatability
 ################
 
-execute store success score %bool global run datapack disable vanilla
-#execute if score %bool global matches 1 run function debug:load/reorder
+datapack disable vanilla
 
 commandaliases reload
 
@@ -20,7 +19,7 @@ commandaliases reload
 # Other Stuff
 ##############
 
-execute in minecraft:overworld run summon marker 0 0 0 {Tags:["onLoad"]}
+execute in minecraft:overworld run summon minecraft:marker 0 0 0 {Tags:["onLoad"]}
 
 
 
@@ -31,8 +30,8 @@ function debug:load/upgrades/run
 
 
 
-execute in minecraft:overworld positioned 0 0 0 unless block ~ ~ ~ oak_sign run setblock ~ ~ ~ oak_sign
-execute in minecraft:overworld positioned 0 0 1 unless block ~ ~ ~ shulker_box run setblock ~ ~ ~ shulker_box
+execute in minecraft:overworld positioned 0 0 0 unless block ~ ~ ~ minecraft:oak_sign run setblock ~ ~ ~ minecraft:oak_sign
+execute in minecraft:overworld positioned 0 0 1 unless block ~ ~ ~ minecraft:shulker_box run setblock ~ ~ ~ minecraft:shulker_box
 
 
 
