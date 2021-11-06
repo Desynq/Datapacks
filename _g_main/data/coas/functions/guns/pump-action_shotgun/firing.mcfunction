@@ -6,7 +6,7 @@ execute at @s rotated ~ ~-3 run function coas:guns/pump-action_shotgun/pellet
 execute at @s rotated ~-3 ~ run function coas:guns/pump-action_shotgun/pellet
 
 
-playsound gun.m870.fire master @a ~ ~ ~ 4 2
+playsound ss:gun.m870.fire voice @a[distance=0..] ~ ~ ~ 4 2
 
 function coas:guns/pump-action_shotgun/cooldown
 

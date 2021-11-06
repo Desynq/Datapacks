@@ -1,0 +1,52 @@
+{
+    "display": {
+        "title": [
+            "",
+            {
+                "text": "[211]",
+                "color": "dark_gray"
+            },
+            " ",
+            {
+                "text": "Spidey Senses",
+                "color": "white"
+            }
+        ],
+        "description": [
+            "",
+            {
+                "text": "While Blind:",
+                "color": "gray"
+            },
+            "\n",
+            {
+                "text": "• +25% chance to dodge damage every tick",
+                "color": "blue"
+            },
+            "\n\n",
+            [
+                {
+                    "text": "Costs: ",
+                    "color": "gold"
+                },
+                {
+                    "text": "$17,500",
+                    "color": "dark_green"
+                }
+            ]
+        ],
+        "icon": {
+            "item": "minecraft:spider_eye"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ss:race/arthropod/2/1"
+}

@@ -1,0 +1,52 @@
+{
+    "display": {
+        "title": [
+            "",
+            {
+                "text": "[31111]",
+                "color": "dark_gray"
+            },
+            " ",
+            {
+                "text": "Master Martial Artist",
+                "color": "white"
+            }
+        ],
+        "description": [
+            "",
+            {
+                "text": "While Unarmed:",
+                "color": "gray"
+            },
+            "\n",
+            {
+                "text": "• +40% chance to dodge damage every tick",
+                "color": "blue"
+            },
+            "\n\n",
+            [
+                {
+                    "text": "Costs: ",
+                    "color": "gold"
+                },
+                {
+                    "text": "$25,000",
+                    "color": "dark_green"
+                }
+            ]
+        ],
+        "icon": {
+            "item": "minecraft:diamond_block"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ss:race/arthropod/3/1/1/1"
+}

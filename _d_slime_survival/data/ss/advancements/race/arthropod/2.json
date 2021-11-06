@@ -1,0 +1,52 @@
+{
+    "display": {
+        "title": [
+            "",
+            {
+                "text": "[2]",
+                "color": "dark_gray"
+            },
+            " ",
+            {
+                "text": "Can't Hit What You Can't See",
+                "color": "white"
+            }
+        ],
+        "description": [
+            "",
+            {
+                "text": "While Invisible:",
+                "color": "gray"
+            },
+            "\n",
+            {
+                "text": "• +30% chance to dodge damage every tick",
+                "color": "blue"
+            },
+            "\n\n",
+            [
+                {
+                    "text": "Costs: ",
+                    "color": "gold"
+                },
+                {
+                    "text": "$7,500",
+                    "color": "dark_green"
+                }
+            ]
+        ],
+        "icon": {
+            "item": "minecraft:spyglass"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ss:race/arthropod/root"
+}

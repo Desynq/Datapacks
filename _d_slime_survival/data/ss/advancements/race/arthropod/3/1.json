@@ -1,0 +1,52 @@
+{
+    "display": {
+        "title": [
+            "",
+            {
+                "text": "[31]",
+                "color": "dark_gray"
+            },
+            " ",
+            {
+                "text": "Apprentice Martial Artist",
+                "color": "white"
+            }
+        ],
+        "description": [
+            "",
+            {
+                "text": "While Unarmed:",
+                "color": "gray"
+            },
+            "\n",
+            {
+                "text": "• +10% chance to dodge damage every tick",
+                "color": "blue"
+            },
+            "\n\n",
+            [
+                {
+                    "text": "Costs: ",
+                    "color": "gold"
+                },
+                {
+                    "text": "$3,000",
+                    "color": "dark_green"
+                }
+            ]
+        ],
+        "icon": {
+            "item": "minecraft:copper_block"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ss:race/arthropod/3"
+}

@@ -1,0 +1,47 @@
+{
+    "display": {
+        "title": [
+            "",
+            {
+                "text": "[22]",
+                "color": "dark_gray"
+            },
+            " ",
+            {
+                "text": "Mage Acrobatics",
+                "color": "white"
+            }
+        ],
+        "description": [
+            "",
+            {
+                "text": "• You can now dodge soul flares and rifting crystals",
+                "color": "blue"
+            },
+            "\n\n",
+            [
+                {
+                    "text": "Costs: ",
+                    "color": "gold"
+                },
+                {
+                    "text": "$25,000",
+                    "color": "dark_green"
+                }
+            ]
+        ],
+        "icon": {
+            "item": "minecraft:soul_campfire"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "acquired": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "ss:race/arthropod/2"
+}
