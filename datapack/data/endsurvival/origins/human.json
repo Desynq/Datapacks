@@ -1,0 +1,10 @@
+{
+	"name": "Human",
+	"description": "The \"default race\".",
+	"icon": {
+		"item": "minecraft:totem_of_undying"
+	},
+	"impact": 1,
+	"order": 0,
+	"powers": []
+}

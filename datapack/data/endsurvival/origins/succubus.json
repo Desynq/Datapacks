@@ -1,0 +1,12 @@
+{
+	"name": "Succubus",
+	"description": "Bad at self defense but good at \"helping\" others and themselves.",
+	"icon": {
+		"item": "minecraft:goat_horn"
+	},
+	"impact": 1,
+	"order": 3,
+	"powers": [
+		"endsurvival:succubus/heal_throw"
+	]
+}

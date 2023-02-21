@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:53,type:explosive_charge,Tags:["banned"],display:{Name:'{"italic":"false","color":"dark_green","text":"Explosive Charge"}',Lore:['{"italic":"false","color":"gray","text":"Sticks to surfaces!"}']}}

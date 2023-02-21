@@ -1,0 +1,10 @@
+{
+	"name": "Sludge",
+	"description": "Mostly consists of slime. Is stronger than normal but struggles to regenerate lost mass. No relation to Slime Survival or the aforementioned myth, The Slime Cave.",
+	"icon": {
+		"item": "minecraft:slime_ball"
+	},
+	"impact": 1,
+	"order": 2,
+	"powers": []
+}

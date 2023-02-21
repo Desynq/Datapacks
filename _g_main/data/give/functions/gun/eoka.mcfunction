@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:208,type:eoka,display:{Name:'{"italic":"false","color":"white","text":"Eoka Pistol"}',Lore:['{"color":"gray","text":"requires stone buttons and gunpowder"}','{"color":"red","text":"unreliable firing mechanism"}','{"color":"red","text":"may break after firing"}']}}

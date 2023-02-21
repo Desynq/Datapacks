@@ -1,2 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:11,type:handcuff_key,display:{Name:'{"italic":"false","text":"Handcuff Key"}',Lore:['{"italic":"false","color":"gray","text":"Can unlock handcuffs"}','{"italic":"false","color":"green","text":"Offhand: Un-handcuff yourself"}','{"italic":"false","color":"green","text":"Use: Un-handcuff player (<=2m) in front of you"}']}}
-item replace entity @s weapon.offhand with air

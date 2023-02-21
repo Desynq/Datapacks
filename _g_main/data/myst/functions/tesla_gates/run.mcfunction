@@ -1,5 +1,0 @@
-execute in slime:themyst if block -137 14 50 redstone_lamp[lit=true] if block -146 6 42 redstone_wall_torch[lit=false] as @a[gamemode=adventure,predicate=dimension/the_myst,scores={DeathTime=0,x=-152..-148,y=11..13,z=35}] positioned -150 11 35 run function myst:tesla_gates/run2
-execute in slime:themyst if block -137 14 50 redstone_lamp[lit=true] if block -146 6 42 redstone_wall_torch[lit=true] as @a[gamemode=adventure,predicate=dimension/the_myst,scores={DeathTime=0,x=-142..-138,y=11..13,z=35}] positioned -140 11 35 run function myst:tesla_gates/run2
-
-execute in slime:themyst if block -137 14 50 redstone_lamp[lit=true] if block -146 6 42 redstone_wall_torch[lit=false] as @e[type=armor_stand,tag=scp106,predicate=dimension/the_myst,scores={entX=-152..-148,entY=11..13,entZ=35}] positioned -150 11 35 run function myst:tesla_gates/run2
-execute in slime:themyst if block -137 14 50 redstone_lamp[lit=true] if block -146 6 42 redstone_wall_torch[lit=true] as @e[type=armor_stand,tag=scp106,predicate=dimension/the_myst,scores={entX=-142..-138,entY=11..13,entZ=35}] positioned -140 11 35 run function myst:tesla_gates/run2

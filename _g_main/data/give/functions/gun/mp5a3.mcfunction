@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:206,type:mp5a3,Tags:["actionbar"],display:{Name:'{"italic":"false","color":"white","text":"MP5A3"}'}}

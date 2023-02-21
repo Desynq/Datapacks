@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:2205,type:gpu,tier:3,Tags:["banned"],display:{Name:'{"italic":"false","color":"gray","text":"GPU [Tier 3]"}'}}

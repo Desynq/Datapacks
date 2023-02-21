@@ -1,7 +1,0 @@
--- Skipping upgrades combines the cost of those skipped
-5x5 = 2,500
-7x7 = 5,000
-9x9 = 10,000
-11x11 = 15,000
-13x13 = 20,000
-15x15 = 25,000

@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:2200,type:cpu,tier:1,Tags:["banned"],display:{Name:'{"italic":"false","color":"gray","text":"CPU [Tier 1]"}'}}

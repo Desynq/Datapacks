@@ -1,0 +1,15 @@
+{
+	"replace": true,
+	"order": 0,
+	"enabled": true,
+	"hidden": false,
+	"origins": [
+		"endsurvival:human",
+		"endsurvival:sludge",
+		"endsurvival:succubus",
+		"endsurvival:floran"
+	],
+	"allow_random": true,
+	"allow_random_unchoosable": false,
+	"exclude_random": []
+}

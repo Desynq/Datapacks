@@ -1,2 +1,0 @@
-execute as @a[scores={elevator.timer=1..},tag=elevator.storage_bay] at @s run function myst:elevators/storage_bay/timer
-execute as @a[scores={elevator.timer=1..},tag=elevator.trainyard] at @s run function myst:elevators/trainyard/timer

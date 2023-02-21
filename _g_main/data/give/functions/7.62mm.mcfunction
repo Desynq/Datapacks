@@ -1,1 +1,0 @@
-give @s white_dye{CustomModelData:5,type:7.62x51mm,display:{Name:'{"italic":"false","text":"7.62mm NATO"}',Lore:['{"italic":"false","color":"gray","text":"Military Rifle Ammunition"}']}}

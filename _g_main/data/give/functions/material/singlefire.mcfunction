@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:3000,type:singlefire_mechanism,display:{Name:'{"italic":"false","color":"white","text":"Semi-Auto Firing Mechanism"}'}}

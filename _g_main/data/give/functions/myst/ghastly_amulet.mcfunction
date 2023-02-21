@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:4000,type:ghastly_amulet,display:{Name:'{"italic":"false","color":"light_purple","text":"Ghastly Amulet"}',Lore:['{"italic":"false","color":"gray","text":"○ Regeneration V If Taking No Damage"}']}}

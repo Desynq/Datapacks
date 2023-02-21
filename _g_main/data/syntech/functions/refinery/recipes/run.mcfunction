@@ -1,1 +1,0 @@
-execute if entity @s[nbt={Items:[{Slot:0b,id:"minecraft:coal"},{Slot:1b,tag:{type:crushed_uraninite}}]}] run function syntech:refinery/recipes/uraninite/1

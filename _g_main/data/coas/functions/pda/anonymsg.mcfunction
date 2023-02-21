@@ -1,4 +1,0 @@
-execute at @a if score @s pln_forward = @p list run tellraw @s [{"color":"gray","text":"Sending player "},{"selector":"@p"},{"color":"gray","text":" message: "},{"color":"yellow","nbt":"SelectedItem.tag.pages[0]","entity":"@s","interpret":"true"}]
-execute at @a if score @s pln_forward = @p list run tellraw @a ["<",{"color":"dark_gray","nbt":"SelectedItem.tag.title","entity":"@s","interpret":"false"},"> ",{"color":"yellow","nbt":"SelectedItem.tag.pages[0]","entity":"@s","interpret":"true"}]
-
-item replace entity @s weapon.mainhand with writable_book{type:anonymsg_book,display:{Name:'{"italic":"false","color":"yellow","text":"Messaging Book"}',Lore:['{"italic":"false","color":"gray","text":"Anonymously message somebody"}','{"italic":"false","color":"green","text":"Sign: Sends first page to PLN Forwarder with title being codename"}']}}

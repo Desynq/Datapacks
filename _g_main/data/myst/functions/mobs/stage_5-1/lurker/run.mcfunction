@@ -1,1 +1,0 @@
-particle smoke ~ ~.9 ~ .3 .9 .3 .05 30 force @a

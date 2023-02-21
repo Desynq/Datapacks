@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:203,type:mgl,Tags:["actionbar"],display:{Name:'{"italic":"false","text":"Multiple Grenade Launcher"}',Lore:['{"color":"gray","text":"it\'s a grenade launcher"}']}}

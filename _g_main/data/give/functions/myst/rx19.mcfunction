@@ -1,3 +1,0 @@
-give @s potion{display:{Name:'{"italic":"false","color":"#1a9997","text":"RX19 Cure"}'},CustomPotionEffects:[{Id:27,Duration:6000,Amplifier:0}],CustomPotionColor:1743255,HideFlags:32}
-give @s potion{display:{Name:'{"italic":"false","color":"#1a9997","text":"RX19 Cure"}'},CustomPotionEffects:[{Id:27,Duration:6000,Amplifier:1}],CustomPotionColor:1743255,HideFlags:32}
-give @s potion{display:{Name:'{"italic":"false","color":"#1a9997","text":"RX19 Cure"}'},CustomPotionEffects:[{Id:27,Duration:6000,Amplifier:2}],CustomPotionColor:1743255,HideFlags:32}

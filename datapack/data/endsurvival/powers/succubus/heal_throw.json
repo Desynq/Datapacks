@@ -1,0 +1,17 @@
+{
+	"type": "origins:fire_projectile",
+
+	"entity_type": "minecraft:potion",
+	"tag": "{Potion:\"minecraft:healing\"}",
+	"speed": 1,
+
+	"cooldown": 15,
+	"hud_render": {
+		"sprite_location": "origins:textures/gui/community/spiderkolo/resource_bar_02.png",
+		"bar_index": 9
+	},
+
+	"key": {
+		"key": "key.origins.primary_active"
+	}
+}

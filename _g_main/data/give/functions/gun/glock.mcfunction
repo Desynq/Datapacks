@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:204,type:glock,Tags:["actionbar"],display:{Name:'{"italic":"false","text":"Glock 17"}',Lore:['{"italic":"false","color":"gray","text":"Damage: 5"}','{"italic":"false","color":"gray","text":"Accuracy: N/A"}','{"italic":"false","color":"gray","text":"Cooldown: 50ms"}','{"italic":"false","color":"gray","text":"Caliber: 9mm"}']}}

@@ -1,0 +1,14 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:sculk",
+		"minecraft:sculk_vein",
+		"minecraft:sculk_catalyst",
+		"minecraft:sculk_shrieker",
+		"minecraft:sculk_sensor",
+		"sculk_worm:sculk_slime",
+		"sculk_worm:sculk_sludge",
+		"sculk_worm:sculk_trap",
+		"sculk_worm:echo_shell"
+	]
+}

@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:2221,type:smart_card,display:{Name:'{"italic":"false","color":"gray","text":"Smart Card"}',Lore:['[{"italic":"false","color":"dark_aqua","text":"a "},{"italic":"true","color":"dark_aqua","text":"very smart"},{"italic":"false","color":"dark_aqua","text":" card"}]']}}

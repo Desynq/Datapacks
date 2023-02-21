@@ -1,2 +1,0 @@
-xp add @s -3 points
-execute at @e[type=#mob,type=!player,tag=!boss,distance=..10] facing entity @s feet as @e[type=#mob,type=!player,tag=!boss,sort=nearest,limit=1] unless score @s t.airblast matches 1.. run function coas:zephyr/airblast

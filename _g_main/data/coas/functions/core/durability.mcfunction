@@ -1,2 +1,0 @@
-execute store result score @s durability run data get entity @s SelectedItem.tag.durability
-execute store result entity @s SelectedItem.tag.durability int 1 run scoreboard players operation @s durability += 1 math

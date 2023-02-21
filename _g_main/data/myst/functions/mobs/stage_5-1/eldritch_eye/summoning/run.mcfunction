@@ -1,1 +1,0 @@
-execute unless entity @e[type=wither_skeleton,tag=arch_eldritch_guardian] run function myst:mobs/stage_5-1/arch_eldritch_guardian/summon

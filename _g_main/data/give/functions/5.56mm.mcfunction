@@ -1,1 +1,0 @@
-give @s white_dye{CustomModelData:1,type:5.56x45mm,display:{Name:'{"italic":"false","text":"5.56mm NATO"}',Lore:['{"italic":"false","color":"gray","text":"Intermediate Ammunition"}']}}

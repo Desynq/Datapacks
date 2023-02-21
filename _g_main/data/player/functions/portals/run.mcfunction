@@ -1,1 +1,0 @@
-execute if score zt.portal myst matches 1 if entity @s[predicate=minecraft:dimension/overworld,predicate=effects/conduit_power] if block ~ ~1.8 ~ conduit run function global:events/zephyr_temple/enter

@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:207,type:mp5sd,Tags:["actionbar"],display:{Name:'{"italic":"false","color":"white","text":"MP5SD"}',Lore:['{"italic":"false","color":"gray","text":"◘ Internally Suppressed"}']}}

@@ -1,1 +1,0 @@
-give @s carrot_on_a_stick{CustomModelData:9,type:wrench,display:{Name:'{"italic":"false","text":"Wrench"}',Lore:['{"italic":"false","color":"gray","text":"Repairs stuff on use"}','{"italic":"false","color":"red","text":"Single-Use"}']}}

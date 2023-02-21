@@ -1,1 +1,0 @@
-summon shulker ~ ~ ~ {Color:15,Health:250,AbsorptionAmount:250,CustomName:'"Mystacle"',Tags:["mystacle.base","boss"],Attributes:[{Name:generic.max_health,Base:250}],Passengers:[{id:shulker,Tags:["mystacle.stem"],Color:15,Invulnerable:1}]}
