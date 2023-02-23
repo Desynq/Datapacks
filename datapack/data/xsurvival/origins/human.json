@@ -1,0 +1,10 @@
+{
+	"name": "Human",
+	"description": "As a natural artificer, humans excel at crafting, building, and making traps. They aren't very good at combat until they get a gun or create their own small armies.",
+	"icon": {
+		"item": "minecraft:emerald"
+	},
+	"impact": 1,
+	"order": 0,
+	"powers": []
+}

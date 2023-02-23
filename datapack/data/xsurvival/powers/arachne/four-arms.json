@@ -1,0 +1,40 @@
+{
+	"type": "origins:multiple",
+
+	"melee-buff": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Human Fighter Bonus",
+			"attribute": "minecraft:generic.attack_damage",
+			"value": 1,
+			"operation": "addition"
+		}
+	},
+
+	"range-debuff": {
+		"type": "origins:modify_attribute",
+		"attribute": "projectile_damage:generic",
+		"modifier": {
+			"name": "Floran Sharpshooter Bonus",
+			"operation": "multiply_total_multiplicative",
+			"value": -0.25
+		}
+	},
+
+
+
+	"name": "Four Arms",
+	"description": "Being able to hold weapons with multiple arms allows you to more easily leverage melee weapons with higher force. Their positioning, however, makes it difficult to use ranged weapons effectively.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§9+1 Attack Damage"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§9-25% Ranged Damage"
+		}
+	]
+}

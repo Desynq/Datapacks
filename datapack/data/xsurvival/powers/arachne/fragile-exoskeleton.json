@@ -1,0 +1,40 @@
+{
+	"type": "origins:multiple",
+
+	"health": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Arachne Fragile Exoskeleton",
+			"attribute": "minecraft:generic.max_health",
+			"value": -4,
+			"operation": "addition"
+		}
+	},
+
+	"armor": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Arachne Fragile Exoskeleton",
+			"attribute": "minecraft:generic.armor",
+			"value": -4,
+			"operation": "addition"
+		}
+	},
+
+
+
+	"name": "Fragile Exoskeleton",
+	"description": "Arachnae are composed mostly of an soft exoskeleton that can easily be broken with enough damage.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§c-4 Health"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§c-4 Armor"
+		}
+	]
+}

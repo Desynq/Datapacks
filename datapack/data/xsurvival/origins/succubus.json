@@ -1,0 +1,13 @@
+{
+	"name": "Succubus",
+	"description": "Succubi excel at dealing damage to their opponents either indirectly or directly at a range.\n\nSuccubi, however, are relatively weak and susceptible to holy magic, whether that be from consecrated weapons (smite), salt, or silver.",
+	"icon": {
+		"item": "minecraft:goat_horn"
+	},
+	"impact": 3,
+	"order": 4,
+	"powers": [
+		"xsurvival:succubus/undead",
+		"xsurvival:succubus/fragile"
+	]
+}

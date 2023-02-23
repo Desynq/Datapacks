@@ -1,0 +1,14 @@
+{
+	"name": "Sludge",
+	"description": "The classic returns, this time, not suited at all for this alien environment. Sludge is good at what it does best, surviving a lot of damage (as long as it isn't from fire).",
+	"icon": {
+		"item": "minecraft:slime_ball"
+	},
+	"impact": 3,
+	"order": 3,
+	"powers": [
+		"xsurvival:sludge/tanky",
+		"xsurvival:sludge/flammable",
+		"xsurvival:sludge/unathletic"
+	]
+}

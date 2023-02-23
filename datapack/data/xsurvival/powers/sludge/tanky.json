@@ -1,0 +1,21 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"name": "Sludge Tanky Bonus",
+		"attribute": "minecraft:generic.max_health",
+		"value": 10,
+		"operation": "addition"
+	},
+
+
+
+	"name": "Tanky",
+	"description": "Your body is made of a thick mucus that can withstand more damage than that of other races.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§9+10 Max Health"
+		}
+	]
+}

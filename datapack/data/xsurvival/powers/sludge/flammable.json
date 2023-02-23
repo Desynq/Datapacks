@@ -1,0 +1,60 @@
+{
+	"type": "origins:multiple",
+
+	"double-damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:fire"
+		},
+		"modifier": {
+			"name": "Sludge Flammability",
+			"operation": "multiply_total_multiplicative",
+			"value": 2
+		}
+	},
+
+	"always-flammable": {
+		"type": "origins:effect_immunity",
+		"effects": "minecraft:fire_resistance",
+		"condition": {
+			"type": "origins:status_effect",
+			"effect": "minecraft:fire_resistance",
+			"min_amplifier": 1,
+			"inverted": true
+		}
+	},
+
+	"combustible": {
+		"type": "origins:action_when_damage_taken",
+		"cooldown": 1,
+		"damage_condition": {
+			"type": "origins:fire"
+		},
+		"entity_action": {
+			"type": "origins:set_on_fire",
+			"duration": 5
+		}
+	},
+
+
+
+	"name": "Flammable",
+	"description": "Your skin is partially made of oil and is therefore highly flammable. You burn until you die or extinguish yourself, fire damage is extremely deadly, and fire damage can set you on fire (such as that from campfires and magma blocks). You also are unable to prevent fire damage using fire resistance potions.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§cFire-related damage sources do triple damage"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§cDamage from fire sources set you on fire, including damage from burning itself"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§cCannot be affected by fire resistance effect"
+		}
+	]
+}

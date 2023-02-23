@@ -4,10 +4,11 @@
 	"enabled": true,
 	"hidden": false,
 	"origins": [
-		"endsurvival:human",
-		"endsurvival:sludge",
-		"endsurvival:succubus",
-		"endsurvival:floran"
+		"xsurvival:human",
+		"xsurvival:arachne",
+		"xsurvival:sludge",
+		"xsurvival:succubus",
+		"xsurvival:floran"
 	],
 	"allow_random": true,
 	"allow_random_unchoosable": false,

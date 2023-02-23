@@ -1,0 +1,15 @@
+{
+	"type": "origins:entity_group",
+	"group": "arthropod",
+
+
+
+	"name": "Arthropod",
+	"description": "Arachnae are spiders and therefore are considered arthropods.",
+	"badges": [
+		{
+			"sprite": "minecraft:textures/item/enchanted_book.png",
+			"text": "§eWhen hit by an attack with bane of arthropods, you take §72.5 * lvl§e damage and get Slowness IV with a random duration between §71§e and §71 + (0.5 * lvl)§e"
+		}
+	]
+}

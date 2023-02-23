@@ -1,0 +1,13 @@
+{
+	"name": "Floran",
+	"description": "Protectors of nature and life itself, florans excel at providing buffs and healing to their allies while also being able to interact directly with nature itself.",
+	"icon": {
+		"item": "minecraft:kelp"
+	},
+	"impact": 2,
+	"order": 2,
+	"powers": [
+		"xsurvival:floran/photosynthetic-regeneration",
+		"xsurvival:floran/heal-throw"
+	]
+}

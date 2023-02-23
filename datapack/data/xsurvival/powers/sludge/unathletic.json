@@ -1,0 +1,21 @@
+{
+	"type": "origins:modify_attribute",
+	"attribute": "combatroll:count",
+	"modifier": {
+		"name": "Sludge Unathleticism",
+		"operation": "max_total",
+		"value": 0
+	},
+
+
+
+	"name": "Unathletic",
+	"description": "Turns out, being made mostly of sticky mucus and oil makes it difficult to perform acrobatics.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§cCannot perform combat rolls"
+		}
+	]
+}

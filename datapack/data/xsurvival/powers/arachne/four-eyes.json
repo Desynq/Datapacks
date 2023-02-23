@@ -1,0 +1,36 @@
+{
+	"type": "origins:multiple",
+
+	"night-vision": {
+		"type": "origins:night_vision",
+		"strength": 0.5
+	},
+
+	"darkness-immunity": {
+		"type": "origins:effect_immunity",
+		"effect": "minecraft:darkness",
+		"condition": {
+			"type": "origins:status_effect",
+			"effect": "minecraft:darkness",
+			"min_amplifier": 1,
+			"inverted": true
+		}
+	},
+
+
+
+	"name": "Four Eyes",
+	"description": "Having four eyes makes your eyesight better at low light levels",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§9Immunity to darkness (unless amplifier > lvl 1)"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§950% Night Vision"
+		}
+	]
+}

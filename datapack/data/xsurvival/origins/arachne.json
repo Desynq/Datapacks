@@ -1,0 +1,17 @@
+{
+	"name": "Human",
+	"description": "Fast, dangerous, and cunning, arachnids are very dangerous up close but are weaker at range and have lower than average health.",
+	"icon": {
+		"item": "minecraft:spider_eye"
+	},
+	"impact": 2,
+	"order": 1,
+	"powers": [
+		"xsurvival:arachne/arthropod",
+		"xsurvival:arachne/four-arms",
+		"xsurvival:arachne/four-eyes",
+		"xsurvival:arachne/four-legs",
+		"xsurvival:arachne/fragile-exoskeleton",
+		"xsurvival:arachne/poison-fangs"
+	]
+}
