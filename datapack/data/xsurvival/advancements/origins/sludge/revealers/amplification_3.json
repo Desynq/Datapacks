@@ -1,0 +1,8 @@
+{
+	"criteria": {
+		"": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"parent": "xsurvival:origins/sludge/mitosis/amplification_3"
+}

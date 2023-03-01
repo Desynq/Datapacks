@@ -1,0 +1,21 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:golden_apple"
+		},
+		"title": "Mitotic Amplification I",
+		"description": "§7You now regenerate 3 health every mitotic cycle. Mitosis exhaustion from amplification is increased to 100%.",
+		"announce_to_chat": false,
+		"frame": "goal",
+		"show_toast": true
+	},
+
+
+
+	"criteria": {
+		"§2Cost: $500": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "xsurvival:origins/sludge/mitosis"
+}

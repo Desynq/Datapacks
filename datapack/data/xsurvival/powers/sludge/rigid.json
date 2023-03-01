@@ -1,0 +1,35 @@
+{
+	"type": "origins:multiple",
+
+	"no-combat-rolls": {
+		"type": "origins:modify_attribute",
+		"attribute": "combatroll:count",
+		"modifier": {
+			"name": "Sludge Unathleticism",
+			"operation": "max_total",
+			"value": 0
+		}
+	},
+
+	"agile": {
+		"type": "origins:modify_attribute",
+		"attribute": "minecraft:generic.movement_speed",
+		"modifier": {
+			"name": "Sludge: Rigid",
+			"operation": "multiply_total_multiplicative",
+			"value": -0.075
+		}
+	},
+
+
+
+	"name": "Rigid",
+	"description": "Due to your cubic anatomy, you are unable to perform combat rolls effectively and struggle to move on ground",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§cCannot perform combat rolls"
+		}
+	]
+}

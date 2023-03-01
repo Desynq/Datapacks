@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:bow"
+		},
+		"title": "Origin: Floran",
+		"description": "Plant lives matter.",
+		"announce_to_chat": false,
+		"frame": "challenge",
+		"background": "minecraft:textures/block/moss_block.png",
+		"show_toast": true
+	},
+
+
+	"criteria": {
+		"": {
+			"trigger": "minecraft:tick"
+		}
+	},
+
+	"rewards": {}
+}

@@ -1,0 +1,1 @@
+script run signal_event('power_active_self', entity_selector('@s'), entity_selector('@s'), 'primary_active' );

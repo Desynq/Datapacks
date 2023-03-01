@@ -1,0 +1,21 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"name": "Floran Acrobat",
+		"attribute": "combatroll:count",
+		"value": 2,
+		"operation": "addition"
+	},
+
+
+
+	"name": "Acrobatic",
+	"description": "Being relatively light footed, doing acrobatic stunts in quick succession like rolling is easy for you.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§9+2 Combat Roll Count"
+		}
+	]
+}

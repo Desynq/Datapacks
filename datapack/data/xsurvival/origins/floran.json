@@ -1,13 +1,14 @@
 {
 	"name": "Floran",
-	"description": "Protectors of nature and life itself, florans excel at providing buffs and healing to their allies while also being able to interact directly with nature itself.",
+	"description": "Class: Ranger\nFlorans, being part elf, part plant, excel at natural magic and using bows and crossbows, but dislike wearing heavy armor.",
 	"icon": {
-		"item": "minecraft:kelp"
+		"item": "minecraft:bow"
 	},
 	"impact": 2,
 	"order": 2,
 	"powers": [
-		"xsurvival:floran/photosynthetic-regeneration",
-		"xsurvival:floran/heal-throw"
+		"xsurvival:floran/sharpshooter",
+		"xsurvival:floran/acrobatic",
+		"xsurvival:floran/light-armored"
 	]
 }

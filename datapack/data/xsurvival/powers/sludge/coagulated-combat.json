@@ -1,0 +1,40 @@
+{
+	"type": "origins:multiple",
+
+	"higher-attack-damage": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Sludge: Coagulated Combat",
+			"attribute": "minecraft:generic.attack_damage",
+			"value": 0.10,
+			"operation": "multiply_total"
+		}
+	},
+
+	"lower-attack-speed": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Sludge: Coagulated Combat",
+			"attribute": "minecraft:generic.attack_speed",
+			"value": -0.10,
+			"operation": "multiply_total"
+		}
+	},
+
+
+
+	"name": "Coagulated Combat",
+	"description": "Being a large, coagulated mass of gel and oil, you struggle to make cohesive attacks in quick succession but are instead able to do hard hitting attacks.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§9+10% Attack Damage"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§c-10% Attack Speed"
+		}
+	]
+}

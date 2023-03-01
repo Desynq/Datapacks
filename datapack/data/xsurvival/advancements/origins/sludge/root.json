@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:slime_spawn_egg"
+		},
+		"title": "Origin: Sludge",
+		"description": "Slime Survival?",
+		"announce_to_chat": false,
+		"frame": "challenge",
+		"background": "minecraft:textures/block/slime_block.png",
+		"show_toast": true
+	},
+
+
+	"criteria": {
+		"": {
+			"trigger": "minecraft:tick"
+		}
+	},
+
+	"rewards": {}
+}

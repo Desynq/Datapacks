@@ -1,0 +1,40 @@
+{
+	"type": "origins:multiple",
+
+
+	"attack-damage": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Succubus Physical Weakness",
+			"attribute": "minecraft:generic.attack_damage",
+			"value": -0.75,
+			"operation": "multiply_total"
+		}
+	},
+
+	"projectile-damage": {
+		"type": "origins:modify_projectile_damage",
+		"modifier": {
+			"name": "Succubus Physical Weakness",
+			"value": -0.75,
+			"operation": "multiply_base_multiplicative"
+		}
+	},
+
+
+
+	"name": "Physical Weakness",
+	"description": "Succubi struggle to overpower their enemies physically and often end up resorting to magic, charm, or thralls instead. This, however, does not mean that a succubus can't physically attack if the situation calls for it, just that it'll be largely ineffective and risky for them.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "minecraft:textures/item/iron_sword.png",
+			"text": "§9-75% Attack Damage"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "minecraft:textures/item/arrow.png",
+			"text": "§9-75% Projectile Damage"
+		}
+	]
+}

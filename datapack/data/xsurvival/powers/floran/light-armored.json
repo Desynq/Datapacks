@@ -1,0 +1,40 @@
+{
+	"type": "origins:multiple",
+
+	"health": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Floran Light Armored",
+			"attribute": "minecraft:generic.armor",
+			"value": -0.5,
+			"operation": "multiply_total"
+		}
+	},
+
+	"armor": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Floran Light Armored",
+			"attribute": "minecraft:generic.armor_toughness",
+			"value": -0.5,
+			"operation": "multiply_total"
+		}
+	},
+
+
+
+	"name": "Light Armored",
+	"description": "Florans are unable to handle wearing heavy armor and therefore custom fit their armor to be as light as possible, greatly compromising the armor's integrity.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§c-50% Armor"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§c-50% Armor Toughness"
+		}
+	]
+}

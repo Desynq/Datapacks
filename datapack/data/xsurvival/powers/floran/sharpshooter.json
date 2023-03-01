@@ -1,0 +1,21 @@
+{
+	"type": "origins:modify_attribute",
+	"attribute": "projectile_damage:generic",
+	"modifier": {
+		"name": "Floran Sharpshooter Bonus",
+		"operation": "multiply_total_multiplicative",
+		"value": 0.2
+	},
+
+
+
+	"name": "Sharpshooter",
+	"description": "Sharing common ancestry with most elven races, florans are naturally adept at handling projectile weapons such as bows and crossbows.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§9+20% Ranged Damage"
+		}
+	]
+}

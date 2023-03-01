@@ -1,0 +1,25 @@
+{
+	"type": "origins:simple",
+
+
+
+	"name": "Heal-Throw",
+	"description": "You can throw a healing or damaging potion.",
+	"badges": [
+		{
+			"type": "origins:keybind",
+			"sprite": "origins:textures/gui/badge/active.png",
+			"text": "Active ability, use with [%s]"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§9You can throw an instant health potion while not crouching"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§9You can throw an instant damage potion while crouching"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"type": "origins:modify_attribute",
+	"attribute": "projectile_damage:generic",
+	"modifier": {
+		"name": "Sludge: Sticky Fingers",
+		"operation": "multiply_total_multiplicative",
+		"value": -0.25
+	},
+
+
+
+	"name": "Sticky Fingers",
+	"description": "As a sludge, you find it difficult to be able to utilize bows and crossbows without covering them in ooze, weakening their overall damage.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§c-25% Ranged Damage"
+		}
+	]
+}

@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:diamond_sword"
+		},
+		"title": "Quick Strikes III",
+		"description": "§7Having mastered the art of quick striking, you are able to unleash attacks at a rate that can well over compensate for your lower base attack damage.",
+		"announce_to_chat": false,
+		"frame": "task",
+		"show_toast": true
+	},
+
+
+
+	"criteria": {
+		"§2Cost: $5000": {
+			"trigger": "minecraft:impossible"
+		},
+		"§9+30% Attack Speed": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "xsurvival:origins/floran/quick_strikes_2"
+}

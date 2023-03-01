@@ -1,25 +1,40 @@
 {
 	"type": "origins:modify_damage_dealt",
+
 	"damage_condition": {
-		"type": "origins:name",
-		"name": "player"
+		"type": "origins:and",
+		"conditions": [
+			{
+				"type": "origins:name",
+				"name": "player"
+			},
+			{
+				"type": "origins:attacker",
+				"entity_condition": {
+					"type": "origins:nbt",
+					"inverted": true,
+					"nbt": "{Tags:['disabledUpgrade.origins-arachne-poison_fangs']}"
+				}
+			}
+		]
 	},
+
 	"target_action": {
 		"type": "origins:apply_effect",
 		"effect": {
-			"effect": "minecraft:poison",
+			"effect": "minecraft:wither",
 			"duration": 200
 		}
 	},
 
 
 	"name": "Poison Fangs",
-	"description": "Chance to poison targets when attacking directly using melee.",
+	"description": "Chance to wither targets when attacking directly using melee.",
 	"badges": [
 		{
 			"type": "origins:tooltip",
 			"sprite": "xsurvival:textures/gui/badge/technical.png",
-			"text": "§925% chance to apply Poison I (0:10) when hitting mobs/players with a melee attack."
+			"text": "§925% chance to apply Wither I (0:10) when hitting mobs/players with a melee attack."
 		}
 	]
 }

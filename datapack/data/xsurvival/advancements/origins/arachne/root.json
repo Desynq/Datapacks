@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:spider_spawn_egg"
+		},
+		"title": "Origin: Arachne",
+		"description": "Glorified spiderman race.",
+		"announce_to_chat": false,
+		"frame": "challenge",
+		"background": "minecraft:textures/block/mossy_cobblestone.png",
+		"show_toast": true
+	},
+
+
+	"criteria": {
+		"": {
+			"trigger": "minecraft:tick"
+		}
+	},
+
+	"rewards": {}
+}

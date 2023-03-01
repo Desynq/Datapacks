@@ -1,0 +1,8 @@
+{
+	"criteria": {
+		"": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"parent": "xsurvival:origins/floran/quick_strikes_3"
+}

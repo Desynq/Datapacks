@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:spider_eye"
+		},
+		"title": "Poison Fangs",
+		"description": "§7Poison I (0:10) when attacking targets directly with melee.",
+		"announce_to_chat": false,
+		"frame": "goal",
+		"show_toast": true
+	},
+
+
+
+	"criteria": {
+		"Stock Upgrade": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": {
+					"condition": "origins:origin",
+					"origin": "xsurvival:arachne"
+				}
+			}
+		}
+	},
+	"parent": "xsurvival:origins/arachne/root"
+}

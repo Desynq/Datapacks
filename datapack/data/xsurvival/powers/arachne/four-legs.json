@@ -1,39 +1,20 @@
 {
-	"type": "origins:multiple",
-
-	"extra-roll": {
-		"type": "origins:attribute",
-		"modifier": {
-			"name": "Arachne Extra Roll",
-			"attribute": "combatroll:count",
-			"value": 1,
-			"operation": "addition"
-		}
-	},
-
-	"agile": {
-		"type": "origins:modify_attribute",
-		"attribute": "minecraft:generic.movement_speed",
-		"modifier": {
-			"name": "Arachne Agility",
-			"operation": "multiply_base_multiplicative",
-			"value": 0.05
-		}
+	"type": "origins:modify_attribute",
+	"attribute": "minecraft:generic.movement_speed",
+	"modifier": {
+		"name": "Arachne Agility",
+		"operation": "multiply_base_multiplicative",
+		"value": 0.05
 	},
 
 
 
 	"name": "Four Legs",
-	"description": "Your extra set of legs give you higher agility and acrobatic ability compared to the average person.",
+	"description": "Your extra set of legs grant you faster movement speed.",
 	"badges": [
 		{
 			"type": "origins:tooltip",
-			"sprite": "xsurvival:textures/gui/badge/technical.png",
-			"text": "§9+1 Combat Roll"
-		},
-		{
-			"type": "origins:tooltip",
-			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"sprite": "minecraft:textures/item/iron_boots.png",
 			"text": "§9+5% Movement Speed"
 		}
 	]

@@ -1,0 +1,20 @@
+{
+	"type": "origins:disable_regen",
+
+
+
+	"name": "Mitosis",
+	"description": "Sludges are unable to regenerate in the same way the normal organisms can. They instead undergo a special form of mitosis that regenerates health and consumes hunger at set intervals rather than passively.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§cNo Natural Regeneration"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§9You regenerate 2 health every 5 seconds at the cost of 0.25 hunger"
+		}
+	]
+}

@@ -1,0 +1,21 @@
+{
+	"type": "origins:modify_attribute",
+	"attribute": "projectile_damage:generic",
+	"modifier": {
+		"name": "Floran Sharpshooter Bonus",
+		"operation": "multiply_total_multiplicative",
+		"value": 0.2
+	},
+
+
+
+	"name": "Weak Arms",
+	"description": "Elves are not exactly known for being able to swing heavy weapons such as axes.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§9-100% Attack Damage while holding an axe"
+		}
+	]
+}
