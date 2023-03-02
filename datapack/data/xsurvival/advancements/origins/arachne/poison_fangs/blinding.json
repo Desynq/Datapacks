@@ -1,0 +1,21 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:black_dye"
+		},
+		"title": "Blinding",
+		"description": "§7Your melee attacks also now have a 50% chance to inflict Blindness I (0:10).",
+		"announce_to_chat": false,
+		"frame": "task",
+		"show_toast": true
+	},
+
+
+
+	"criteria": {
+		"§2Cost: $750": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "xsurvival:origins/arachne/poison_fangs"
+}

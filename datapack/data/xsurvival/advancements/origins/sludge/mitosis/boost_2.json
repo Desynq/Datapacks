@@ -1,0 +1,21 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:golden_carrot"
+		},
+		"title": "Mitotic Boost II",
+		"description": "§7Regeneration interval lowered to 3 seconds.",
+		"announce_to_chat": false,
+		"frame": "task",
+		"show_toast": true
+	},
+
+
+
+	"criteria": {
+		"§2Cost: $2500": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "xsurvival:origins/sludge/mitosis/boost_1"
+}

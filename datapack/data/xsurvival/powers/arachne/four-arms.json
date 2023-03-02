@@ -28,13 +28,13 @@
 	"badges": [
 		{
 			"type": "origins:tooltip",
-			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"sprite": "minecraft:textures/item/iron_sword.png",
 			"text": "§9+1 Attack Damage"
 		},
 		{
 			"type": "origins:tooltip",
-			"sprite": "xsurvival:textures/gui/badge/technical.png",
-			"text": "§9-25% Ranged Damage"
+			"sprite": "minecraft:textures/item/bow.png",
+			"text": "§c-25% Ranged Damage"
 		}
 	]
 }

@@ -1,0 +1,29 @@
+{
+	"type": "origins:multiple",
+
+	"toggle": {
+		"type": "origins:toggle",
+		"retain_state": false,
+		"active_by_default": false,
+		"key": {
+			"key": "key.origins.secondary_active"
+		}
+	},
+
+	"invisibility": {
+		"type": "origins:invisibility",
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:*_toggle"
+		}
+	},
+
+	"prevent-vibrators": {
+		"type": "origins:prevent_game_event",
+		"tag": "vibrations",
+		"condition": {
+			"type": "origins:power_active",
+			"power": "*:*_toggle"
+		}
+	}
+}

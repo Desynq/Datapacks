@@ -6,7 +6,7 @@
 		"title": "Mitotic Amplification I",
 		"description": "§7You now regenerate 3 health every mitotic cycle. Mitosis exhaustion from amplification is increased to 100%.",
 		"announce_to_chat": false,
-		"frame": "goal",
+		"frame": "task",
 		"show_toast": true
 	},
 

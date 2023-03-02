@@ -3,8 +3,8 @@
 		"icon": {
 			"item": "minecraft:spider_eye"
 		},
-		"title": "Poison Fangs",
-		"description": "§7Poison I (0:10) when attacking targets directly with melee.",
+		"title": "Poison Fangs I",
+		"description": "§7Your melee attacks inflict poison on enemies.",
 		"announce_to_chat": false,
 		"frame": "goal",
 		"show_toast": true

@@ -1,0 +1,21 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:coal"
+		},
+		"title": "Necrotifying",
+		"description": "§7Your melee attacks now inflict wither instead of poison.",
+		"announce_to_chat": false,
+		"frame": "task",
+		"show_toast": true
+	},
+
+
+
+	"criteria": {
+		"§2Cost: $2500": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "xsurvival:origins/arachne/poison_fangs"
+}

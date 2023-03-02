@@ -1,0 +1,21 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:redstone"
+		},
+		"title": "Longer Dosage I",
+		"description": "§7Your melee attack's status effect now lasts three times as long.",
+		"announce_to_chat": false,
+		"frame": "task",
+		"show_toast": true
+	},
+
+
+
+	"criteria": {
+		"§2Cost: $3500": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "xsurvival:origins/arachne/poison_fangs/longer_dosage_1"
+}

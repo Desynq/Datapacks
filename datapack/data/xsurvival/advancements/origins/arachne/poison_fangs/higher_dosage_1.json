@@ -1,0 +1,21 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:glowstone_dust"
+		},
+		"title": "Higher Dosage I",
+		"description": "§7Your melee attack's status effect is now twice as powerful.",
+		"announce_to_chat": false,
+		"frame": "task",
+		"show_toast": true
+	},
+
+
+
+	"criteria": {
+		"§2Cost: $1000": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "xsurvival:origins/arachne/poison_fangs"
+}

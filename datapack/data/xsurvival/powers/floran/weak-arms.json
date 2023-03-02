@@ -1,21 +1,54 @@
 {
-	"type": "origins:modify_attribute",
-	"attribute": "projectile_damage:generic",
-	"modifier": {
-		"name": "Floran Sharpshooter Bonus",
-		"operation": "multiply_total_multiplicative",
-		"value": 0.2
+	"type": "origins:multiple",
+
+	"lower-melee-damage": {
+		"type": "origins:attribute",
+		"modifier": {
+			"name": "Floran: Weak Arms",
+			"attribute": "minecraft:generic.attack_damage",
+			"value": -0.25,
+			"operation": "multiply_total"
+		}
+	},
+
+	"no-axe-damage": {
+		"type": "origins:modify_damage_dealt",
+
+		"damage_condition": {
+			"type": "origins:attacker",
+			"entity_condition": {
+				"type": "origins:equipped_item",
+				"equipment_slot": "mainhand",
+				"item_condition": {
+					"type": "origins:ingredient",
+					"ingredient": {
+						"tag": "c:axes"
+					}
+				}
+			}
+		},
+
+		"modifier": {
+			"name": "Floran: No Axe Damage",
+			"operation": "multiply_total",
+			"value": -1
+		}
 	},
 
 
 
 	"name": "Weak Arms",
-	"description": "Elves are not exactly known for being able to swing heavy weapons such as axes.",
+	"description": "Florans struggle to use melee weapons effectively, §lespecially§r heavy weapons like axes.",
 	"badges": [
 		{
 			"type": "origins:tooltip",
 			"sprite": "xsurvival:textures/gui/badge/technical.png",
-			"text": "§9-100% Attack Damage while holding an axe"
+			"text": "§c-25% Melee Attack Damage"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "xsurvival:textures/gui/badge/technical.png",
+			"text": "§c-100% Axe Damage"
 		}
 	]
 }
