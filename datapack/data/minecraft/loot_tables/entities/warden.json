@@ -19,6 +19,15 @@
 					]
 				}
 			]
+		},
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "sculk_worm:sculk_mucus"
+				}
+			]
 		}
 	]
 }

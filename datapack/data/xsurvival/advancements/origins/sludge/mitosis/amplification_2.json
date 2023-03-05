@@ -4,7 +4,7 @@
 			"item": "minecraft:golden_apple"
 		},
 		"title": "Mitotic Amplification II",
-		"description": "§7You now regenerate 4 health every mitotic cycle. Mitosis exhaustion from amplification is increased to 200%",
+		"description": "§7You now regenerate 4 health every mitotic cycle. Mitosis exhaustion from amplification is increased by 100%",
 		"announce_to_chat": false,
 		"frame": "task",
 		"show_toast": true
@@ -13,7 +13,7 @@
 
 
 	"criteria": {
-		"§2Cost: $1500": {
+		"§2Cost: $2500": {
 			"trigger": "minecraft:impossible"
 		}
 	},

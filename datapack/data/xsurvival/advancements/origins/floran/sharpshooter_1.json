@@ -1,0 +1,36 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:quartz"
+		},
+		"title": "Sharpshooter I",
+		"description": "§7You deal 20% more ranged damage",
+		"announce_to_chat": false,
+		"frame": "goal",
+		"show_toast": true
+	},
+
+
+
+	"criteria": {
+		"Stock Upgrade": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": {
+					"condition": "origins:origin",
+					"origin": "xsurvival:floran"
+				}
+			}
+		},
+		"§9+20% Ranged Damage": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": {
+					"condition": "origins:origin",
+					"origin": "xsurvival:floran"
+				}
+			}
+		}
+	},
+	"parent": "xsurvival:origins/floran/root"
+}

@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:quartz"
+		},
+		"title": "Sharpshooter III",
+		"description": "§7You deal 40% more ranged damage",
+		"announce_to_chat": false,
+		"frame": "task",
+		"show_toast": true
+	},
+
+
+
+	"criteria": {
+		"§2Cost: $2000": {
+			"trigger": "minecraft:impossible"
+		},
+		"§9+40% Ranged Damage": {
+			"trigger": "minecraft:impossible"
+		}
+	},
+	"parent": "xsurvival:origins/floran/sharpshooter_2"
+}
