@@ -1,0 +1,11 @@
+{
+	"powers": [
+	],
+	"icon": {
+		"item": "minecraft:emerald"
+	},
+	"order": 1,
+	"impact": 0,
+	"name": "Villager",
+	"description": "Arguably one of the most boring humanoids, Villagers generally don't excel in any one particular skill or field aside from bartering, persuasion, and other charismatic roles. Villagers tend to play better as the money-maker of the group and generally should not be used to replace any dedicated combat role."
+}

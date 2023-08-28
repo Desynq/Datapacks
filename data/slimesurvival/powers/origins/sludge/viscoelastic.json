@@ -1,0 +1,44 @@
+{
+	"type": "origins:multiple",
+
+	"low-movement-speed": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"name": "Sludge: Viscoelastic",
+			"attribute": "minecraft:generic.movement_speed",
+			"value": -0.9,
+			"operation": "multiply_total"
+		},
+		"tick_rate": 1,
+		"condition": {
+			"type": "origins:on_block"
+		}
+	},
+
+	"hopping": {
+		"type": "origins:modify_jump",
+		"modifier": {
+			"operation": "addition",
+			"value": 0.1
+		},
+		"entity_action": {
+			"type": "origins:execute_command",
+			"command": "function slimesurvival:powers/viscoelastic_jump"
+		},
+		"condition": {
+			"type": "origins:on_block"
+		}
+	},
+
+	"airspeed": {
+		"type": "origins:modify_velocity",
+		"modifier": {
+			"value": 0.15,
+			"operation": "multiply_total"
+		},
+		"axes": [
+			"x",
+			"z"
+		]
+	}
+}

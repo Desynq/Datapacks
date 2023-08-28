@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:slime_ball"
+		},
+		"title": "Origin: Sludge",
+		"description": "",
+		"background": "minecraft:textures/block/slime_block.png",
+		"frame": "task",
+		"show_toast": true,
+		"announce_to_chat": false,
+		"hidden": false
+	},
+	"criteria": {
+		"requirement": {
+			"trigger": "minecraft:tick",
+			"conditions": {
+				"player": [
+					{
+						"condition": "origins:origin",
+						"origin": "slimesurvival:sludge"
+					}
+				]
+			}
+		}
+	}
+}

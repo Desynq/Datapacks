@@ -1,0 +1,38 @@
+{
+	"type": "origins:multiple",
+
+	"double-damage": {
+		"type": "origins:modify_damage_taken",
+		"damage_condition": {
+			"type": "origins:fire"
+		},
+		"modifier": {
+			"name": "Sludge Flammability",
+			"operation": "multiply_total_multiplicative",
+			"value": 2
+		}
+	},
+	"always-flammable": {
+		"type": "origins:modify_status_effect_duration",
+		"status_effect": "minecraft:fire_resistance",
+		"modifier": {
+			"operation": "multiply_base_multiplicative",
+			"value": -0.5
+		}
+	},
+
+	"name": "Flammable",
+	"description": "Your skin is flammable and difficult to protect against fire for long periods of time.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "minecraft:textures/item/book.png",
+			"text": "§cFire-related damage sources do triple damage."
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "minecraft:textures/effect/fire_resistance.png",
+			"text": "§cThe fire resistance effect only lasts half as long."
+		}
+	]
+}

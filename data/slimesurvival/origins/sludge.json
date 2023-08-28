@@ -1,0 +1,14 @@
+{
+	"powers": [
+		"slimesurvival:origins/sludge/thick-flesh",
+		"slimesurvival:origins/sludge/viscoelastic",
+		"slimesurvival:origins/sludge/flammable"
+	],
+	"icon": {
+		"item": "minecraft:slime_ball"
+	},
+	"order": 3,
+	"impact": 0,
+	"name": "Sludge",
+	"description": "The Sludge are some of the oldest and most feared beings on this world, with their tribalistic urges to consume all that stand in their paths and their insurmountable constitution. The only known way to quickly dispatch one of their members has been historically carried out with fire or poison as any physical attacks barely leave a lasting impression on their gelatinous bodies."
+}
