@@ -1,10 +1,13 @@
 {
-	"powers": [],
+	"powers": [
+		"slimesurvival:origins/arachnid/weak-exoskeleton",
+		"slimesurvival:origins/arachnid/octopodal-velocity"
+	],
 	"icon": {
 		"item": "minecraft:cobweb"
 	},
 	"order": 4,
 	"impact": 0,
 	"name": "Arachnid",
-	"description": ""
+	"description": "does whatever a spider can"
 }

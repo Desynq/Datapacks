@@ -1,0 +1,12 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"name": "Weak Exoskeleton: Max Health",
+		"attribute": "minecraft:generic.max_health",
+		"value": -10,
+		"operation": "addition"
+	},
+
+	"name": "Weak Exoskeleton",
+	"description": "spider has weak exoskeleton :("
+}

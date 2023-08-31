@@ -1,0 +1,9 @@
+{
+	"type": "origins:model_color",
+	"red": 0.75,
+	"blue": 0.75,
+	"alpha": 0.9,
+
+	"name": "Translucent",
+	"description": "Your skin is slightly transparent and bears a greenish hue due to its gelatinous make-up."
+}

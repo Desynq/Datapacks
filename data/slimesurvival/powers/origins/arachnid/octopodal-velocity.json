@@ -1,0 +1,12 @@
+{
+	"type": "origins:attribute",
+	"modifier": {
+		"name": "Octopodal Velocity: Movement Speed",
+		"attribute": "minecraft:generic.movement_speed",
+		"value": 0.015,
+		"operation": "addition"
+	},
+
+	"name": "Octopodal Velocity",
+	"description": "spider has eight legs :)"
+}

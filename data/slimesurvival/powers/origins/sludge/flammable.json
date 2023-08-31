@@ -26,12 +26,12 @@
 	"badges": [
 		{
 			"type": "origins:tooltip",
-			"sprite": "minecraft:textures/item/book.png",
+			"sprite": "minecraft:textures/item/blaze_powder.png",
 			"text": "§cFire-related damage sources do triple damage."
 		},
 		{
 			"type": "origins:tooltip",
-			"sprite": "minecraft:textures/effect/fire_resistance.png",
+			"sprite": "minecraft:textures/mob_effect/fire_resistance.png",
 			"text": "§cThe fire resistance effect only lasts half as long."
 		}
 	]

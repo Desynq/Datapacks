@@ -1,6 +1,29 @@
 {
 	"type": "origins:multiple",
 
+	"on-ground-without-boots": {
+		"type": "origins:simple",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:on_block"
+				},
+				{
+					"type": "origins:equipped_item",
+					"equipment_slot": "feet",
+					"item_condition": {
+						"type": "origins:ingredient",
+						"ingredient": {
+							"item": "minecraft:leather_boots"
+						}
+					},
+					"inverted": true
+				}
+			]
+		}
+	},
+
 	"low-movement-speed": {
 		"type": "origins:conditioned_attribute",
 		"modifier": {
@@ -11,7 +34,8 @@
 		},
 		"tick_rate": 1,
 		"condition": {
-			"type": "origins:on_block"
+			"type": "origins:power_active",
+			"power": "slimesurvival:origins/sludge/viscoelastic_on-ground-without-boots"
 		}
 	},
 
@@ -26,7 +50,8 @@
 			"command": "function slimesurvival:powers/viscoelastic_jump"
 		},
 		"condition": {
-			"type": "origins:on_block"
+			"type": "origins:power_active",
+			"power": "slimesurvival:origins/sludge/viscoelastic_on-ground-without-boots"
 		}
 	},
 
@@ -39,6 +64,36 @@
 		"axes": [
 			"x",
 			"z"
-		]
-	}
+		],
+		"condition": {
+			"type": "origins:power_active",
+			"power": "slimesurvival:origins/sludge/viscoelastic_on-ground-without-boots"
+		}
+	},
+
+
+	"name": "Viscoelastic",
+	"description": "Your gelatinous constitution makes you very mobile both while leaping and while air-strafing, although your sticky viscosity makes it difficult to move on the ground.",
+	"badges": [
+		{
+			"type": "origins:tooltip",
+			"sprite": "minecraft:textures/item/slime_ball.png",
+			"text": "You exert viscoelastic properties when not wearing leather boots."
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "minecraft:textures/mob_effect/slowness.png",
+			"text": "Viscoelastic: -90% (Total) Movement Speed while on the ground"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "minecraft:textures/mob_effect/jump_boost.png",
+			"text": "Viscoelastic: +10% (Base) Jump Height"
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "minecraft:textures/item/elytra.png",
+			"text": "Viscoelastic: +15% (Total) Horizontal Air Velocity"
+		}
+	]
 }

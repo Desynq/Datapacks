@@ -3,7 +3,7 @@
 	"generator": {
 		"type": "minecraft:flat",
 		"settings": {
-			"biome": "minecraft:swamp",
+			"biome": "slimesurvival:myre",
 			"lakes": false,
 			"features": true,
 			"layers": [
