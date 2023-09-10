@@ -3,12 +3,12 @@
 	"modifier": {
 		"name": "Sludge: Thick Flesh",
 		"attribute": "minecraft:generic.max_health",
-		"value": 1.0,
+		"value": 0.5,
 		"operation": "multiply_total"
 	},
 
 	"name": "Thick Flesh",
-	"description": "Your thick, gelatinous flesh is very dense and requires more damage to penetrate than normal",
+	"description": " ",
 	"badges": [
 		{
 			"type": "origins:tooltip",

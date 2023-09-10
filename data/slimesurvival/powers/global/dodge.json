@@ -10,11 +10,11 @@
 		},
 		"damage_condition": {
 			"type": "origins:in_tag",
-			"tag": "slimesurvival:dodge/base"
+			"name": "minecraft:mob_attack"
 		},
 		"condition": {
 			"type": "origins:command",
-			"command": "execute store result score @s player.hasDodged run script in _player_events run PlayerEvents_attemptDodge(p, ['arrow', 'player_attack', 'mob_attack'])",
+			"command": "execute store result score @s player.hasDodged run script in _player_events run PlayerEvents_attemptsDodge(p, ['arrow', 'player_attack', 'mob_attack'])",
 			"comparison": "==",
 			"compare_to": 1
 		}

@@ -1,0 +1,11 @@
+{
+	"type": "apugli:prevent_label_render",
+	"bientity_condition": {
+		"type": "origins:distance",
+		"comparison": ">=",
+		"compare_to": 8
+	},
+
+	"name": "Unrecognizable",
+	"description": "Your arachnoid facial features make it difficult for others to identify you easily from far away (more than 4 blocks)."
+}

@@ -12,7 +12,7 @@
 			"value": 2
 		}
 	},
-	"always-flammable": {
+	"short-fire-resistance": {
 		"type": "origins:modify_status_effect_duration",
 		"status_effect": "minecraft:fire_resistance",
 		"modifier": {
@@ -20,9 +20,16 @@
 			"value": -0.5
 		}
 	},
+	"non-regenerative-fire-resistance": {
+		"type": "origins:disable_regen",
+		"condition": {
+			"type": "origins:status_effect",
+			"effect": "minecraft:fire_resistance"
+		}
+	},
 
 	"name": "Flammable",
-	"description": "Your skin is flammable and difficult to protect against fire for long periods of time.",
+	"description": " ",
 	"badges": [
 		{
 			"type": "origins:tooltip",
@@ -32,7 +39,12 @@
 		{
 			"type": "origins:tooltip",
 			"sprite": "minecraft:textures/mob_effect/fire_resistance.png",
-			"text": "§cThe fire resistance effect only lasts half as long."
+			"text": "§cFire resistance status effect only lasts half as long."
+		},
+		{
+			"type": "origins:tooltip",
+			"sprite": "minecraft:textures/mob_effect/fire_resistance.png",
+			"text": "§cFire resistance status effect disables natural regeneration"
 		}
 	]
 }

@@ -1,7 +1,8 @@
 {
 	"powers": [
 		"slimesurvival:origins/arachnid/weak-exoskeleton",
-		"slimesurvival:origins/arachnid/octopodal-velocity"
+		"slimesurvival:origins/arachnid/octopodal-velocity",
+		"slimesurvival:origins/arachnid/unrecognizable"
 	],
 	"icon": {
 		"item": "minecraft:cobweb"

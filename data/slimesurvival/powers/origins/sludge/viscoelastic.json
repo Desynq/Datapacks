@@ -1,26 +1,14 @@
 {
 	"type": "origins:multiple",
 
-	"on-ground-without-boots": {
+	"no-footwear": {
 		"type": "origins:simple",
 		"condition": {
-			"type": "origins:and",
-			"conditions": [
-				{
-					"type": "origins:on_block"
-				},
-				{
-					"type": "origins:equipped_item",
-					"equipment_slot": "feet",
-					"item_condition": {
-						"type": "origins:ingredient",
-						"ingredient": {
-							"item": "minecraft:leather_boots"
-						}
-					},
-					"inverted": true
-				}
-			]
+			"type": "origins:equipped_item",
+			"equipment_slot": "feet",
+			"item_condition": {
+				"type": "origins:empty"
+			}
 		}
 	},
 
@@ -35,7 +23,7 @@
 		"tick_rate": 1,
 		"condition": {
 			"type": "origins:power_active",
-			"power": "slimesurvival:origins/sludge/viscoelastic_on-ground-without-boots"
+			"power": "slimesurvival:origins/sludge/viscoelastic_no-footwear"
 		}
 	},
 
@@ -51,7 +39,7 @@
 		},
 		"condition": {
 			"type": "origins:power_active",
-			"power": "slimesurvival:origins/sludge/viscoelastic_on-ground-without-boots"
+			"power": "slimesurvival:origins/sludge/viscoelastic_no-footwear"
 		}
 	},
 
@@ -67,7 +55,7 @@
 		],
 		"condition": {
 			"type": "origins:power_active",
-			"power": "slimesurvival:origins/sludge/viscoelastic_on-ground-without-boots"
+			"power": "slimesurvival:origins/sludge/viscoelastic_no-footwear"
 		}
 	},
 
@@ -83,7 +71,7 @@
 		{
 			"type": "origins:tooltip",
 			"sprite": "minecraft:textures/mob_effect/slowness.png",
-			"text": "Viscoelastic: -90% (Total) Movement Speed while on the ground"
+			"text": "Viscoelastic: -90% (Total) Movement Speed"
 		},
 		{
 			"type": "origins:tooltip",
