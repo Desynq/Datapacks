@@ -1,37 +1,31 @@
 {
 	"display": {
 		"icon": {
-			"item": "minecraft:sticky_piston"
+			"item": "minecraft:blaze_powder"
 		},
 		"title": "Flammable                                                       ",
 		"description": [
+			"",
 			{
-				"text": "Your skin is sticky but exerts a similar effect to Jello when moving. This makes it more difficult for you to move while on the ground while also making you experience more inertia while in the air.",
-				"color": "dark_aqua"
+				"text": "Your body is mostly composed of a flammable, oily substance that is difficult to cover with fire resistant effects without also stopping the regeneration of new, non-fire-resistant cells.",
+				"color": "dark_purple",
+				"italic": true
 			},
 			{
-				"text": "\n----------------------------------------------------------------",
+				"text": "\n-------------------------------",
 				"color": "gray"
 			},
 			{
-				"text": "\n> Base jump height is increased by 10%",
-				"color": "blue"
-			},
-			{
-				"text": "\n\n> Horizontal inertia is increased by 15%",
-				"color": "blue"
-			},
-			{
-				"text": "\n\n> Total movement speed is reduced by 90% while on the ground",
+				"text": "\n+200% total fire-related damage",
 				"color": "red"
 			},
 			{
-				"text": "\n\n> Jumping makes a loud sound and emits particles",
+				"text": "\n\n-50% total fire resistance effect duration",
 				"color": "red"
 			},
 			{
-				"text": "\n\n> This trait is disabled while wearing any type of footwear",
-				"color": "dark_purple"
+				"text": "\n\nFire resistance effect disables natural regeneration",
+				"color": "red"
 			}
 		],
 		"frame": "goal",

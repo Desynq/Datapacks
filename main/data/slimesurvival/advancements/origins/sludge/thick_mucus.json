@@ -3,7 +3,7 @@
 		"icon": {
 			"item": "minecraft:iron_chestplate"
 		},
-		"title": "Thick Flesh                                                     ",
+		"title": "Thick Mucus                                                     ",
 		"description": [
 			{
 				"text": "Your thick, gelatinous flesh is very dense and can sustain more damage",
@@ -24,7 +24,7 @@
 		"hidden": false
 	},
 	"criteria": {
-		"has sludge/root": {
+		"§9> Unlocked by default": {
 			"trigger": "minecraft:tick",
 			"conditions": {
 				"player": [

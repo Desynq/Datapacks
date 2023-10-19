@@ -43,22 +43,6 @@
 		}
 	},
 
-	"airspeed": {
-		"type": "origins:modify_velocity",
-		"modifier": {
-			"value": 0.15,
-			"operation": "multiply_total"
-		},
-		"axes": [
-			"x",
-			"z"
-		],
-		"condition": {
-			"type": "origins:power_active",
-			"power": "slimesurvival:origins/sludge/viscoelastic_no-footwear"
-		}
-	},
-
 
 	"name": "Viscoelastic",
 	"description": "Your gelatinous constitution makes you very mobile both while leaping and while air-strafing, although your sticky viscosity makes it difficult to move on the ground.",
@@ -77,11 +61,6 @@
 			"type": "origins:tooltip",
 			"sprite": "minecraft:textures/mob_effect/jump_boost.png",
 			"text": "Viscoelastic: +10% (Base) Jump Height"
-		},
-		{
-			"type": "origins:tooltip",
-			"sprite": "minecraft:textures/item/elytra.png",
-			"text": "Viscoelastic: +15% (Total) Horizontal Air Velocity"
 		}
 	]
 }
