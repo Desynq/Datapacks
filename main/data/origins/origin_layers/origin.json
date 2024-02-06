@@ -4,13 +4,7 @@
 	"order": 0,
 	"enabled": true,
 	"origins": [
-		"slimesurvival:villager",
-		"slimesurvival:creep",
-		"slimesurvival:sludge",
-		"slimesurvival:arachnid",
-		"slimesurvival:floran",
-		"slimesurvival:ghoul",
-		"slimesurvival:merfolk"
+		"slimesurvival:arachnid"
 	],
 	"allow_random": true,
 	"exclude_random": [

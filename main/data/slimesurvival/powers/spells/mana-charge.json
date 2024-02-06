@@ -1,0 +1,55 @@
+{
+	"type": "origins:multiple",
+
+
+
+	"disable-jumping": {
+		"type": "origins:modify_jump",
+		"modifier": {
+			"operation": "set_total",
+			"value": 0
+		}
+	},
+
+	"slower-swimming": {
+		"type": "origins:modify_swim_speed",
+		"modifier": {
+			"operation": "multiply_total_multiplicatively",
+			"value": -0.9
+		}
+	},
+
+	"slower-lava-swimming": {
+		"type": "origins:modify_lava_speed",
+		"modifier": {
+			"operation": "multiply_total_multiplicatively",
+			"value": -0.9
+		}
+	},
+
+	"slower-movement": {
+		"type": "origins:conditioned_attribute",
+		"tick_rate": 1,
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.9
+		}
+		
+	},
+
+	"slower-break-speed": {
+		"type": "origins:conditioned_attribute",
+		"modifier": {
+			"operation": "multiply_total",
+			"value": -0.9
+		}
+	},
+
+	"no-dealt-damage": {
+		"type": "origins:modify_damage_dealt",
+		"modifier": {
+			"operation": "set_total",
+			"value": 0
+		}
+	}
+}
